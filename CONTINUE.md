@@ -208,7 +208,11 @@ macrolanguage's tagset (fa, iso639_3 fas) names the member Glottolog lists
 (pes) only among its alias tags, so Persian, Uzbek, Pashto, Azerbaijani,
 Guarani, Pulaar, Estonian and Nepali drew as having no script on record.
 Members named in a tagset's aliases now take its script, and check 20
-fails if one is missed.
+fails if one is missed. Wikidata and CLDR also key 87 languages by a
+macrolanguage code (ar, fa, ku, ne...), but spreading a macrolanguage's
+scripts over its members was tried and rejected: it wrote Western Farsi
+in Cyrillic, which is Tajik's script, and Konkan Marathi in Malayalam.
+Those sources would need a member-level key to count.
 
 Still open:
 
