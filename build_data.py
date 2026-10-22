@@ -13,6 +13,12 @@ DATA, OUT = os.path.join(BASE, "data"), os.path.join(BASE, "out")
 sys.path.insert(0, BASE)
 from genealogy import G, SOURCES
 
+# Glottolog files some languoids under top-level "pseudo-families" that are
+# categories, not lineages. They are kept on the plate but not counted as
+# families: the first version counted them and printed 245 instead of 238.
+PSEUDO_FAMILIES = {"Bookkeeping", "Unclassifiable", "Unattested", "Pidgin", "Mixed Language",
+                   "Sign Language", "Speech Register", "Artificial Language"}
+
 SPECIAL = {"Zinh", "Zyyy", "Zzzz", "Zmth", "Zsym", "Zxxx"}
 
 
@@ -281,7 +287,12 @@ if __name__ == "__main__":
         "aes": dict(collections.Counter(v["aes"] for v in langs.values())),
         "macroareas": dict(collections.Counter(m for v in langs.values() for m in v["macroareas"] or [""])),
     }
-    stats["families"] = len({v["family"] for v in langs.values() if not v["isolate"]})
+    fam_ids = {v["family"] for v in langs.values() if not v["isolate"]}
+    pseudo = {f for f in fam_ids if fam_name.get(f) in PSEUDO_FAMILIES}
+    stats["families"] = len(fam_ids - pseudo)
+    stats["pseudo_families"] = sorted(fam_name[f] for f in pseudo)
+    stats["languages_in_pseudo_families"] = sum(1 for v in langs.values()
+                                                if not v["isolate"] and v["family"] in pseudo)
 
     json.dump({"scripts": scripts, "languages": langs, "family_names": fam_name,
                "stats": stats},

@@ -580,8 +580,9 @@ checks = [
     % (ST["scripts_without_glyph"], N_NOGLYPH_UNENCODED),
     "Languages drawn: %d, every Glottolog languoid at level=language, minus %d constructed."
     % (ST["languages"], ST["artificial_dropped"]),
-    "Families: %d. Isolates: %d. Sign languages: %d. Extinct: %d."
-    % (ST["families"], ST["isolates"], ST["sign_languages"], ST["extinct"]),
+    "Families: %d, not counting Glottolog's %d pseudo-families (%d languages). Isolates: %d. Sign languages: %d. Extinct: %d."
+    % (ST["families"], len(ST["pseudo_families"]), ST["languages_in_pseudo_families"],
+       ST["isolates"], ST["sign_languages"], ST["extinct"]),
     "Languages with no script recorded: %d, %.1f%%; of them %d listed as unwritten, %d with no record."
     % (ST["languages_without_script"], 100 * ST["languages_without_script"] / ST["languages"],
        ST["languages_recorded_unwritten"], ST["languages_without_script"] - ST["languages_recorded_unwritten"]),

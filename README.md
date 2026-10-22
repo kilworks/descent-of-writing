@@ -30,7 +30,7 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | Descent claims with a named source | 198 of 198, attested ones included (one, `Saur`, says outright that it is unsourced) |
 | Deepest chain of descent | 8 generations |
 | **Languages drawn** | **8,587** (8,618 Glottolog languoids at level=language, minus 31 constructed) |
-| Families / isolates | 245 / 183 |
+| Families / isolates | 238 / 183, not counting Glottolog's 7 pseudo-families (Bookkeeping, Sign Language, Unclassifiable and others, 913 languages), which the first version counted as 245 families |
 | Sign languages | 227 |
 | Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,995 of them from langtags alone |
 | Languages listed as unwritten (SIL langtags) | 2,856 (33.3%) |

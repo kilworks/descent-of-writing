@@ -67,10 +67,15 @@ check("3. language marks == Glottolog languages minus constructed",
       "%d in source, %d constructed dropped, %d in dataset, %d marks drawn"
       % (len(gl), ST["artificial_dropped"], len(L), marks))
 
-# 4. families
+# 4. families: distinct Family_ID, minus Glottolog's pseudo-families
+from build_data import PSEUDO_FAMILIES
+FN = D["family_names"]
 fams = {v["family"] for v in L.values() if not v["isolate"]}
-check("4. family count == distinct Family_ID", len(fams) == ST["families"],
-      "%d families, %d isolates" % (len(fams), ST["isolates"]))
+real = {f for f in fams if FN.get(f) not in PSEUDO_FAMILIES}
+check("4. family count == distinct Family_ID minus pseudo-families", len(real) == ST["families"],
+      "%d families, %d isolates; %d pseudo-families left out (%s) holding %d languages"
+      % (len(real), ST["isolates"], len(fams) - len(real), ", ".join(ST["pseudo_families"]),
+         ST["languages_in_pseudo_families"]))
 
 # 5. every script reaches an origin, or is one
 bad = []

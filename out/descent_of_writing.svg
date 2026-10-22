@@ -7,7 +7,7 @@
 <text x="13124" y="176" text-anchor="middle" font-size="112" letter-spacing="16">THE DESCENT OF WRITING</text>
 <text x="13124" y="256" text-anchor="middle" font-size="46" fill="#6b6155">every script humans are known to have written, and every language beneath them</text>
 <line x1="260" y1="300" x2="25988" y2="300" stroke="#c9bda9" stroke-width="3"/>
-<text x="13124" y="372" text-anchor="middle" font-size="34" fill="#6b6155" class="m">218 scripts of ISO 15924  &#183;  9 roots with no known parent  &#183;  8587 languages of Glottolog  &#183;  245 families  &#183;  183 isolates</text>
+<text x="13124" y="372" text-anchor="middle" font-size="34" fill="#6b6155" class="m">218 scripts of ISO 15924  &#183;  9 roots with no known parent  &#183;  8587 languages of Glottolog  &#183;  238 families  &#183;  183 isolates</text>
 <path d="M10107.5 3210.0 C 10107.5 3295.0 11485.7 3295.0 11485.7 3380.0" fill="none" stroke="#a86a1f" stroke-width="2.4" opacity="0.60" stroke-dasharray="4 18" stroke-linecap="round"/>
 <path d="M15377.1 3210.0 C 15377.1 3295.0 16701.7 3295.0 16701.7 3380.0" fill="none" stroke="#a86a1f" stroke-width="2.4" opacity="0.60" stroke-dasharray="22 10 3 10"/>
 <path d="M18841.4 2740.0 C 18841.4 2825.0 19252.0 2825.0 19252.0 2910.0" fill="none" stroke="#a86a1f" stroke-width="2.4" opacity="0.60" stroke-dasharray="16 14"/>
@@ -11685,7 +11685,7 @@
 <text x="6860" y="10860" font-size="30" fill="#6b6155">Scripts with a real glyph specimen: 181. Without: 37, each named in the catalogue.</text>
 <text x="6860" y="10906" font-size="30" fill="#6b6155">Of those 37, 32 are not encoded in Unicode at all, so no font for them can exist.</text>
 <text x="6860" y="10952" font-size="30" fill="#6b6155">Languages drawn: 8587, every Glottolog languoid at level=language, minus 31 constructed.</text>
-<text x="6860" y="10998" font-size="30" fill="#6b6155">Families: 245. Isolates: 183. Sign languages: 227. Extinct: 1235.</text>
+<text x="6860" y="10998" font-size="30" fill="#6b6155">Families: 238, not counting Glottolog's 7 pseudo-families (913 languages). Isolates: 183. Sign languages: 227. Extinct: 1235.</text>
 <text x="6860" y="11044" font-size="30" fill="#6b6155">Languages with no script recorded: 4070, 47.4%; of them 2856 listed as unwritten, 1214 with no record.</text>
 <text x="6860" y="11090" font-size="30" fill="#6b6155">Deepest chain of descent: 8 generations. Every script traces to a root or is one.</text>
 <text x="260" y="11196" font-size="28" fill="#a89d8d" class="m">Sources: ISO 15924 registry and Unicode Character Database (unicode.org, retrieved 2026-10-22) &#183; Glottolog 5 CLDF (CC-BY-4.0) &#183; Wikidata P282 P1098 P1705 &#183; Unicode CLDR supplementalData &#183; SIL ISO 639-3 tables &#183; SIL langtags.json (MIT) &#183; specimens rendered from Noto (SIL OFL), shaped with HarfBuzz.</text>

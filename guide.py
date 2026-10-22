@@ -258,8 +258,7 @@ def build():
     w("## Script and language are two different trees")
     w("")
     # Glottolog's pseudo-families are filing categories, not lineages
-    PSEUDO = {"Bookkeeping", "Unclassifiable", "Unattested", "Pidgin", "Mixed Language",
-              "Sign Language", "Speech Register", "Artificial Language"}
+    from build_data import PSEUDO_FAMILIES as PSEUDO
     fam_name = D["family_names"]
     fscripts, sfams, members = collections.defaultdict(set), collections.defaultdict(set), collections.Counter()
     for v in L.values():
