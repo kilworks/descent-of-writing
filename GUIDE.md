@@ -20,10 +20,10 @@ It covers all 218 scripts of the ISO 15924 registry that are not special or priv
 | Type | Scripts | What it means |
 |---|---:|---|
 | logographic | 13 | signs stand for words or morphemes, usually with phonetic components alongside. Every independent invention of writing began here. |
-| syllabary | 17 | one sign per syllable, with no shared shape between syllables that share a consonant (Cherokee, kana, Linear B). |
-| abjad | 26 | letters for consonants only, vowels left to the reader or marked optionally (Phoenician, Hebrew, Arabic). The term is Daniels' (1990). |
-| abugida | 76 | a consonant letter carries an inherent vowel, and other vowels are marks attached to it (Brahmi and its descendants, Ge'ez). Also Daniels'. |
-| alphabet | 59 | consonants and vowels written as letters of equal standing (Greek, Latin, Cyrillic, and many twentieth-century inventions). |
+| syllabary | 18 | one sign per syllable, with no shared shape between syllables that share a consonant (Cherokee, kana, Linear B). |
+| abjad | 23 | letters for consonants only, vowels left to the reader or marked optionally (Phoenician, Hebrew, Arabic). The term is Daniels' (1990). |
+| abugida | 71 | a consonant letter carries an inherent vowel, and other vowels are marks attached to it (Brahmi and its descendants, Ge'ez). Also Daniels'. |
+| alphabet | 66 | consonants and vowels written as letters of equal standing (Greek, Latin, Cyrillic, and many twentieth-century inventions). |
 | featural | 3 | the shapes encode articulatory features, so related sounds look related (Hangul, Visible Speech, SignWriting). The term is Sampson's (1985). |
 | semasiographic | 2 | signs carry meaning without fixing the words that express it (Naxi Dongba, Blissymbols). |
 | undeciphered | 5 | the type cannot be stated because the script is not read. |
@@ -169,7 +169,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
 - [`Egyp`](#egyp) Egyptian hieroglyphs, logographic, 3250 BCE
   - [`Egyh`](#egyh) Egyptian hieratic, logographic, 2700 BCE
     - [`Egyd`](#egyd) Egyptian demotic, logographic, 650 BCE
-      - [`Merc`](#merc) Meroitic Cursive, abugida, 220 BCE
+      - [`Merc`](#merc) Meroitic Cursive, alphabet, 220 BCE
   - [`Psin`](#psin) Proto-Sinaitic, abjad, 1900 BCE
     - [`Ugar`](#ugar) Ugaritic, abjad, 1250 BCE *(stimulus)*
     - [`Phnx`](#phnx) Phoenician, abjad, 1000 BCE
@@ -251,13 +251,13 @@ Indented by generation. Each line gives the code, the name, the type, the first 
           - [`Gukh`](#gukh) Gurung Khema, abugida, 1995 CE *(stimulus)*
         - [`Khar`](#khar) Kharoshthi, abugida, 250 BCE
         - [`Elym`](#elym) Elymaic, abjad, 150 BCE
-          - [`Mand`](#mand) Mandaic, Mandaean, abjad, 350 CE *(contested)*
+          - [`Mand`](#mand) Mandaic, Mandaean, alphabet, 350 CE *(contested)*
         - [`Chrs`](#chrs) Chorasmian, abjad, 100 BCE
         - [`Hatr`](#hatr) Hatran, abjad, 98 BCE
         - [`Nbat`](#nbat) Nabataean, abjad, 95 BCE
           - [`Arab`](#arab) Arabic, abjad, 512 CE
             - [`Aran`](#aran) Arabic, variant, 1400 CE *(variant)*
-            - [`Thaa`](#thaa) Thaana, abugida, 1705 CE *(stimulus)*
+            - [`Thaa`](#thaa) Thaana, alphabet, 1705 CE *(stimulus)*
             - [`Bamu`](#bamu) Bamum, syllabary, 1896 CE *(contested)*
             - [`Osma`](#osma) Osmanya, alphabet, 1920 CE *(stimulus)*
             - [`Nkoo`](#nkoo) N’Ko, alphabet, 1949 CE *(stimulus)*
@@ -283,7 +283,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
               - [`Hung`](#hung) Old Hungarian, alphabet, 900 CE *(contested)*
             - [`Ougr`](#ougr) Old Uyghur, abjad, 800 CE
               - [`Kits`](#kits) Khitan small script, logographic, 925 CE *(stimulus)*
-              - [`Mong`](#mong) Mongolian, abjad, 1224 CE
+              - [`Mong`](#mong) Mongolian, alphabet, 1224 CE
       - [`Grek`](#grek) Greek, alphabet, 750 BCE
         - [`Cari`](#cari) Carian, alphabet, 700 BCE *(contested)*
         - [`Ital`](#ital) Old Italic, alphabet, 700 BCE
@@ -298,8 +298,8 @@ Indented by generation. Each line gives the code, the name, the type, the first 
               - [`Mend`](#mend) Mende Kikakui, syllabary, 1917 CE *(stimulus)*
               - [`Kpel`](#kpel) Kpelle, syllabary, 1930 CE *(stimulus)*
               - [`Loma`](#loma) Loma, syllabary, 1930 CE *(stimulus)*
-            - [`Cans`](#cans) Unified Canadian Aboriginal Syllabics, abugida, 1840 CE *(stimulus)*
-              - [`Plrd`](#plrd) Miao, abugida, 1904 CE *(stimulus)*
+            - [`Cans`](#cans) Unified Canadian Aboriginal Syllabics, syllabary, 1840 CE *(stimulus)*
+              - [`Plrd`](#plrd) Miao, syllabary, 1904 CE *(stimulus)*
             - [`Moon`](#moon) Moon, alphabet, 1845 CE
             - [`Dsrt`](#dsrt) Deseret, alphabet, 1854 CE *(stimulus)*
             - [`Dupl`](#dupl) Duployan shorthand, Duployan stenography, alphabet, 1860 CE *(stimulus)*
@@ -345,12 +345,12 @@ Indented by generation. Each line gives the code, the name, the type, the first 
         - [`Elba`](#elba) Elbasan, alphabet, 1761 CE *(stimulus)*
         - [`Vith`](#vith) Vithkuqi, alphabet, 1844 CE *(contested)*
       - [`Sidt`](#sidt) Sidetic, alphabet, 500 BCE *(contested)*
-      - [`Tfng`](#tfng) Tifinagh, abjad, 138 BCE *(contested)*
+      - [`Tfng`](#tfng) Tifinagh, alphabet, 138 BCE *(contested)*
       - [`Samr`](#samr) Samaritan, abjad, 350 CE *(contested)*
     - [`Sarb`](#sarb) Old South Arabian, abjad, 800 BCE *(contested)*
       - [`Ethi`](#ethi) Ethiopic, abugida, 200 CE
     - [`Narb`](#narb) Old North Arabian, abjad, 600 BCE
-  - [`Mero`](#mero) Meroitic Hieroglyphs, abugida, 150 BCE
+  - [`Mero`](#mero) Meroitic Hieroglyphs, alphabet, 150 BCE
 
 ### Han
 
@@ -386,7 +386,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
 - [`Pcun`](#pcun) Proto-Cuneiform, logographic, 3300 BCE
   - [`Pelm`](#pelm) Proto-Elamite, undeciphered, 3050 BCE *(stimulus)*
   - [`Xsux`](#xsux) Cuneiform, Sumero-Akkadian, logographic, 2600 BCE
-    - [`Xpeo`](#xpeo) Old Persian, syllabary, 520 BCE *(stimulus)*
+    - [`Xpeo`](#xpeo) Old Persian, alphabet, 520 BCE *(stimulus)*
 
 ### Naxi Dongba
 
@@ -646,7 +646,7 @@ Unicode: encoded since version 6.1, block from U+11100.
 
 ### Cans
 
-**Unified Canadian Aboriginal Syllabics**. Abugida, written left to right. First attested 1840 CE, in use today; status living.
+**Unified Canadian Aboriginal Syllabics**. Syllabary, written left to right. First attested 1840 CE, in use today; status living.
 
 Parent: [`Latn`](#latn) Latin through British shorthand, link **stimulus**.
 Source: Nichols 1996, in Daniels & Bright. Most characters drawn from British shorthand; Evans knew Devanagari, but no source makes it his model.
@@ -1509,7 +1509,7 @@ Unicode: encoded since version 11.0, block from U+11EE0.
 
 ### Mand
 
-**Mandaic, Mandaean**. Abjad, written right to left. First attested 350 CE, in use today; status living.
+**Mandaic, Mandaean**. Alphabet, written right to left. First attested 350 CE, in use today; status living.
 
 Parent: [`Elym`](#elym) Elymaic, link **contested**.
 Source: Encyclopaedia Iranica 'Mandaeans v'; Haberl 2006, BASOR. Based on the script of the Elymaean rock inscriptions; Unicode also allows Parthian chancery; bowls 4th-7th c..
@@ -1568,7 +1568,7 @@ Unicode: encoded since version 7.0, block from U+1E800.
 
 ### Merc
 
-**Meroitic Cursive**. Abugida, written right to left. First attested 220 BCE, last used 400 CE; status historical.
+**Meroitic Cursive**. Alphabet, written right to left. First attested 220 BCE, last used 400 CE; status historical.
 
 Parent: [`Egyd`](#egyd) Egyptian demotic, link **attested**.
 Source: Rilly, UCLA Encyclopedia of Egyptology; Priese 1973. Developed from Demotic; earliest datable object a sistrum handle naming Arnekhamani, c.220 BCE.
@@ -1578,7 +1578,7 @@ Unicode: encoded since version 6.1, block from U+109A0.
 
 ### Mero
 
-**Meroitic Hieroglyphs**. Abugida, written right to left. First attested 150 BCE, last used 400 CE; status historical.
+**Meroitic Hieroglyphs**. Alphabet, written right to left. First attested 150 BCE, last used 400 CE; status historical.
 
 Parent: [`Egyp`](#egyp) Egyptian hieroglyphs, link **attested**.
 Source: Rilly, UCLA Encyclopedia of Egyptology. Created under Taneyidamani, first half of the 2nd c. BCE, from Egyptian hieroglyphs with new values.
@@ -1609,7 +1609,7 @@ Unicode: encoded since version 7.0, block from U+11600.
 
 ### Mong
 
-**Mongolian** (ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ᠌). Abjad, written top to bottom. First attested 1224 CE, in use today; status living.
+**Mongolian** (ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ᠌). Alphabet, written top to bottom. First attested 1224 CE, in use today; status living.
 
 Parent: [`Ougr`](#ougr) Old Uyghur, link **attested**.
 Source: Unicode ch.13; Brose 2005. Adopted 1204 by tradition; earliest surviving text the Stele of Yisungge, c.1224-1225.
@@ -1960,7 +1960,7 @@ Unicode: not encoded, so no font can show it.
 
 ### Plrd
 
-**Miao**. Abugida, written left to right. First attested 1904 CE, in use today; status living.
+**Miao**. Syllabary, written left to right. First attested 1904 CE, in use today; status living.
 
 Parent: [`Cans`](#cans) Unified Canadian Aboriginal Syllabics, link **stimulus**.
 Source: Unicode N3789 (L2/10-093); Lewis & Dorais 2003. Structure adopted from Cree syllabics, with Latin, shorthand and Miao signs.
@@ -2388,7 +2388,7 @@ Unicode: not encoded, so no font can show it.
 
 ### Tfng
 
-**Tifinagh** (ⵜⴼⵉⵏⵗ). Abjad, written in more than one direction. First attested 138 BCE, in use today; status living.
+**Tifinagh** (ⵜⴼⵉⵏⵗ). Alphabet, written in more than one direction. First attested 138 BCE, in use today; status living.
 
 Parent: [`Phnx`](#phnx) Phoenician through Libyco-Berber, link **contested**.
 Source: British Museum, 'Written in stone'; Chaker & Hachi 2000. Phoenician/Punic origin has the wider support; indigenous and South Arabian origins argued; first dated text 139/138 BCE (Dougga).
@@ -2409,7 +2409,7 @@ Unicode: encoded since version 3.2, block from U+1700.
 
 ### Thaa
 
-**Thaana** (ތާނަ). Abugida, written right to left. First attested 1705 CE, in use today; status living.
+**Thaana** (ތާނަ). Alphabet, written right to left. First attested 1705 CE, in use today; status living.
 
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Maldives National Centre for Linguistic and Historical Research, 'Scripts of Maldives'. First nine letters from Arabic numerals, next nine from Indic numerals; vowel marks from Arabic; earliest records 1705.
@@ -2572,7 +2572,7 @@ Unicode: not encoded, so no font can show it.
 
 ### Xpeo
 
-**Old Persian**. Syllabary, written left to right. First attested 520 BCE, last used 330 BCE; status historical.
+**Old Persian**. Alphabet, written left to right. First attested 520 BCE, last used 330 BCE; status historical.
 
 Parent: [`Xsux`](#xsux) Cuneiform, Sumero-Akkadian, link **stimulus**.
 Source: Schmitt, Encyclopaedia Iranica 'Cuneiform script'. An independent creation in wedge form for Darius's Bisotun inscription, c. 520 BCE.

@@ -232,8 +232,9 @@ check (verify.py), or a figure that moved against the committed dataset
 the four figures that had moved since (one more language without a script,
 five more with a speaker count, and the root list). When it fails, rebuild
 locally, read the drift, update the README figures, and commit the new
-`out/`. The workflow has not yet run on GitHub: the first scheduled run, or a
-manual dispatch, is its real test.
+`out/`. First run on GitHub, dispatched by hand on 2026-10-22 (run
+39779795305): green on a clean Ubuntu runner, 181 specimens, all checks
+passing, no drift on 26 figures.
 
 ### 5. Five specimens wait for Noto (two recovered)
 

@@ -21,6 +21,10 @@ Row = code: (parent, edge, type, direction, start, end, status)
               composite = registry code bundling several scripts, not a script
   type      logographic | syllabary | abjad | alphabet | abugida | featural
             | semasiographic | undeciphered | composite | variant | symbols
+            Follows Unicode 17.0 Table 6-1 where it lists the script, except
+            Ougr and Ethi, where Unicode's own prose contradicts the table
+            (Ougr kept abjad, Ethi kept abugida). Cans as syllabary is
+            disputed: Bright and Bringhurst say alphasyllabary.
   direction ltr | rtl | ttb | boustrophedon | varies
   start     first attestation, year (negative = BCE); for a modern invention,
             the year it was devised
@@ -49,13 +53,13 @@ G["Nkdb"] = (None, None, "semasiographic", "ltr", 1200, None, "living")
 # ------------------------------------------------------------- MESOPOTAMIA ---
 G["Xsux"] = ("Pcun", "attested", "logographic", "ltr", -2600, 75, "historical")
 G["Pelm"] = ("Pcun", "stimulus", "undeciphered", "rtl", -3050, -2900, "undeciphered")
-G["Xpeo"] = ("Xsux", "stimulus", "syllabary", "ltr", -520, -330, "historical")
+G["Xpeo"] = ("Xsux", "stimulus", "alphabet", "ltr", -520, -330, "historical")
 
 # ------------------------------------------------------------------ EGYPT ----
 G["Egyh"] = ("Egyp", "attested", "logographic", "rtl", -2700, 300, "historical")
 G["Egyd"] = ("Egyh", "attested", "logographic", "rtl", -650, 500, "historical")
-G["Mero"] = ("Egyp", "attested", "abugida", "rtl", -150, 400, "historical")
-G["Merc"] = ("Egyd", "attested", "abugida", "rtl", -220, 400, "historical")
+G["Mero"] = ("Egyp", "attested", "alphabet", "rtl", -150, 400, "historical")
+G["Merc"] = ("Egyd", "attested", "alphabet", "rtl", -220, 400, "historical")
 G["Psin"] = ("Egyp", "attested", "abjad", "varies", -1900, -1400, "historical")
 
 # -------------------------------------------------- PROTO-SINAITIC / SEMITIC --
@@ -65,7 +69,7 @@ G["Samr"] = ("Phnx", "contested", "abjad", "rtl", 350, None, "living")
 G["Sarb"] = ("Psin", "contested", "abjad", "boustrophedon", -800, 600, "historical")
 G["Narb"] = ("Psin", "attested", "abjad", "varies", -600, 400, "historical")
 G["Ethi"] = ("Sarb", "attested", "abugida", "ltr", 200, None, "living")
-G["Tfng"] = ("Phnx", "contested", "abjad", "varies", -138, None, "living")
+G["Tfng"] = ("Phnx", "contested", "alphabet", "varies", -138, None, "living")
 
 # ----------------------------------------------------------------- ARAMAIC ---
 G["Armi"] = ("Phnx", "attested", "abjad", "rtl", -900, -100, "historical")
@@ -77,7 +81,7 @@ G["Syrc"] = ("Armi", "attested", "abjad", "rtl", 6, None, "living")
 G["Syre"] = ("Syrc", "variant", "variant", "rtl", 100, None, "living")
 G["Syrj"] = ("Syrc", "variant", "variant", "rtl", 400, None, "living")
 G["Syrn"] = ("Syrc", "variant", "variant", "rtl", 400, None, "living")
-G["Mand"] = ("Elym", "contested", "abjad", "rtl", 350, None, "living")
+G["Mand"] = ("Elym", "contested", "alphabet", "rtl", 350, None, "living")
 G["Mani"] = ("Syrc", "contested", "abjad", "rtl", 250, 1000, "historical")
 G["Elym"] = ("Armi", "attested", "abjad", "rtl", -150, 300, "historical")
 G["Chrs"] = ("Armi", "attested", "abjad", "rtl", -100, 800, "historical")
@@ -89,7 +93,7 @@ G["Avst"] = ("Phlv", "attested", "alphabet", "rtl", 500, None, "living")
 G["Sogo"] = ("Armi", "attested", "abjad", "rtl", 313, 400, "historical")
 G["Sogd"] = ("Sogo", "attested", "abjad", "varies", 600, 1400, "historical")
 G["Ougr"] = ("Sogd", "attested", "abjad", "ttb", 800, 1800, "historical")
-G["Mong"] = ("Ougr", "attested", "abjad", "ttb", 1224, None, "living")
+G["Mong"] = ("Ougr", "attested", "alphabet", "ttb", 1224, None, "living")
 G["Orkh"] = ("Sogd", "contested", "alphabet", "rtl", 700, 1000, "historical")
 G["Hung"] = ("Orkh", "contested", "alphabet", "rtl", 900, None, "revived")
 G["Yezi"] = ("Syrc", "contested", "alphabet", "rtl", 1200, None, "living")
@@ -97,7 +101,7 @@ G["Yezi"] = ("Syrc", "contested", "alphabet", "rtl", 1200, None, "living")
 # ------------------------------------------------------------------ ARABIC ---
 G["Arab"] = ("Nbat", "attested", "abjad", "rtl", 512, None, "living")
 G["Aran"] = ("Arab", "variant", "variant", "rtl", 1400, None, "living")
-G["Thaa"] = ("Arab", "stimulus", "abugida", "rtl", 1705, None, "living")
+G["Thaa"] = ("Arab", "stimulus", "alphabet", "rtl", 1705, None, "living")
 G["Rohg"] = ("Arab", "stimulus", "alphabet", "rtl", 1980, None, "living")
 G["Adlm"] = ("Arab", "stimulus", "alphabet", "rtl", 1989, None, "living")
 G["Nkoo"] = ("Arab", "stimulus", "alphabet", "rtl", 1949, None, "living")
@@ -147,8 +151,8 @@ G["Zsye"] = ("Latn", "composite", "symbols", "ltr", 1999, None, "living")
 
 # ------------------------------------------- AMERICAS AND THE PACIFIC --------
 G["Cher"] = ("Latn", "stimulus", "syllabary", "ltr", 1821, None, "living")
-G["Cans"] = ("Latn", "stimulus", "abugida", "ltr", 1840, None, "living")
-G["Plrd"] = ("Cans", "stimulus", "abugida", "ltr", 1904, None, "living")
+G["Cans"] = ("Latn", "stimulus", "syllabary", "ltr", 1840, None, "living")
+G["Plrd"] = ("Cans", "stimulus", "syllabary", "ltr", 1904, None, "living")
 G["Wole"] = ("Latn", "stimulus", "syllabary", "ltr", 1905, 1950, "historical")
 
 # --------------------------------------------------------- WEST AFRICA -------
