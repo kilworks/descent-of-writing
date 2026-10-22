@@ -91,7 +91,7 @@ The SVG carries a title and a description, and every script card has its own `<t
 
 ![Catalogue and legend](docs/detail-catalogue.png)
 
-All 218 scripts appear again in a catalogue keyed by code, carrying type, direction, span of use, status, parent and the kind of link, and whether a specimen exists. The same rows are in [`out/scripts_catalogue.csv`](out/scripts_catalogue.csv) with 22 columns, including the intermediary with no ISO code (Barbier's night writing behind Braille, Gaudi behind Tirhuta), the source each edge rests on, and what that source says, so the plate is auditable against its own data.
+All 218 scripts appear again in a catalogue keyed by code, carrying type, direction, span of use, status, parent and the kind of link, and whether a specimen exists. The same rows are in [`out/scripts_catalogue.csv`](out/scripts_catalogue.csv) with 23 columns, including the intermediary with no ISO code (Barbier's night writing behind Braille, Gaudi behind Tirhuta), the source each edge rests on, and what that source says, so the plate is auditable against its own data.
 
 ## Build it
 

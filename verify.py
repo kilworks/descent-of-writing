@@ -178,7 +178,7 @@ check("11. GUIDE.md matches the dataset, one entry per script",
 # ---- companion CSV, one row per script, all seven documented fields
 with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newline="") as f:
     w = csv.writer(f)
-    w.writerow(["iso15924", "iso_number", "name_en", "name_fr", "native_name", "type",
+    w.writerow(["iso15924", "iso_number", "name_en", "name_fr", "native_name", "native_source", "type",
                 "direction", "first_use", "last_use", "status", "parent", "edge",
                 "origin", "via", "source", "source_note", "unicode_version", "unicode_block_start", "codepoints",
                 "specimen", "specimen_font", "glyph_missing_reason"])
@@ -188,7 +188,7 @@ with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newl
         while S[cur]["parent"]:
             cur = S[cur]["parent"]
         root = cur
-        w.writerow([c, s["num"], s["name"], s["name_fr"], s["native"] or "", s["type"],
+        w.writerow([c, s["num"], s["name"], s["name_fr"], s["native"] or "", s.get("native_source") or "", s["type"],
                     s["direction"], s["start"], s["end"] if s["end"] is not None else "present",
                     s["status"], s["parent"] or "", s["edge"] or "root", root,
                     s.get("via", ""), s.get("source", ""), s.get("source_note", ""),

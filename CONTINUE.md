@@ -268,7 +268,11 @@ Publishing it on GitHub Pages is a repository setting, left to the owner.
 
 ### 8. Smaller, real, unglamorous
 
-- Only 111 of 218 scripts have a native name. Wikidata P1705 is thin.
+- 116 of 218 scripts have a native name: 111 from Wikidata P1705, and 5
+  more from the script's Wikidata label in the language it mainly writes,
+  kept only when the label is in that script (Cherokee, Gothic, Greek,
+  Khmer, Tai Le). Labels in the minority languages most scripts serve are
+  rare; a CLDR pass over script display names would add the major ones.
 - Speaker counts reach 19.8% of languages. Unknown counts still draw at the
   smallest size; the caption now says so with the computed share, but a
   distinct encoding would be more honest than a caption.

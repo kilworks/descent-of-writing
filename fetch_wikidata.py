@@ -24,6 +24,14 @@ SELECT ?iso ?n WHERE {
   ?l wdt:P1098 ?n .
 }""",
 
+    # every label of every script item, in every language: a script's name in
+    # the language it mainly writes is its native name when P1705 is missing
+    "wd_script_labels.json": """
+SELECT ?code ?label WHERE {
+  ?sc wdt:P506 ?code .
+  ?sc rdfs:label ?label .
+}""",
+
     # every entity carrying an ISO 15924 code, with descent + metadata
     "wd_scripts.json": """
 SELECT ?sc ?code ?scLabel ?native ?inception ?based ?basedCode ?dir ?dirLabel ?instLabel WHERE {

@@ -677,7 +677,7 @@ Unicode: encoded since version 5.1, block from U+AA00.
 
 ### Cher
 
-**Cherokee**. Syllabary, written left to right. First attested 1821 CE, in use today; status living.
+**Cherokee** (ᏣᎳᎩ ᏧᏓᏡᎩ ᏚᏃᏴᎬᎢ). Syllabary, written left to right. First attested 1821 CE, in use today; status living.
 
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Unicode ch.20. Sequoyah took letter shapes from Latin print without their Latin values, 1815-1821.
@@ -944,7 +944,7 @@ Unicode: encoded since version 10.0, block from U+11D00.
 
 ### Goth
 
-**Gothic**. Alphabet, written left to right. First attested 350 CE, last used 900 CE; status historical.
+**Gothic** (𐌰𐌶𐌲𐌰𐌱𐌰𐌹𐍂𐌺𐌰). Alphabet, written left to right. First attested 350 CE, last used 900 CE; status historical.
 
 Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Schaffner 2024, Oxford Research Encyclopedia of Linguistics. Wulfila's alphabet on the Greek model, with Latin and runic letters, c.350; manuscripts 5th-6th c..
@@ -965,7 +965,7 @@ Unicode: encoded since version 7.0, block from U+11300.
 
 ### Grek
 
-**Greek**. Alphabet, written left to right. First attested 750 BCE, in use today; status living.
+**Greek** (ελληνικό αλφάβητο). Alphabet, written left to right. First attested 750 BCE, in use today; status living.
 
 Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Janko, on Methone; Jeffery, Local Scripts of Archaic Greece. Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left.
@@ -1253,7 +1253,7 @@ Unicode: encoded since version 4.1, block from U+10A00.
 
 ### Khmr
 
-**Khmer**. Abugida, written left to right. First attested 611 CE, in use today; status living.
+**Khmer** (អក្សរខ្មែរ). Abugida, written left to right. First attested 611 CE, in use today; status living.
 
 Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Zakharov 2019; Unicode ch.16. Earliest dated Old Khmer K.557/600, 611; close to the Pallava script of the Coromandel coast.
@@ -2308,7 +2308,7 @@ Unicode: encoded since version 6.1, block from U+11680.
 
 ### Tale
 
-**Tai Le**. Abugida, written left to right. First attested 1407 CE, in use today; status living.
+**Tai Le** (ᥘᥤᥐ ᥖᥭᥰ ᥘᥫᥴ). Abugida, written left to right. First attested 1407 CE, in use today; status living.
 
 Parent: [`Mymr`](#mymr) Myanmar, link **attested**.
 Source: Daniels 2012, Journal of Southeast Asian Studies. The Tay borrowed heavily from Burmese before the 15th c.; a Ming scroll of 1407.

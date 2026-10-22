@@ -259,6 +259,47 @@ if __name__ == "__main__":
 
     fams = collections.Counter(v["family"] for v in langs.values())
     with_script = sum(1 for v in langs.values() if v["scripts"])
+    # Native names: Wikidata P1705 where it exists, else the script's Wikidata
+    # label in the language it mainly writes (the largest language hung under
+    # it), kept only if the label is written in that script itself, so a
+    # transliteration never passes for a native name.
+    for c, s in scripts.items():
+        s["native_source"] = "Wikidata P1705" if s["native"] else None
+    cp_script = {}
+    for line in open(os.path.join(DATA, "Scripts.txt"), encoding="utf8"):
+        line = line.split("#")[0].strip()
+        if not line:
+            continue
+        rng, sc = [x.strip() for x in line.split(";")]
+        lo, _, hi = rng.partition("..")
+        for cp in range(int(lo, 16), int(hi or lo, 16) + 1):
+            cp_script[cp] = sc
+    part1 = {}
+    with open(os.path.join(DATA, "iso-639-3.tab"), encoding="utf8") as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            if r.get("Part1"):
+                part1[r["Id"]] = r["Part1"]
+    labels = collections.defaultdict(dict)
+    for b in wikidata("wd_script_labels.json"):
+        lab = b["label"]
+        labels[b["code"]["value"]][lab.get("xml:lang", "")] = lab["value"]
+    hung = collections.defaultdict(list)
+    for v in langs.values():
+        if v["primary_script"] and v["iso"]:
+            hung[v["primary_script"]].append(v)
+    for c, s in scripts.items():
+        # Latin writes languages of some 270 families: no one of them owns its name
+        if s["native"] or c == "Latn":
+            continue
+        # largest language first; English is the plate's own language, not a native one
+        for v in sorted(hung.get(c, []), key=lambda v: -(v["speakers"] or 0)):
+            tag = part1.get(v["iso"], v["iso"])
+            lab = labels.get(c, {}).get(tag)
+            if tag != "en" and lab and any(cp_script.get(ord(ch)) == s["pva"] for ch in lab):
+                s["native"] = lab
+                s["native_source"] = "Wikidata label in %s" % v["name"]
+                break
+
     stats = {
         "iso15924_total_rows": 226,
         "iso15924_special_removed": 8,
@@ -267,6 +308,7 @@ if __name__ == "__main__":
         "scripts_without_glyph": sum(1 for s in scripts.values() if not s["glyph"]),
         "scripts_encoded": sum(1 for s in scripts.values() if s["encoded"]),
         "scripts_not_encoded": sum(1 for s in scripts.values() if not s["encoded"]),
+        "scripts_with_native_name": sum(1 for s in scripts.values() if s["native"]),
         "origins": sorted(k for k, v in scripts.items() if v["parent"] is None),
         "languages": len(langs),
         "artificial_dropped": n_artificial,
