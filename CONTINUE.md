@@ -235,8 +235,11 @@ Still open:
   which agrees on 1,486 of the 1,494 it speaks for (99.5%); with Wiktionary,
   2,647 of the 3,041 (87.0%) are confirmed by a source kept apart from SIL.
   The 394 left, and the 8 LinguaMeta disagreements in
-  out/crosscheck_linguameta.txt, are the next to check; ScriptSource
-  (scriptsource.org) is the candidate.
+  out/crosscheck_linguameta.txt, are the next to check. ScriptSource is
+  not a candidate: SIL publishes it, as it does langtags, so it would not
+  be independent. Grammars and Glottolog's own bibliography per language
+  are; the Mehri disagreement, for one, needs a grammar saying speakers
+  write in Arabic letters, which the open web gives only second-hand.
   One of them, Eastern Qiandong Miao in Bopomofo, comes from langtags'
   hmn-Bopo tagset, reached through the alias rule of check 20. Northern
   Qiandong Miao came the same way and now hangs under the Latin script set
