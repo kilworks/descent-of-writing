@@ -10,6 +10,7 @@ It covers all 218 scripts of the ISO 15924 registry that are not special or priv
 - [How the links are drawn](#how-the-links-are-drawn)
 - [The roots](#the-roots)
 - [The great lineages](#the-great-lineages)
+- [Script and language are two different trees](#script-and-language-are-two-different-trees)
 - [Open questions](#open-questions)
 - [The family trees](#the-family-trees)
 - [Every script, by code](#every-script-by-code)
@@ -96,6 +97,16 @@ Proto-cuneiform appears at Uruk around 3300 BCE, as book-keeping, and became cun
 ### Writing made on purpose
 
 42 of the scripts were devised after 1800, most of them by a person whose name is recorded. Sequoyah's Cherokee syllabary (finished in 1821 CE) took Latin letter shapes without their values, and James Evans's Cree syllabics turned British shorthand into a syllabary. In West Africa, the Vai syllabary of 1833 CE prompted Mende, Kpelle, Loma and Bassa Vah. In India, Burma and Laos, scripts such as Ol Chiki, Warang Citi, Sora Sompeng, Pahawh Hmong and Mro were made for languages with no script of their own, often as the founding act of a religious or cultural movement, and their encoding proposals describe them as unrelated to any earlier script. They are the clearest evidence that writing, once known to exist, can be invented again from the idea alone.
+
+## Script and language are two different trees
+
+The plate draws the descent of scripts as a tree and sorts languages by family inside each script's field, but the two trees do not line up. A script travels by conquest, religion, trade and schooling; a language descends by speech. Counting families and isolates as Glottolog defines them, leaving out its filing categories (Artificial Language, Bookkeeping, Mixed Language, Pidgin, Sign Language, Speech Register, Unattested, Unclassifiable):
+
+- Latin writes languages of 272 families and isolates, Arabic of 23, Braille of 17.
+- Indo-European is written in 81 scripts, Sino-Tibetan in 42, Austronesian in 28.
+- Yet 139 of the 188 scripts recorded for any language serve a single family or isolate: most scripts were made for one language or a few close ones, and a handful of imperial and religious scripts carry everything else.
+
+A second plate could draw the language families as a tree facing this one, linked by chords; CONTINUE.md keeps it as open work.
 
 ## Open questions
 

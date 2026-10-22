@@ -200,6 +200,7 @@ def build():
     w("- [How the links are drawn](#how-the-links-are-drawn)")
     w("- [The roots](#the-roots)")
     w("- [The great lineages](#the-great-lineages)")
+    w("- [Script and language are two different trees](#script-and-language-are-two-different-trees)")
     w("- [Open questions](#open-questions)")
     w("- [The family trees](#the-family-trees)")
     w("- [Every script, by code](#every-script-by-code)")
@@ -253,6 +254,42 @@ def build():
         w("")
         w(text.format(**nums))
         w("")
+
+    w("## Script and language are two different trees")
+    w("")
+    # Glottolog's pseudo-families are filing categories, not lineages
+    PSEUDO = {"Bookkeeping", "Unclassifiable", "Unattested", "Pidgin", "Mixed Language",
+              "Sign Language", "Speech Register", "Artificial Language"}
+    fam_name = D["family_names"]
+    fscripts, sfams, members = collections.defaultdict(set), collections.defaultdict(set), collections.Counter()
+    for v in L.values():
+        f = "isolate:" + v["id"] if v["isolate"] else v["family"]
+        if fam_name.get(f) in PSEUDO:
+            continue
+        members[f] += 1
+        for c in v["scripts"]:
+            fscripts[f].add(c)
+            sfams[c].add(f)
+    top_s = sorted(sfams.items(), key=lambda kv: -len(kv[1]))
+    top_f = sorted(fscripts.items(), key=lambda kv: -len(kv[1]))
+    single = sum(1 for fs in sfams.values() if len(fs) == 1)
+    w("The plate draws the descent of scripts as a tree and sorts languages by family inside each "
+      "script's field, but the two trees do not line up. A script travels by conquest, religion, "
+      "trade and schooling; a language descends by speech. Counting families and isolates as "
+      "Glottolog defines them, leaving out its filing categories (%s):" % ", ".join(sorted(PSEUDO)))
+    w("")
+    w("- %s writes languages of %d families and isolates, %s of %d, %s of %d."
+      % tuple([short(S[top_s[0][0]]["name"]), len(top_s[0][1])]
+              + sum(([short(S[c]["name"]), len(fs)] for c, fs in top_s[1:3]), [])))
+    w("- %s is written in %d scripts, %s in %d, %s in %d."
+      % tuple(sum(([fam_name.get(f, f), len(cs)] for f, cs in top_f[:3]), [])))
+    w("- Yet %d of the %d scripts recorded for any language serve a single family or isolate: most "
+      "scripts were made for one language or a few close ones, and a handful of imperial and "
+      "religious scripts carry everything else." % (single, len(sfams)))
+    w("")
+    w("A second plate could draw the language families as a tree facing this one, linked by "
+      "chords; CONTINUE.md keeps it as open work.")
+    w("")
 
     w("## Open questions")
     w("")

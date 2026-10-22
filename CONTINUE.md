@@ -252,6 +252,12 @@ Drawing both trees facing each other, linked by chords, is denser and more
 honest. It is also a different plate, so it may deserve to be a second output
 rather than a change to this one.
 
+GUIDE.md now measures the mismatch instead of drawing it: Latin writes
+languages of 272 families and isolates, Indo-European is written in 81
+scripts, and 139 of the 188 scripts recorded for any language serve a
+single family or isolate (Glottolog's filing categories left out). The
+facing-trees plate is still open.
+
 ### 7. Done: a browser viewer
 
 `viewer.html` loads the SVG inline and the dataset beside it: pan, zoom,
