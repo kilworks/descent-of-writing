@@ -174,6 +174,10 @@ Brahmi governs the placement of about 60 scripts and its Aramaic origin is the
 majority view, not a settled one. Hangul's Phags-pa link covers five or six
 consonant shapes at most. Egyptian independence from Sumer is the majority
 view. Each is recorded; none has been reviewed by someone who works on it.
+GUIDE.md now sets out six of these debates (Brahmi, Egypt, Hangul, Indus,
+rongorongo, Glagolitic) with the positions, their evidence and where the
+field stands, from 34 sources read on 2026-10-22. A specialist reading of
+that chapter is the cheapest useful review.
 
 ### 3. Done in part: language to script coverage, 17.7% to 52.6%
 
