@@ -2,7 +2,7 @@
 
 Generated from `out/dataset.json` by [`guide.py`](guide.py). Do not edit by hand: change [`genealogy.py`](genealogy.py) or the sources, rebuild, and rerun `guide.py`. `verify.py` fails if this file is stale.
 
-It covers all 218 scripts of the ISO 15924 registry that are not special or private-use codes, the same set the [plate](out/descent_of_writing.svg) draws, and the 4,569 languages of Glottolog that a source records a script for (Wikidata, CLDR or SIL langtags). Of the other 4,018, 2,857 are listed as unwritten by SIL langtags and 1,161 have no record either way. Neither is proof that a language is unwritten.
+It covers all 218 scripts of the ISO 15924 registry that are not special or private-use codes, the same set the [plate](out/descent_of_writing.svg) draws, and the 4,597 languages of Glottolog that a source records a script for (Wikidata, CLDR or SIL langtags). Of the other 3,990, 2,856 are listed as unwritten by SIL langtags and 1,134 have no record either way. Neither is proof that a language is unwritten.
 
 ## Contents
 
@@ -80,7 +80,7 @@ Around 750 BCE Greek writers took Phoenician letters for consonants their langua
 
 ### Latin's reach
 
-Latin writes 3,655 of the 4,569 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 13 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
+Latin writes 3,673 of the 4,597 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 13 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
 
 ### Brahmi, and the abugida
 
@@ -102,7 +102,7 @@ Proto-cuneiform appears at Uruk around 3300 BCE, as book-keeping, and became cun
 
 The plate draws the descent of scripts as a tree and sorts languages by family inside each script's field, but the two trees do not line up. A script travels by conquest, religion, trade and schooling; a language descends by speech. Counting families and isolates as Glottolog defines them, leaving out its filing categories (Artificial Language, Bookkeeping, Mixed Language, Pidgin, Sign Language, Speech Register, Unattested, Unclassifiable):
 
-- Latin writes languages of 273 families and isolates, Arabic of 23, Braille of 18.
+- Latin writes languages of 274 families and isolates, Arabic of 23, Braille of 18.
 - Indo-European is written in 85 scripts, Sino-Tibetan in 42, Austronesian in 28.
 - Yet 143 of the 193 scripts recorded for any language serve a single family or isolate: most scripts were made for one language or a few close ones, and a handful of imperial and religious scripts carry everything else.
 
@@ -459,7 +459,7 @@ Parent: [`Nbat`](#nbat) Nabataean, link **attested**.
 Source: Hoyland, 'The birth of Arabic in stone'; Robin et al. 2014, CRAI. Earliest dated text in Arabic script Zabad, 512; Namara (328) and Jabal Ramm are in Nabataean script.
 Children: [`Aran`](#aran), [`Thaa`](#thaa), [`Bamu`](#bamu), [`Osma`](#osma), [`Nkoo`](#nkoo), [`Berf`](#berf), [`Gara`](#gara), [`Rohg`](#rohg), [`Adlm`](#adlm).
 
-Languages written mainly in it: 150. Largest: Standard Arabic (335,000,000 speakers), Urdu (68,600,000 speakers), Egyptian Arabic (64,600,000 speakers), Western Farsi (52,800,000 speakers), Levantine Arabic (44,000,000 speakers). Also recorded as a further script for 154 more.
+Languages written mainly in it: 150. Largest: Standard Arabic (335,000,000 speakers), Urdu (68,600,000 speakers), Egyptian Arabic (64,600,000 speakers), Western Farsi (52,800,000 speakers), Levantine Arabic (44,000,000 speakers). Also recorded as a further script for 155 more.
 Unicode: encoded since version 1.1, block from U+0600.
 
 ### Aran
@@ -551,7 +551,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link
 Source: Salomon 1998 2.2.5.5; Unicode ch.15. Gaudi (proto-Bengali) current from the 10th to the 14th c.; a distinct Bengali from the 14th-15th c..
 Children: [`Toto`](#toto).
 
-Languages written mainly in it: 16. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Mundari (1,500,000 speakers). Also recorded as a further script for 30 more.
+Languages written mainly in it: 17. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Mundari (1,500,000 speakers). Also recorded as a further script for 30 more.
 Unicode: encoded since version 1.1, block from U+0980.
 
 ### Berf
@@ -755,7 +755,7 @@ Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Slavica Occitania 12 (2001), after the Kirilo-Metodievska enciklopedija. Earliest epigraphy Krepcha 921, a Preslav sherd 931, a dated Dobrudja inscription 943.
 Children: [`Cyrs`](#cyrs), [`Perm`](#perm).
 
-Languages written mainly in it: 99. Largest: Russian (154,000,000 speakers), Ukrainian (26,900,000 speakers), Tajik (14,000,000 speakers), Kazakh (12,900,000 speakers), Bulgarian (9,000,000 speakers). Also recorded as a further script for 41 more.
+Languages written mainly in it: 103. Largest: Russian (154,000,000 speakers), Ukrainian (26,900,000 speakers), Tajik (14,000,000 speakers), Kazakh (12,900,000 speakers), Bulgarian (9,000,000 speakers). Also recorded as a further script for 41 more.
 Unicode: encoded since version 1.1, block from U+0400.
 
 ### Cyrs
@@ -972,7 +972,7 @@ Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Janko, on Methone; Jeffery, Local Scripts of Archaic Greece. Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left.
 Children: [`Cari`](#cari), [`Ital`](#ital), [`Lydi`](#lydi), [`Lyci`](#lyci), [`Copt`](#copt), [`Goth`](#goth), [`Armn`](#armn), [`Geok`](#geok), [`Glag`](#glag), [`Cyrl`](#cyrl), [`Todr`](#todr), [`Elba`](#elba), [`Vith`](#vith).
 
-Languages written mainly in it: 17. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 11 more.
+Languages written mainly in it: 19. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 11 more.
 Unicode: encoded since version 1.1, block from U+0370.
 
 ### Gujr
@@ -1111,7 +1111,7 @@ Unicode: encoded since version 8.0, block from U+14400.
 Parent: [`Laoo`](#laoo) Lao, link **invented**.
 Source: Unicode ch.16; Smalley, Vang & Yang 1990, Mother of Writing. Devised by Shong Lue Yang in 1959; some letters may recall Lao and Latin.
 
-Languages written mainly in it: 1. Hmong Njua (Retired) (4,000,000 speakers). Also recorded as a further script for 3 more.
+Languages written mainly in it: 1. Hmong Njua (Retired) (4,000,000 speakers). Also recorded as a further script for 4 more.
 Unicode: encoded since version 7.0, block from U+16B00.
 
 ### Hmnp
@@ -1121,7 +1121,7 @@ Unicode: encoded since version 7.0, block from U+16B00.
 Parent: [`Hebr`](#hebr) Hebrew, link **stimulus**.
 Source: Everson, Unicode N4780R3. Several consonant letters appear derived from Hebrew characters; 1980s.
 
-Languages written mainly in it: 1. Hmong Njua. Also recorded as a further script for 1 more.
+Languages written mainly in it: 1. Hmong Njua. Also recorded as a further script for 2 more.
 Unicode: encoded since version 12.0, block from U+1E100.
 
 ### Hntl
@@ -1239,7 +1239,7 @@ Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: de Casparis 1975, Indonesian Palaeography; Pandey, L2/12-125. Plumpungan c.750; de Casparis doubts direct descent from Pallava.
 Children: [`Bali`](#bali), [`Sund`](#sund), [`Java`](#java), [`Tglg`](#tglg), [`Bugi`](#bugi), [`Rjng`](#rjng), [`Batk`](#batk).
 
-Recorded as a further script for 3 languages, the main script for none.
+Languages written mainly in it: 1. Old Malay. Also recorded as a further script for 3 more.
 Unicode: encoded since version 15.0, block from U+11F00.
 
 ### Khar
@@ -1392,7 +1392,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020. Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over.
 Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge).
 
-Languages written mainly in it: 3,655. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 212 more.
+Languages written mainly in it: 3,673. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 213 more.
 Unicode: encoded since version 1.1, block from U+0041.
 
 ### Leke
@@ -2041,7 +2041,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Unicode TN40; Looijenga 2003; Duwel 2008. Thought to come from North Italic; Vimose comb c.150-160; written in either direction.
 Children: [`Cirt`](#cirt).
 
-Languages written mainly in it: 2. Largest: Central East Middle German (2,000,000 speakers), Old Norse. Also recorded as a further script for 14 more.
+Languages written mainly in it: 2. Largest: Central East Middle German (2,000,000 speakers), Old Norse. Also recorded as a further script for 15 more.
 Unicode: encoded since version 3.0, block from U+16A0.
 
 ### Samr
@@ -2395,7 +2395,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Phnx`](#phnx) Phoenician through Libyco-Berber, link **contested**.
 Source: British Museum, 'Written in stone'; Chaker & Hachi 2000. Phoenician/Punic origin has the wider support; indigenous and South Arabian origins argued; first dated text 139/138 BCE (Dougga).
 
-Languages written mainly in it: 6. Largest: Tachelhit (8,000,000 speakers), Tagdal (26,900 speakers), Zenaga (200 speakers), Numidian, Western Algerian Berber. Also recorded as a further script for 16 more.
+Languages written mainly in it: 7. Largest: Tachelhit (8,000,000 speakers), Tagdal (26,900 speakers), Zenaga (200 speakers), Numidian, Western Algerian Berber. Also recorded as a further script for 16 more.
 Unicode: encoded since version 4.1, block from U+2D30.
 
 ### Tglg
@@ -2590,7 +2590,7 @@ Parent: [`Pcun`](#pcun) Proto-Cuneiform, link **attested**.
 Source: Unicode ch.11; L2/25-211 (proto-cuneiform). Cuneiform proper from c.2700-2600 BCE (Fara, Abu Salabikh); -2900 is the end of the archaic period.
 Children: [`Xpeo`](#xpeo).
 
-Languages written mainly in it: 10. Largest: Sumerian, Elamite, Hattic, Hurrian, Urartian. Also recorded as a further script for 1 more.
+Languages written mainly in it: 11. Largest: Sumerian, Elamite, Hattic, Hurrian, Urartian. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.0, block from U+12000.
 
 ### Yezi

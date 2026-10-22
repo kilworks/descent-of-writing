@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 22 of
-22 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 23 of
+23 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -19,7 +19,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 22 of
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
 | Descent claims with a named source | 198 of 198, attested included, none marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
-| Languages with a recorded script | 4,569 (53.2%); 2,857 listed unwritten |
+| Languages with a recorded script | 4,597 (53.5%); 2,856 listed unwritten |
 | Languages with a speaker count | 1,699 (19.8%) |
 | Scripts with a native name | 121 of 218 |
 | Sources retrieved | 2026-10-22 |
@@ -205,13 +205,13 @@ books can close these.
 ### 3. Done in part: language to script coverage, 17.7% to 53.2%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,569 of 8,587 (53.2%), 3,040 of them on langtags
-alone. Listed as unwritten: 2,857. No record either way: 1,161. Before it was
+third source. Written: 4,597 of 8,587 (53.5%), 3,033 of them on langtags
+alone. Listed as unwritten: 2,856. No record either way: 1,134. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
 unwritten never contribute a script (langtags documents regional inference on
 them). Multi-script languages now hang under a ranked primary script
-(langtags default tag, then CLDR primary, then Wikidata); 6 of the 750
+(langtags default tag, then CLDR primary, then Wikidata); 6 of the 753
 with several still fall back to alphabetical order. Members of a
 macrolanguage (Mandarin, Malay) have
 their default tagset filed under the macrolanguage in langtags, which left
@@ -240,14 +240,14 @@ Still open:
   and Jpan, which is how the sources tag them.
 - An independent check now exists: crosscheck_wiktionary.py compares the
   langtags-only links with Wiktionary's language data. Where Wiktionary
-  lists a script it agrees for 99.2% (2,364 of 2,382); eight corrections
+  lists a script it agrees for 99.2% (2,360 of 2,378); eight corrections
   came from the disagreements, and 18 remain in
   out/crosscheck_wiktionary.txt for a reader who knows the languages.
-- 3,040 languages rest on langtags alone, which inherits the Ethnologue's
+- 3,033 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. Done in part on 2026-10-22: crosscheck_linguameta.py tests them
   against LinguaMeta's own curation (GOOGLE_RESEARCH-sourced scripts only),
-  which agrees on 1,486 of the 1,493 it speaks for (99.5%); with Wiktionary,
-  2,647 of the 3,040 (87.1%) are confirmed by a source kept apart from SIL.
+  which agrees on 1,482 of the 1,489 it speaks for (99.5%); with Wiktionary,
+  2,641 of the 3,033 (87.1%) are confirmed by a source kept apart from SIL.
   ScriptSource is not a candidate: SIL publishes it, as it does langtags,
   so it would not be independent.
   Wikipedia's language infoboxes were tried on the 393 left, as a
@@ -279,11 +279,16 @@ Still open:
   open source was found.
 - The unwritten flag is positive evidence but not proof: a listed language can
   have a missionary or school orthography that langtags has not caught.
-- Of the 1,161 with no record, 754 have no ISO 639-3 code, which every
-  script source keys on; bridging Glottocodes to scripts directly would reach
-  them. Another 218 are sign languages, which langtags tags `Zxxx` (no
+- Of the 1,134 with no record, 730 have no ISO 639-3 code, which every
+  script source but one keys on. Done in part on 2026-10-22: Wikidata's
+  Glottocode (P1394) now joins writing systems directly, which reached 28
+  languages, 24 of them without an ISO code (Kassite, Old Malay, Medieval
+  Greek, Forest Nenets...). Its one plain error, Crimean Gothic in runes, is
+  dropped in corrections.py, which now takes a Glottocode where a language
+  has no ISO code. Check 22 fails if a Glottocode link is left unjoined;
+  the rest have no source at all. Another 218 are sign languages, which langtags tags `Zxxx` (no
   written form) where it has them. Done on 2026-10-22: they have a field of
-  their own in the lower register, next to "no record" (now 943), and
+  their own in the lower register, next to "no record" (now 916), and
   check 19 holds it; the nine written in SignWriting hang under it above.
 
 ### 4. Done: monthly rebuild and drift check
@@ -333,7 +338,7 @@ pooled. Done on 2026-10-22: `render_trees.py` writes
 `out/trees_facing.svg`, the full facing pair. Glottolog's classification
 (now kept per language in the dataset) is drawn to depth on the left,
 opened while a clade holds 40 or more written languages within four levels
-of its family (164 leaves); the script descent tree on the right; the same
+of its family (165 leaves); the script descent tree on the right; the same
 bands between. Check 21 holds it. Still open: the cut-off is a choice, and
 a viewer that opens clades on demand would show the whole tree.
 

@@ -17,6 +17,15 @@ SELECT ?iso ?sc ?scCode ?scLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }""",
 
+    # language (Glottocode) -> writing system: reaches the languages with no
+    # ISO 639-3 code, which every other script source keys on
+    "wd_glotto_script.json": """
+SELECT ?g ?scCode WHERE {
+  ?l wdt:P1394 ?g .
+  ?l wdt:P282 ?sc .
+  ?sc wdt:P506 ?scCode .
+}""",
+
     # language (ISO 639-3) -> speaker count, keep the max per language downstream
     "wd_speakers.json": """
 SELECT ?iso ?n WHERE {

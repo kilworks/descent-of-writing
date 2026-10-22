@@ -149,6 +149,11 @@ def build_languages():
         if gid and c in valid:
             lang_scripts[gid].add(c)
             src_count["wikidata"] += 1
+    for b in wikidata("wd_glotto_script.json"):
+        gid, c = b["g"]["value"], b["scCode"]["value"]
+        if gid in langs and c in valid:
+            lang_scripts[gid].add(c)
+            src_count["wikidata"] += 1
 
     # CLDR languageData is a second, independently maintained opinion on which
     # script a language uses. It is keyed by BCP47, so bridge 639-1 to 639-3.
@@ -212,7 +217,7 @@ def build_languages():
     from corrections import CORRECTIONS
     forced_main = {}
     for iso, sc, action, _src, _note in CORRECTIONS:
-        gid = by_iso.get(iso)
+        gid = by_iso.get(iso) or (iso if iso in langs else None)   # ISO 639-3, or a Glottocode
         if not gid:
             continue
         if action == "drop":

@@ -4,7 +4,7 @@
 Wikidata, CLDR and SIL langtags are joined as they come, and they are right
 almost everywhere they overlap. The few links below are wrong on the record,
 mostly for ancient scripts where the sources are thin. Each correction names
-the language by ISO 639-3, the script, what is done, and the authority, and
+the language by ISO 639-3 (or by Glottocode where it has none), the script, what is done, and the authority, and
 verify.py fails if one stops being applied.
 
   drop  remove the link: the language was not written in that script
@@ -73,6 +73,14 @@ CORRECTIONS = [
      "langtags gives only a Bopomofo tagset"),
     ("hea", "Latn", "main", "Enwall 2012, International Journal of the Sociology of Language 215",
      "the 1956 Latin script is the one in schools and in the 2009 New Testament"),
+    ("crim1255", "Runr", "drop", "Stearns 1978, Crimean Gothic: Analysis and Etymology of the Corpus",
+     "Crimean Gothic survives only in the word list Busbecq took down in Latin letters in the 1560s; "
+     "no runic text is known"),
+    ("crim1255", "Latn", "add", "Stearns 1978, Crimean Gothic: Analysis and Etymology of the Corpus",
+     "Busbecq's word list, printed 1589, is the whole corpus"),
+    ("noak1234", "Beng", "main", "Glottolog 5 (Southeastern Bengali); Unicode ch.12",
+     "Noakhali is a Bengali dialect, written as Bengali is; Wikidata's three scripts were ranked "
+     "by code, which put Arabic first"),
     ("hmq", "Latn", "add", "Enwall 2012, IJSL 215; West 2009, L2/09-049 (WG2 N3570)",
      "Hmu has a Latin script since 1956; the Bopomofo-based orthography Hutton made for Hmu "
      "'is now long since obsolete' (West)"),

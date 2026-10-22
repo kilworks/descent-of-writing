@@ -156,7 +156,7 @@ from corrections import CORRECTIONS
 by_iso = {v["iso"]: v for v in L.values() if v["iso"]}
 unapplied = []
 for iso, sc, action, src, note in CORRECTIONS:
-    v = by_iso.get(iso)
+    v = by_iso.get(iso) or L.get(iso)          # ISO 639-3, or a Glottocode
     if not v or not src or not note:
         unapplied.append(iso)
     elif action == "drop" and sc in v["scripts"]:
@@ -269,6 +269,17 @@ check("21. facing-trees plate draws every written language and main script",
       bool(m) and int(m.group(1)) == ST["languages_with_script"] and drawn == mains,
       "%s languages in the plate, %d in the dataset; %d of %d main scripts drawn"
       % (m.group(1) if m else "no plate", ST["languages_with_script"], len(drawn & mains), len(mains)))
+
+# 22. Wikidata's links keyed by Glottocode reach the languages with no ISO
+# code; each is applied unless a sourced correction drops it
+dropped = {(by_iso[k]["id"] if k in by_iso else k, sc) for k, sc, act, _s, _n in CORRECTIONS if act == "drop"}
+unjoined = sorted("%s+%s" % (b["g"]["value"], b["scCode"]["value"])
+                  for b in json.load(open(os.path.join(DATA, "wd_glotto_script.json"), encoding="utf8"))["results"]["bindings"]
+                  if b["g"]["value"] in L and b["scCode"]["value"] in S
+                  and b["scCode"]["value"] not in L[b["g"]["value"]]["scripts"]
+                  and (b["g"]["value"], b["scCode"]["value"]) not in dropped)
+check("22. Wikidata links by Glottocode applied",
+      not unjoined, "not applied: %s" % (unjoined[:5] or "none"))
 
 # 11. the written guide is generated from this dataset and must not lag it
 import guide

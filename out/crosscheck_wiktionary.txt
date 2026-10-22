@@ -1,13 +1,13 @@
 Wiktionary language data (en.wiktionary.org, Module:languages), CC BY-SA 4.0, quoted for review only.
 
-Cross-check of the 3040 languages whose script rests on SIL langtags alone,
+Cross-check of the 3033 languages whose script rests on SIL langtags alone,
 against Wiktionary's language data modules (6070 codes with a script list).
 
-agrees on at least one script               2364   77.8%
-no Wiktionary entry or no script listed      658   21.6%
+agrees on at least one script               2360   77.8%
+no Wiktionary entry or no script listed      655   21.6%
 disagrees                                     18    0.6%
 
-Agreement where both speak: 2364 of 2382 (99.2%).
+Agreement where both speak: 2360 of 2378 (99.2%).
 
 Disagreements (name, ISO 639-3, langtags, Wiktionary):
   Alu Kurumba [xua]  Taml  vs  Knda
