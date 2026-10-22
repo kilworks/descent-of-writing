@@ -42,6 +42,8 @@ def get(url, dest, tries=3):
 
 
 if __name__ == "__main__":
+    os.makedirs(DATA, exist_ok=True)    # data/ is gitignored, so a fresh clone has none
+    failed = []
     for name, url in SOURCES.items():
         dest = os.path.join(DATA, name)
         if os.path.exists(dest) and os.path.getsize(dest) > 1000:
@@ -49,3 +51,7 @@ if __name__ == "__main__":
             continue
         r = get(url, dest)
         print("%-30s %s" % (name, r))
+        if isinstance(r, str):
+            failed.append(name)
+    if failed:
+        sys.exit("FAILED: %s" % ", ".join(failed))

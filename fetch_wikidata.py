@@ -1,5 +1,5 @@
 """Wikidata pulls. Saves raw SPARQL JSON to data/. No derivation here."""
-import os, json, time, urllib.request, urllib.parse
+import os, sys, json, time, urllib.request, urllib.parse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "data")
@@ -54,6 +54,8 @@ def run(q, tries=6):
 
 
 if __name__ == "__main__":
+    os.makedirs(DATA, exist_ok=True)
+    failed = []
     for name, q in QUERIES.items():
         dest = os.path.join(DATA, name)
         if os.path.exists(dest) and os.path.getsize(dest) > 500:
@@ -66,4 +68,7 @@ if __name__ == "__main__":
             print("%-22s %d rows" % (name, len(d["results"]["bindings"])), flush=True)
         except Exception as e:
             print("%-22s FAIL %s" % (name, str(e)[:160]), flush=True)
+            failed.append(name)
         time.sleep(70)
+    if failed:
+        sys.exit("FAILED: %s" % ", ".join(failed))

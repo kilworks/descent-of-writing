@@ -185,6 +185,7 @@ def outlines(path, chars, want=N_SPECIMEN):
 
 
 if __name__ == "__main__":
+    os.makedirs(FONTS, exist_ok=True)   # fonts/ is gitignored, so a fresh clone has none
     iso = load_iso()
     scripts = load_scripts_map()
     cats = load_categories()
