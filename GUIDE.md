@@ -500,7 +500,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **contested**.
 Source: Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy. Aramaic origin after Buhler is the majority view; not settled.
 Children: [`Sinh`](#sinh), [`Cham`](#cham), [`Knda`](#knda), [`Sidd`](#sidd), [`Gran`](#gran), [`Taml`](#taml), [`Telu`](#telu), [`Khmr`](#khmr), [`Tibt`](#tibt), [`Kawi`](#kawi), [`Shrd`](#shrd), [`Bhks`](#bhks), [`Mtei`](#mtei), [`Mymr`](#mymr), [`Gonm`](#gonm), [`Sora`](#sora), [`Gukh`](#gukh).
 
-Languages written mainly in it: 7. Largest: Tokharian B, Tokharian A, Old Cham, Maharastri Prakrit, Khotanese. Also recorded as a further script for 3 more.
+Languages written mainly in it: 8. Largest: Tokharian B, Tokharian A, Old Cham, Maharastri Prakrit, Khotanese. Also recorded as a further script for 3 more.
 Unicode: encoded since version 6.0, block from U+11000.
 
 ### Brai
@@ -859,7 +859,7 @@ Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Francis 2024; Pandey, L2/18-083. Pallava is the ancestor of Grantha; Grantha itself designed around 600 CE.
 Children: [`Diak`](#diak), [`Tutg`](#tutg), [`Mlym`](#mlym), [`Saur`](#saur).
 
-Languages written mainly in it: 1. Old Tamil. Also recorded as a further script for 1 more.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+11300.
 
 ### Grek
@@ -979,7 +979,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Unicode ch.10; Barag. The square Hebrew script grew out of Imperial Aramaic; Mount Gerizim inscriptions 3rd-2nd c. BCE.
 Children: [`Hmnp`](#hmnp).
 
-Languages written mainly in it: 16. Largest: Modern Hebrew (9,303,950 speakers), Ladino (137,000 speakers), Judeo-Persian (60,000 speakers), Judeo-Yemeni Arabic (50,300 speakers), Hulaulá (10,000 speakers). Also recorded as a further script for 9 more.
+Languages written mainly in it: 17. Largest: Modern Hebrew (9,303,950 speakers), Ladino (137,000 speakers), Judeo-Persian (60,000 speakers), Judeo-Yemeni Arabic (50,300 speakers), Hulaulá (10,000 speakers). Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0591.
 
 ### Hira
@@ -1844,7 +1844,7 @@ Parent: [`Psin`](#psin) Proto-Sinaitic through Proto-Canaanite, link **attested*
 Source: Unicode ch.10; Ahiram sarcophagus, KAI 1. First long text the Ahiram sarcophagus, c.1000 BCE on palaeography; its date is disputed.
 Children: [`Armi`](#armi), [`Grek`](#grek), [`Sidt`](#sidt), [`Tfng`](#tfng), [`Samr`](#samr).
 
-Languages written mainly in it: 2. Largest: Punic, Phoenician. Also recorded as a further script for 1 more.
+Languages written mainly in it: 3. Largest: Old Aramaic-Sam'alian, Punic, Phoenician. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.0, block from U+10900.
 
 ### Piqd
@@ -2154,7 +2154,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Healey 2011, Hugoye; Drijvers & Healey As55. The earliest dated Syriac inscription is the Birecik inscription of 6 CE.
 Children: [`Syre`](#syre), [`Mani`](#mani), [`Syrj`](#syrj), [`Syrn`](#syrn), [`Yezi`](#yezi).
 
-Languages written mainly in it: 10. Largest: Classical Syriac (575,000 speakers), Assyrian Neo-Aramaic (232,300 speakers), Old Aramaic-Sam'alian, Western Neo-Aramaic, Jewish Babylonian Aramaic (ca. 200-1200 CE). Also recorded as a further script for 4 more.
+Languages written mainly in it: 8. Largest: Classical Syriac (575,000 speakers), Assyrian Neo-Aramaic (232,300 speakers), Western Neo-Aramaic, Mlahsô, Gardabani Bohtan Neo-Aramaic. Also recorded as a further script for 4 more.
 Unicode: encoded since version 3.0, block from U+0700.
 
 ### Syre

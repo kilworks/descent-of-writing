@@ -178,7 +178,7 @@ view. Each is recorded; none has been reviewed by someone who works on it.
 ### 3. Done in part: language to script coverage, 17.7% to 52.6%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,517 of 8,587 (52.6%), 2,998 of them on langtags
+third source. Written: 4,517 of 8,587 (52.6%), 2,995 of them on langtags
 alone. Listed as unwritten: 2,856. No record either way: 1,214. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
@@ -197,8 +197,11 @@ Still open:
   wrong or misranked links, now fixed with sources in `corrections.py`
   (Elymian under Elymaic, Hurrian under Anatolian hieroglyphs, Tocharian B
   under Manichaean, Elamite under Proto-Elamite, four Aramaic varieties
-  under Elymaic). The living scripts have not had the same review.
-- 2,998 languages rest on langtags alone, which inherits the Ethnologue's
+  under Elymaic). A second review of the living scripts added six: Old
+  Aramaic and Jewish Babylonian Aramaic had fallen under Syriac, Old Tamil
+  under Grantha. Korean and Japanese stay under the registry composites Kore
+  and Jpan, which is how the sources tag them.
+- 2,995 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. A second independent source per language would make them firmer.
   ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
   after that.

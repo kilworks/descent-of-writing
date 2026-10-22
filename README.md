@@ -30,7 +30,7 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | **Languages drawn** | **8,587** (8,618 Glottolog languoids at level=language, minus 31 constructed) |
 | Families / isolates | 245 / 183 |
 | Sign languages | 227 |
-| Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,998 of them from langtags alone |
+| Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,995 of them from langtags alone |
 | Languages listed as unwritten (SIL langtags) | 2,856 (33.3%) |
 | Languages with no record either way | 1,214 (14.1%) |
 | Languages with several scripts | 720; the one they hang under is ranked by a source for all but 4, and Braille is never the main script of a language that has another |
@@ -79,7 +79,7 @@ The lower register is the honest part. **It is not proof of unwritten languages.
 
 Three rules keep the langtags data honest. A tagset flagged unwritten never contributes a script, because langtags documents that such a tagset "may still have a non Zyyy script due to regional inference". The special codes `Zyyy` (unknown) and `Zxxx` (sign language) are not scripts. And where the three sources overlap, langtags agrees with Wikidata and CLDR on at least one script for 1,294 of 1,330 languages (97%); 187 languages carry a script from one source while langtags lists them as unwritten (50 of them extinct languages that linguists recorded in Latin); they keep the script, since a language written down by its students has been written.
 
-The sources are still wrong in a few places, mostly for ancient scripts where they are thin. [`corrections.py`](corrections.py) holds eleven sourced fixes: Elymian, a language of Sicily written in Greek letters, had been given Elymaic, an Aramaic script of Iran, because the names collide; Hurrian had been hung under Anatolian hieroglyphs; Tocharian B under Manichaean instead of Brahmi; Elamite under Proto-Elamite, whose language is not established. Check 13 fails if a correction stops being applied or loses its source.
+The sources are still wrong in a few places, mostly for ancient scripts where they are thin. [`corrections.py`](corrections.py) holds seventeen sourced fixes: Elymian, a language of Sicily written in Greek letters, had been given Elymaic, an Aramaic script of Iran, because the names collide; Hurrian had been hung under Anatolian hieroglyphs, and Old Aramaic and Jewish Babylonian Aramaic under Syriac; Tocharian B under Manichaean instead of Brahmi; Elamite under Proto-Elamite, whose language is not established. Check 13 fails if a correction stops being applied or loses its source.
 
 ## Readable without sight
 
