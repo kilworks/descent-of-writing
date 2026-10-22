@@ -28,6 +28,8 @@ jobs:
       - run: python fonts.py
       - run: python build_data.py
       - run: python render.py
+      - run: python render_families.py
+      - run: python guide.py
       - run: python verify.py
       - run: python drift.py
       - if: always()
@@ -36,5 +38,7 @@ jobs:
           name: plate
           path: |
             out/descent_of_writing.svg
+            out/families_and_scripts.svg
+            GUIDE.md
             out/scripts_catalogue.csv
             out/dataset.json

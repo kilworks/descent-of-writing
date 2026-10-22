@@ -138,7 +138,7 @@ G["Brai"] = ("Latn", "stimulus", "alphabet", "ltr", 1824, None, "living")
 G["Dupl"] = ("Latn", "stimulus", "alphabet", "ltr", 1860, None, "living")
 G["Visp"] = ("Latn", "invented", "featural", "ltr", 1867, 1900, "historical")
 G["Shaw"] = ("Latn", "invented", "alphabet", "ltr", 1960, None, "constructed")
-G["Dsrt"] = ("Latn", "stimulus", "alphabet", "ltr", 1854, 1877, "constructed")
+G["Dsrt"] = ("Latn", "stimulus", "alphabet", "ltr", 1854, 1869, "historical")
 G["Osge"] = ("Latn", "attested", "alphabet", "ltr", 2006, None, "living")
 G["Lisu"] = ("Latn", "attested", "alphabet", "ltr", 1915, None, "living")
 G["Sunu"] = ("Latn", "stimulus", "alphabet", "ltr", 1942, None, "living")
@@ -158,7 +158,7 @@ G["Kpel"] = ("Vaii", "stimulus", "syllabary", "ltr", 1930, None, "living")
 G["Loma"] = ("Vaii", "stimulus", "syllabary", "ltr", 1930, None, "living")
 G["Bass"] = ("Vaii", "stimulus", "alphabet", "ltr", 1907, None, "living")
 G["Medf"] = ("Latn", "stimulus", "alphabet", "ltr", 1927, None, "living")
-G["Afak"] = ("Latn", "invented", "syllabary", "ltr", 1908, None, "historical")
+G["Afak"] = ("Latn", "invented", "syllabary", "ltr", 1908, None, "living")
 
 # ------------------------------------------- MODERN INVENTIONS, SOUTH ASIA ---
 G["Olck"] = ("Latn", "invented", "alphabet", "ltr", 1925, None, "living")
@@ -183,22 +183,22 @@ G["Khar"] = ("Armi", "attested", "abugida", "rtl", -250, 300, "historical")
 G["Sidd"] = ("Brah", "attested", "abugida", "ltr", 588, 1200, "historical")
 G["Deva"] = ("Sidd", "attested", "abugida", "ltr", 851, None, "living")
 G["Shrd"] = ("Brah", "attested", "abugida", "ltr", 800, 1900, "historical")
-G["Takr"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "historical")
-G["Dogr"] = ("Takr", "attested", "abugida", "ltr", 1860, None, "historical")
+G["Takr"] = ("Shrd", "attested", "abugida", "ltr", 1500, 1950, "historical")
+G["Dogr"] = ("Takr", "attested", "abugida", "ltr", 1860, 1950, "historical")
 G["Guru"] = ("Shrd", "attested", "abugida", "ltr", 1570, None, "living")
-G["Khoj"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "historical")
+G["Khoj"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "living")
 G["Mult"] = ("Shrd", "attested", "abugida", "ltr", 1750, 1950, "historical")
-G["Sind"] = ("Shrd", "attested", "abugida", "ltr", 1550, None, "historical")
+G["Sind"] = ("Shrd", "attested", "abugida", "ltr", 1550, 1910, "historical")
 G["Mahj"] = ("Deva", "contested", "abugida", "ltr", 1600, 1950, "historical")
 G["Kthi"] = ("Sidd", "attested", "abugida", "ltr", 1550, 1950, "historical")
-G["Modi"] = ("Deva", "attested", "abugida", "ltr", 1600, None, "historical")
+G["Modi"] = ("Deva", "attested", "abugida", "ltr", 1600, 1950, "historical")
 G["Nand"] = ("Deva", "attested", "abugida", "ltr", 1100, 1800, "historical")
 G["Gujr"] = ("Deva", "attested", "abugida", "ltr", 1592, None, "living")
 G["Sylo"] = ("Kthi", "attested", "abugida", "ltr", 1500, None, "living")
 G["Gong"] = ("Modi", "contested", "abugida", "ltr", 1750, None, "living")
 G["Gonm"] = ("Brah", "stimulus", "abugida", "ltr", 1918, None, "living")
 G["Beng"] = ("Sidd", "attested", "abugida", "ltr", 1350, None, "living")
-G["Tirh"] = ("Sidd", "attested", "abugida", "ltr", 1200, None, "historical")
+G["Tirh"] = ("Sidd", "attested", "abugida", "ltr", 1200, None, "living")
 G["Orya"] = ("Sidd", "attested", "abugida", "ltr", 1300, None, "living")
 G["Newa"] = ("Sidd", "attested", "abugida", "ltr", 908, None, "living")
 G["Ranj"] = ("Newa", "attested", "abugida", "ltr", 1099, None, "living")
@@ -210,7 +210,7 @@ G["Gukh"] = ("Brah", "stimulus", "abugida", "ltr", 1995, None, "living")
 
 # ------------------------------------------------------- BRAHMIC: TIBETAN ----
 G["Tibt"] = ("Brah", "attested", "abugida", "ltr", 650, None, "living")
-G["Marc"] = ("Tibt", "contested", "abugida", "ltr", 1000, None, "historical")
+G["Marc"] = ("Tibt", "contested", "abugida", "ltr", 1000, None, "living")
 G["Phag"] = ("Tibt", "attested", "abugida", "ttb", 1269, 1400, "historical")
 G["Lepc"] = ("Tibt", "attested", "abugida", "ltr", 1720, None, "living")
 G["Limb"] = ("Lepc", "contested", "abugida", "ltr", 1850, None, "living")
@@ -222,7 +222,7 @@ G["Soyo"] = ("Ranj", "attested", "abugida", "ltr", 1686, 1800, "historical")
 G["Gran"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
 G["Taml"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
 G["Mlym"] = ("Gran", "attested", "abugida", "ltr", 1100, None, "living")
-G["Tutg"] = ("Gran", "attested", "abugida", "ltr", 1000, None, "historical")
+G["Tutg"] = ("Gran", "attested", "abugida", "ltr", 1000, None, "living")
 G["Saur"] = ("Gran", "contested", "abugida", "ltr", 1880, None, "living")
 G["Sinh"] = ("Brah", "attested", "abugida", "ltr", -200, None, "living")
 G["Diak"] = ("Gran", "attested", "abugida", "ltr", 900, 1700, "historical")
@@ -234,14 +234,14 @@ G["Khmr"] = ("Brah", "attested", "abugida", "ltr", 611, None, "living")
 G["Thai"] = ("Khmr", "attested", "abugida", "ltr", 1292, None, "living")
 G["Laoo"] = ("Thai", "attested", "abugida", "ltr", 1494, None, "living")
 G["Tavt"] = ("Thai", "attested", "abugida", "ltr", 1500, None, "living")
-G["Tayo"] = ("Thai", "contested", "abugida", "ttb", 1500, None, "historical")
+G["Tayo"] = ("Thai", "contested", "abugida", "ttb", 1500, None, "living")
 G["Mymr"] = ("Brah", "attested", "abugida", "ltr", 1113, None, "living")
 G["Leke"] = ("Mymr", "contested", "abugida", "ltr", 1844, None, "living")
 G["Kali"] = ("Mymr", "stimulus", "alphabet", "ltr", 1962, None, "living")
 G["Lana"] = ("Mymr", "attested", "abugida", "ltr", 1376, None, "living")
 G["Talu"] = ("Lana", "attested", "abugida", "ltr", 1955, None, "living")
 G["Tale"] = ("Mymr", "attested", "abugida", "ltr", 1407, None, "living")
-G["Ahom"] = ("Mymr", "attested", "abugida", "ltr", 1300, 1800, "revived")
+G["Ahom"] = ("Mymr", "attested", "abugida", "ltr", 1300, None, "revived")
 G["Cham"] = ("Brah", "attested", "abugida", "ltr", 400, None, "living")
 G["Kawi"] = ("Brah", "attested", "abugida", "ltr", 750, 1500, "historical")
 G["Java"] = ("Kawi", "attested", "abugida", "ltr", 1500, None, "living")
@@ -268,7 +268,7 @@ G["Hant"] = ("Hani", "variant", "variant", "varies", -200, None, "living")
 G["Hira"] = ("Hani", "attested", "syllabary", "varies", 800, None, "living")
 G["Kana"] = ("Hani", "attested", "syllabary", "varies", 825, None, "living")
 G["Bopo"] = ("Hani", "attested", "syllabary", "varies", 1913, None, "living")
-G["Nshu"] = ("Hani", "attested", "syllabary", "ttb", 1850, None, "historical")
+G["Nshu"] = ("Hani", "attested", "syllabary", "ttb", 1850, None, "revived")
 G["Tang"] = ("Hani", "stimulus", "logographic", "ltr", 1036, 1500, "historical")
 G["Kitl"] = ("Hani", "stimulus", "logographic", "ttb", 920, 1200, "undeciphered")
 G["Kits"] = ("Ougr", "stimulus", "logographic", "ttb", 925, 1200, "undeciphered")
@@ -391,8 +391,8 @@ SOURCES = {
              "symbols built from the vocal organs, not from existing letters"),
     "Shaw": ("", "University of Reading, Kingsley Read alphabet collection",
              "a 48-character alphabet for English, shapes new, 1960"),
-    "Dsrt": ("Pitman 1847 phonotypy", "Beesley, 'Deseret in Unicode'",
-             "Pitman's phonotypy the starting point, then an entirely new set of characters, adopted Dec 1853"),
+    "Dsrt": ("Pitman 1847 phonotypy", "Beesley, 'Deseret in Unicode'; Unicode ch.20",
+             "Pitman's phonotypy the starting point, then an entirely new set of characters, adopted Dec 1853; not actively promoted after 1869; now of interest to historians and hobbyists"),
     "Sunu": ("", "Pandey, L2/21-157",
              "a linear alphabet whose structure is modelled upon the Latin alphabet"),
     "Sgnw": ("Sutton DanceWriting", "Unicode N4342",
@@ -417,8 +417,8 @@ SOURCES = {
              "may have been influenced by Vai; typeset from 1907"),
     "Medf": ("", "L2/16-101R",
              "strong influence of English orthography, capital and small letters; revealed 1927"),
-    "Afak": ("", "Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976",
-             "unrelated to any other script; acrophonic rebus; devised 1908"),
+    "Afak": ("", "Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976; L2/25-078",
+             "unrelated to any other script; acrophonic rebus; devised 1908; still taught as grade-1 Afaka among the few literate in it"),
     "Olck": ("", "Unicode N2505; Zide 1996",
              "alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects"),
     "Nagm": ("", "L2/21-031R; Unicode ch.13",
@@ -459,8 +459,8 @@ SOURCES = {
              "earliest use dated 11th-12th c., from the Tibetan group; Tomba 1993 calls the old documents forgeries"),
     "Brah": ("", "Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy",
              "Aramaic origin after Buhler is the majority view; not settled; earliest securely dated texts the Ashokan edicts, c.250 BCE"),
-    "Tirh": ("Gaudi", "Pandey, L2/11-175R, after Salomon 1998",
-             "derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c."),
+    "Tirh": ("Gaudi", "Pandey, L2/11-175R, after Salomon 1998; Unicode ch.15",
+             "derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c.; still used for religious and literary manuscripts and personal letters"),
     "Kthi": ("Nagari", "Pandey, Unicode N3389",
              "Kaithi and Devanagari are siblings within the Nagari family"),
     "Mahj": ("Landa", "Pandey, Unicode N4126",
@@ -475,8 +475,8 @@ SOURCES = {
     # Southeast Asia
     "Tavt": ("Sukhothai", "Thai Research Fund report PDG4810005",
              "Tai Dam script a derivative of Sukhothai script, arriving around the 16th c."),
-    "Tayo": ("", "L2/22-289; Ferlus 2006",
-             "a common origin with the Tai Dam group; written top to bottom in right-to-left columns"),
+    "Tayo": ("", "L2/22-289; Ferlus 2006; Unicode ch.16",
+             "a common origin with the Tai Dam group; written top to bottom in right-to-left columns; teaching and learning supported by local government and teachers"),
     "Talu": ("", "Grabowsky, Manuscript Cultures 3",
              "a simplification of Tai Tham, officially introduced 1955"),
     "Kali": ("", "Unicode N3038",
@@ -597,8 +597,8 @@ SOURCES = {
              "Todaiji fujumonko, 824-834, the earliest katakana used for an extended Japanese text"),
     "Bopo": ("", "Ministry of Education, Taiwan; DeFrancis 1950",
              "adopted 1913 from simplified Han forms (Zhang Binglin), promulgated 1918"),
-    "Nshu": ("", "UNESCO 2018; Endo, Unicode N4626",
-             "no securely dated object before the 19th c.; claims of a Song origin have no object behind them"),
+    "Nshu": ("", "UNESCO 2018; Endo, Unicode N4626; UNESCO Courier 2018; Unicode ch.18",
+             "no securely dated object before the 19th c.; claims of a Song origin have no object behind them; very few fluent writers left by the late 20th c.; revived by local and national authorities"),
     "Nkgb": ("", "Friedrich 2023; Unicode N3442",
              "some characters from Dongba, some from Yi, Tibetan and Chinese; a dated stele of 1619"),
     "Sidd": ("Gupta", "Salomon 1998, Indian Epigraphy 2.2.5.4",
@@ -607,20 +607,20 @@ SOURCES = {
              "no authentic specimen before the Silahara inscriptions at Kanheri, 851 and 877-878"),
     "Shrd": ("Kutila", "Pandey, L2/08-200; Salomon 1998",
              "descended from Gupta through Kutila; Proto-Sarada from the 7th c., Sharada of Kashmir from the 8th"),
-    "Takr": ("Devasesha", "Pandey, L2/09-424",
-             "from Sharada through Devasesha (14th c.), differentiated in the 16th c."),
-    "Dogr": ("", "Pandey, L2/15-234; Unicode ch.15",
-             "Dogra written from the 17th c.; standardised in the 1860s"),
+    "Takr": ("Devasesha", "Pandey, L2/09-424; Unicode ch.15",
+             "from Sharada through Devasesha (14th c.), differentiated in the 16th c.; official in princely states until the mid-20th c.; revival efforts only"),
+    "Dogr": ("", "Pandey, L2/15-234; Unicode ch.15; Indian Express 2026",
+             "Dogra written from the 17th c.; standardised in the 1860s; no longer used actively, Dogri now in Devanagari; signboard revival begun in Jammu, 2026"),
     "Guru": ("Landa", "Pandey, L2/10-011; Mann 1996, The Goindval Pothis",
              "Landa the model; the Goindval Pothis of the 1570s are the earliest extant source; 1539 was a guruship date"),
     "Khoj": ("Landa", "Pandey, Unicode N3978; Unicode ch.15",
-             "a refined form of the Lohanaki variety of Landa, in use by the 16th c."),
+             "a refined form of the Lohanaki variety of Landa, in use by the 16th c.; primers still published in Pakistan; used in Nizari Ismaili ceremonies"),
     "Mult": ("Landa", "Unicode ch.15",
              "related to Gurmukhi; used in the 19th and 20th c.; earlier date unsourced"),
     "Sind": ("Landa", "Pandey, L2/11-022; Unicode ch.15",
-             "a Landa-based script related to Sharada; standard form published 1868"),
-    "Modi": ("Nagari", "Pandey, Unicode N4034; Salomon 1998 n.116",
-             "a Nagari-family script for continuous writing; earliest extant document early 17th c."),
+             "a Landa-based script related to Sharada; standard form published 1868; now obsolete; Bible Society printing continued past 1900"),
+    "Modi": ("Nagari", "Pandey, Unicode N4034; Salomon 1998 n.116; Unicode ch.15; Hindustan Times 2025",
+             "a Nagari-family script for continuous writing; earliest extant document early 17th c.; formally discontinued in the 1950s; taught again for reading archives"),
     "Nand": ("Nagari", "Pandey, L2/17-162",
              "a sister of Devanagari within the Nagari family, 11th c."),
     "Gujr": ("Nagari", "Unicode ch.12; Salomon 1998 3.4.3",
@@ -635,8 +635,8 @@ SOURCES = {
              "developed from the Newar (pacumola) model; first in Nepal in 1099"),
     "Bhks": ("", "Unicode ch.14; Dimitrov",
              "used 10th-13th c.; eleven inscriptions and four manuscripts known"),
-    "Marc": ("", "West, Unicode N4491",
-             "quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation"),
+    "Marc": ("", "West, Unicode N4491; Unicode ch.14",
+             "quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation; widely used in modern Bon literature and inscriptions"),
     "Phag": ("", "Unicode ch.14",
              "devised for Khubilai and promulgated in 1269; similar to Tibetan"),
     "Lepc": ("", "Unicode ch.13; Everson, Unicode N2947",
@@ -653,8 +653,8 @@ SOURCES = {
              "a new alphabet for Tamil around the start of the 7th c., a sister of Grantha, not from Vatteluttu"),
     "Mlym": ("Chola Grantha", "ICANN Malayalam LGR 2019",
              "the 830 Vazhappalli plates are in Vatteluttu; Malayalam script texts from about the 12th c."),
-    "Tutg": ("Chola Grantha", "L2/17-378",
-             "evolved from the later Chola Grantha to write Sanskrit"),
+    "Tutg": ("Chola Grantha", "L2/17-378; L2/22-031",
+             "evolved from the later Chola Grantha to write Sanskrit; in continuous use for ritual purposes such as birth charts and charms"),
     "Knda": ("Kadamba", "Mahadevan, Frontline; Gai",
              "Halmidi inscription, mid-5th c., in Kadamba script; a sister of Telugu"),
     "Telu": ("Kadamba", "Mahadevan, Frontline",
@@ -677,8 +677,8 @@ SOURCES = {
              "developed from the Mon script of Hariphunchai; earliest evidence 1376"),
     "Tale": ("", "Daniels 2012, Journal of Southeast Asian Studies",
              "the Tay borrowed heavily from Burmese before the 15th c.; a Ming scroll of 1407"),
-    "Ahom": ("", "Terwiel 1983, JSS 71",
-             "brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object"),
+    "Ahom": ("", "Terwiel 1983, JSS 71; Unicode ch.15",
+             "brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object; religious use into the 19th c.; modern use from a 1920 dictionary"),
     "Bali": ("", "Unicode ch.17",
              "from Kawi; Belanjong pillar 914, Old Balinese beside Sanskrit"),
     "Sund": ("Pallava", "Unicode ch.17; Pandey, L2/12-125",

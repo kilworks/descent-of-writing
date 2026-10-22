@@ -255,8 +255,12 @@ rather than a change to this one.
 GUIDE.md now measures the mismatch instead of drawing it: Latin writes
 languages of 272 families and isolates, Indo-European is written in 81
 scripts, and 139 of the 188 scripts recorded for any language serve a
-single family or isolate (Glottolog's filing categories left out). The
-facing-trees plate is still open.
+single family or isolate (Glottolog's filing categories left out). A second
+plate now draws it: `render_families.py` writes
+`out/families_and_scripts.svg`, families facing scripts with bands sized by
+language counts, the top 40 families and 30 scripts named and the rest
+pooled. A full facing pair of trees, with the family tree drawn to depth
+rather than as a column, is still open.
 
 ### 7. Done: a browser viewer
 

@@ -34,6 +34,14 @@ for name, box, full_w in FIGURES:
         n = rasterize.render(SVG, dest, 0, 0, crop=(W, H, x, y, w, h))
     print("%-20s %8d bytes" % (name, n))
 
+# the families plate is its own artefact too
+fp = os.path.join(OUT, "families_and_scripts.svg")
+if os.path.exists(fp):
+    fw, fh = (int(x) for x in re.search(r'width="(\d+)" height="(\d+)"',
+                                        open(fp, encoding="utf8").read(800)).groups())
+    print("%-20s %8d bytes" % ("families", rasterize.render(
+        fp, os.path.join(DOCS, "families.png"), 2100, round(2100 * fh / fw))))
+
 # the shaping witness sheet is its own artefact, not a crop of the plate
 sc = os.path.join(OUT, "specimen_check.svg")
 if os.path.exists(sc):

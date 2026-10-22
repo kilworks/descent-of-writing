@@ -106,7 +106,7 @@ The plate draws the descent of scripts as a tree and sorts languages by family i
 - Indo-European is written in 81 scripts, Sino-Tibetan in 42, Austronesian in 28.
 - Yet 139 of the 188 scripts recorded for any language serve a single family or isolate: most scripts were made for one language or a few close ones, and a handful of imperial and religious scripts carry everything else.
 
-A second plate could draw the language families as a tree facing this one, linked by chords; CONTINUE.md keeps it as open work.
+The second plate, [`out/families_and_scripts.svg`](out/families_and_scripts.svg), draws this: families on one side, scripts on the other, and a band for every family and script that meet, as thick as the languages they share.
 
 ## Open questions
 
@@ -423,10 +423,10 @@ Unicode: encoded since version 9.0, block from U+1E900.
 
 ### Afak
 
-**Afaka**. Syllabary, written left to right. First attested 1908 CE, in use today; status historical.
+**Afaka**. Syllabary, written left to right. First attested 1908 CE, in use today; status living.
 
 Parent: [`Latn`](#latn) Latin, link **invented**.
-Source: Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976. Unrelated to any other script; acrophonic rebus; devised 1908.
+Source: Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976; L2/25-078. Unrelated to any other script; acrophonic rebus; devised 1908; still taught as grade-1 Afaka among the few literate in it.
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
@@ -443,10 +443,10 @@ Unicode: encoded since version 7.0, block from U+10530.
 
 ### Ahom
 
-**Ahom, Tai Ahom**. Abugida, written left to right. First attested 1300 CE, last used 1800 CE; status revived.
+**Ahom, Tai Ahom**. Abugida, written left to right. First attested 1300 CE, in use today; status revived.
 
 Parent: [`Mymr`](#mymr) Myanmar, link **attested**.
-Source: Terwiel 1983, JSS 71. Brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object.
+Source: Terwiel 1983, JSS 71; Unicode ch.15. Brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object; religious use into the 19th c.; modern use from a 1920 dictionary.
 
 Languages written mainly in it: 1. Ahom.
 Unicode: encoded since version 8.0, block from U+11700.
@@ -789,20 +789,20 @@ Unicode: encoded since version 13.0, block from U+11900.
 
 ### Dogr
 
-**Dogra** (𑠝𑠢𑠳𑠷 𑠖𑠵𑠌𑠤𑠬 𑠀𑠊𑠹𑠋𑠤). Abugida, written left to right. First attested 1860 CE, in use today; status historical.
+**Dogra** (𑠝𑠢𑠳𑠷 𑠖𑠵𑠌𑠤𑠬 𑠀𑠊𑠹𑠋𑠤). Abugida, written left to right. First attested 1860 CE, last used 1950 CE; status historical.
 
 Parent: [`Takr`](#takr) Takri, Ṭākrī, Ṭāṅkrī, link **attested**.
-Source: Pandey, L2/15-234; Unicode ch.15. Dogra written from the 17th c.; standardised in the 1860s.
+Source: Pandey, L2/15-234; Unicode ch.15; Indian Express 2026. Dogra written from the 17th c.; standardised in the 1860s; no longer used actively, Dogri now in Devanagari; signboard revival begun in Jammu, 2026.
 
 Languages a source records it for: none.
 Unicode: encoded since version 11.0, block from U+11800.
 
 ### Dsrt
 
-**Deseret** (𐐔𐐯𐑅𐐨𐑉𐐯𐐻). Alphabet, written left to right. First attested 1854 CE, last used 1877 CE; status constructed.
+**Deseret** (𐐔𐐯𐑅𐐨𐑉𐐯𐐻). Alphabet, written left to right. First attested 1854 CE, last used 1869 CE; status historical.
 
 Parent: [`Latn`](#latn) Latin through Pitman 1847 phonotypy, link **stimulus**.
-Source: Beesley, 'Deseret in Unicode'. Pitman's phonotypy the starting point, then an entirely new set of characters, adopted Dec 1853.
+Source: Beesley, 'Deseret in Unicode'; Unicode ch.20. Pitman's phonotypy the starting point, then an entirely new set of characters, adopted Dec 1853; not actively promoted after 1869; now of interest to historians and hobbyists.
 
 Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 3.1, block from U+10400.
@@ -1264,10 +1264,10 @@ Unicode: encoded since version 3.0, block from U+1780.
 
 ### Khoj
 
-**Khojki** (𑊻𑋧𑋂𑊺𑋢). Abugida, written left to right. First attested 1500 CE, in use today; status historical.
+**Khojki** (𑊻𑋧𑋂𑊺𑋢). Abugida, written left to right. First attested 1500 CE, in use today; status living.
 
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
-Source: Pandey, Unicode N3978; Unicode ch.15. A refined form of the Lohanaki variety of Landa, in use by the 16th c..
+Source: Pandey, Unicode N3978; Unicode ch.15. A refined form of the Lohanaki variety of Landa, in use by the 16th c.; primers still published in Pakistan; used in Nizari Ismaili ceremonies.
 
 Recorded as a further script for 4 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+11200.
@@ -1529,10 +1529,10 @@ Unicode: encoded since version 7.0, block from U+10AC0.
 
 ### Marc
 
-**Marchen**. Abugida, written left to right. First attested 1000 CE, in use today; status historical.
+**Marchen**. Abugida, written left to right. First attested 1000 CE, in use today; status living.
 
 Parent: [`Tibt`](#tibt) Tibetan, link **contested**.
-Source: West, Unicode N4491. Quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation.
+Source: West, Unicode N4491; Unicode ch.14. Quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation; widely used in modern Bon literature and inscriptions.
 
 Languages written mainly in it: 1. Zhangzhung. Also recorded as a further script for 1 more.
 Unicode: encoded since version 9.0, block from U+11C70.
@@ -1598,10 +1598,10 @@ Unicode: encoded since version 1.1, block from U+0D00.
 
 ### Modi
 
-**Modi, Moḍī**. Abugida, written left to right. First attested 1600 CE, in use today; status historical.
+**Modi, Moḍī**. Abugida, written left to right. First attested 1600 CE, last used 1950 CE; status historical.
 
 Parent: [`Deva`](#deva) Devanagari through Nagari, link **attested**.
-Source: Pandey, Unicode N4034; Salomon 1998 n.116. A Nagari-family script for continuous writing; earliest extant document early 17th c..
+Source: Pandey, Unicode N4034; Salomon 1998 n.116; Unicode ch.15; Hindustan Times 2025. A Nagari-family script for continuous writing; earliest extant document early 17th c.; formally discontinued in the 1950s; taught again for reading archives.
 Children: [`Gong`](#gong).
 
 Languages written mainly in it: 1. Old Marathi. Also recorded as a further script for 3 more.
@@ -1753,10 +1753,10 @@ Unicode: encoded since version 5.0, block from U+07C0.
 
 ### Nshu
 
-**Nüshu** (女書). Syllabary, written top to bottom. First attested 1850 CE, in use today; status historical.
+**Nüshu** (女書). Syllabary, written top to bottom. First attested 1850 CE, in use today; status revived.
 
 Parent: [`Hani`](#hani) Han, link **attested**.
-Source: UNESCO 2018; Endo, Unicode N4626. No securely dated object before the 19th c.; claims of a Song origin have no object behind them.
+Source: UNESCO 2018; Endo, Unicode N4626; UNESCO Courier 2018; Unicode ch.18. No securely dated object before the 19th c.; claims of a Song origin have no object behind them; very few fluent writers left by the late 20th c.; revived by local and national authorities.
 
 Languages a source records it for: none.
 Unicode: encoded since version 10.0, block from U+16FE1.
@@ -2157,10 +2157,10 @@ Unicode: not encoded, so no font can show it.
 
 ### Sind
 
-**Khudawadi, Sindhi** (खुदाबादी). Abugida, written left to right. First attested 1550 CE, in use today; status historical.
+**Khudawadi, Sindhi** (खुदाबादी). Abugida, written left to right. First attested 1550 CE, last used 1910 CE; status historical.
 
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
-Source: Pandey, L2/11-022; Unicode ch.15. A Landa-based script related to Sharada; standard form published 1868.
+Source: Pandey, L2/11-022; Unicode ch.15. A Landa-based script related to Sharada; standard form published 1868; now obsolete; Bible Society printing continued past 1900.
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+112B0.
@@ -2297,10 +2297,10 @@ Unicode: encoded since version 3.2, block from U+1760.
 
 ### Takr
 
-**Takri, Ṭākrī, Ṭāṅkrī** (𑚔𑚭𑚊𑚤𑚯). Abugida, written left to right. First attested 1500 CE, in use today; status historical.
+**Takri, Ṭākrī, Ṭāṅkrī** (𑚔𑚭𑚊𑚤𑚯). Abugida, written left to right. First attested 1500 CE, last used 1950 CE; status historical.
 
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Devasesha, link **attested**.
-Source: Pandey, L2/09-424. From Sharada through Devasesha (14th c.), differentiated in the 16th c..
+Source: Pandey, L2/09-424; Unicode ch.15. From Sharada through Devasesha (14th c.), differentiated in the 16th c.; official in princely states until the mid-20th c.; revival efforts only.
 Children: [`Dogr`](#dogr).
 
 Languages written mainly in it: 1. Hinduri. Also recorded as a further script for 13 more.
@@ -2358,10 +2358,10 @@ Unicode: encoded since version 5.2, block from U+AA80.
 
 ### Tayo
 
-**Tai Yo**. Abugida, written top to bottom. First attested 1500 CE, in use today; status historical.
+**Tai Yo**. Abugida, written top to bottom. First attested 1500 CE, in use today; status living.
 
 Parent: [`Thai`](#thai) Thai, link **contested**.
-Source: L2/22-289; Ferlus 2006. A common origin with the Tai Dam group; written top to bottom in right-to-left columns.
+Source: L2/22-289; Ferlus 2006; Unicode ch.16. A common origin with the Tai Dam group; written top to bottom in right-to-left columns; teaching and learning supported by local government and teachers.
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
@@ -2441,10 +2441,10 @@ Unicode: encoded since version 2.0, block from U+0F00.
 
 ### Tirh
 
-**Tirhuta** (𑒧𑒱𑒟𑒱𑒪𑒰𑒏𑓂𑒭𑒩). Abugida, written left to right. First attested 1200 CE, in use today; status historical.
+**Tirhuta** (𑒧𑒱𑒟𑒱𑒪𑒰𑒏𑓂𑒭𑒩). Abugida, written left to right. First attested 1200 CE, in use today; status living.
 
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
-Source: Pandey, L2/11-175R, after Salomon 1998. Derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c..
+Source: Pandey, L2/11-175R, after Salomon 1998; Unicode ch.15. Derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c.; still used for religious and literary manuscripts and personal letters.
 
 Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+11480.
@@ -2491,10 +2491,10 @@ Unicode: encoded since version 14.0, block from U+1E290.
 
 ### Tutg
 
-**Tulu-Tigalari** (𑎡𑎻𑎭𑎻 𑎭𑎹𑎦𑎹). Abugida, written left to right. First attested 1000 CE, in use today; status historical.
+**Tulu-Tigalari** (𑎡𑎻𑎭𑎻 𑎭𑎹𑎦𑎹). Abugida, written left to right. First attested 1000 CE, in use today; status living.
 
 Parent: [`Gran`](#gran) Grantha through Chola Grantha, link **attested**.
-Source: L2/17-378. Evolved from the later Chola Grantha to write Sanskrit.
+Source: L2/17-378; L2/22-031. Evolved from the later Chola Grantha to write Sanskrit; in continuous use for ritual purposes such as birth charts and charms.
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+11380.

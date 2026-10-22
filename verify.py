@@ -166,6 +166,22 @@ for iso, sc, action, src, note in CORRECTIONS:
 check("13. language-script corrections applied, each with its source",
       not unapplied, "%d corrections, not applied: %s" % (len(CORRECTIONS), unapplied or "none"))
 
+# 14. status and dates agree: a script in use has no end, a dead one has one
+LIVE = {"living", "revived", "constructed", "fictional"}
+clash = sorted(c for c in S
+               if (S[c]["status"] in LIVE and S[c]["end"] is not None)
+               or (S[c]["status"] in ("historical", "undeciphered") and S[c]["end"] is None)
+               or (S[c]["end"] is not None and S[c]["end"] < S[c]["start"]))
+check("14. status and dates agree", not clash, "disagreeing: %s" % (clash or "none"))
+
+# 15. the families plate exists and draws every language with a script
+FP = os.path.join(OUT, "families_and_scripts.svg")
+fam_svg = open(FP, encoding="utf8").read() if os.path.exists(FP) else ""
+m = re.search(r"<desc>(\d+) languages with a script on record", fam_svg)
+check("15. families plate draws every language with a script",
+      bool(m) and int(m.group(1)) == ST["languages_with_script"],
+      "%s in the plate, %d in the dataset" % (m.group(1) if m else "no plate", ST["languages_with_script"]))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

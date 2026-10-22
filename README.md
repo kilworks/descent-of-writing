@@ -63,6 +63,12 @@ Edge style carries the strength of the claim:
 
 The difference between the last two kinds matters. Most scripts devised in the twentieth century, Ol Chiki, Mro, Tangsa, Toto, Pau Cin Hau and others, are described in their own Unicode proposals as having "no genetic relationship" with any other script. Drawing them as Latin's children, as the first version did, asserted a descent that their sources deny.
 
+## Script and family are two trees
+
+![Language families and the scripts that write them](docs/families.png)
+
+A second plate, [`out/families_and_scripts.svg`](out/families_and_scripts.svg), turns the question around. Language families stand on the left, scripts on the right in the order of their descent tree, and each band is as thick as the number of languages of that family written mainly in that script. Latin takes 3,610 of the 4,517 languages with a script on record, from families on every continent, while most other scripts serve one family. Band colour is the script's great lineage, since nearly every script descends from Egyptian and the root colour of the main plate would say nothing here.
+
 ## Specimens are shaped, not approximated
 
 Every specimen is a real outline pulled from a Noto face and shaped with HarfBuzz. Shaping is not cosmetic here. Arabic and every Brahmic script build their letterforms through GSUB, and Nastaliq's base glyphs are empty: drawing straight from the cmap gives disconnected stubs or nothing at all.
@@ -104,6 +110,7 @@ python fetch_wikidata.py  # writing systems, speaker counts, native names
 python fonts.py           # ~200 Noto faces, shape and extract outlines
 python build_data.py      # join everything into out/dataset.json
 python render.py          # draw the plate
+python render_families.py # draw the second plate, families facing scripts
 python guide.py           # write GUIDE.md from the dataset
 python verify.py          # acceptance checks, write the catalogue CSV
 python drift.py           # figures that moved against the committed dataset

@@ -286,8 +286,9 @@ def build():
       "scripts were made for one language or a few close ones, and a handful of imperial and "
       "religious scripts carry everything else." % (single, len(sfams)))
     w("")
-    w("A second plate could draw the language families as a tree facing this one, linked by "
-      "chords; CONTINUE.md keeps it as open work.")
+    w("The second plate, [`out/families_and_scripts.svg`](out/families_and_scripts.svg), draws this: "
+      "families on one side, scripts on the other, and a band for every family and script that meet, "
+      "as thick as the languages they share.")
     w("")
 
     w("## Open questions")
