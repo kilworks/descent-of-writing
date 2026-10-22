@@ -165,12 +165,12 @@ G["Medf"] = ("Latn", "stimulus", "alphabet", "ltr", 1927, None, "living")
 G["Afak"] = ("Latn", "invented", "syllabary", "ltr", 1908, None, "living")
 
 # ------------------------------------------- MODERN INVENTIONS, SOUTH ASIA ---
-G["Olck"] = ("Latn", "invented", "alphabet", "ltr", 1925, None, "living")
+G["Olck"] = ("Orya", "invented", "alphabet", "ltr", 1925, None, "living")
 G["Nagm"] = ("Olck", "stimulus", "alphabet", "ltr", 1950, None, "living")
 G["Onao"] = ("Latn", "invented", "alphabet", "ltr", 1981, None, "living")
 G["Wara"] = ("Latn", "invented", "alphabet", "ltr", 1950, None, "living")
-G["Tols"] = ("Latn", "invented", "alphabet", "ltr", 1988, None, "living")
-G["Toto"] = ("Latn", "invented", "alphabet", "ltr", 2015, None, "living")
+G["Tols"] = ("Deva", "invented", "alphabet", "ltr", 1988, None, "living")
+G["Toto"] = ("Beng", "invented", "alphabet", "ltr", 2015, None, "living")
 G["Chis"] = ("Latn", "invented", "alphabet", "ltr", 1986, None, "living")
 G["Tnsa"] = ("Latn", "invented", "alphabet", "ltr", 1990, None, "living")
 G["Wcho"] = ("Latn", "invented", "alphabet", "ltr", 2001, None, "living")
@@ -434,8 +434,9 @@ SOURCES = {
              "strong influence of English orthography, capital and small letters; revealed 1927"),
     "Afak": ("", "Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976; L2/25-078",
              "unrelated to any other script; acrophonic rebus; devised 1908; still taught as grade-1 Afaka among the few literate in it"),
-    "Olck": ("", "Unicode N2505; Zide 1996",
-             "alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects"),
+    "Olck": ("", "Unicode N2505; Zide 1996; Wikipedia 'Raghunath Murmu' (secondary)",
+             "alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects; "
+             "Murmu was schooled in Odia, so it hangs under Odia (Santali was also written in Latin, Devanagari, Bengali)"),
     "Nagm": ("", "L2/21-031R; Unicode ch.13",
              "organisation modelled on Ol Chiki; developed from the 1950s"),
     "Onao": ("", "L2/22-151",
@@ -443,9 +444,11 @@ SOURCES = {
     "Wara": ("", "Everson, Unicode N4259 (L2/12-118)",
              "devised by Lako Bodra in the 1950s; full vowel letters"),
     "Tols": ("", "Pandey, L2/23-024",
-             "invented in 1988 by Narayan Oraon, published 1999"),
+             "invented in 1988 by Narayan Oraon, published 1999; Oraon also published Kurukh-Hindi primers, "
+             "so it hangs under Devanagari"),
     "Toto": ("", "Anderson & Evans 2024, Nepalese Linguistics 38; L2/19-330",
-             "an entirely novel set of letters from everyday objects; launched May 2015"),
+             "an entirely novel set of letters from everyday objects; launched May 2015; "
+             "'the government schooling is in Bangla medium', so it hangs under Bengali"),
     "Chis": ("", "L2/22-218R3",
              "invented in 1986 by Jayanta Kumar Mahata from Kurmali ritual and rangoli signs"),
     "Tnsa": ("", "Morey, eScholarship 5nz191bp; L2/13-231",

@@ -155,10 +155,17 @@ Still soft, and named so it can be argued with:
 - `Saur` Saurashtra: its encoding proposal (L2/05-222R2) calls it "of the
   Brahmic type" and its origin "not known". It hung from Grantha with no
   source; it now hangs from Brahmi, contested, until someone traces it.
-- Sixteen `invented` scripts sit under Latin, most because no source names
-  the literacy their makers came from. For Toto, Mro and Chisoi a regional script
-  (Bengali, Burmese) is at least as likely. The edge kind already says the
-  position is not a descent; a source per script would make it a fact.
+- Thirteen `invented` scripts sit under Latin. Five belong there (Visible
+  Speech, Shavian, SignWriting, Sarati, pIqaD: their makers wrote English).
+  Three moved on 2026-10-22, each with its reason in `SOURCES`: Ol Chiki
+  under Odia (Murmu was schooled in Odia; a secondary source), Toto under
+  Bengali (schooling in Bangla medium, L2/19-330), Tolong Siki under
+  Devanagari (its maker published Kurukh-Hindi primers). For the other
+  eight (Afaka, Ol Onal, Warang Citi, Chisoi, Tangsa, Wancho, Mro, Pau Cin
+  Hau) the proposals name only the community's scripts, several of them,
+  or none; Chisoi under Bengali and Warang Citi under Devanagari are
+  implied by place alone. The edge kind already says the position is not a
+  descent; a source on each maker would make it a fact.
 - Three children are dated before their parent: Avestan (500, a creation
   estimate) before Book Pahlavi (619, first dated papyri), Syloti Nagri (1500)
   before Kaithi (1550), Makasar (1600) before Rejang (1750). Start is first

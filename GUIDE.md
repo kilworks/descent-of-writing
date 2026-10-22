@@ -72,19 +72,19 @@ It split early. A southern branch gave Ancient South Arabian and, from it, Ge'ez
 
 ### Aramaic, the empire's hand
 
-Aramaic became the administrative script of the Assyrian and then the Persian empires, and so it travelled. 110 scripts descend from it. Square Hebrew is one; Nabataean, and from it Arabic (first securely dated in Arabic script in 512 CE), another; Syriac a third. Eastward, the Middle Iranian scripts (Parthian, the Pahlavis, Avestan) and Sogdian carried it along the Silk Road, where Sogdian became Old Uyghur and Old Uyghur, turned on its side, became the vertical Mongolian script of 1224 CE. In India, Kharosthi is an Aramaic adaptation, and Brahmi most likely is too, though that is the majority view rather than a settled one (Salomon 1998).
+Aramaic became the administrative script of the Assyrian and then the Persian empires, and so it travelled. 114 scripts descend from it. Square Hebrew is one; Nabataean, and from it Arabic (first securely dated in Arabic script in 512 CE), another; Syriac a third. Eastward, the Middle Iranian scripts (Parthian, the Pahlavis, Avestan) and Sogdian carried it along the Silk Road, where Sogdian became Old Uyghur and Old Uyghur, turned on its side, became the vertical Mongolian script of 1224 CE. In India, Kharosthi is an Aramaic adaptation, and Brahmi most likely is too, though that is the majority view rather than a settled one (Salomon 1998).
 
 ### Greek, and the vowel
 
-Around 750 BCE Greek writers took Phoenician letters for consonants their language lacked and turned them into vowels: aleph became alpha, he became epsilon. Writing every vowel as a full letter is the step that makes an alphabet in the narrow sense. 59 scripts descend from Greek. A western Greek variety passed to the Etruscans and from them to Latin and the runes; Coptic kept the Greek letters and added six or seven from Demotic for Egyptian sounds; Gothic, Glagolitic and Cyrillic were made for Christian texts. Armenian and Georgian follow Greek order closely, but where their letter shapes came from is still argued.
+Around 750 BCE Greek writers took Phoenician letters for consonants their language lacked and turned them into vowels: aleph became alpha, he became epsilon. Writing every vowel as a full letter is the step that makes an alphabet in the narrow sense. 55 scripts descend from Greek. A western Greek variety passed to the Etruscans and from them to Latin and the runes; Coptic kept the Greek letters and added six or seven from Demotic for Egyptian sounds; Gothic, Glagolitic and Cyrillic were made for Christian texts. Armenian and Georgian follow Greek order closely, but where their letter shapes came from is still argued.
 
 ### Latin's reach
 
-Latin writes 3,609 of the 4,517 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 16 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
+Latin writes 3,609 of the 4,517 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 13 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
 
 ### Brahmi, and the abugida
 
-Brahmi appears fully formed in the edicts of Ashoka around 250 BCE. Its idea is new: a consonant letter carries an inherent vowel, other vowels are marks attached to it, and a stroke cancels the vowel. 72 scripts descend from it, against 59 from Greek: most of the registry's diversity is Brahmic. Through the Gupta script it gave Siddham and the Nagari family (Devanagari, Bengali, Odia, Newar) in the north, Sharada and Landa in the north-west, Tibetan in the Himalaya, and, through the Kadamba script, Kannada and Telugu. Through the Pallava script of south India it crossed the sea: Khmer and from it Thai and Lao, the Mon-Burmese scripts, Cham, and Kawi with the scripts of Java, Bali, Sumatra, Sulawesi and the Philippines.
+Brahmi appears fully formed in the edicts of Ashoka around 250 BCE. Its idea is new: a consonant letter carries an inherent vowel, other vowels are marks attached to it, and a stroke cancels the vowel. 76 scripts descend from it, against 55 from Greek: most of the registry's diversity is Brahmic. Through the Gupta script it gave Siddham and the Nagari family (Devanagari, Bengali, Odia, Newar) in the north, Sharada and Landa in the north-west, Tibetan in the Himalaya, and, through the Kadamba script, Kannada and Telugu. Through the Pallava script of south India it crossed the sea: Khmer and from it Thai and Lao, the Mon-Burmese scripts, Cham, and Kawi with the scripts of Java, Bali, Sumatra, Sulawesi and the Philippines.
 
 ### Chinese, and the scripts it prompted
 
@@ -187,12 +187,16 @@ Indented by generation. Each line gives the code, the name, the type, the first 
               - [`Mahj`](#mahj) Mahajani, alphabet, 1600 CE *(contested)*
               - [`Modi`](#modi) Modi, Moḍī, abugida, 1600 CE
                 - [`Gong`](#gong) Gunjala Gondi, abugida, 1750 CE *(contested)*
+              - [`Tols`](#tols) Tolong Siki, alphabet, 1988 CE *(invented)*
             - [`Newa`](#newa) Newa, Newar, Newari, Nepāla lipi, abugida, 908 CE
               - [`Ranj`](#ranj) Ranjana, abugida, 1099 CE
                 - [`Soyo`](#soyo) Soyombo, abugida, 1686 CE
             - [`Tirh`](#tirh) Tirhuta, abugida, 1200 CE
             - [`Orya`](#orya) Oriya, abugida, 1300 CE
+              - [`Olck`](#olck) Ol Chiki, alphabet, 1925 CE *(invented)*
+                - [`Nagm`](#nagm) Nag Mundari, alphabet, 1950 CE *(stimulus)*
             - [`Beng`](#beng) Bengali, abugida, 1350 CE
+              - [`Toto`](#toto) Toto, alphabet, 2015 CE *(invented)*
             - [`Kthi`](#kthi) Kaithi, abugida, 1550 CE
               - [`Sylo`](#sylo) Syloti Nagri, abugida, 1500 CE
           - [`Gran`](#gran) Grantha, abugida, 600 CE
@@ -310,8 +314,6 @@ Indented by generation. Each line gives the code, the name, the type, the first 
             - [`Lisu`](#lisu) Lisu, alphabet, 1915 CE
             - [`Sara`](#sara) Sarati, alphabet, 1919 CE *(invented)*
               - [`Teng`](#teng) Tengwar, alphabet, 1930 CE
-            - [`Olck`](#olck) Ol Chiki, alphabet, 1925 CE *(invented)*
-              - [`Nagm`](#nagm) Nag Mundari, alphabet, 1950 CE *(stimulus)*
             - [`Medf`](#medf) Medefaidrin, alphabet, 1927 CE *(stimulus)*
             - [`Sunu`](#sunu) Sunuwar, alphabet, 1942 CE *(stimulus)*
             - [`Wara`](#wara) Warang Citi, alphabet, 1950 CE *(invented)*
@@ -321,12 +323,10 @@ Indented by generation. Each line gives the code, the name, the type, the first 
             - [`Mroo`](#mroo) Mro, Mru, alphabet, 1980 CE *(invented)*
             - [`Onao`](#onao) Ol Onal, alphabet, 1981 CE *(invented)*
             - [`Chis`](#chis) Chisoi, alphabet, 1986 CE *(invented)*
-            - [`Tols`](#tols) Tolong Siki, alphabet, 1988 CE *(invented)*
             - [`Tnsa`](#tnsa) Tangsa, alphabet, 1990 CE *(invented)*
             - [`Zsye`](#zsye) Symbols, symbols, 1999 CE *(composite)*
             - [`Wcho`](#wcho) Wancho, alphabet, 2001 CE *(invented)*
             - [`Osge`](#osge) Osage, alphabet, 2006 CE
-            - [`Toto`](#toto) Toto, alphabet, 2015 CE *(invented)*
           - [`Runr`](#runr) Runic, alphabet, 150 CE
             - [`Cirt`](#cirt) Cirth, alphabet, 1930 CE *(stimulus)*
         - [`Lydi`](#lydi) Lydian, alphabet, 700 BCE
@@ -549,6 +549,7 @@ Unicode: encoded since version 6.0, block from U+1BC0.
 
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
 Source: Salomon 1998 2.2.5.5; Unicode ch.15. Gaudi (proto-Bengali) current from the 10th to the 14th c.; a distinct Bengali from the 14th-15th c..
+Children: [`Toto`](#toto).
 
 Languages written mainly in it: 16. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Mundari (1,500,000 speakers). Also recorded as a further script for 30 more.
 Unicode: encoded since version 1.1, block from U+0980.
@@ -772,7 +773,7 @@ Unicode: encoded since version 1.1.
 
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Nagari, link **attested**.
 Source: Salomon 1998, after Sukthankar. No authentic specimen before the Silahara inscriptions at Kanheri, 851 and 877-878.
-Children: [`Nand`](#nand), [`Gujr`](#gujr), [`Mahj`](#mahj), [`Modi`](#modi).
+Children: [`Nand`](#nand), [`Gujr`](#gujr), [`Mahj`](#mahj), [`Modi`](#modi), [`Tols`](#tols).
 
 Languages written mainly in it: 180. Largest: Hindi (341,000,000 speakers), Marathi (83,100,000 speakers), Bhojpuri (52,200,000 speakers), Maithili (33,900,000 speakers), Awadhi (22,000,000 speakers). Also recorded as a further script for 35 more.
 Unicode: encoded since version 1.1, block from U+0900.
@@ -1389,7 +1390,7 @@ Unicode: encoded since version 1.1.
 
 Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020. Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over.
-Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Olck`](#olck), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tols`](#tols), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge), [`Toto`](#toto).
+Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge).
 
 Languages written mainly in it: 3,609. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 205 more.
 Unicode: encoded since version 1.1, block from U+0041.
@@ -1775,8 +1776,8 @@ Unicode: encoded since version 3.0, block from U+1680.
 
 **Ol Chiki** (ᱚᱞ ᱪᱤᱠᱤ). Alphabet, written left to right. First attested 1925 CE, in use today; status living.
 
-Parent: [`Latn`](#latn) Latin, link **invented**.
-Source: Unicode N2505; Zide 1996. Alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects.
+Parent: [`Orya`](#orya) Oriya, link **invented**.
+Source: Unicode N2505; Zide 1996; Wikipedia 'Raghunath Murmu' (secondary). Alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects; Murmu was schooled in Odia, so it hangs under Odia (Santali was also written in Latin, Devanagari, Bengali).
 Children: [`Nagm`](#nagm).
 
 Languages written mainly in it: 1. Santali (7,200,000 speakers).
@@ -1809,6 +1810,7 @@ Unicode: encoded since version 5.2, block from U+10C00.
 
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
 Source: Salomon 1998 3.4.2. Early Oriya texts in Gaudi (Urajam 1051); a distinct Oriya script from the 14th c., of composite origin.
+Children: [`Olck`](#olck).
 
 Languages written mainly in it: 15. Largest: Odia (34,500,000 speakers), Sambalpuri (2,630,000 speakers), Pengo (350,000 speakers), Juang (30,875 speakers), Bondo (9,000 speakers). Also recorded as a further script for 11 more.
 Unicode: encoded since version 1.1, block from U+0B01.
@@ -2473,8 +2475,8 @@ Unicode: encoded since version 16.0, block from U+105C0.
 
 **Tolong Siki** (𑶻𑶳𑷑𑶳𑷎 𑷔𑶰𑷊𑶰). Alphabet, written left to right. First attested 1988 CE, in use today; status living.
 
-Parent: [`Latn`](#latn) Latin, link **invented**.
-Source: Pandey, L2/23-024. Invented in 1988 by Narayan Oraon, published 1999.
+Parent: [`Deva`](#deva) Devanagari, link **invented**.
+Source: Pandey, L2/23-024. Invented in 1988 by Narayan Oraon, published 1999; Oraon also published Kurukh-Hindi primers, so it hangs under Devanagari.
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
@@ -2483,8 +2485,8 @@ Unicode: not encoded, so no font can show it.
 
 **Toto** (𞊒𞊪𞊒𞊪 𞊫𞊠𞊐𞊭𞊑𞊦𞊒). Alphabet, written left to right. First attested 2015 CE, in use today; status living.
 
-Parent: [`Latn`](#latn) Latin, link **invented**.
-Source: Anderson & Evans 2024, Nepalese Linguistics 38; L2/19-330. An entirely novel set of letters from everyday objects; launched May 2015.
+Parent: [`Beng`](#beng) Bengali, link **invented**.
+Source: Anderson & Evans 2024, Nepalese Linguistics 38; L2/19-330. An entirely novel set of letters from everyday objects; launched May 2015; 'the government schooling is in Bangla medium', so it hangs under Bengali.
 
 Languages written mainly in it: 1. Toto.
 Unicode: encoded since version 14.0, block from U+1E290.
