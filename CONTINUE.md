@@ -20,7 +20,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 10 of
 | Edges with a named source | 90 of the 90 that need one; `Saur` marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
 | Languages with a recorded script | 1,517 (17.7%) |
-| Languages with a speaker count | 1,694 (19.7%) |
+| Languages with a speaker count | 1,699 (19.8%) |
 | Scripts with a native name | 111 of 218 |
 | Sources retrieved | 2026-10-22 |
 
@@ -160,15 +160,18 @@ paywalled and its licence does not permit redistribution.
 Any improvement here changes Zone B materially. Whatever the number becomes,
 keep the label honest: it is still what sources record, not what is true.
 
-### 4. No CI, so upstream drift is invisible
+### 4. Done: monthly rebuild and drift check
 
-`verify.py` exists and nothing runs it. A GitHub Action on a monthly schedule
-that runs the full pipeline and fails on a changed count would catch new ISO
-15924 codes and new Glottolog releases the week they land, instead of the plate
-silently becoming a 2026 snapshot that claims to be current.
-
-The plate already prints its retrieval date, so the failure mode is staleness
-rather than a false claim, but staleness compounds.
+`.github/workflows/monthly.yml` runs the whole pipeline from live sources on
+the 3rd of each month and fails on any of three things: a new ISO 15924 code
+(build_data.py stops on a script with no genealogy row), a broken acceptance
+check (verify.py), or a figure that moved against the committed dataset
+(`drift.py`). `drift.py` was seen to fail against the August build, naming
+the four figures that had moved since (one more language without a script,
+five more with a speaker count, and the root list). When it fails, rebuild
+locally, read the drift, update the README figures, and commit the new
+`out/`. The workflow has not yet run on GitHub: the first scheduled run, or a
+manual dispatch, is its real test.
 
 ### 5. Seven specimens are recoverable
 
@@ -201,7 +204,7 @@ script.
 ### 8. Smaller, real, unglamorous
 
 - Only 111 of 218 scripts have a native name. Wikidata P1705 is thin.
-- Speaker counts reach 19.7% of languages. Unknown counts still draw at the
+- Speaker counts reach 19.8% of languages. Unknown counts still draw at the
   smallest size; the caption now says so with the computed share, but a
   distinct encoding would be more honest than a caption.
 

@@ -94,7 +94,10 @@ python fonts.py           # ~200 Noto faces, shape and extract outlines
 python build_data.py      # join everything into out/dataset.json
 python render.py          # draw the plate
 python verify.py          # acceptance checks, write the catalogue CSV
+python drift.py           # figures that moved against the committed dataset
 ```
+
+The same pipeline runs on the 3rd of every month in GitHub Actions ([`monthly.yml`](.github/workflows/monthly.yml)) and fails when an upstream release moves any figure, so the plate cannot silently turn into an old snapshot.
 
 `fetch_wikidata.py` backs off past the query service's rate limit, which is currently one request per minute, so expect it to sit for a few minutes. Rasterizing uses the Chrome or Edge already installed rather than pulling a renderer:
 
