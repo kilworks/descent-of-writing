@@ -121,6 +121,14 @@ check("9. every non-attested edge and argued root is sourced",
       % (len(need), nosrc or "none", ", ".join(unsourced) or "none",
          ", ".join("%s %d" % kv for kv in edges.most_common())))
 
+# 10. the plate can be read without sight: a title and a description for the
+# document, and a title for every script card
+titled = set(re.findall(r'<g id="s-([A-Za-z]{4})">\s*<title>[^<]+</title>', SVG))
+check("10. svg has a title, a description, and a title per script",
+      "<title>The Descent of Writing</title>" in SVG and "<desc>" in SVG and titled == set(S),
+      "%d of %d script cards titled, untitled: %s"
+      % (len(titled), len(S), sorted(set(S) - titled) or "none"))
+
 # ---- companion CSV, one row per script, all seven documented fields
 with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newline="") as f:
     w = csv.writer(f)

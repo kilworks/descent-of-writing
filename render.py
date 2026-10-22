@@ -265,6 +265,11 @@ H = ZONE_C_TOP + 110 + math.ceil(len(S) / 9) * 84 + 130 + 58 + 8 * 46 + 260
 a('<?xml version="1.0" encoding="UTF-8"?>')
 a('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">'
   % (W, H, W, H))
+a('<title>The Descent of Writing</title>')
+a('<desc>%d scripts of the ISO 15924 registry drawn as a descent tree from %d roots, with the %d '
+  'languages of Glottolog hung beneath the script that writes them, and a catalogue of every script. '
+  'Each script card carries its own title with type, direction, dates, parent and source.</desc>'
+  % (len(S), sum(1 for c in S if not S[c]["parent"]), len(L)))
 a('<rect width="%d" height="%d" fill="%s"/>' % (W, H, PAPER))
 a('<defs><style>'
   'text{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;'
@@ -312,6 +317,14 @@ for c, s in S.items():
     col = HUE[root_of(c)]
     is_origin = s["parent"] is None
     a('<g id="s-%s">' % c)
+    # read aloud by screen readers and shown on hover: the card in one sentence
+    a('<title>%s</title>' % esc("%s, %s: %s, %s, %s to %s, %s. %s%s" % (
+        c, short_name(s["name"]), s["type"], s["direction"], yr(s["start"]), yr(s["end"]),
+        s["status"],
+        "Root, no known parent in the registry." if not s["parent"]
+        else "From %s%s, %s." % (short_name(S[s["parent"]]["name"]),
+                                 " through " + s["via"] if s.get("via") else "", s["edge"]),
+        " Source: %s." % s["source"] if s.get("source") else "")))
     if is_origin:
         a('<rect x="%.1f" y="%.1f" width="%d" height="%d" rx="10" fill="%s" opacity="0.10"/>'
           % (x - NODE_W / 2, y - NODE_H / 2, NODE_W, NODE_H, col))
@@ -421,6 +434,12 @@ def draw_field(gids, x0, w, colour, label, sub, top, field_h, label_size=26):
         if v["aes"] == "extinct":
             a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="none" stroke="%s" '
               'stroke-width="1.4" opacity="0.6" id="l-%s"/>' % (px, py, r, col, gid))
+        elif v["aes"] == "unknown":
+            # no status in Glottolog: the faintest fill would read as nearly
+            # extinct, so unknown gets its own mark rather than a rank
+            a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s" fill-opacity="0.12" stroke="%s" '
+              'stroke-width="1.2" stroke-dasharray="2 2" opacity="0.8" id="l-%s"/>'
+              % (px, py, r, col, col, gid))
         else:
             a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s" opacity="%.2f" id="l-%s"/>'
               % (px, py, r, col, max(al, 0.14), gid))
@@ -467,8 +486,10 @@ foot = row_b_top + row_b_h + 118
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'The two registers are the same width; their heights are in proportion to the languages they hold, '
   'and both are packed to the same density, so the areas compare directly. '
-  'Mark area is speaker count on a log scale. Fading runs from safe through threatened to moribund; '
-  'a hollow ring is an extinct language.</text>' % (PAD, foot, INK_SOFT))
+  'Mark area is speaker count on a log scale; with no count on record (%d%% of languages) a mark takes the smallest size. '
+  'Fading runs from safe through threatened to moribund; a hollow ring is an extinct language, '
+  'a dashed ring one whose status Glottolog does not give.</text>'
+  % (PAD, foot, INK_SOFT, round(100 * sum(1 for v in L.values() if not v["speakers"]) / len(L))))
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'The lower register is not proof of unwritten languages. It is what Wikidata and CLDR record no script for, '
   'and their coverage thins fast outside the major languages. The true unwritten share is lower, and unknown.</text>'

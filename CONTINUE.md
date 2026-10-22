@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 9 of
-9 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 10 of
+10 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -200,15 +200,15 @@ script.
 
 ### 8. Smaller, real, unglamorous
 
-- 350 languages have no endangerment status. Glottolog simply lacks it for
-  them; they currently render at the lowest opacity, which reads as "nearly
-  extinct" rather than "unknown". That is a small lie in the encoding.
 - Only 111 of 218 scripts have a native name. Wikidata P1705 is thin.
-- Speaker counts reach 19.7% of languages. Mark area therefore encodes
-  "unknown" as "smallest" for four languages in five.
-- The plate has no `<title>` or `<desc>` elements, so it is opaque to a screen
-  reader. For a document that is entirely about writing systems, that is a
-  poor look.
+- Speaker counts reach 19.7% of languages. Unknown counts still draw at the
+  smallest size; the caption now says so with the computed share, but a
+  distinct encoding would be more honest than a caption.
+
+Done on 2026-10-22: the 350 languages with no endangerment status in
+Glottolog draw as a dashed ring instead of the faintest fill, which read as
+"nearly extinct"; the plate has a `<title>`, a `<desc>` and a title on every
+script card, asserted by check 10.
 
 ## What a good change looks like
 
