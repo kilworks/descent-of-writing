@@ -178,7 +178,7 @@ G["Hmng"] = ("Laoo", "invented", "alphabet", "ltr", 1959, None, "living")
 G["Hmnp"] = ("Hebr", "stimulus", "alphabet", "ltr", 1980, None, "living")
 
 # ------------------------------------------------------- BRAHMIC: NORTHERN ---
-G["Brah"] = ("Armi", "contested", "abugida", "ltr", -300, 500, "historical")
+G["Brah"] = ("Armi", "contested", "abugida", "ltr", -250, 500, "historical")
 G["Khar"] = ("Armi", "attested", "abugida", "rtl", -250, 300, "historical")
 G["Sidd"] = ("Brah", "attested", "abugida", "ltr", 588, 1200, "historical")
 G["Deva"] = ("Sidd", "attested", "abugida", "ltr", 851, None, "living")
@@ -458,7 +458,7 @@ SOURCES = {
     "Mtei": ("", "Everson, Unicode N3158",
              "earliest use dated 11th-12th c., from the Tibetan group; Tomba 1993 calls the old documents forgeries"),
     "Brah": ("", "Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy",
-             "Aramaic origin after Buhler is the majority view; not settled"),
+             "Aramaic origin after Buhler is the majority view; not settled; earliest securely dated texts the Ashokan edicts, c.250 BCE"),
     "Tirh": ("Gaudi", "Pandey, L2/11-175R, after Salomon 1998",
              "derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c."),
     "Kthi": ("Nagari", "Pandey, Unicode N3389",

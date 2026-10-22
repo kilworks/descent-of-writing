@@ -365,12 +365,12 @@
 <text x="19644.0" y="1312.0" text-anchor="middle" font-size="20" fill="#6b6155">1913 CE &#8211; present</text>
 </g>
 <g id="s-Brah">
-<title>Brah, Brahmi: abugida, ltr, 300 BCE to 500 CE, historical. From Imperial Aramaic, contested. Source: Bright 1996, in Daniels &amp; Bright; Salomon 1998, Indian Epigraphy.</title>
+<title>Brah, Brahmi: abugida, ltr, 250 BCE to 500 CE, historical. From Imperial Aramaic, contested. Source: Bright 1996, in Daniels &amp; Bright; Salomon 1998, Indian Epigraphy.</title>
 <g transform="translate(4222.85,2551.29) scale(0.072255,-0.072255)"><path d="M223 292 38 572H512L327 292L522 0H29ZM276 353 366 496H186ZM177 76H375L276 232ZM1161 287Q1161 149 1092.5 68.5Q1024 -12 893 -12Q816 -12 756.5 24.0Q697 60 663.5 127.5Q630 195 630 287Q630 377 660.5 444.0Q691 511 750.5 547.5Q810 584 897 584Q977 584 1036.0 548.0Q1095 512 1128.0 445.5Q1161 379 1161 287ZM897 345 989 480Q951 505 894 505Q842 505 802 482ZM720 287Q720 203 748 150L844 285L747 421Q720 370 720 287ZM1072 287Q1072 367 1044 421L948 285L1043 151Q1072 206 1072 287ZM804 90Q842 67 896 67Q948 67 988 91L897 225ZM1644 322H1636Q1569 322 1517.5 287.0Q1466 252 1436.5 193.0Q1407 134 1407 62V0H1317V64Q1317 150 1357.0 228.5Q1397 307 1468 352Q1400 387 1363.5 449.5Q1327 512 1327 591V714H1417V593Q1417 532 1443.5 488.5Q1470 445 1517.5 421.5Q1565 398 1626 398H1644V714H1734V0H1644ZM1910 0V64Q1910 154 1951.0 231.5Q1992 309 2061 352Q1995 385 1957.5 448.0Q1920 511 1920 591V714H2010V593Q2010 504 2067.0 451.0Q2124 398 2219 398H2237V714H2327V398H2449V322H2327V0H2237V322H2229Q2165 322 2113.0 287.0Q2061 252 2030.5 194.0Q2000 136 2000 65V0ZM2567 548Q2567 580 2582.0 598.0Q2597 616 2628 616Q2691 616 2691 548Q2691 517 2674.0 498.5Q2657 480 2628 480Q2599 480 2583.0 498.5Q2567 517 2567 548ZM2791 301Q2791 333 2806.5 351.0Q2822 369 2852 369Q2883 369 2899.0 351.0Q2915 333 2915 301Q2915 270 2898.5 251.5Q2882 233 2852 233Q2824 233 2807.5 251.0Q2791 269 2791 301ZM2567 54Q2567 121 2628 121Q2657 121 2674.0 103.5Q2691 86 2691 54Q2691 23 2674.0 4.5Q2657 -14 2628 -14Q2599 -14 2583.0 4.0Q2567 22 2567 54ZM3377 714V0H3287V714ZM3091 362Q3091 429 3152 429Q3181 429 3198.0 411.5Q3215 394 3215 362Q3215 331 3198.0 312.5Q3181 294 3152 294Q3123 294 3107.0 312.0Q3091 330 3091 362ZM3448 362Q3448 429 3509 429Q3572 429 3572 362Q3572 331 3555.5 312.5Q3539 294 3509 294Q3480 294 3464.0 312.0Q3448 330 3448 362Z" fill="#1a1714"/></g>
 <text x="4352.9" y="2634.0" text-anchor="middle" font-size="30" class="m" fill="#a86a1f">Brah</text>
 <text x="4352.9" y="2668.0" text-anchor="middle" font-size="26">Brahmi</text>
 <text x="4352.9" y="2696.0" text-anchor="middle" font-size="20" fill="#6b6155">abugida &#183; ltr</text>
-<text x="4352.9" y="2722.0" text-anchor="middle" font-size="20" fill="#6b6155">300 BCE &#8211; 500 CE</text>
+<text x="4352.9" y="2722.0" text-anchor="middle" font-size="20" fill="#6b6155">250 BCE &#8211; 500 CE</text>
 </g>
 <g id="s-Brai">
 <title>Brai, Braille: alphabet, ltr, 1824 CE to present, living. From Latin through Barbier's night writing, stimulus. Source: RNIB; Unicode ch.21.</title>
@@ -11035,7 +11035,7 @@
 <text x="408" y="9948" font-size="29" fill="#6b6155">syllabary &#183; varies &#183; 1913 CE to present &#183; living &#183; from Hani, attested</text>
 <text x="260" y="9992" font-size="38" class="m" fill="#a86a1f">Brah</text>
 <text x="408" y="9992" font-size="38">Brahmi</text>
-<text x="408" y="10032" font-size="29" fill="#6b6155">abugida &#183; ltr &#183; 300 BCE to 500 CE &#183; historical &#183; from Armi, contested</text>
+<text x="408" y="10032" font-size="29" fill="#6b6155">abugida &#183; ltr &#183; 250 BCE to 500 CE &#183; historical &#183; from Armi, contested</text>
 <text x="260" y="10076" font-size="38" class="m" fill="#a86a1f">Brai</text>
 <text x="408" y="10076" font-size="38">Braille</text>
 <text x="408" y="10116" font-size="29" fill="#6b6155">alphabet &#183; ltr &#183; 1824 CE to present &#183; living &#183; from Latn, stimulus</text>

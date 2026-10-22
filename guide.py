@@ -48,6 +48,54 @@ EDGES = [
 ]
 
 
+# The lineages, as prose. Every count in braces is computed from the dataset
+# when the guide is written, so the text cannot disagree with the tree; every
+# claim is one the SOURCES table of genealogy.py, or the works named here, makes.
+LINEAGES = [
+    ("One invention behind most of the world: the alphabet",
+     """Of the {n_scripts} scripts in the registry, {d_Egyp} descend from Egyptian hieroglyphs, and {d_Psin} of those through a single step: Proto-Sinaitic. Around {y_Psin}, Semitic speakers working in Egypt and Sinai took a few dozen hieroglyphs and used each for the first consonant of its name in their own language, a house for /b/, water for /m/ (Darnell et al. 2005 on Wadi el-Hol; Hamilton 2006). The result wrote consonants only, and it was the first alphabet.
+
+It split early. A southern branch gave Ancient South Arabian and, from it, Ge'ez; Ancient North Arabian shares that branch's ancestor rather than descending from it (Al-Jallad 2015). A northern branch was standardised as Phoenician by about {y_Phnx}. Ugarit, around {y_Ugar}, kept the idea and the letter order but wrote them in wedges on clay: an alphabet in cuneiform dress."""),
+    ("Aramaic, the empire's hand",
+     """Aramaic became the administrative script of the Assyrian and then the Persian empires, and so it travelled. {d_Armi} scripts descend from it. Square Hebrew is one; Nabataean, and from it Arabic (first securely dated in Arabic script in {y_Arab}), another; Syriac a third. Eastward, the Middle Iranian scripts (Parthian, the Pahlavis, Avestan) and Sogdian carried it along the Silk Road, where Sogdian became Old Uyghur and Old Uyghur, turned on its side, became the vertical Mongolian script of {y_Mong}. In India, Kharosthi is an Aramaic adaptation, and Brahmi most likely is too, though that is the majority view rather than a settled one (Salomon 1998)."""),
+    ("Greek, and the vowel",
+     """Around {y_Grek} Greek writers took Phoenician letters for consonants their language lacked and turned them into vowels: aleph became alpha, he became epsilon. Writing every vowel as a full letter is the step that makes an alphabet in the narrow sense. {d_Grek} scripts descend from Greek. A western Greek variety passed to the Etruscans and from them to Latin and the runes; Coptic kept the Greek letters and added six or seven from Demotic for Egyptian sounds; Gothic, Glagolitic and Cyrillic were made for Christian texts. Armenian and Georgian follow Greek order closely, but where their letter shapes came from is still argued."""),
+    ("Latin's reach",
+     """Latin writes {n_latin_main} of the {n_written} languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: {n_latin_invented} of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent."""),
+    ("Brahmi, and the abugida",
+     """Brahmi appears fully formed in the edicts of Ashoka around {y_Brah}. Its idea is new: a consonant letter carries an inherent vowel, other vowels are marks attached to it, and a stroke cancels the vowel. {d_Brah} scripts descend from it, against {d_Grek} from Greek: most of the registry's diversity is Brahmic. Through the Gupta script it gave Siddham and the Nagari family (Devanagari, Bengali, Odia, Newar) in the north, Sharada and Landa in the north-west, Tibetan in the Himalaya, and, through the Kadamba script, Kannada and Telugu. Through the Pallava script of south India it crossed the sea: Khmer and from it Thai and Lao, the Mon-Burmese scripts, Cham, and Kawi with the scripts of Java, Bali, Sumatra, Sulawesi and the Philippines."""),
+    ("Chinese, and the scripts it prompted",
+     """Chinese writing is attested from the oracle bones of about {y_Hani} and is the only one of the old inventions still in daily use. Its characters are mostly compounds of a meaning part and a sound part. In Japan, Chinese characters used for their sound became the two kana syllabaries; in China, simplified components became Bopomofo, and in Hunan, women's writing became Nushu. Other states built writing on the Chinese model without borrowing its characters: Khitan, Tangut, Jurchen. Hangul, of 1443, is a case apart: by its own account of 1446 its consonant shapes draw the speech organs, a Phags-pa model is argued for five or six letters at most, and the plate hangs it from Phags-pa as contested."""),
+    ("The other first inventions",
+     """Proto-cuneiform appears at Uruk around {y_Pcun}, as book-keeping, and became cuneiform, the script of Sumerian, Akkadian, Hittite, Elamite and a dozen more languages over three thousand years; Proto-Elamite was devised beside it under its stimulus. Egyptian hieroglyphs appear around {y_Egyp}; hieratic and Demotic are their cursive forms, and the two Meroitic scripts of Nubia were made from the hieroglyphs and from Demotic. Mayan writing, from about {y_Maya}, is the one pre-Columbian script of the Americas that can be read today, deciphered over the second half of the twentieth century after Knorozov showed in 1952 that it is partly phonetic. Linear A in Crete, the Indus signs and rongorongo are not read, and the plate says so."""),
+    ("Writing made on purpose",
+     """{n_modern} of the scripts were devised after 1800, most of them by a person whose name is recorded. Sequoyah's Cherokee syllabary (finished in {y_Cher}) took Latin letter shapes without their values, and James Evans's Cree syllabics turned British shorthand into a syllabary. In West Africa, the Vai syllabary of {y_Vaii} prompted Mende, Kpelle, Loma and Bassa Vah. In India, Burma and Laos, scripts such as Ol Chiki, Warang Citi, Sora Sompeng, Pahawh Hmong and Mro were made for languages with no script of their own, often as the founding act of a religious or cultural movement, and their encoding proposals describe them as unrelated to any earlier script. They are the clearest evidence that writing, once known to exist, can be invented again from the idea alone."""),
+]
+
+
+def lineage_numbers(S, L):
+    """The figures the lineage prose quotes, computed, never typed."""
+    import collections as _c
+    kids = _c.defaultdict(list)
+    for c, s in S.items():
+        if s["parent"]:
+            kids[s["parent"]].append(c)
+
+    def desc(c):
+        return sum(1 + desc(k) for k in kids[c])
+
+    n = {"n_scripts": len(S),
+         "n_written": format(sum(1 for v in L.values() if v["scripts"]), ","),
+         "n_latin_main": format(sum(1 for v in L.values() if v["primary_script"] == "Latn"), ","),
+         "n_latin_invented": sum(1 for k in kids["Latn"] if S[k]["edge"] == "invented"),
+         "n_modern": sum(1 for s in S.values() if s["start"] >= 1800
+                         and s["edge"] in ("stimulus", "invented") and s["status"] != "fictional")}
+    for c in S:
+        n["d_" + c] = desc(c)
+        n["y_" + c] = yr(S[c]["start"])
+    return n
+
+
 def yr(v):
     if v is None:
         return "present"
@@ -108,6 +156,7 @@ def build():
     w("- [What kinds of script there are](#what-kinds-of-script-there-are)")
     w("- [How the links are drawn](#how-the-links-are-drawn)")
     w("- [The roots](#the-roots)")
+    w("- [The great lineages](#the-great-lineages)")
     w("- [The family trees](#the-family-trees)")
     w("- [Every script, by code](#every-script-by-code)")
     w("")
@@ -151,6 +200,15 @@ def build():
         w("| [`%s`](#%s) %s | %s | %d | %s |" % (r, r.lower(), short(s["name"]), yr(s["start"]),
                                                size[r] - 1, why))
     w("")
+
+    w("## The great lineages")
+    w("")
+    nums = lineage_numbers(S, L)
+    for title, text in LINEAGES:
+        w("### " + title)
+        w("")
+        w(text.format(**nums))
+        w("")
 
     w("## The family trees")
     w("")
