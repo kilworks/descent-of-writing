@@ -80,17 +80,17 @@ DEBATES = [
     ("Where Brahmi came from",
      """**Semitic origin.** Buhler (*On the Origin of the Indian Brahma Alphabet*, 1898) derived Brahmi from a Semitic, in practice Aramaic, model; Salomon (*Indian Epigraphy*, 1998) keeps this as the leading view. Falk (*Schrift im alten Indien*, 1993; and in 2018) sees a script designed under Ashoka from the two then current in the north-west, Greek and Kharosthi.
 
-**Earlier or indigenous.** Sherds from Anuradhapura in Sri Lanka carry Brahmi letters in layers dated to the early 4th century BCE (Coningham, Allchin, Batt and Lucy, *Cambridge Archaeological Journal* 6, 1996), and Tamil Nadu finds have been dated earlier still; these would put Brahmi before Ashoka. A descent from the Indus signs is sometimes proposed; it cannot be shown while the Indus signs themselves are unread.
+**Earlier or indigenous.** Sherds from Anuradhapura in Sri Lanka carry Brahmi letters in layers dated to the early 4th century BCE (Coningham, Allchin, Batt and Lucy, *Cambridge Archaeological Journal* 6, 1996), and Tamil Nadu's archaeology department dated inscribed sherds from Keeladi to the 6th century BCE (*Keeladi*, 2019), a date others dispute; either would put Brahmi before Ashoka. A descent from the Indus signs is sometimes proposed; it cannot be shown while the Indus signs themselves are unread.
 
 **Where it stands.** An Aramaic model is the majority view and the plate draws it, dashed. How the letters were derived is not explained, and Pillai (2023, *Indialogs*) calls the debate far from settled. About seventy scripts hang from this one edge."""),
     ("Whether Egypt invented writing alone",
      """**Independent.** The labels of tomb U-j at Abydos (Dreyer, *Umm el-Qaab I*, 1998), around 3250 BCE, are as early as the first Mesopotamian tablets, and Egyptian writing differs from cuneiform in structure, signs and use (Baines, in Houston ed., *The First Writing*, 2004; Regulski, *Oxford Handbook*, 2014).
 
-**Stimulus.** Petrie, Pope, Ray (1986) and Brewer (all cited in Regulski 2014) argued that the idea of writing reached Egypt from Mesopotamia, through contacts visible in cylinder seals and art.
+**Stimulus.** Petrie, Pope, Ray (1986) and Brewer (all cited in Regulski 2016) argued that the idea of writing reached Egypt from Mesopotamia, through contacts visible in cylinder seals and art.
 
 **Where it stands.** The majority view is independent invention, with stimulus diffusion of the bare idea still possible; Regulski writes that it remains a possibility. The plate keeps Egyptian hieroglyphs as a root and records the argument against it."""),
     ("What Hangul's letters were drawn from",
-     """**The speech organs.** The *Hunminjeongeum Haerye* of 1446, written with the script's promulgation, says the five basic consonants picture the organs that make them, the root of the tongue closing the throat for ㄱ, the shape of the mouth for ㅁ, and that further letters add strokes for aspiration or tension. Sampson (*Writing Systems*, 1985) made Hangul his example of a featural script.
+     """**The speech organs.** The *Hunminjeongeum Haerye* of 1446, written with the script's promulgation, says the five basic consonants picture the organs that make them, the root of the tongue closing the throat for ㄱ, the shape of the mouth for ㅁ, and that further letters add a stroke for a stronger sound, while tense consonants double the letter. Sampson (*Writing Systems*, 1985) made Hangul his example of a featural script.
 
 **Phags-pa.** Ledyard (*The Korean Language Reform of 1446*, 1966, revised 1998) argued that a handful of base consonants follow the Phags-pa script of the Mongol court, which Korean scholars knew; an earlier court record also says the letters imitate an old seal script.
 
@@ -100,7 +100,7 @@ DEBATES = [
 
 **Language.** Rao and colleagues (*Science* 324, 2009) found the sign sequences' conditional entropy close to that of natural languages, with positional regularities like a syntax; Parpola and Mahadevan have long read the signs as a logo-syllabic script.
 
-**Where it stands.** Open. Rao and colleagues themselves write that without a decipherment neither thesis can be proved. The plate includes the Indus signs because the registry does, as a root marked undeciphered."""),
+**Where it stands.** Open. Rao and colleagues themselves, replying to Sproat (*Computational Linguistics* 36, 2010), write that without a decipherment neither thesis can be proved. The plate includes the Indus signs because the registry does, as a root marked undeciphered."""),
     ("How old rongorongo is",
      """**After contact.** No visitor to Rapa Nui reported writing before Eyraud in 1864. Emory (1968) and Fischer (*Rongorongo*, 1997) argued that the islanders invented it after seeing the Spanish annexation document of 1770 (both cited in Wieczorek et al. 2021).
 

@@ -188,6 +188,20 @@ rongorongo, Glagolitic) with the positions, their evidence and where the
 field stands, from 34 sources read on 2026-10-22. A specialist reading of
 that chapter is the cheapest useful review.
 
+A source check, which is not that review, went over the chapter the same
+day: 36 attributed claims, 21 confirmed against the work or its abstract.
+Fixed: Regulski's chapter is 2016 (Crossref), not 2014; the Haerye adds a
+stroke for a stronger sound but doubles the letter for a tense one; the
+"neither thesis can be proved" line is from Rao and colleagues' reply in
+Computational Linguistics 36, not the Science paper; the Tamil Nadu dating
+now names Keeladi (2019) and says it is disputed. Not yet confirmed from
+the works themselves: Buhler 1898, Salomon 1998 on Anuradhapura, Falk
+2018, Baines 2004, the Petrie, Pope and Brewer citations in Regulski,
+Sampson 1985, the Sejong Sillok's seal-script line, the "syntax" wording
+for Rao et al. 2009, Emory 1968 and Fischer 1997 as cited by Wieczorek,
+and Vondrak, Nahtigal and Fortunatov on Glagolitic. A reader with the
+books can close these.
+
 ### 3. Done in part: language to script coverage, 17.7% to 53.2%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
