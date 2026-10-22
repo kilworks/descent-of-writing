@@ -360,7 +360,15 @@ Publishing it on GitHub Pages is a repository setting, left to the owner.
   it. Latin has none on purpose (no one language owns it). Of the other
   96, 54 write no language on record, and for the rest neither Wikidata
   nor CLDR names the script in the language it writes. A native name for
-  them would come from the encoding proposals, script by script.
+  them would come from the encoding proposals, script by script. Tried
+  on 2026-10-22 for all 67 encoded scripts without one: the proposals and
+  the core specification give Latin names only (aksara Jawa, Kirat Rai,
+  Shupamum, Khema lipi) or show the script's name in images and legacy
+  fonts that carry no Unicode text. In-script names exist for eight on
+  Wikipedia (Ahom, Bassa Vah, Duployan, Garay, Javanese, Kayah Li, Kawi,
+  Kirat Rai) with no source behind them, and Duployan's reads like an
+  editor's transcription of the French name, so none was taken. For the
+  ancient scripts no native name is attested at all.
 - Speaker counts reach 20.2% of languages (36 more since Wikidata is also
   joined by Glottocode). The other 6,852 are drawn as
   squares of one size instead of the smallest circle, so a missing count no
