@@ -100,10 +100,11 @@ for (f, sc), n in flows.items():
     by_script[sc] += n
     by_family[f] += n
 
-keep_s = set(sorted(by_script, key=lambda c: -by_script[c])[:TOP_SCRIPTS])
+# ties broken by name: these are sets, whose order changes with Python's hash seed
+keep_s = set(sorted(by_script, key=lambda c: (-by_script[c], c))[:TOP_SCRIPTS])
 SPECIAL = {"Isolates", "Unclassified and other categories"}
 keep_f = set(f for f in sorted(by_family, key=lambda f: -by_family[f]) if f not in SPECIAL)
-keep_f = set(sorted(keep_f, key=lambda f: -by_family[f])[:TOP_FAMILIES])
+keep_f = set(sorted(keep_f, key=lambda f: (-by_family[f], f))[:TOP_FAMILIES])
 n_other_s = len(set(by_script) - keep_s)
 n_other_f = len(set(by_family) - keep_f - SPECIAL)
 OTHER_S = "%d other scripts" % n_other_s
@@ -122,7 +123,7 @@ for (f, s), n in agg.items():
     fam_mean[f][0] += rpos[s] * n
     fam_mean[f][1] += n
 left = sorted((f for f in fam_mean if f not in SPECIAL and f != OTHER_F),
-              key=lambda f: fam_mean[f][0] / fam_mean[f][1])
+              key=lambda f: (fam_mean[f][0] / fam_mean[f][1], f))
 left += [f for f in (OTHER_F, "Isolates", "Unclassified and other categories") if f in fam_mean]
 
 col_tot_l = {f: sum(n for (ff, _), n in agg.items() if ff == f) for f in left}
