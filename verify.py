@@ -182,6 +182,30 @@ check("15. families plate draws every language with a script",
       bool(m) and int(m.group(1)) == ST["languages_with_script"],
       "%s in the plate, %d in the dataset" % (m.group(1) if m else "no plate", ST["languages_with_script"]))
 
+# 16. the type column follows Unicode's Table 6-1, or says why not
+from genealogy import TYPE_EXCEPTIONS
+T61 = {"Alphabets": "alphabet", "Abjads": "abjad", "Abugidas": "abugida",
+       "Logosyllabaries": "logographic", "Simple Syllabaries": "syllabary",
+       "Featural Syllabaries": "featural"}
+long2code = {}
+for l in open(os.path.join(DATA, "PropertyValueAliases.txt"), encoding="utf8"):
+    if l.startswith("sc ;"):
+        f = [x.strip() for x in l.split("#")[0].split(";")]
+        long2code[f[2]] = f[1]
+ch6 = open(os.path.join(DATA, "unicode_ch06.html"), encoding="utf8").read()
+table = {}
+for head, cell in re.findall(r"<tr><th>([^<]+)</th><td>(.*?)</td></tr>", ch6):
+    if head in T61:
+        for name in re.findall(r'title="Script=([A-Za-z_]+)"', cell):
+            table[long2code.get(name, name)] = T61[head]
+off = sorted(c for c in table if c in G and G[c][2] != table[c]
+             and TYPE_EXCEPTIONS.get(c, (None,))[0] != table[c])
+stale = sorted(c for c in TYPE_EXCEPTIONS if table.get(c) != TYPE_EXCEPTIONS[c][0] or G[c][2] == table[c])
+check("16. script types follow Unicode Table 6-1, exceptions argued",
+      len(table) > 150 and not off and not stale,
+      "%d scripts in the table, %d argued exceptions; disagreeing: %s; stale exceptions: %s"
+      % (len(table), len(TYPE_EXCEPTIONS), off or "none", stale or "none"))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

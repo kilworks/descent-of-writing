@@ -22,9 +22,9 @@ Row = code: (parent, edge, type, direction, start, end, status)
   type      logographic | syllabary | abjad | alphabet | abugida | featural
             | semasiographic | undeciphered | composite | variant | symbols
             Follows Unicode 17.0 Table 6-1 where it lists the script, except
-            Ougr and Ethi, where Unicode's own prose contradicts the table
-            (Ougr kept abjad, Ethi kept abugida). Cans as syllabary is
-            disputed: Bright and Bringhurst say alphasyllabary.
+            the rows in TYPE_EXCEPTIONS below; verify.py check 16 holds this.
+            Cans as syllabary is disputed: Bright and Bringhurst say
+            alphasyllabary.
   direction ltr | rtl | ttb | boustrophedon | varies
   start     first attestation, year (negative = BCE); for a modern invention,
             the year it was devised
@@ -63,7 +63,7 @@ G["Merc"] = ("Egyd", "attested", "alphabet", "rtl", -220, 400, "historical")
 G["Psin"] = ("Egyp", "attested", "abjad", "varies", -1900, -1400, "historical")
 
 # -------------------------------------------------- PROTO-SINAITIC / SEMITIC --
-G["Ugar"] = ("Psin", "stimulus", "abjad", "ltr", -1250, -1190, "historical")
+G["Ugar"] = ("Psin", "stimulus", "alphabet", "ltr", -1250, -1190, "historical")
 G["Phnx"] = ("Psin", "attested", "abjad", "rtl", -1000, 100, "historical")
 G["Samr"] = ("Phnx", "contested", "abjad", "rtl", 350, None, "living")
 G["Sarb"] = ("Psin", "contested", "abjad", "boustrophedon", -800, 600, "historical")
@@ -191,9 +191,9 @@ G["Takr"] = ("Shrd", "attested", "abugida", "ltr", 1500, 1950, "historical")
 G["Dogr"] = ("Takr", "attested", "abugida", "ltr", 1860, 1950, "historical")
 G["Guru"] = ("Shrd", "attested", "abugida", "ltr", 1570, None, "living")
 G["Khoj"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "living")
-G["Mult"] = ("Shrd", "attested", "abugida", "ltr", 1750, 1950, "historical")
+G["Mult"] = ("Shrd", "attested", "abjad", "ltr", 1750, 1950, "historical")
 G["Sind"] = ("Shrd", "attested", "abugida", "ltr", 1550, 1910, "historical")
-G["Mahj"] = ("Deva", "contested", "abugida", "ltr", 1600, 1950, "historical")
+G["Mahj"] = ("Deva", "contested", "alphabet", "ltr", 1600, 1950, "historical")
 G["Kthi"] = ("Sidd", "attested", "abugida", "ltr", 1550, 1950, "historical")
 G["Modi"] = ("Deva", "attested", "abugida", "ltr", 1600, 1950, "historical")
 G["Nand"] = ("Deva", "attested", "abugida", "ltr", 1100, 1800, "historical")
@@ -297,6 +297,17 @@ G["Sara"] = ("Latn", "invented", "alphabet", "ltr", 1919, None, "fictional")
 G["Teng"] = ("Sara", "attested", "alphabet", "ltr", 1930, None, "fictional")
 G["Cirt"] = ("Runr", "stimulus", "alphabet", "ltr", 1930, None, "fictional")
 G["Piqd"] = ("Latn", "invented", "alphabet", "ltr", 1979, None, "fictional")
+
+# Where the type column departs from Unicode 17.0 Table 6-1, and why.
+# code: (Table 6-1 type, reason)
+TYPE_EXCEPTIONS = {
+    "Ethi": ("syllabary", "ch.6 prose: 'traditionally analyzed as an abugida, because the base "
+                          "character for each consonantal series is understood as having an inherent vowel'"),
+    "Nshu": ("logographic", "ch.18: 'Nushu characters typically represent the phonetic values of "
+                            "syllables'; some signs are ideographs"),
+    "Lina": ("logographic", "undeciphered: the plate types it by what is known, not by its sign count"),
+    "Cpmn": ("syllabary", "undeciphered: the plate types it by what is known, not by its sign count"),
+}
 
 
 # ---------------------------------------------------------------- SOURCES ----

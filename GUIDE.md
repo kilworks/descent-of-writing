@@ -22,8 +22,8 @@ It covers all 218 scripts of the ISO 15924 registry that are not special or priv
 | logographic | 13 | signs stand for words or morphemes, usually with phonetic components alongside. Every independent invention of writing began here. |
 | syllabary | 18 | one sign per syllable, with no shared shape between syllables that share a consonant (Cherokee, kana, Linear B). |
 | abjad | 23 | letters for consonants only, vowels left to the reader or marked optionally (Phoenician, Hebrew, Arabic). The term is Daniels' (1990). |
-| abugida | 71 | a consonant letter carries an inherent vowel, and other vowels are marks attached to it (Brahmi and its descendants, Ge'ez). Also Daniels'. |
-| alphabet | 66 | consonants and vowels written as letters of equal standing (Greek, Latin, Cyrillic, and many twentieth-century inventions). |
+| abugida | 69 | a consonant letter carries an inherent vowel, and other vowels are marks attached to it (Brahmi and its descendants, Ge'ez). Also Daniels'. |
+| alphabet | 68 | consonants and vowels written as letters of equal standing (Greek, Latin, Cyrillic, and many twentieth-century inventions). |
 | featural | 3 | the shapes encode articulatory features, so related sounds look related (Hangul, Visible Speech, SignWriting). The term is Sampson's (1985). |
 | semasiographic | 2 | signs carry meaning without fixing the words that express it (Naxi Dongba, Blissymbols). |
 | undeciphered | 5 | the type cannot be stated because the script is not read. |
@@ -171,7 +171,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
     - [`Egyd`](#egyd) Egyptian demotic, logographic, 650 BCE
       - [`Merc`](#merc) Meroitic Cursive, alphabet, 220 BCE
   - [`Psin`](#psin) Proto-Sinaitic, abjad, 1900 BCE
-    - [`Ugar`](#ugar) Ugaritic, abjad, 1250 BCE *(stimulus)*
+    - [`Ugar`](#ugar) Ugaritic, alphabet, 1250 BCE *(stimulus)*
     - [`Phnx`](#phnx) Phoenician, abjad, 1000 BCE
       - [`Armi`](#armi) Imperial Aramaic, abjad, 900 BCE
         - [`Hebr`](#hebr) Hebrew, abjad, 300 BCE
@@ -184,7 +184,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
             - [`Deva`](#deva) Devanagari, abugida, 851 CE
               - [`Nand`](#nand) Nandinagari, abugida, 1100 CE
               - [`Gujr`](#gujr) Gujarati, abugida, 1592 CE
-              - [`Mahj`](#mahj) Mahajani, abugida, 1600 CE *(contested)*
+              - [`Mahj`](#mahj) Mahajani, alphabet, 1600 CE *(contested)*
               - [`Modi`](#modi) Modi, Moḍī, abugida, 1600 CE
                 - [`Gong`](#gong) Gunjala Gondi, abugida, 1750 CE *(contested)*
             - [`Newa`](#newa) Newa, Newar, Newari, Nepāla lipi, abugida, 908 CE
@@ -235,7 +235,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
               - [`Dogr`](#dogr) Dogra, abugida, 1860 CE
             - [`Sind`](#sind) Khudawadi, Sindhi, abugida, 1550 CE
             - [`Guru`](#guru) Gurmukhi, abugida, 1570 CE
-            - [`Mult`](#mult) Multani, abugida, 1750 CE
+            - [`Mult`](#mult) Multani, abjad, 1750 CE
           - [`Bhks`](#bhks) Bhaiksuki, abugida, 1000 CE
           - [`Mtei`](#mtei) Meitei Mayek, abugida, 1100 CE *(contested)*
           - [`Mymr`](#mymr) Myanmar, abugida, 1113 CE
@@ -1489,7 +1489,7 @@ Unicode: encoded since version 5.1, block from U+10920.
 
 ### Mahj
 
-**Mahajani** (महाजनी). Abugida, written left to right. First attested 1600 CE, last used 1950 CE; status historical.
+**Mahajani** (महाजनी). Alphabet, written left to right. First attested 1600 CE, last used 1950 CE; status historical.
 
 Parent: [`Deva`](#deva) Devanagari through Landa, link **contested**.
 Source: Pandey, Unicode N4126. Often called a derivative of Kaithi or Devanagari; structure resembles Landa.
@@ -1649,7 +1649,7 @@ Unicode: encoded since version 5.2, block from U+AAE0.
 
 ### Mult
 
-**Multani** (ਮੁਲਤਾਨੀ ਲਿਪੀ). Abugida, written left to right. First attested 1750 CE, last used 1950 CE; status historical.
+**Multani** (ਮੁਲਤਾਨੀ ਲਿਪੀ). Abjad, written left to right. First attested 1750 CE, last used 1950 CE; status historical.
 
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
 Source: Unicode ch.15. Related to Gurmukhi; used in the 19th and 20th c.; earlier date unsourced.
@@ -2501,7 +2501,7 @@ Unicode: encoded since version 16.0, block from U+11380.
 
 ### Ugar
 
-**Ugaritic**. Abjad, written left to right. First attested 1250 BCE, last used 1190 BCE; status historical.
+**Ugaritic**. Alphabet, written left to right. First attested 1250 BCE, last used 1190 BCE; status historical.
 
 Parent: [`Psin`](#psin) Proto-Sinaitic through Proto-Canaanite linear alphabet, link **stimulus**.
 Source: Vita, 'Ugaritic' (CSIC 2021); Cross, 'A Ugaritic Abecedary'. Modelled on a linear alphabet of 27 signs; only the wedge medium is Mesopotamian.

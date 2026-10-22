@@ -26,6 +26,8 @@ SOURCES = {
     # SIL Writing Systems Technology: scripts per language, curated with the
     # Ethnologue script editor, and an explicit flag for unwritten languages
     "langtags.json":            "https://ldml.api.sil.org/langtags.json",
+    # Table 6-1, Unicode's typology of scripts, which the type column follows
+    "unicode_ch06.html":        "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/",
 }
 
 

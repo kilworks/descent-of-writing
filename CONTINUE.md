@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 10 of
-10 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 17 of
+17 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -287,7 +287,17 @@ Publishing it on GitHub Pages is a repository setting, left to the owner.
   smallest size; the caption now says so with the computed share, but a
   distinct encoding would be more honest than a caption.
 
-Done on 2026-10-22: the 350 languages with no endangerment status in
+Done on 2026-10-22: the type column follows Unicode 17.0 Table 6-1 for
+the 169 scripts it lists. Twelve rows moved (Mongolian, Mandaic, Thaana,
+Tifinagh, both Meroitic, Old Persian, Ugaritic and Mahajani to alphabet;
+Multani to abjad; Canadian Syllabics and Pollard to syllabary). Four
+depart from the table with a reason in `TYPE_EXCEPTIONS`: Ethiopic stays
+an abugida and Nushu a syllabary on Unicode's own prose, Linear A and
+Cypro-Minoan stay undeciphered. Check 16 fails on a new disagreement or a
+stale exception, and was seen to fail both ways. The 49 scripts outside the
+table keep curated types with no single source.
+
+Also done on 2026-10-22: the 350 languages with no endangerment status in
 Glottolog draw as a dashed ring instead of the faintest fill, which read as
 "nearly extinct"; the plate has a `<title>`, a `<desc>` and a title on every
 script card, asserted by check 10.
