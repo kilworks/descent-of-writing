@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 18 of
-18 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 19 of
+19 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -289,9 +289,10 @@ Publishing it on GitHub Pages is a repository setting, left to the owner.
   96, 54 write no language on record, and for the rest neither Wikidata
   nor CLDR names the script in the language it writes. A native name for
   them would come from the encoding proposals, script by script.
-- Speaker counts reach 19.8% of languages. Unknown counts still draw at the
-  smallest size; the caption now says so with the computed share, but a
-  distinct encoding would be more honest than a caption.
+- Speaker counts reach 19.8% of languages. The other 6,888 are drawn as
+  squares of one size instead of the smallest circle, so a missing count no
+  longer reads as a small one (check 18). More counts would come from
+  Glottolog's own sources or the Ethnologue, which is not open.
 
 Done on 2026-10-22: the type column follows Unicode 17.0 Table 6-1 for
 the 169 scripts it lists. Twelve rows moved (Mongolian, Mandaic, Thaana,

@@ -436,17 +436,22 @@ def draw_field(gids, x0, w, colour, label, sub, top, field_h, label_size=26):
             continue
         col, al = mark_fill(v, colour)
         if v["aes"] == "extinct":
-            a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="none" stroke="%s" '
-              'stroke-width="1.4" opacity="0.6" id="l-%s"/>' % (px, py, r, col, gid))
+            style = 'fill="none" stroke="%s" stroke-width="1.4" opacity="0.6"' % col
         elif v["aes"] == "unknown":
             # no status in Glottolog: the faintest fill would read as nearly
             # extinct, so unknown gets its own mark rather than a rank
-            a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s" fill-opacity="0.12" stroke="%s" '
-              'stroke-width="1.2" stroke-dasharray="2 2" opacity="0.8" id="l-%s"/>'
-              % (px, py, r, col, col, gid))
+            style = ('fill="%s" fill-opacity="0.12" stroke="%s" stroke-width="1.2" '
+                     'stroke-dasharray="2 2" opacity="0.8"' % (col, col))
         else:
-            a('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s" opacity="%.2f" id="l-%s"/>'
-              % (px, py, r, col, max(al, 0.14), gid))
+            style = 'fill="%s" opacity="%.2f"' % (col, max(al, 0.14))
+        if v["speakers"]:
+            a('<circle cx="%.1f" cy="%.1f" r="%.1f" %s id="l-%s"/>' % (px, py, r, style, gid))
+        else:
+            # no count on record: a square of one size, so a missing count
+            # cannot read as a small one; same area as the smallest circle
+            sd = r * 1.77
+            a('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" %s id="l-%s"/>'
+              % (px - sd / 2, py - sd / 2, sd, sd, style, gid))
     if w >= label_size * 3.2:
         a('<text x="%.1f" y="%.1f" text-anchor="middle" font-size="%d" class="m" fill="%s">%s</text>'
           % (x0 + w / 2, top + field_h + label_size + 18, label_size, colour, esc(label)))
@@ -498,9 +503,9 @@ foot = row_b_top + row_b_h + 118
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'The two registers are the same width; their heights are in proportion to the languages they hold, '
   'and both are packed to the same density, so the areas compare directly. '
-  'Mark area is speaker count on a log scale; with no count on record (%d%% of languages) a mark takes the smallest size. '
-  'Fading runs from safe through threatened to moribund; a hollow ring is an extinct language, '
-  'a dashed ring one whose status Glottolog does not give.</text>'
+  'Circle area is speaker count on a log scale; a square is a language with no count on record (%d%% of them), all squares one size. '
+  'Fading runs from safe through threatened to moribund; a hollow outline is an extinct language, '
+  'a dashed outline one whose status Glottolog does not give.</text>'
   % (PAD, foot, INK_SOFT, round(100 * sum(1 for v in L.values() if not v["speakers"]) / len(L))))
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'The lower register is not proof of unwritten languages. Its left field is what SIL langtags, kept with the Ethnologue, '

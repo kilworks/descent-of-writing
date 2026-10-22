@@ -225,6 +225,16 @@ check("17. native names sourced, label-derived ones in their script",
       n_native == ST["scripts_with_native_name"] and not unsourced and not foreign,
       "%d native names; unsourced: %s; not in their script: %s" % (n_native, unsourced or "none", foreign or "none"))
 
+# 18. a language with no speaker count is a square, so its size says nothing;
+# a counted one is a circle
+squares = set(re.findall(r'<rect [^>]*id="l-([a-z0-9]{8})"', SVG))
+circles = set(re.findall(r'<circle [^>]*id="l-([a-z0-9]{8})"', SVG))
+uncounted = {g for g, v in L.items() if not v["speakers"]}
+wrong = sorted((squares - uncounted) | (circles & uncounted))
+check("18. uncounted languages are squares, counted ones circles",
+      squares and not wrong and not (squares & circles),
+      "%d squares, %d circles; drawn with the wrong shape: %s" % (len(squares), len(circles), wrong[:5] or "none"))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")
