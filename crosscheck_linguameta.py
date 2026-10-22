@@ -48,7 +48,10 @@ def main():
     os.makedirs(LM, exist_ok=True)
     bcp = {r["iso_639_3_code"]: r["bcp_47_code"]
            for r in csv.DictReader(fetch("linguameta.tsv").splitlines(), delimiter="\t") if r["iso_639_3_code"]}
-    L = json.load(open(os.path.join(OUT, "dataset.json"), encoding="utf8"))["languages"]
+    D = json.load(open(os.path.join(OUT, "dataset.json"), encoding="utf8"))
+    L, S = D["languages"], D["scripts"]
+    # a style variant (Syre, Estrangela) counts as its script (Syrc) on both sides
+    base = lambda cs: {S[c]["parent"] if c in S and S[c]["edge"] == "variant" else c for c in cs}
     alone = [v for v in L.values() if v["script_sources"] == ["langtags"]]
     with ThreadPoolExecutor(16) as ex:
         docs = list(ex.map(lambda v: fetch("data/%s.json" % bcp[v["iso"]]) if v["iso"] in bcp else None, alone))
@@ -67,16 +70,16 @@ def main():
 
     tally, disagree, either = collections.Counter(), [], 0
     for v, doc in zip(alone, docs):
-        own = own_scripts(doc) if doc else set()
+        own = base(own_scripts(doc)) if doc else set()
         w = wk.get(v["iso"]) or wk.get(part1.get(v["iso"], "")) or set()
         if not own:
             tally["no LinguaMeta curation of its own"] += 1
-        elif own & set(v["scripts"]):
+        elif own & base(v["scripts"]):
             tally["agrees on at least one script"] += 1
         else:
             tally["disagrees"] += 1
             disagree.append((v["name"], v["iso"], sorted(v["scripts"]), sorted(own)))
-        either += bool((own | w) & set(v["scripts"]))
+        either += bool((own | base(w)) & base(v["scripts"]))
     n = len(alone)
     lines = ["LinguaMeta (google-research/url-nlp, linguameta), CC BY-SA 4.0, quoted for review only.",
              "Only scripts LinguaMeta sources to its own curation (GOOGLE_RESEARCH) are used.",

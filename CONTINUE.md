@@ -232,9 +232,9 @@ Still open:
 - 3,041 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. Done in part on 2026-10-22: crosscheck_linguameta.py tests them
   against LinguaMeta's own curation (GOOGLE_RESEARCH-sourced scripts only),
-  which agrees on 1,485 of the 1,494 it speaks for (99.4%); with Wiktionary,
+  which agrees on 1,486 of the 1,494 it speaks for (99.5%); with Wiktionary,
   2,647 of the 3,041 (87.0%) are confirmed by a source kept apart from SIL.
-  The 394 left, and the 9 LinguaMeta disagreements in
+  The 394 left, and the 8 LinguaMeta disagreements in
   out/crosscheck_linguameta.txt, are the next to check; ScriptSource
   (scriptsource.org) is the candidate.
   One of them, Eastern Qiandong Miao in Bopomofo, comes from langtags'
