@@ -206,6 +206,25 @@ check("16. script types follow Unicode Table 6-1, exceptions argued",
       "%d scripts in the table, %d argued exceptions; disagreeing: %s; stale exceptions: %s"
       % (len(table), len(TYPE_EXCEPTIONS), off or "none", stale or "none"))
 
+# 17. every native name says where it comes from, and one taken from a label
+# (Wikidata or CLDR) is written in the script it names
+from build_data import PARTS
+cp_sc = {}
+for l in open(os.path.join(DATA, "Scripts.txt"), encoding="utf8"):
+    l = l.split("#")[0].strip()
+    if l:
+        rng, sc = [x.strip() for x in l.split(";")]
+        lo, _, hi = rng.partition("..")
+        for cp in range(int(lo, 16), int(hi or lo, 16) + 1):
+            cp_sc[cp] = sc
+unsourced = sorted(c for c in S if S[c]["native"] and not S[c].get("native_source"))
+foreign = sorted(c for c in S if re.match(r"(Wikidata label|CLDR)", S[c].get("native_source") or "")
+                 and not any(cp_sc.get(ord(ch)) in PARTS.get(c, {S[c]["pva"]}) for ch in S[c]["native"]))
+n_native = sum(1 for c in S if S[c]["native"])
+check("17. native names sourced, label-derived ones in their script",
+      n_native == ST["scripts_with_native_name"] and not unsourced and not foreign,
+      "%d native names; unsourced: %s; not in their script: %s" % (n_native, unsourced or "none", foreign or "none"))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

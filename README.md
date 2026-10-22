@@ -107,7 +107,7 @@ Python 3.10+, roughly 90 MB of downloads, about 15 minutes on a cold start.
 
 ```bash
 pip install fonttools uharfbuzz brotli
-python fetch.py           # ISO 15924, UCD, Glottolog CLDF, CLDR, ISO 639-3
+python fetch.py           # ISO 15924, UCD, Unicode ch.6, Glottolog CLDF, CLDR, ISO 639-3
 python fetch_wikidata.py  # writing systems, speaker counts, native names
 python fonts.py           # ~200 Noto faces, shape and extract outlines
 python build_data.py      # join everything into out/dataset.json
@@ -156,6 +156,8 @@ The first two would have produced a wrong plate that looked right. The third sto
 | [Glottolog 5 CLDF](https://github.com/glottolog/glottolog-cldf) | languages, families, isolates, endangerment | CC-BY-4.0 |
 | [Wikidata](https://query.wikidata.org/) | writing systems (P282), speakers (P1098), native names (P1705) | CC0 |
 | [Unicode CLDR](https://github.com/unicode-org/cldr) | a second opinion on language to script | Unicode terms |
+| [CLDR locale names](https://github.com/unicode-org/cldr-json) | a script's name in the language it writes, where Wikidata has none | Unicode terms |
+| [Unicode 17.0 core specification](https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/) | script types (Table 6-1) | Unicode terms |
 | [SIL ISO 639-3 tables](https://iso639-3.sil.org/) | the 639-1 to 639-3 bridge | SIL terms |
 | [SIL langtags.json](https://github.com/silnrsi/langtags) | a third source on language to script, the unwritten flag, the default script of a language | MIT |
 | [Noto fonts](https://github.com/notofonts/notofonts.github.io) | glyph specimens | SIL OFL 1.1 |

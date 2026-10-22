@@ -484,7 +484,7 @@ Unicode: encoded since version 5.2, block from U+10840.
 
 ### Armn
 
-**Armenian**. Alphabet, written left to right. First attested 405 CE, in use today; status living.
+**Armenian** (հայկական). Alphabet, written left to right. First attested 405 CE, in use today; status living.
 
 Parent: [`Grek`](#grek) Greek, link **contested**.
 Source: Pifer, Encyclopaedia Iranica 'Mesrop Mastoc'; D'Aiuto 2020. Arranged in Greek order; derivation of the letter shapes from Greek, Iranian or Aramaic still argued.
@@ -646,7 +646,7 @@ Unicode: encoded since version 6.1, block from U+11100.
 
 ### Cans
 
-**Unified Canadian Aboriginal Syllabics**. Syllabary, written left to right. First attested 1840 CE, in use today; status living.
+**Unified Canadian Aboriginal Syllabics** (ᓀᐦᐃᔭᐘᓯᓇᐦᐃᑳᑌᐤ). Syllabary, written left to right. First attested 1840 CE, in use today; status living.
 
 Parent: [`Latn`](#latn) Latin through British shorthand, link **stimulus**.
 Source: Nichols 1996, in Daniels & Bright. Most characters drawn from British shorthand; Evans knew Devanagari, but no source makes it his model.
@@ -904,7 +904,7 @@ Unicode: encoded since version 1.1, block from U+10A0.
 
 ### Geor
 
-**Georgian**. Alphabet, written left to right. First attested 982 CE, in use today; status living.
+**Georgian** (ქართული). Alphabet, written left to right. First attested 982 CE, in use today; status living.
 
 Parent: [`Geok`](#geok) Khutsuri, link **attested**.
 Source: Aleksidze 1983; Typotheque 2023. First Mkhedruli inscription at Ateni Sioni, 982-986.
@@ -1026,7 +1026,7 @@ Unicode: encoded since version 1.1, block from U+1100.
 
 ### Hani
 
-**Han**. Logographic, written in more than one direction. First attested 1250 BCE, in use today; status living.
+**Han** (汉字). Logographic, written in more than one direction. First attested 1250 BCE, in use today; status living.
 
 A root: no known parent among the registry's codes.
 Children: [`Seal`](#seal), [`Hant`](#hant), [`Hira`](#hira), [`Hrkt`](#hrkt), [`Jpan`](#jpan), [`Kana`](#kana), [`Kitl`](#kitl), [`Tang`](#tang), [`Shui`](#shui), [`Kore`](#kore), [`Yiii`](#yiii), [`Nshu`](#nshu), [`Hntl`](#hntl), [`Bopo`](#bopo), [`Hanb`](#hanb), [`Blis`](#blis), [`Hans`](#hans).
@@ -1193,7 +1193,7 @@ Unicode: encoded since version 5.2, block from U+A980.
 
 ### Jpan
 
-**Japanese**. Composite, written in more than one direction. First attested 800 CE, in use today; status living.
+**Japanese** (日本語の文字). Composite, written in more than one direction. First attested 800 CE, in use today; status living.
 
 Parent: [`Hani`](#hani) Han, link **composite**.
 

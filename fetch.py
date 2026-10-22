@@ -46,9 +46,45 @@ def get(url, dest, tries=3):
             time.sleep(2 + 3 * i)
 
 
+def cldr_script_names(dest):
+    """CLDR's name for each script in each base locale, kept per locale as
+    published (cldr-localenames-full), with the CLDR version."""
+    reg = json.loads(urllib.request.urlopen(urllib.request.Request(
+        "https://registry.npmjs.org/cldr-localenames-full/latest", headers=UA), timeout=90, context=CTX).read())
+    v, cdn = reg["version"], "https://cdn.jsdelivr.net/npm/%s@%s/%s"
+
+    def load(path):
+        try:
+            req = urllib.request.Request(cdn % (path[0], v, path[1]), headers=UA)
+            with urllib.request.urlopen(req, timeout=90, context=CTX) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code == 404:       # a locale with no scripts.json names no script
+                return None
+            raise
+
+    locs = [l for l in load(("cldr-core", "availableLocales.json"))["availableLocales"]["full"] if "-" not in l]
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(16) as ex:
+        got = ex.map(lambda l: load(("cldr-localenames-full", "main/%s/scripts.json" % l)), locs)
+        out = {"version": v, "locales": {l: d["main"][l]["localeDisplayNames"]["scripts"]
+                                         for l, d in zip(locs, got) if d}}
+    json.dump(out, open(dest, "w", encoding="utf8"), ensure_ascii=False)
+    return "%d locales, CLDR %s" % (len(out["locales"]), v)
+
+
 if __name__ == "__main__":
     os.makedirs(DATA, exist_ok=True)    # data/ is gitignored, so a fresh clone has none
     failed = []
+    dest = os.path.join(DATA, "cldr_script_names.json")
+    if not os.path.exists(dest):
+        try:
+            r = cldr_script_names(dest)
+        except Exception as e:
+            r = "FAIL: %s" % e
+        print("%-30s %s" % ("cldr_script_names.json", r))
+        if r.startswith("FAIL"):
+            failed.append("cldr_script_names.json")
     for name, url in SOURCES.items():
         dest = os.path.join(DATA, name)
         if os.path.exists(dest) and os.path.getsize(dest) > 1000:

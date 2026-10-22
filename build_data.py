@@ -20,6 +20,11 @@ PSEUDO_FAMILIES = {"Bookkeeping", "Unclassifiable", "Unattested", "Pidgin", "Mix
                    "Sign Language", "Speech Register", "Artificial Language"}
 
 SPECIAL = {"Zinh", "Zyyy", "Zzzz", "Zmth", "Zsym", "Zxxx"}
+# the Unicode scripts ISO 15924 defines its composites and variants by, so a
+# name can be tested as written in them
+PARTS = {"Jpan": {"Han", "Hiragana", "Katakana"}, "Kore": {"Hangul", "Han"},
+         "Hanb": {"Han", "Bopomofo"}, "Hrkt": {"Hiragana", "Katakana"},
+         "Hans": {"Han"}, "Hant": {"Han"}}
 
 
 def iso15924():
@@ -298,6 +303,30 @@ if __name__ == "__main__":
             if tag != "en" and lab and any(cp_script.get(ord(ch)) == s["pva"] for ch in lab):
                 s["native"] = lab
                 s["native_source"] = "Wikidata label in %s" % v["name"]
+                break
+
+    # Then CLDR's display name for the script in that language's locale. A
+    # macrolanguage member is reached through langtags, which files Mandarin
+    # (cmn) under zh.
+    cldr = json.load(open(os.path.join(DATA, "cldr_script_names.json"), encoding="utf8"))
+    locale = {}
+    for t in json.load(open(os.path.join(DATA, "langtags.json"), encoding="utf8")):
+        if isinstance(t, dict) and not t.get("tag", "_").startswith("_"):
+            base = t["tag"].split("-")[0]
+            for alias in [t.get("iso639_3") or ""] + t.get("tags", []):
+                locale.setdefault(alias.split("-")[0], base)
+    for c, s in scripts.items():
+        if s["native"] or c == "Latn":
+            continue
+        ok = PARTS.get(c, {s["pva"]})
+        for v in sorted(hung.get(c, []), key=lambda v: -(v["speakers"] or 0)):
+            for tag in dict.fromkeys([part1.get(v["iso"], v["iso"]), locale.get(v["iso"])]):
+                lab = cldr["locales"].get(tag, {}).get(c)
+                if tag and tag != "en" and lab and any(cp_script.get(ord(ch)) in ok for ch in lab):
+                    s["native"] = lab
+                    s["native_source"] = "CLDR %s name in %s" % (cldr["version"], v["name"])
+                    break
+            if s["native"]:
                 break
 
     stats = {
