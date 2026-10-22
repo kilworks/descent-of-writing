@@ -23,8 +23,8 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | ISO 15924 rows loaded | 226 |
 | Special and private-use codes removed | 8 (`Zinh` `Zyyy` `Zzzz` `Zmth` `Zsym` `Zxxx`, `Qaaa`..`Qabx`) |
 | **Scripts drawn** | **218**, each exactly once |
-| With a real glyph specimen | 179 |
-| Without | 39, of which 32 are not encoded in Unicode at all |
+| With a real glyph specimen | 181 |
+| Without | 37, of which 32 are not encoded in Unicode at all; the other 5 wait for a Noto face |
 | Roots, no known parent in the registry | 9, of which 3 are independent inventions beyond dispute |
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
 | Descent claims with a named source | 198 of 198, attested ones included (one, `Saur`, says outright that it is unsourced) |

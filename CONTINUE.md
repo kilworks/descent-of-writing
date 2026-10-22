@@ -14,7 +14,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 10 of
 | | |
 |---|---|
 | Scripts drawn | 218 of 218 ISO 15924 non-special codes |
-| With a real shaped specimen | 179 |
+| With a real shaped specimen | 181 |
 | Roots | 9, of which 3 independent inventions beyond dispute |
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
 | Descent claims with a named source | 198 of 198, attested included; `Saur` marked unsourced |
@@ -226,12 +226,16 @@ locally, read the drift, update the README figures, and commit the new
 `out/`. The workflow has not yet run on GitHub: the first scheduled run, or a
 manual dispatch, is its real test.
 
-### 5. Seven specimens are recoverable
+### 5. Five specimens wait for Noto (two recovered)
 
-`Gara` `Gukh` `Krai` `Onao` `Sunu` `Todr` `Tutg` are encoded in Unicode 16 and
-have no Noto face yet. Re-running `fonts.py` will pick them up as Noto ships
-them, taking the specimen count from 179 to 186. The other 32 gaps are scripts
-Unicode has never encoded, so no font for them can exist and they stay gaps.
+This item used to say that re-running `fonts.py` would pick up the seven
+Unicode 16 scripts as Noto shipped them. It would not have: `fonts_map.py`
+listed them as having no font, so `fonts.py` never looked. They now resolve
+like any other script, which recovered Sunuwar (Noto Sans Sunuwar) and
+Todhri (Noto Serif Todhri) on 2026-10-22: 181 specimens. `Gara` `Gukh`
+`Krai` `Onao` `Tutg` still have no Noto face, and the monthly rebuild will
+pick each up when it ships. The other 32 gaps are scripts Unicode has never
+encoded, so no font for them can exist and they stay gaps.
 
 ### 6. The two recursions are not equal
 

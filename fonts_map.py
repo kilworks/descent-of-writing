@@ -93,14 +93,10 @@ NO_FONT = {
     "Tols": "not encoded in Unicode",
     "Visp": "not encoded in Unicode",
     "Wole": "not encoded in Unicode",
-    # encoded, but Noto has not shipped a face yet (all Unicode 16, 2024)
-    "Gara": "encoded in Unicode 16, no Noto face released",
-    "Gukh": "encoded in Unicode 16, no Noto face released",
-    "Krai": "encoded in Unicode 16, no Noto face released",
-    "Onao": "encoded in Unicode 16, no Noto face released",
-    "Tutg": "encoded in Unicode 16, no Noto face released",
-    "Sunu": "encoded in Unicode 16, no Noto face released",
-    "Todr": "encoded in Unicode 16, no Noto face released",
+    # Scripts encoded but not yet given a Noto face are NOT listed here: they
+    # resolve like any other, so a face is picked up the month Noto ships it.
+    # Listing them once (Unicode 16 additions) hid Sunuwar and Todhri for
+    # months after Noto released them.
 }
 
 
