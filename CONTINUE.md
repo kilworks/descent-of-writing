@@ -16,8 +16,8 @@ Everything builds from a cold clone. `python verify.py` currently passes 10 of
 | Scripts drawn | 218 of 218 ISO 15924 non-special codes |
 | With a real shaped specimen | 179 |
 | Roots | 9, of which 3 independent inventions beyond dispute |
-| Descent edges | 108 attested, 38 stimulus, 28 contested, 18 invented, 11 variant, 6 composite |
-| Edges with a named source | 90 of the 90 that need one; `Saur` marked unsourced |
+| Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
+| Descent claims with a named source | 198 of 198, attested included; `Saur` marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
 | Languages with a recorded script | 1,517 (17.7%) |
 | Languages with a speaker count | 1,699 (19.8%) |
@@ -87,8 +87,8 @@ Settled, do not reopen without a reason:
 
 Worked through on 2026-10-22 against the Unicode encoding proposals, the core
 specification and peer-reviewed work; every source is named row by row in the
-`SOURCES` table of `genealogy.py`, and check 9 fails the build if an edge that
-needs one has none.
+`SOURCES` table of `genealogy.py`, and check 9 fails the build if a descent
+edge has none.
 
 What moved, and why:
 
@@ -122,6 +122,34 @@ What moved, and why:
   Beria Erfe 1980 to 1950 and its direction from right-to-left to
   left-to-right, Leke 1830 to 1844, Baybayin 1300 to 1550, Yi 1300 to 1485.
 
+A second pass, the same day, audited the 99 edges left `attested`, so every
+descent claim now has a source and check 9 covers them all. It moved:
+
+- **Pallava.** Grantha had been standing in for the Pallava script, but
+  Grantha was designed around 600 (Francis 2024) and Pallava is older. Khmer,
+  Cham, Kawi, Burmese and Tamil now hang from Brahmi through Pallava as
+  sisters of Grantha, not its daughters. This also cleared Cham (400) being
+  older than its parent.
+- **Kadamba.** Kannada and Telugu are named as sisters through Kadamba.
+- **Lao** from Thai through Fakkham (Lorrillard), not from Khmer. **Ranjana**
+  from the Newar script (Pandey), not from Siddham. **Mandaic** from
+  Elymaic, contested (Iranica).
+- **Newly contested:** Samaritan (a 4th-c. CE creation, Barag), Old South
+  Arabian (Proto-Canaanite or Phoenician-type, Sass), Marchen, Limbu, Naxi
+  Geba, Old Sundanese, Batak, Buginese.
+- **First attestations that were origin guesses:** Samaritan -600 to 350,
+  Arabic 400 to 512 (Zabad; Namara and Jabal Ramm are Nabataean script), Nushu
+  1400 to 1850, Kharosthi -400 to -250, Old Sogdian -100 to 313, Mongolian
+  1204 to 1224, Ge'ez -100 to 200, hieratic -3200 to -2700, cuneiform proper
+  -2900 to -2600, Meroitic -300 to -150 and -220, Greek -800 to -750, Latin
+  -700 to -600, Cyrillic 900 to 921, Mkhedruli 1000 to 982, Devanagari 700 to
+  851, Siddham 550 to 588, Modi 1200 to 1600, Gurmukhi 1539 to 1570 (1539 was
+  a guruship date), Newar 1100 to 908, Lao 1350 to 1494, Thai 1283 to 1292
+  (the Ram Khamhaeng inscription, authenticity disputed), Burmese 1000 to
+  1113, Tai Tham 1300 to 1376, Tai Le 1300 to 1407, Rejang 1700 to 1750, Batak
+  1300 to 1764, Balinese 1000 to 914, Avestan now 500 to the present (still
+  liturgical; first manuscript 1288).
+
 Still soft, and named so it can be argued with:
 
 - `Saur` Saurashtra has no source for any parent; its row says so.
@@ -129,11 +157,11 @@ Still soft, and named so it can be argued with:
   the literacy their makers came from. For Toto, Mro and Chisoi a regional script
   (Bengali, Burmese) is at least as likely. The edge kind already says the
   position is not a descent; a source per script would make it a fact.
-- Three children are dated before their parent: Cham (400) before Grantha
-  (500), Syloti Nagri (1500) before Kaithi (1550), Makasar (1600) before
-  Rejang (1700). Start is first attestation, and a
-  parent's earliest documents can be lost, so this is not an error by
-  itself; Grantha stands in for Pallava script, which is older than 500.
+- Three children are dated before their parent: Avestan (500, a creation
+  estimate) before Book Pahlavi (619, first dated papyri), Syloti Nagri (1500)
+  before Kaithi (1550), Makasar (1600) before Rejang (1750). Start is first
+  attestation, and a parent's earliest documents can be lost, so this is not
+  an error by itself.
 - Vai: Latin, Arabic and Cherokee stimuli are all proposed and none
   established. It stays under Latin, flagged in its source note.
 - Canadian Aboriginal syllabics: the much repeated Devanagari model has no
@@ -193,7 +221,7 @@ rather than a change to this one.
 
 ### 7. The SVG is not usable in a browser
 
-23,640 pixels wide. Browsers will open it, but nobody can navigate it, and the
+26,248 pixels wide. Browsers will open it, but nobody can navigate it, and the
 6,000-wide PNG makes every card illegible. A deep-zoom viewer with tiles, or a
 simple pan-and-zoom page with the SVG inline, would make the artefact actually
 readable by people who are not going to download 1.7 MB and open Inkscape.

@@ -3,7 +3,7 @@
 
 Wikidata P144 covers barely half the registry and disagrees with itself on the
 Semitic chain, so descent is curated here against palaeographic scholarship and
-the Unicode encoding proposals. Every edge that is not plain attested descent
+the Unicode encoding proposals. Every descent edge, attested ones included,
 carries its authority in SOURCES below, and verify.py fails if one is missing.
 
 Row = code: (parent, edge, type, direction, start, end, status)
@@ -47,55 +47,55 @@ G["Hluw"] = (None, None, "logographic", "boustrophedon", -1400, -700, "historica
 G["Nkdb"] = (None, None, "semasiographic", "ltr", 1200, None, "living")
 
 # ------------------------------------------------------------- MESOPOTAMIA ---
-G["Xsux"] = ("Pcun", "attested", "logographic", "ltr", -2900, 75, "historical")
+G["Xsux"] = ("Pcun", "attested", "logographic", "ltr", -2600, 75, "historical")
 G["Pelm"] = ("Pcun", "stimulus", "undeciphered", "rtl", -3050, -2900, "undeciphered")
 G["Xpeo"] = ("Xsux", "stimulus", "syllabary", "ltr", -520, -330, "historical")
 
 # ------------------------------------------------------------------ EGYPT ----
-G["Egyh"] = ("Egyp", "attested", "logographic", "rtl", -3200, 300, "historical")
+G["Egyh"] = ("Egyp", "attested", "logographic", "rtl", -2700, 300, "historical")
 G["Egyd"] = ("Egyh", "attested", "logographic", "rtl", -650, 500, "historical")
-G["Mero"] = ("Egyp", "attested", "abugida", "rtl", -300, 400, "historical")
-G["Merc"] = ("Egyd", "attested", "abugida", "rtl", -300, 400, "historical")
+G["Mero"] = ("Egyp", "attested", "abugida", "rtl", -150, 400, "historical")
+G["Merc"] = ("Egyd", "attested", "abugida", "rtl", -220, 400, "historical")
 G["Psin"] = ("Egyp", "attested", "abjad", "varies", -1900, -1400, "historical")
 
 # -------------------------------------------------- PROTO-SINAITIC / SEMITIC --
 G["Ugar"] = ("Psin", "stimulus", "abjad", "ltr", -1250, -1190, "historical")
-G["Phnx"] = ("Psin", "attested", "abjad", "rtl", -1050, 100, "historical")
-G["Samr"] = ("Phnx", "attested", "abjad", "rtl", -600, None, "living")
-G["Sarb"] = ("Psin", "attested", "abjad", "boustrophedon", -900, 600, "historical")
+G["Phnx"] = ("Psin", "attested", "abjad", "rtl", -1000, 100, "historical")
+G["Samr"] = ("Phnx", "contested", "abjad", "rtl", 350, None, "living")
+G["Sarb"] = ("Psin", "contested", "abjad", "boustrophedon", -800, 600, "historical")
 G["Narb"] = ("Psin", "attested", "abjad", "varies", -600, 400, "historical")
-G["Ethi"] = ("Sarb", "attested", "abugida", "ltr", -100, None, "living")
+G["Ethi"] = ("Sarb", "attested", "abugida", "ltr", 200, None, "living")
 G["Tfng"] = ("Phnx", "contested", "abjad", "varies", -138, None, "living")
 
 # ----------------------------------------------------------------- ARAMAIC ---
 G["Armi"] = ("Phnx", "attested", "abjad", "rtl", -900, -100, "historical")
 G["Hebr"] = ("Armi", "attested", "abjad", "rtl", -300, None, "living")
-G["Nbat"] = ("Armi", "attested", "abjad", "rtl", -200, 400, "historical")
-G["Palm"] = ("Armi", "attested", "abjad", "rtl", -100, 300, "historical")
-G["Hatr"] = ("Armi", "attested", "abjad", "rtl", -100, 300, "historical")
-G["Syrc"] = ("Armi", "attested", "abjad", "rtl", 100, None, "living")
+G["Nbat"] = ("Armi", "attested", "abjad", "rtl", -95, 400, "historical")
+G["Palm"] = ("Armi", "attested", "abjad", "rtl", -44, 300, "historical")
+G["Hatr"] = ("Armi", "attested", "abjad", "rtl", -98, 300, "historical")
+G["Syrc"] = ("Armi", "attested", "abjad", "rtl", 6, None, "living")
 G["Syre"] = ("Syrc", "variant", "variant", "rtl", 100, None, "living")
 G["Syrj"] = ("Syrc", "variant", "variant", "rtl", 400, None, "living")
 G["Syrn"] = ("Syrc", "variant", "variant", "rtl", 400, None, "living")
-G["Mand"] = ("Armi", "attested", "abjad", "rtl", 200, None, "living")
+G["Mand"] = ("Elym", "contested", "abjad", "rtl", 350, None, "living")
 G["Mani"] = ("Syrc", "contested", "abjad", "rtl", 250, 1000, "historical")
-G["Elym"] = ("Armi", "attested", "abjad", "rtl", -100, 300, "historical")
+G["Elym"] = ("Armi", "attested", "abjad", "rtl", -150, 300, "historical")
 G["Chrs"] = ("Armi", "attested", "abjad", "rtl", -100, 800, "historical")
-G["Prti"] = ("Armi", "attested", "abjad", "rtl", -250, 250, "historical")
-G["Phli"] = ("Armi", "attested", "abjad", "rtl", -100, 900, "historical")
+G["Prti"] = ("Armi", "attested", "abjad", "rtl", -89, 250, "historical")
+G["Phli"] = ("Armi", "attested", "abjad", "rtl", 224, 900, "historical")
 G["Phlp"] = ("Phli", "attested", "abjad", "rtl", 600, 800, "historical")
-G["Phlv"] = ("Phli", "attested", "abjad", "rtl", 400, 1100, "historical")
-G["Avst"] = ("Phlv", "attested", "alphabet", "rtl", 400, 1000, "historical")
-G["Sogo"] = ("Armi", "attested", "abjad", "rtl", -100, 400, "historical")
-G["Sogd"] = ("Sogo", "attested", "abjad", "varies", 400, 1000, "historical")
+G["Phlv"] = ("Phli", "attested", "abjad", "rtl", 619, 1100, "historical")
+G["Avst"] = ("Phlv", "attested", "alphabet", "rtl", 500, None, "living")
+G["Sogo"] = ("Armi", "attested", "abjad", "rtl", 313, 400, "historical")
+G["Sogd"] = ("Sogo", "attested", "abjad", "varies", 600, 1400, "historical")
 G["Ougr"] = ("Sogd", "attested", "abjad", "ttb", 800, 1800, "historical")
-G["Mong"] = ("Ougr", "attested", "abjad", "ttb", 1204, None, "living")
+G["Mong"] = ("Ougr", "attested", "abjad", "ttb", 1224, None, "living")
 G["Orkh"] = ("Sogd", "contested", "alphabet", "rtl", 700, 1000, "historical")
 G["Hung"] = ("Orkh", "contested", "alphabet", "rtl", 900, None, "revived")
 G["Yezi"] = ("Syrc", "contested", "alphabet", "rtl", 1200, None, "living")
 
 # ------------------------------------------------------------------ ARABIC ---
-G["Arab"] = ("Nbat", "attested", "abjad", "rtl", 400, None, "living")
+G["Arab"] = ("Nbat", "attested", "abjad", "rtl", 512, None, "living")
 G["Aran"] = ("Arab", "variant", "variant", "rtl", 1400, None, "living")
 G["Thaa"] = ("Arab", "stimulus", "abugida", "rtl", 1705, None, "living")
 G["Rohg"] = ("Arab", "stimulus", "alphabet", "rtl", 1980, None, "living")
@@ -107,29 +107,29 @@ G["Bamu"] = ("Arab", "contested", "syllabary", "ltr", 1896, None, "living")
 G["Berf"] = ("Arab", "invented", "alphabet", "ltr", 1950, None, "living")
 
 # ------------------------------------------------------------------- GREEK ---
-G["Grek"] = ("Phnx", "attested", "alphabet", "ltr", -800, None, "living")
+G["Grek"] = ("Phnx", "attested", "alphabet", "ltr", -750, None, "living")
 G["Cari"] = ("Grek", "contested", "alphabet", "varies", -700, -300, "historical")
 G["Lyci"] = ("Grek", "attested", "alphabet", "ltr", -500, -300, "historical")
 G["Lydi"] = ("Grek", "attested", "alphabet", "rtl", -700, -300, "historical")
 G["Sidt"] = ("Phnx", "contested", "alphabet", "rtl", -500, -300, "historical")
-G["Copt"] = ("Grek", "attested", "alphabet", "ltr", 200, None, "living")
+G["Copt"] = ("Grek", "attested", "alphabet", "ltr", 100, None, "living")
 G["Goth"] = ("Grek", "attested", "alphabet", "ltr", 350, 900, "historical")
 G["Armn"] = ("Grek", "contested", "alphabet", "ltr", 405, None, "living")
 G["Aghb"] = ("Armn", "contested", "alphabet", "ltr", 420, 1000, "historical")
 G["Geok"] = ("Grek", "contested", "alphabet", "ltr", 430, 1100, "historical")
-G["Geor"] = ("Geok", "attested", "alphabet", "ltr", 1000, None, "living")
+G["Geor"] = ("Geok", "attested", "alphabet", "ltr", 982, None, "living")
 G["Glag"] = ("Grek", "contested", "alphabet", "ltr", 863, 1900, "historical")
-G["Cyrl"] = ("Grek", "attested", "alphabet", "ltr", 900, None, "living")
+G["Cyrl"] = ("Grek", "attested", "alphabet", "ltr", 921, None, "living")
 G["Cyrs"] = ("Cyrl", "variant", "variant", "ltr", 900, None, "living")
 G["Perm"] = ("Cyrl", "stimulus", "alphabet", "ltr", 1372, 1700, "historical")
 G["Ital"] = ("Grek", "attested", "alphabet", "varies", -700, -100, "historical")
-G["Runr"] = ("Ital", "attested", "alphabet", "boustrophedon", 150, 1500, "historical")
+G["Runr"] = ("Ital", "attested", "alphabet", "varies", 150, 1500, "historical")
 G["Elba"] = ("Grek", "stimulus", "alphabet", "ltr", 1761, 1800, "historical")
 G["Vith"] = ("Grek", "contested", "alphabet", "ltr", 1844, 1900, "historical")
 G["Todr"] = ("Grek", "stimulus", "alphabet", "ltr", 1750, 1900, "historical")
 
 # ------------------------------------------------------------------- LATIN ---
-G["Latn"] = ("Ital", "attested", "alphabet", "ltr", -700, None, "living")
+G["Latn"] = ("Ital", "attested", "alphabet", "ltr", -600, None, "living")
 G["Latf"] = ("Latn", "variant", "variant", "ltr", 1150, None, "living")
 G["Latg"] = ("Latn", "variant", "variant", "ltr", 700, None, "living")
 G["Ogam"] = ("Latn", "stimulus", "alphabet", "varies", 350, 600, "historical")
@@ -179,29 +179,29 @@ G["Hmnp"] = ("Hebr", "stimulus", "alphabet", "ltr", 1980, None, "living")
 
 # ------------------------------------------------------- BRAHMIC: NORTHERN ---
 G["Brah"] = ("Armi", "contested", "abugida", "ltr", -300, 500, "historical")
-G["Khar"] = ("Armi", "attested", "abugida", "rtl", -400, 300, "historical")
-G["Sidd"] = ("Brah", "attested", "abugida", "ltr", 550, 1200, "historical")
-G["Deva"] = ("Sidd", "attested", "abugida", "ltr", 700, None, "living")
+G["Khar"] = ("Armi", "attested", "abugida", "rtl", -250, 300, "historical")
+G["Sidd"] = ("Brah", "attested", "abugida", "ltr", 588, 1200, "historical")
+G["Deva"] = ("Sidd", "attested", "abugida", "ltr", 851, None, "living")
 G["Shrd"] = ("Brah", "attested", "abugida", "ltr", 800, 1900, "historical")
 G["Takr"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "historical")
 G["Dogr"] = ("Takr", "attested", "abugida", "ltr", 1860, None, "historical")
-G["Guru"] = ("Shrd", "attested", "abugida", "ltr", 1539, None, "living")
+G["Guru"] = ("Shrd", "attested", "abugida", "ltr", 1570, None, "living")
 G["Khoj"] = ("Shrd", "attested", "abugida", "ltr", 1500, None, "historical")
 G["Mult"] = ("Shrd", "attested", "abugida", "ltr", 1750, 1950, "historical")
 G["Sind"] = ("Shrd", "attested", "abugida", "ltr", 1550, None, "historical")
 G["Mahj"] = ("Deva", "contested", "abugida", "ltr", 1600, 1950, "historical")
 G["Kthi"] = ("Sidd", "attested", "abugida", "ltr", 1550, 1950, "historical")
-G["Modi"] = ("Deva", "attested", "abugida", "ltr", 1200, None, "historical")
+G["Modi"] = ("Deva", "attested", "abugida", "ltr", 1600, None, "historical")
 G["Nand"] = ("Deva", "attested", "abugida", "ltr", 1100, 1800, "historical")
 G["Gujr"] = ("Deva", "attested", "abugida", "ltr", 1592, None, "living")
 G["Sylo"] = ("Kthi", "attested", "abugida", "ltr", 1500, None, "living")
 G["Gong"] = ("Modi", "contested", "abugida", "ltr", 1750, None, "living")
 G["Gonm"] = ("Brah", "stimulus", "abugida", "ltr", 1918, None, "living")
-G["Beng"] = ("Sidd", "attested", "abugida", "ltr", 1000, None, "living")
+G["Beng"] = ("Sidd", "attested", "abugida", "ltr", 1350, None, "living")
 G["Tirh"] = ("Sidd", "attested", "abugida", "ltr", 1200, None, "historical")
-G["Orya"] = ("Sidd", "attested", "abugida", "ltr", 1050, None, "living")
-G["Newa"] = ("Sidd", "attested", "abugida", "ltr", 1100, None, "living")
-G["Ranj"] = ("Sidd", "attested", "abugida", "ltr", 1100, None, "living")
+G["Orya"] = ("Sidd", "attested", "abugida", "ltr", 1300, None, "living")
+G["Newa"] = ("Sidd", "attested", "abugida", "ltr", 908, None, "living")
+G["Ranj"] = ("Newa", "attested", "abugida", "ltr", 1099, None, "living")
 G["Bhks"] = ("Brah", "attested", "abugida", "ltr", 1000, 1200, "historical")
 G["Mtei"] = ("Brah", "contested", "abugida", "ltr", 1100, None, "living")
 G["Cakm"] = ("Mymr", "attested", "abugida", "ltr", 1700, None, "living")
@@ -210,46 +210,46 @@ G["Gukh"] = ("Brah", "stimulus", "abugida", "ltr", 1995, None, "living")
 
 # ------------------------------------------------------- BRAHMIC: TIBETAN ----
 G["Tibt"] = ("Brah", "attested", "abugida", "ltr", 650, None, "living")
-G["Marc"] = ("Tibt", "attested", "abugida", "ltr", 1000, None, "historical")
+G["Marc"] = ("Tibt", "contested", "abugida", "ltr", 1000, None, "historical")
 G["Phag"] = ("Tibt", "attested", "abugida", "ttb", 1269, 1400, "historical")
-G["Lepc"] = ("Tibt", "attested", "abugida", "ltr", 1700, None, "living")
-G["Limb"] = ("Lepc", "attested", "abugida", "ltr", 1700, None, "living")
+G["Lepc"] = ("Tibt", "attested", "abugida", "ltr", 1720, None, "living")
+G["Limb"] = ("Lepc", "contested", "abugida", "ltr", 1850, None, "living")
 G["Krai"] = ("Limb", "contested", "abugida", "ltr", 1925, None, "living")
 G["Zanb"] = ("Tibt", "attested", "abugida", "ltr", 1686, 1800, "historical")
 G["Soyo"] = ("Ranj", "attested", "abugida", "ltr", 1686, 1800, "historical")
 
 # ------------------------------------------------------- BRAHMIC: SOUTHERN ---
-G["Gran"] = ("Brah", "attested", "abugida", "ltr", 500, None, "living")
-G["Taml"] = ("Gran", "attested", "abugida", "ltr", 700, None, "living")
-G["Mlym"] = ("Gran", "attested", "abugida", "ltr", 830, None, "living")
+G["Gran"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
+G["Taml"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
+G["Mlym"] = ("Gran", "attested", "abugida", "ltr", 1100, None, "living")
 G["Tutg"] = ("Gran", "attested", "abugida", "ltr", 1000, None, "historical")
 G["Saur"] = ("Gran", "contested", "abugida", "ltr", 1880, None, "living")
 G["Sinh"] = ("Brah", "attested", "abugida", "ltr", -200, None, "living")
 G["Diak"] = ("Gran", "attested", "abugida", "ltr", 900, 1700, "historical")
-G["Knda"] = ("Brah", "attested", "abugida", "ltr", 500, None, "living")
+G["Knda"] = ("Brah", "attested", "abugida", "ltr", 450, None, "living")
 G["Telu"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
 
 # --------------------------------------------------- BRAHMIC: SOUTHEAST ASIA -
-G["Khmr"] = ("Gran", "attested", "abugida", "ltr", 611, None, "living")
-G["Thai"] = ("Khmr", "attested", "abugida", "ltr", 1283, None, "living")
-G["Laoo"] = ("Khmr", "attested", "abugida", "ltr", 1350, None, "living")
+G["Khmr"] = ("Brah", "attested", "abugida", "ltr", 611, None, "living")
+G["Thai"] = ("Khmr", "attested", "abugida", "ltr", 1292, None, "living")
+G["Laoo"] = ("Thai", "attested", "abugida", "ltr", 1494, None, "living")
 G["Tavt"] = ("Thai", "attested", "abugida", "ltr", 1500, None, "living")
 G["Tayo"] = ("Thai", "contested", "abugida", "ttb", 1500, None, "historical")
-G["Mymr"] = ("Gran", "attested", "abugida", "ltr", 1000, None, "living")
+G["Mymr"] = ("Brah", "attested", "abugida", "ltr", 1113, None, "living")
 G["Leke"] = ("Mymr", "contested", "abugida", "ltr", 1844, None, "living")
 G["Kali"] = ("Mymr", "stimulus", "alphabet", "ltr", 1962, None, "living")
-G["Lana"] = ("Mymr", "attested", "abugida", "ltr", 1300, None, "living")
+G["Lana"] = ("Mymr", "attested", "abugida", "ltr", 1376, None, "living")
 G["Talu"] = ("Lana", "attested", "abugida", "ltr", 1955, None, "living")
-G["Tale"] = ("Mymr", "attested", "abugida", "ltr", 1300, None, "living")
+G["Tale"] = ("Mymr", "attested", "abugida", "ltr", 1407, None, "living")
 G["Ahom"] = ("Mymr", "attested", "abugida", "ltr", 1300, 1800, "revived")
-G["Cham"] = ("Gran", "attested", "abugida", "ltr", 400, None, "living")
-G["Kawi"] = ("Gran", "attested", "abugida", "ltr", 750, 1500, "historical")
+G["Cham"] = ("Brah", "attested", "abugida", "ltr", 400, None, "living")
+G["Kawi"] = ("Brah", "attested", "abugida", "ltr", 750, 1500, "historical")
 G["Java"] = ("Kawi", "attested", "abugida", "ltr", 1500, None, "living")
-G["Bali"] = ("Kawi", "attested", "abugida", "ltr", 1000, None, "living")
-G["Sund"] = ("Kawi", "attested", "abugida", "ltr", 1400, None, "living")
-G["Rjng"] = ("Kawi", "attested", "abugida", "ltr", 1700, None, "living")
-G["Batk"] = ("Kawi", "attested", "abugida", "ltr", 1300, None, "living")
-G["Bugi"] = ("Kawi", "attested", "abugida", "ltr", 1600, None, "living")
+G["Bali"] = ("Kawi", "attested", "abugida", "ltr", 914, None, "living")
+G["Sund"] = ("Kawi", "contested", "abugida", "ltr", 1400, None, "living")
+G["Rjng"] = ("Kawi", "attested", "abugida", "ltr", 1750, None, "living")
+G["Batk"] = ("Kawi", "contested", "abugida", "ltr", 1764, None, "living")
+G["Bugi"] = ("Kawi", "contested", "abugida", "ltr", 1600, None, "living")
 G["Maka"] = ("Rjng", "contested", "abugida", "ltr", 1600, 1900, "historical")
 G["Tglg"] = ("Kawi", "contested", "abugida", "ltr", 1550, None, "revived")
 G["Hano"] = ("Tglg", "contested", "abugida", "ltr", 1600, None, "living")
@@ -257,8 +257,8 @@ G["Buhd"] = ("Tglg", "contested", "abugida", "ltr", 1600, None, "living")
 G["Tagb"] = ("Tglg", "contested", "abugida", "ltr", 1600, None, "living")
 
 # ------------------------------------------------------------------ AEGEAN ---
-G["Linb"] = ("Lina", "attested", "syllabary", "ltr", -1450, -1200, "historical")
-G["Cpmn"] = ("Lina", "attested", "undeciphered", "ltr", -1550, -1050, "undeciphered")
+G["Linb"] = ("Lina", "attested", "syllabary", "ltr", -1400, -1200, "historical")
+G["Cpmn"] = ("Lina", "attested", "undeciphered", "ltr", -1500, -1050, "undeciphered")
 G["Cprt"] = ("Cpmn", "attested", "syllabary", "rtl", -1100, -300, "historical")
 
 # -------------------------------------------------------------------- HAN ----
@@ -266,15 +266,15 @@ G["Seal"] = ("Hani", "variant", "variant", "ttb", -800, None, "living")
 G["Hans"] = ("Hani", "variant", "variant", "ltr", 1956, None, "living")
 G["Hant"] = ("Hani", "variant", "variant", "varies", -200, None, "living")
 G["Hira"] = ("Hani", "attested", "syllabary", "varies", 800, None, "living")
-G["Kana"] = ("Hani", "attested", "syllabary", "varies", 800, None, "living")
+G["Kana"] = ("Hani", "attested", "syllabary", "varies", 825, None, "living")
 G["Bopo"] = ("Hani", "attested", "syllabary", "varies", 1913, None, "living")
-G["Nshu"] = ("Hani", "attested", "syllabary", "ttb", 1400, None, "historical")
+G["Nshu"] = ("Hani", "attested", "syllabary", "ttb", 1850, None, "historical")
 G["Tang"] = ("Hani", "stimulus", "logographic", "ltr", 1036, 1500, "historical")
 G["Kitl"] = ("Hani", "stimulus", "logographic", "ttb", 920, 1200, "undeciphered")
 G["Kits"] = ("Ougr", "stimulus", "logographic", "ttb", 925, 1200, "undeciphered")
 G["Jurc"] = ("Kitl", "attested", "logographic", "ttb", 1119, 1500, "historical")
 G["Yiii"] = ("Hani", "contested", "syllabary", "ltr", 1485, None, "living")
-G["Nkgb"] = ("Nkdb", "attested", "syllabary", "ltr", 1600, None, "living")
+G["Nkgb"] = ("Nkdb", "contested", "syllabary", "ltr", 1619, None, "living")
 G["Shui"] = ("Hani", "attested", "logographic", "rtl", 1400, None, "living")
 G["Hang"] = ("Phag", "contested", "featural", "varies", 1443, None, "living")
 G["Jamo"] = ("Hang", "variant", "variant", "ltr", 1443, None, "living")
@@ -296,8 +296,8 @@ G["Piqd"] = ("Latn", "invented", "alphabet", "ltr", 1979, None, "fictional")
 
 
 # ---------------------------------------------------------------- SOURCES ----
-# The authority for every edge that is not plain attested descent, and for
-# every row whose date or parent departs from what a reader might expect.
+# The authority for every descent edge and every argued root: the parent, the
+# kind of link, and the first dated object behind the start year.
 # code: (via, source, note)
 #   via     the real intermediary when it has no ISO 15924 code, else ""
 #   source  the citation the row rests on; "unsourced" is allowed and counted
@@ -519,6 +519,202 @@ SOURCES = {
              "the featural Tengwar, developed by Tolkien from Sarati"),
     "Piqd": ("", "L2/20-181",
              "built on ten characters designed for Star Trek: The Motion Picture, 1979"),
+    "Xsux": ("", "Unicode ch.11; L2/25-211 (proto-cuneiform)",
+             "cuneiform proper from c.2700-2600 BCE (Fara, Abu Salabikh); -2900 is the end of the archaic period"),
+    "Egyh": ("", "Regulski, Oxford Handbook of Topics in Archaeology",
+             "earliest hieratic on the stone vessels under the Step Pyramid, late 2nd dynasty to Djoser"),
+    "Egyd": ("Abnormal Hieratic", "Depauw, A Companion to Demotic Studies",
+             "develops out of late hieratic in the 7th c. BCE; the earliest named object is not sourced here"),
+    "Mero": ("", "Rilly, UCLA Encyclopedia of Egyptology",
+             "created under Taneyidamani, first half of the 2nd c. BCE, from Egyptian hieroglyphs with new values"),
+    "Merc": ("", "Rilly, UCLA Encyclopedia of Egyptology; Priese 1973",
+             "developed from Demotic; earliest datable object a sistrum handle naming Arnekhamani, c.220 BCE"),
+    "Psin": ("", "L2/19-299 (Proto-Sinaitic)",
+             "most scholars agree it derives from Egyptian hieroglyphs; first attested 19th c. BCE (Wadi el-Hol)"),
+    "Phnx": ("Proto-Canaanite", "Unicode ch.10; Ahiram sarcophagus, KAI 1",
+             "first long text the Ahiram sarcophagus, c.1000 BCE on palaeography; its date is disputed"),
+    "Samr": ("Paleo-Hebrew", "Barag, in Cambridge History of Judaism; Langlois 2019",
+             "a conscious creation of the 4th c. CE; Cross and Purvis argued a Hasmonean branch of paleo-Hebrew"),
+    "Sarb": ("Proto-Canaanite", "Hasselbach, in The Semitic Languages; Sass",
+             "split off a Proto-Canaanite variant before 1000 BCE; Sass derives it from Phoenician-type letters"),
+    "Ethi": ("", "Drewes, RIE III/B; Breton 2019, Cahiers d'etudes africaines",
+             "earliest Ge'ez text the Addi Gelemo sceptre, late 2nd to early 3rd c. CE; vocalised under Ezana"),
+    "Nbat": ("", "Naveh, The Nabataeans",
+             "Elusa inscription early 2nd c. BCE not yet Nabataean in form; Aslah inscription, Petra, 95 BCE"),
+    "Palm": ("", "Unicode ch.10",
+             "inscriptions from 44 BCE to about 280 CE"),
+    "Hatr": ("", "Unicode N4324 (L2/12-312)",
+             "inscriptions from 98-97 BCE to about 241 CE"),
+    "Syrc": ("", "Healey 2011, Hugoye; Drijvers & Healey As55",
+             "the earliest dated Syriac inscription is the Birecik inscription of 6 CE"),
+    "Mand": ("", "Encyclopaedia Iranica 'Mandaeans v'; Haberl 2006, BASOR",
+             "based on the script of the Elymaean rock inscriptions; Unicode also allows Parthian chancery; bowls 4th-7th c."),
+    "Elym": ("", "L2/17-226 (Elymaic); Unicode ch.10",
+             "derives from Aramaic; earliest on coins of the 2nd c. BCE"),
+    "Chrs": ("", "L2/18-164R2 (Chorasmian)",
+             "from Imperial Aramaic; dated cursive from Toprak-Kala, 3rd c. CE; earlier dates in the proposal unresolved"),
+    "Prti": ("", "Skjaervo, Encyclopaedia Iranica 'Iran vi.3'; MacKenzie, 'Dates and dating'",
+             "Nisa ostraca of the 1st c. BCE, one dated 89 BCE"),
+    "Phli": ("", "Humbach, Encyclopaedia Iranica 'Epigraphy i'; Rezakhani 2016",
+             "Sasanian inscriptions from 224 CE; descent through the Persis coin script is denied by Rezakhani"),
+    "Phlp": ("", "Encyclopaedia Iranica 'Pahlavi Psalter'; Unicode ch.10",
+             "6th or 7th c. CE, after 552; more archaic than Book Pahlavi"),
+    "Phlv": ("", "Hintze 2014, Kratylos; Cereti",
+             "earliest dated witnesses the Elephantine papyri, 619-629 CE; the 4th-c. sarcophagus anchor is Islamic-period"),
+    "Avst": ("", "Unicode ch.10; Hoffmann, Encyclopaedia Iranica 'Avestan script'",
+             "created about the 5th-6th c. CE for the Avesta; earliest manuscript 1288; still used in Zoroastrian liturgy"),
+    "Sogo": ("", "Encyclopaedia Iranica 'Ancient Letters'; Unicode ch.14",
+             "Ancient Letters securely dated 312-313 CE; the Kultobe inscriptions possibly earlier"),
+    "Sogd": ("", "Unicode ch.14",
+             "derived from Old Sogdian, used from the 7th to the 14th c. CE"),
+    "Mong": ("", "Unicode ch.13; Brose 2005",
+             "adopted 1204 by tradition; earliest surviving text the Stele of Yisungge, c.1224-1225"),
+    "Arab": ("", "Hoyland, 'The birth of Arabic in stone'; Robin et al. 2014, CRAI",
+             "earliest dated text in Arabic script Zabad, 512; Namara (328) and Jabal Ramm are in Nabataean script"),
+    "Khar": ("", "Strauch; Baums 2016; Salomon 1998",
+             "no securely dated document before the Ashokan edicts at Shahbazgarhi and Mansehra, mid-3rd c. BCE"),
+    "Grek": ("", "Janko, on Methone; Jeffery, Local Scripts of Archaic Greece",
+             "Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left"),
+    "Copt": ("", "Claremont Coptic Encyclopedia, 'Old Coptic'",
+             "Old Coptic papyri of the 1st-2nd c. CE; Greek letters plus six or seven from Demotic"),
+    "Geor": ("", "Aleksidze 1983; Typotheque 2023",
+             "first Mkhedruli inscription at Ateni Sioni, 982-986"),
+    "Cyrl": ("", "Slavica Occitania 12 (2001), after the Kirilo-Metodievska enciklopedija",
+             "earliest epigraphy Krepcha 921, a Preslav sherd 931, a dated Dobrudja inscription 943"),
+    "Runr": ("", "Unicode TN40; Looijenga 2003; Duwel 2008",
+             "thought to come from North Italic; Vimose comb c.150-160; written in either direction"),
+    "Latn": ("", "Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020",
+             "Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over"),
+    "Linb": ("", "Olivier 2012, in Cline (ed.), Oxford Handbook of the Bronze Age Aegean",
+             "Knossos tablets 14th c. BCE on the compromise chronology; 1450 is the high date"),
+    "Cpmn": ("", "Olivier 2012; Steele 2014, Kadmos 53",
+             "Enkomi tablet of Late Cypriot I, c.1525-1475 BCE; derived from Linear A by sign form"),
+    "Cprt": ("", "Olivier 2012",
+             "the Palaepaphos obelos (11th c. BCE) may be the last Cypro-Minoan text rather than the first Cypriot one"),
+    "Hira": ("Man'yogana", "Unicode ch.18; Seeley 1991, A History of Writing in Japan",
+             "a 9th-c. development from cursive man'yogana; no securely dated first object"),
+    "Kana": ("Man'yogana", "Whitman 2022; Seeley 1991",
+             "Todaiji fujumonko, 824-834, the earliest katakana used for an extended Japanese text"),
+    "Bopo": ("", "Ministry of Education, Taiwan; DeFrancis 1950",
+             "adopted 1913 from simplified Han forms (Zhang Binglin), promulgated 1918"),
+    "Nshu": ("", "UNESCO 2018; Endo, Unicode N4626",
+             "no securely dated object before the 19th c.; claims of a Song origin have no object behind them"),
+    "Nkgb": ("", "Friedrich 2023; Unicode N3442",
+             "some characters from Dongba, some from Yi, Tibetan and Chinese; a dated stele of 1619"),
+    "Sidd": ("Gupta", "Salomon 1998, Indian Epigraphy 2.2.5.4",
+             "evolved out of the Gupta script in the late 6th c.; Bodh-Gaya inscription of Mahanaman, 588-589"),
+    "Deva": ("Nagari", "Salomon 1998, after Sukthankar",
+             "no authentic specimen before the Silahara inscriptions at Kanheri, 851 and 877-878"),
+    "Shrd": ("Kutila", "Pandey, L2/08-200; Salomon 1998",
+             "descended from Gupta through Kutila; Proto-Sarada from the 7th c., Sharada of Kashmir from the 8th"),
+    "Takr": ("Devasesha", "Pandey, L2/09-424",
+             "from Sharada through Devasesha (14th c.), differentiated in the 16th c."),
+    "Dogr": ("", "Pandey, L2/15-234; Unicode ch.15",
+             "Dogra written from the 17th c.; standardised in the 1860s"),
+    "Guru": ("Landa", "Pandey, L2/10-011; Mann 1996, The Goindval Pothis",
+             "Landa the model; the Goindval Pothis of the 1570s are the earliest extant source; 1539 was a guruship date"),
+    "Khoj": ("Landa", "Pandey, Unicode N3978; Unicode ch.15",
+             "a refined form of the Lohanaki variety of Landa, in use by the 16th c."),
+    "Mult": ("Landa", "Unicode ch.15",
+             "related to Gurmukhi; used in the 19th and 20th c.; earlier date unsourced"),
+    "Sind": ("Landa", "Pandey, L2/11-022; Unicode ch.15",
+             "a Landa-based script related to Sharada; standard form published 1868"),
+    "Modi": ("Nagari", "Pandey, Unicode N4034; Salomon 1998 n.116",
+             "a Nagari-family script for continuous writing; earliest extant document early 17th c."),
+    "Nand": ("Nagari", "Pandey, L2/17-162",
+             "a sister of Devanagari within the Nagari family, 11th c."),
+    "Gujr": ("Nagari", "Unicode ch.12; Salomon 1998 3.4.3",
+             "closely related to Devanagari; texts wholly in Gujarati from the late 15th c.; 1592 unsourced"),
+    "Beng": ("Gaudi", "Salomon 1998 2.2.5.5; Unicode ch.15",
+             "Gaudi (proto-Bengali) current from the 10th to the 14th c.; a distinct Bengali from the 14th-15th c."),
+    "Orya": ("Gaudi", "Salomon 1998 3.4.2",
+             "early Oriya texts in Gaudi (Urajam 1051); a distinct Oriya script from the 14th c., of composite origin"),
+    "Newa": ("Kutila", "Pandey, Unicode N4184; Unicode ch.13",
+             "a distinct Newar script from the 10th c.; Lankavatara Sutra manuscript dated 908"),
+    "Ranj": ("", "Pandey, Unicode N4184, after Malla 1981",
+             "developed from the Newar (pacumola) model; first in Nepal in 1099"),
+    "Bhks": ("", "Unicode ch.14; Dimitrov",
+             "used 10th-13th c.; eleven inscriptions and four manuscripts known"),
+    "Marc": ("", "West, Unicode N4491",
+             "quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation"),
+    "Phag": ("", "Unicode ch.14",
+             "devised for Khubilai and promulgated in 1269; similar to Tibetan"),
+    "Lepc": ("", "Unicode ch.13; Everson, Unicode N2947",
+             "based directly on Tibetan; invented around 1720"),
+    "Limb": ("", "Unicode ch.13; Hall, Unicode N4347",
+             "oldest known writings collected in Darjeeling in the 1850s; 18th-c. Sirijanga origin is tradition"),
+    "Zanb": ("", "Unicode ch.14; Pandey, L2/14-024",
+             "based upon Tibetan; date unknown, believed to precede Soyombo (1686)"),
+    "Soyo": ("Lantsa", "Unicode ch.14; Unicode N1855",
+             "created in 1686 by Zanabazar on the model of Lantsa, with Tibetan order and shapes"),
+    "Gran": ("Pallava", "Francis 2024; Pandey, L2/18-083",
+             "Pallava is the ancestor of Grantha; Grantha itself designed around 600 CE"),
+    "Taml": ("Pallava", "Francis 2024",
+             "a new alphabet for Tamil around the start of the 7th c., a sister of Grantha, not from Vatteluttu"),
+    "Mlym": ("Chola Grantha", "ICANN Malayalam LGR 2019",
+             "the 830 Vazhappalli plates are in Vatteluttu; Malayalam script texts from about the 12th c."),
+    "Tutg": ("Chola Grantha", "L2/17-378",
+             "evolved from the later Chola Grantha to write Sanskrit"),
+    "Knda": ("Kadamba", "Mahadevan, Frontline; Gai",
+             "Halmidi inscription, mid-5th c., in Kadamba script; a sister of Telugu"),
+    "Telu": ("Kadamba", "Mahadevan, Frontline",
+             "Kalamalla inscription of the Renati Cholas, end of the 6th c."),
+    "Sinh": ("", "Unicode L2/10-312",
+             "Brahmi inscriptions of the 3rd-2nd c. BCE; later influenced by Grantha"),
+    "Khmr": ("Pallava", "Zakharov 2019; Unicode ch.16",
+             "earliest dated Old Khmer K.557/600, 611; close to the Pallava script of the Coromandel coast"),
+    "Cham": ("Pallava", "Unicode ch.16; Filliozat 1969",
+             "Old Cham at Dong Yen Chau, c.4th c., in Pallava script"),
+    "Kawi": ("Pallava", "de Casparis 1975, Indonesian Palaeography; Pandey, L2/12-125",
+             "Plumpungan c.750; de Casparis doubts direct descent from Pallava"),
+    "Mymr": ("Old Mon or Pyu", "Unicode ch.16; Aung-Thwin 2005",
+             "first inscription 11th c. (Myazedi c.1113); Mon source in Unicode, Pyu argued by Aung-Thwin"),
+    "Thai": ("Sukhothai", "Penth 1989, JSS 77",
+             "Ram Khamhaeng inscription dated 1292, authenticity disputed; Wat Bang Sanuk 1219 also cited"),
+    "Laoo": ("Fakkham", "Lorrillard, 'Scripts and history: the case of Laos'",
+             "Fakkham the prototype of Lao script; no direct Khmer transmission; first dated stele 1494 or 1497"),
+    "Lana": ("Old Mon", "Apiradee & Grabowsky 2024",
+             "developed from the Mon script of Hariphunchai; earliest evidence 1376"),
+    "Tale": ("", "Daniels 2012, Journal of Southeast Asian Studies",
+             "the Tay borrowed heavily from Burmese before the 15th c.; a Ming scroll of 1407"),
+    "Ahom": ("", "Terwiel 1983, JSS 71",
+             "brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object"),
+    "Bali": ("", "Unicode ch.17",
+             "from Kawi; Belanjong pillar 914, Old Balinese beside Sanskrit"),
+    "Sund": ("Pallava", "Unicode ch.17; Pandey, L2/12-125",
+             "Unicode derives Old Sundanese from Pallawa, Pandey from Kawi; used 14th-18th c."),
+    "Rjng": ("", "Everson, Unicode N3096",
+             "first attested about the mid-18th c."),
+    "Batk": ("", "Kozok 2000, BKI",
+             "no proto-forms found; a manuscript in the British Library by 1764; introduction date unknown"),
+    "Bugi": ("", "Everson, Unicode N2588",
+             "of the Brahmic type and perhaps related to Javanese"),
+    "Java": ("", "Pandey, L2/12-125",
+             "Kawi is the ancestor of Javanese and Balinese"),
+    "Armi": ("", "Encyclopaedia Iranica 'Aramaic i'; Unicode ch.10",
+             "first attested in inscriptions of the 9th-8th c. BCE; distinct from Phoenician by the mid-8th c."),
+    "Hebr": ("", "Unicode ch.10; Barag",
+             "the square Hebrew script grew out of Imperial Aramaic; Mount Gerizim inscriptions 3rd-2nd c. BCE"),
+    "Goth": ("", "Schaffner 2024, Oxford Research Encyclopedia of Linguistics",
+             "Wulfila's alphabet on the Greek model, with Latin and runic letters, c.350; manuscripts 5th-6th c."),
+    "Ital": ("Euboean Greek", "Everson, L2/00-140; Unicode TN40",
+             "from the Euboean Greek of Ischia and Cumae; Marsiliana abecedary 7th c. BCE; mostly right to left"),
+    "Lyci": ("", "Adiego 2018; Unicode ch.8",
+             "both the letter shapes and the chronology point to a Greek origin; c.500 BCE"),
+    "Lydi": ("", "Adiego 2018; Unicode ch.8",
+             "Greek or Phrygian model, an open question; late 8th or early 7th c. BCE; mostly right to left"),
+    "Moon": ("", "Everson, Unicode N4128 (L2/11-280); Perkins School for the Blind",
+             "embossed symbols simplified from Latin letters; developed by William Moon in 1845"),
+    "Osge": ("", "Everson, Lookout & Pratt, Unicode N4587",
+             "letters in origin modifications or fusions of Latin letters, designed by 2006, revised 2012-2014"),
+    "Lisu": ("", "Unicode N3317; Cook, L2/07-294",
+             "Sara Ba Thaw and James Fraser modified the shapes of Latin letters, 1908-1914, published 1915"),
+    "Ougr": ("", "L2/20-003 (Old Uyghur); Unicode ch.14",
+             "believed to derive from Sogdian cursive in the 8th or 9th c."),
+    "Sylo": ("", "L2/02-388 (Syloti Nagri); Pandey, Unicode N3389",
+             "a form of Kaithi; earliest manuscript dated 1549 or 1774, exact origin unknown"),
+    "Cakm": ("", "Everson & Hosken, Unicode N3645 (L2/09-187)",
+             "Brahmic, an early offshoot of the Mon-Burmese script; no dated early manuscript found"),
 }
 
 # Sample codepoints for the glyph specimens, keyed by ISO 15924 code.

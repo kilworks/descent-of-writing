@@ -107,15 +107,16 @@ for n in (ST["scripts"], ST["languages"], ST["families"], ST["isolates"],
 check("8. printed figures match the dataset",
       not [f for f in fails if str(f).startswith("printed")], "all key counts appear in the svg")
 
-# 9. every claim weaker than attested descent names its authority. A root is
-# only exempt when its independence is not argued (Sumer, China, Mesoamerica).
+# 9. every descent claim names its authority, attested ones included. Exempt:
+# style variants and registry composites, which claim no descent, and the
+# roots whose independence is not argued (Sumer, China, Mesoamerica).
 UNDISPUTED_ROOTS = {"Pcun", "Hani", "Maya"}
-need = sorted(c for c in S if S[c]["edge"] in ("stimulus", "contested", "invented")
+need = sorted(c for c in S if S[c]["edge"] in ("attested", "stimulus", "contested", "invented")
               or (S[c]["parent"] is None and c not in UNDISPUTED_ROOTS))
 nosrc = [c for c in need if not S[c].get("source")]
 unsourced = sorted(c for c in need if S[c].get("source") == "unsourced")
 edges = collections.Counter(S[c]["edge"] or "root" for c in S)
-check("9. every non-attested edge and argued root is sourced",
+check("9. every descent claim and argued root is sourced",
       not nosrc and not [c for c in SOURCES if c not in S],
       "%d need a source, missing %s; marked unsourced: %s; edges: %s"
       % (len(need), nosrc or "none", ", ".join(unsourced) or "none",
@@ -128,6 +129,15 @@ check("10. svg has a title, a description, and a title per script",
       "<title>The Descent of Writing</title>" in SVG and "<desc>" in SVG and titled == set(S),
       "%d of %d script cards titled, untitled: %s"
       % (len(titled), len(S), sorted(set(S) - titled) or "none"))
+
+# 11. the written guide is generated from this dataset and must not lag it
+import guide
+_gp = os.path.join(BASE, "GUIDE.md")
+_g = open(_gp, encoding="utf8").read() if os.path.exists(_gp) else ""
+_entries = len(re.findall(r"^### [A-Z][a-z]{3}$", _g, flags=re.M))
+check("11. GUIDE.md matches the dataset, one entry per script",
+      _g == guide.build() and _entries == len(S),
+      "%d script entries in the guide; rerun python guide.py if stale" % _entries)
 
 # ---- companion CSV, one row per script, all seven documented fields
 with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newline="") as f:
