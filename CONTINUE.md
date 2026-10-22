@@ -20,7 +20,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 23 of
 | Descent claims with a named source | 198 of 198, attested included, none marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
 | Languages with a recorded script | 4,597 (53.5%); 2,856 listed unwritten |
-| Languages with a speaker count | 1,699 (19.8%) |
+| Languages with a speaker count | 1,735 (20.2%) |
 | Scripts with a native name | 121 of 218 |
 | Sources retrieved | 2026-10-22 |
 
@@ -361,7 +361,8 @@ Publishing it on GitHub Pages is a repository setting, left to the owner.
   96, 54 write no language on record, and for the rest neither Wikidata
   nor CLDR names the script in the language it writes. A native name for
   them would come from the encoding proposals, script by script.
-- Speaker counts reach 19.8% of languages. The other 6,888 are drawn as
+- Speaker counts reach 20.2% of languages (36 more since Wikidata is also
+  joined by Glottocode). The other 6,852 are drawn as
   squares of one size instead of the smallest circle, so a missing count no
   longer reads as a small one (check 18). More counts would come from
   Glottolog's own sources or the Ethnologue, which is not open.

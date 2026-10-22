@@ -278,8 +278,14 @@ unjoined = sorted("%s+%s" % (b["g"]["value"], b["scCode"]["value"])
                   if b["g"]["value"] in L and b["scCode"]["value"] in S
                   and b["scCode"]["value"] not in L[b["g"]["value"]]["scripts"]
                   and (b["g"]["value"], b["scCode"]["value"]) not in dropped)
+no_count = sorted({b["g"]["value"] for b in json.load(open(os.path.join(DATA, "wd_glotto_speakers.json"),
+                                                         encoding="utf8"))["results"]["bindings"]
+                   if b["g"]["value"] in L and not L[b["g"]["value"]]["speakers"]
+                   and re.fullmatch(r"[0-9.eE+]+", b["n"]["value"]) and float(b["n"]["value"]) > 0
+                   and L[b["g"]["value"]]["category"] != "Bookkeeping"})
 check("22. Wikidata links by Glottocode applied",
-      not unjoined, "not applied: %s" % (unjoined[:5] or "none"))
+      not unjoined and not no_count,
+      "scripts not applied: %s; speaker counts not applied: %s" % (unjoined[:5] or "none", no_count[:5] or "none"))
 
 # 11. the written guide is generated from this dataset and must not lag it
 import guide

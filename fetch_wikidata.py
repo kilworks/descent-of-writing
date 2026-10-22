@@ -26,6 +26,13 @@ SELECT ?g ?scCode WHERE {
   ?sc wdt:P506 ?scCode .
 }""",
 
+    # language (Glottocode) -> speaker count, for languages the ISO join misses
+    "wd_glotto_speakers.json": """
+SELECT ?g ?n WHERE {
+  ?l wdt:P1394 ?g .
+  ?l wdt:P1098 ?n .
+}""",
+
     # language (ISO 639-3) -> speaker count, keep the max per language downstream
     "wd_speakers.json": """
 SELECT ?iso ?n WHERE {

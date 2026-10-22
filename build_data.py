@@ -139,6 +139,19 @@ def build_languages():
         except ValueError:
             continue
         speakers[gid] = max(speakers.get(gid, 0), n)
+    # then by Glottocode, only where the ISO join gave nothing, and never for
+    # Glottolog's Bookkeeping entries: retired codes such as "Malay
+    # (individual language)" carry the whole macrolanguage's count
+    by_glotto = {}
+    for b in wikidata("wd_glotto_speakers.json"):
+        gid = b["g"]["value"]
+        try:
+            n = float(b["n"]["value"])
+        except ValueError:
+            continue
+        if gid in langs and gid not in speakers and cat.get(gid) != "Bookkeeping":
+            by_glotto[gid] = max(by_glotto.get(gid, 0), n)
+    speakers.update(by_glotto)
 
     valid = set(build_scripts())
     lang_scripts = collections.defaultdict(set)

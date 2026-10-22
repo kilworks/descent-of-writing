@@ -551,7 +551,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link
 Source: Salomon 1998 2.2.5.5; Unicode ch.15. Gaudi (proto-Bengali) current from the 10th to the 14th c.; a distinct Bengali from the 14th-15th c..
 Children: [`Toto`](#toto).
 
-Languages written mainly in it: 17. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Mundari (1,500,000 speakers). Also recorded as a further script for 30 more.
+Languages written mainly in it: 17. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Noakhali (7,000,000 speakers). Also recorded as a further script for 30 more.
 Unicode: encoded since version 1.1, block from U+0980.
 
 ### Berf
@@ -1812,7 +1812,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link
 Source: Salomon 1998 3.4.2. Early Oriya texts in Gaudi (Urajam 1051); a distinct Oriya script from the 14th c., of composite origin.
 Children: [`Olck`](#olck).
 
-Languages written mainly in it: 15. Largest: Odia (34,500,000 speakers), Sambalpuri (2,630,000 speakers), Pengo (350,000 speakers), Juang (30,875 speakers), Bondo (9,000 speakers). Also recorded as a further script for 11 more.
+Languages written mainly in it: 15. Largest: Odia (34,500,000 speakers), Sambalpuri (2,630,000 speakers), Kui (India) (645,000 speakers), Pengo (350,000 speakers), Juang (30,875 speakers). Also recorded as a further script for 11 more.
 Unicode: encoded since version 1.1, block from U+0B01.
 
 ### Osge
@@ -2395,7 +2395,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Phnx`](#phnx) Phoenician through Libyco-Berber, link **contested**.
 Source: British Museum, 'Written in stone'; Chaker & Hachi 2000. Phoenician/Punic origin has the wider support; indigenous and South Arabian origins argued; first dated text 139/138 BCE (Dougga).
 
-Languages written mainly in it: 7. Largest: Tachelhit (8,000,000 speakers), Tagdal (26,900 speakers), Zenaga (200 speakers), Numidian, Western Algerian Berber. Also recorded as a further script for 16 more.
+Languages written mainly in it: 7. Largest: Tachelhit (8,000,000 speakers), Tunisian-Zuwara Berber (41,000 speakers), Tagdal (26,900 speakers), Zenaga (200 speakers), Numidian. Also recorded as a further script for 16 more.
 Unicode: encoded since version 4.1, block from U+2D30.
 
 ### Tglg
