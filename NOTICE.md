@@ -33,6 +33,7 @@ derivative work under the OFL.
 | Glottolog 5 CLDF | CC-BY-4.0 |
 | Wikidata | CC0 |
 | SIL ISO 639-3 code tables | [SIL terms of use](https://iso639-3.sil.org/code_tables/download_tables) |
+| SIL langtags.json | MIT, Copyright (c) 2019-2025 SIL International |
 
 None of these sources are redistributed in this repository. `fetch.py` and
 `fetch_wikidata.py` retrieve them at build time. What is committed under

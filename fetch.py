@@ -23,6 +23,9 @@ SOURCES = {
     # 639-3 bridge CLDR needs to be joined to Glottolog
     "cldr_supplemental.xml":    "https://raw.githubusercontent.com/unicode-org/cldr/main/common/supplemental/supplementalData.xml",
     "iso-639-3.tab":            "https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3.tab",
+    # SIL Writing Systems Technology: scripts per language, curated with the
+    # Ethnologue script editor, and an explicit flag for unwritten languages
+    "langtags.json":            "https://ldml.api.sil.org/langtags.json",
 }
 
 

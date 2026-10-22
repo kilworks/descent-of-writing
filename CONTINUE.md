@@ -19,7 +19,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 10 of
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
 | Descent claims with a named source | 198 of 198, attested included; `Saur` marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
-| Languages with a recorded script | 1,517 (17.7%) |
+| Languages with a recorded script | 4,517 (52.6%); 2,856 listed unwritten |
 | Languages with a speaker count | 1,699 (19.8%) |
 | Scripts with a native name | 111 of 218 |
 | Sources retrieved | 2026-10-22 |
@@ -175,18 +175,34 @@ majority view, not a settled one. Hangul's Phags-pa link covers five or six
 consonant shapes at most. Egyptian independence from Sumer is the majority
 view. Each is recorded; none has been reviewed by someone who works on it.
 
-### 3. Language to script coverage is 17.7%
+### 3. Done in part: language to script coverage, 17.7% to 52.6%
 
-The largest single gap in the plate. Wikidata P282 and CLDR together reach
-1,517 of 8,587 languages, which is why 82.3% land in the unrecorded register.
+SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
+third source. Written: 4,517 of 8,587 (52.6%), 3,000 of them on langtags
+alone. Listed as unwritten: 2,856. No record either way: 1,214. Before it was
+added, its agreement with Wikidata and CLDR was measured: at least one shared
+script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
+unwritten never contribute a script (langtags documents regional inference on
+them). Multi-script languages now hang under a ranked primary script
+(langtags default tag, then CLDR primary, then Wikidata); 4 of 723 still fall
+back to alphabetical order. Members of a macrolanguage (Mandarin, Malay) have
+their default tagset filed under the macrolanguage in langtags, which left
+them only special tagsets; they were briefly drawn under Braille, and check 12
+now fails if Braille is ever the main script of a language that has another.
 
-Worth trying, in order: ScriptSource (scriptsource.org) publishes
-language-to-script data; Wikipedia's per-language infoboxes are scrapeable and
-better covered than Wikidata's structured claims; Ethnologue has it but is
-paywalled and its licence does not permit redistribution.
+Still open:
 
-Any improvement here changes Zone B materially. Whatever the number becomes,
-keep the label honest: it is still what sources record, not what is true.
+- 3,000 languages rest on langtags alone, which inherits the Ethnologue's
+  judgement. A second independent source per language would make them firmer.
+  ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
+  after that.
+- The unwritten flag is positive evidence but not proof: a listed language can
+  have a missionary or school orthography that langtags has not caught.
+- Of the 1,214 with no record, 754 have no ISO 639-3 code, which every
+  script source keys on; bridging Glottocodes to scripts directly would reach
+  them. Another 218 are sign languages, which langtags tags `Zxxx` (no
+  script) rather than unwritten. They could take a field of their own, with
+  SignWriting as the one script that writes some of them.
 
 ### 4. Done: monthly rebuild and drift check
 

@@ -130,6 +130,20 @@ check("10. svg has a title, a description, and a title per script",
       "%d of %d script cards titled, untitled: %s"
       % (len(titled), len(S), sorted(set(S) - titled) or "none"))
 
+# 12. where a language hangs, and how the lower register splits. Braille is a
+# recoding of other scripts, so it is a language's main script only when it
+# is its only one; and the two lower fields must add up and be printed.
+braille_main = sorted(v["name"] for v in L.values()
+                      if v["primary_script"] == "Brai" and len(v["scripts"]) > 1)
+listed = sum(1 for v in L.values() if not v["scripts"] and v["sil_unwritten"])
+norec = sum(1 for v in L.values() if not v["scripts"] and not v["sil_unwritten"])
+check("12. main scripts and the lower register are consistent",
+      not braille_main and listed == ST["languages_recorded_unwritten"]
+      and listed + norec == ST["languages_without_script"]
+      and "%d languages" % listed in SVG and "%d languages" % norec in SVG,
+      "Braille as main script with another available: %s; listed unwritten %d, no record %d"
+      % (braille_main or "none", listed, norec))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

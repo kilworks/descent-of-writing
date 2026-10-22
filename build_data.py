@@ -145,6 +145,7 @@ def build_languages():
             if r.get("Part1"):
                 part1[r["Part1"]] = r["Id"]
     root = ET.parse(os.path.join(DATA, "cldr_supplemental.xml")).getroot()
+    cldr_primary = {}
     for el in root.iter("language"):
         t, sc = el.get("type"), el.get("scripts")
         if not t or not sc:
@@ -157,6 +158,36 @@ def build_languages():
             if c in valid:
                 lang_scripts[gid].add(c)
                 src_count["cldr"] += 1
+                if el.get("alt") != "secondary" and gid not in cldr_primary:
+                    cldr_primary[gid] = c
+    # SIL langtags.json, curated with the Ethnologue script editor. A tagset
+    # flagged unwritten can still carry a script "due to regional inference"
+    # (langtags.md), so an unwritten tagset never contributes a script: it
+    # only records that the language is listed as unwritten. Zyyy (unknown),
+    # Zxxx (sign) and the other special codes are not scripts.
+    sil_unwritten = set()
+    lt_primary = {}       # the script of the language's minimal tag, its default orthography
+    by_source = collections.defaultdict(lambda: collections.defaultdict(set))
+    for gid, scs in lang_scripts.items():
+        for c in scs:
+            by_source[gid]["wikidata or cldr"].add(c)
+    lt = json.load(open(os.path.join(DATA, "langtags.json"), encoding="utf8"))
+    for t in lt:
+        if not isinstance(t, dict) or t.get("tag", "").startswith("_"):
+            continue
+        gid = by_iso.get(t.get("iso639_3"))
+        if not gid:
+            continue
+        if t.get("unwritten"):
+            sil_unwritten.add(gid)
+            continue
+        c = t.get("script")
+        if c in valid:
+            lang_scripts[gid].add(c)
+            by_source[gid]["langtags"].add(c)
+            src_count["langtags"] += 1
+            if "-" not in t.get("tag", "-"):
+                lt_primary[gid] = c
     print("script links: %s" % dict(src_count))
 
     dropped = []
@@ -165,6 +196,29 @@ def build_languages():
         v["category"] = cat.get(gid, "")
         v["speakers"] = speakers.get(gid)
         v["scripts"] = sorted(lang_scripts.get(gid, []))
+        v["script_sources"] = sorted(by_source[gid]) if gid in by_source else []
+        # which script a language hangs under on the plate, when it has several
+        if not v["scripts"]:
+            v["primary_script"], v["primary_basis"] = None, None
+        elif len(v["scripts"]) == 1:
+            v["primary_script"], v["primary_basis"] = v["scripts"][0], "only script"
+        elif lt_primary.get(gid) in v["scripts"]:
+            v["primary_script"], v["primary_basis"] = lt_primary[gid], "langtags default"
+        elif cldr_primary.get(gid) in v["scripts"]:
+            v["primary_script"], v["primary_basis"] = cldr_primary[gid], "cldr primary"
+        else:
+            # Members of a macrolanguage (Mandarin under zh, Malay under ms)
+            # have their default tagset filed under the macrolanguage, so
+            # langtags leaves them only special tagsets such as Braille. Prefer
+            # what Wikidata states, and never let Braille, a recoding of
+            # another script, be the main script when there is another.
+            pool = [c for c in v["scripts"] if c != "Brai"] or v["scripts"]
+            wd = sorted(c for c in by_source[gid].get("wikidata or cldr", ()) if c in pool)
+            if wd:
+                v["primary_script"], v["primary_basis"] = wd[0], "wikidata or cldr, first by code"
+            else:
+                v["primary_script"], v["primary_basis"] = pool[0], "alphabetical, no source ranks them"
+        v["sil_unwritten"] = gid in sil_unwritten
         if v["category"] == "Artificial_Language":
             dropped.append(gid)
     for gid in dropped:                       # spec excludes constructed languages
@@ -193,6 +247,13 @@ if __name__ == "__main__":
         "isolates": sum(1 for v in langs.values() if v["isolate"]),
         "languages_with_script": with_script,
         "languages_without_script": len(langs) - with_script,
+        "languages_recorded_unwritten": sum(1 for v in langs.values()
+                                            if not v["scripts"] and v["sil_unwritten"]),
+        "languages_multiscript": sum(1 for v in langs.values() if len(v["scripts"]) > 1),
+        "primary_alphabetical": sum(1 for v in langs.values()
+                                    if (v["primary_basis"] or "").startswith("alphabetical")),
+        "languages_scripted_only_by_langtags": sum(1 for v in langs.values()
+                                                   if v["script_sources"] == ["langtags"]),
         "languages_with_speakers": sum(1 for v in langs.values() if v["speakers"]),
         "sign_languages": sum(1 for v in langs.values() if v["category"] == "Sign_Language"),
         "extinct": sum(1 for v in langs.values() if v["aes"] == "extinct"),

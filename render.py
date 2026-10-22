@@ -234,9 +234,13 @@ by_script = collections.defaultdict(list)
 unwritten = []
 for gid, v in L.items():
     if v["scripts"]:
-        by_script[v["scripts"][0]].append(gid)
+        # a language with several scripts hangs under its primary one, ranked
+        # by a source where one exists (build_data.py, primary_basis)
+        by_script[v["primary_script"]].append(gid)
     else:
         unwritten.append(gid)
+listed_unwritten = [g for g in unwritten if L[g]["sil_unwritten"]]
+no_record = [g for g in unwritten if not L[g]["sil_unwritten"]]
 
 
 def mark_r(v, cell):
@@ -471,16 +475,24 @@ a('<text x="%d" y="%.0f" font-size="34" letter-spacing="6" fill="%s">'
   'WRITTEN: %d languages a source assigns to a script, under the script that writes them</text>'
   % (PAD, top - 46, INK_SOFT, n_written))
 
-draw_field(unwritten, PAD, inner, NONE_GREY,
-           "no script recorded in any source used",
+# two fields share the lower register, widths in proportion to what they hold:
+# languages SIL lists as unwritten, and languages no source records either way
+w_listed = (inner - gapx * 4) * len(listed_unwritten) / max(1, len(unwritten))
+draw_field(listed_unwritten, PAD, w_listed, NONE_GREY,
+           "listed as unwritten by SIL langtags",
            "%d languages, %.0f%% of every language in Glottolog"
-           % (len(unwritten), 100 * len(unwritten) / total),
+           % (len(listed_unwritten), 100 * len(listed_unwritten) / total),
+           row_b_top, row_b_h, label_size=34)
+draw_field(no_record, PAD + w_listed + gapx * 4, inner - w_listed - gapx * 4, NONE_GREY,
+           "no record either way",
+           "%d languages, %.0f%% of every language in Glottolog"
+           % (len(no_record), 100 * len(no_record) / total),
            row_b_top, row_b_h, label_size=34)
 a('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="none" stroke="%s" '
   'stroke-width="2.5" stroke-dasharray="16 12"/>'
   % (PAD - 18, row_b_top - 20, inner + 36, row_b_h + 40, NONE_GREY))
 a('<text x="%d" y="%.0f" font-size="34" letter-spacing="6" fill="%s">'
-  'UNRECORDED</text>' % (PAD, row_b_top - 44, NONE_GREY))
+  'NO SCRIPT ON RECORD</text>' % (PAD, row_b_top - 44, NONE_GREY))
 
 foot = row_b_top + row_b_h + 118
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
@@ -491,9 +503,10 @@ a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'a dashed ring one whose status Glottolog does not give.</text>'
   % (PAD, foot, INK_SOFT, round(100 * sum(1 for v in L.values() if not v["speakers"]) / len(L))))
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
-  'The lower register is not proof of unwritten languages. It is what Wikidata and CLDR record no script for, '
-  'and their coverage thins fast outside the major languages. The true unwritten share is lower, and unknown.</text>'
-  % (PAD, foot + 44, "#9c3b2e"))
+  'The lower register is not proof of unwritten languages. Its left field is what SIL langtags, kept with the Ethnologue, '
+  'lists as unwritten; its right field is what no source used records either way. Scripts above come from Wikidata, '
+  'CLDR and SIL langtags; %d of the %d written languages rest on langtags alone.</text>'
+  % (PAD, foot + 44, "#9c3b2e", ST["languages_scripted_only_by_langtags"], ST["languages_with_script"]))
 
 # ---- zone C, the catalogue
 a('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="3"/>'
@@ -569,8 +582,9 @@ checks = [
     % (ST["languages"], ST["artificial_dropped"]),
     "Families: %d. Isolates: %d. Sign languages: %d. Extinct: %d."
     % (ST["families"], ST["isolates"], ST["sign_languages"], ST["extinct"]),
-    "Languages with no script recorded: %d, %.1f%% of the total."
-    % (ST["languages_without_script"], 100 * ST["languages_without_script"] / ST["languages"]),
+    "Languages with no script recorded: %d, %.1f%%; of them %d listed as unwritten, %d with no record."
+    % (ST["languages_without_script"], 100 * ST["languages_without_script"] / ST["languages"],
+       ST["languages_recorded_unwritten"], ST["languages_without_script"] - ST["languages_recorded_unwritten"]),
     "Deepest chain of descent: %d generations. Every script traces to a root or is one."
     % MAXD,
 ]
@@ -581,7 +595,7 @@ for i, t in enumerate(checks):
 a('<text x="%d" y="%.0f" font-size="28" fill="%s" class="m">'
   'Sources: ISO 15924 registry and Unicode Character Database (unicode.org, retrieved %s) '
   '&#183; Glottolog 5 CLDF (CC-BY-4.0) &#183; Wikidata P282 P1098 P1705 '
-  '&#183; Unicode CLDR supplementalData &#183; SIL ISO 639-3 tables '
+  '&#183; Unicode CLDR supplementalData &#183; SIL ISO 639-3 tables &#183; SIL langtags.json (MIT) '
   '&#183; specimens rendered from Noto (SIL OFL), shaped with HarfBuzz.</text>'
   % (PAD, LEG_Y + 58 + 8 * 46 + 60, INK_FAINT, DATE))
 a('<text x="%d" y="%.0f" font-size="28" fill="%s" class="m">'

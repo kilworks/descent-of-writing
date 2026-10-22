@@ -95,10 +95,13 @@ def build():
     w("")
     w("It covers all %d scripts of the ISO 15924 registry that are not special or private-use codes, "
       "the same set the [plate](out/descent_of_writing.svg) draws, and the %s languages of Glottolog "
-      "that a source records a script for. %s further languages have no script on record; that is a "
-      "gap in the record, not proof that they are unwritten."
+      "that a source records a script for (Wikidata, CLDR or SIL langtags). Of the other %s, %s are "
+      "listed as unwritten by SIL langtags and %s have no record either way. Neither is proof that a "
+      "language is unwritten."
       % (len(S), format(ST["languages"] - ST["languages_without_script"], ","),
-         format(ST["languages_without_script"], ",")))
+         format(ST["languages_without_script"], ","),
+         format(ST["languages_recorded_unwritten"], ","),
+         format(ST["languages_without_script"] - ST["languages_recorded_unwritten"], ",")))
     w("")
     w("## Contents")
     w("")
@@ -197,11 +200,17 @@ def build():
             w("Children: %s." % ", ".join("[`%s`](#%s)" % (k, k.lower()) for k in kids[c]))
         w("")
         ls = sorted(langs_of[c], key=lambda v: -(v["speakers"] or 0))
-        if ls:
-            top = ", ".join("%s%s" % (v["name"], " (%s speakers)" % format(v["speakers"], ",")
-                                      if v["speakers"] else "") for v in ls[:5])
-            w("Languages a source records it for: %d. %s%s."
-              % (len(ls), "Largest: " if len(ls) > 1 else "", top))
+        main = [v for v in ls if v["primary_script"] == c]
+        also = len(ls) - len(main)
+        if main:
+            top = ", ".join("%s%s" % (v["name"], " (%s speakers)" % format(int(v["speakers"]), ",")
+                                      if v["speakers"] else "") for v in main[:5])
+            w("Languages written mainly in it: %s. %s%s.%s"
+              % (format(len(main), ","), "Largest: " if len(main) > 1 else "", top,
+                 " Also recorded as a further script for %s more." % format(also, ",") if also else ""))
+        elif ls:
+            w("Recorded as a further script for %s language%s, the main script for none."
+              % (format(len(ls), ","), "" if len(ls) == 1 else "s"))
         else:
             w("Languages a source records it for: none.")
         w("Unicode: %s." % ("encoded since version %s, block from U+%04X"

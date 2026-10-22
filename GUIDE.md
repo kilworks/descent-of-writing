@@ -2,7 +2,7 @@
 
 Generated from `out/dataset.json` by [`guide.py`](guide.py). Do not edit by hand: change [`genealogy.py`](genealogy.py) or the sources, rebuild, and rerun `guide.py`. `verify.py` fails if this file is stale.
 
-It covers all 218 scripts of the ISO 15924 registry that are not special or private-use codes, the same set the [plate](out/descent_of_writing.svg) draws, and the 1,517 languages of Glottolog that a source records a script for. 7,070 further languages have no script on record; that is a gap in the record, not proof that they are unwritten.
+It covers all 218 scripts of the ISO 15924 registry that are not special or private-use codes, the same set the [plate](out/descent_of_writing.svg) draws, and the 4,517 languages of Glottolog that a source records a script for (Wikidata, CLDR or SIL langtags). Of the other 4,070, 2,856 are listed as unwritten by SIL langtags and 1,214 have no record either way. Neither is proof that a language is unwritten.
 
 ## Contents
 
@@ -317,7 +317,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: L2/14-219R; Unicode ch.19. Glyphs original; right-to-left direction and optional joining shared with Arabic.
 
-Languages a source records it for: 1. Pular.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 9.0, block from U+1E900.
 
 ### Afak
@@ -327,7 +327,7 @@ Unicode: encoded since version 9.0, block from U+1E900.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Everson, Unicode N4132 (L2/11-297R); Dubelaar 1976. Unrelated to any other script; acrophonic rebus; devised 1908.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Aghb
@@ -337,7 +337,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Armn`](#armn) Armenian, link **contested**.
 Source: Everson & Gippert, Unicode N4131R. Attributed by tradition to Mashtots; arrangement close to Armenian; Greek the model for both.
 
-Languages a source records it for: 2. Largest: Lezgian (633,610.0 speakers), Aghwan.
+Languages written mainly in it: 1. Aghwan. Also recorded as a further script for 2 more.
 Unicode: encoded since version 7.0, block from U+10530.
 
 ### Ahom
@@ -347,7 +347,7 @@ Unicode: encoded since version 7.0, block from U+10530.
 Parent: [`Mymr`](#mymr) Myanmar, link **attested**.
 Source: Terwiel 1983, JSS 71. Brought at the conquest c. early 13th c., apparently on a Mon example; no dated early object.
 
-Languages a source records it for: 1. Ahom.
+Languages written mainly in it: 1. Ahom.
 Unicode: encoded since version 8.0, block from U+11700.
 
 ### Arab
@@ -358,7 +358,7 @@ Parent: [`Nbat`](#nbat) Nabataean, link **attested**.
 Source: Hoyland, 'The birth of Arabic in stone'; Robin et al. 2014, CRAI. Earliest dated text in Arabic script Zabad, 512; Namara (328) and Jabal Ramm are in Nabataean script.
 Children: [`Aran`](#aran), [`Thaa`](#thaa), [`Bamu`](#bamu), [`Osma`](#osma), [`Nkoo`](#nkoo), [`Berf`](#berf), [`Gara`](#gara), [`Rohg`](#rohg), [`Adlm`](#adlm).
 
-Languages a source records it for: 88. Largest: Standard Arabic (335,000,000.0 speakers), Standard Indonesian (198,996,550.0 speakers), Eastern Panjabi (125,000,000.0 speakers), Turkish (82,231,620.0 speakers), Tamil (75,000,000.0 speakers).
+Languages written mainly in it: 148. Largest: Standard Arabic (335,000,000 speakers), Urdu (68,600,000 speakers), Egyptian Arabic (64,600,000 speakers), Levantine Arabic (44,000,000 speakers), Algerian Arabic (42,252,851 speakers). Also recorded as a further script for 142 more.
 Unicode: encoded since version 1.1, block from U+0600.
 
 ### Aran
@@ -367,7 +367,7 @@ Unicode: encoded since version 1.1, block from U+0600.
 
 Parent: [`Arab`](#arab) Arabic, link **variant**.
 
-Languages a source records it for: 1. Bakhtiari (1,000,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 1.1.
 
 ### Armi
@@ -378,7 +378,7 @@ Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Encyclopaedia Iranica 'Aramaic i'; Unicode ch.10. First attested in inscriptions of the 9th-8th c. BCE; distinct from Phoenician by the mid-8th c..
 Children: [`Brah`](#brah), [`Hebr`](#hebr), [`Khar`](#khar), [`Elym`](#elym), [`Chrs`](#chrs), [`Hatr`](#hatr), [`Nbat`](#nbat), [`Prti`](#prti), [`Palm`](#palm), [`Syrc`](#syrc), [`Phli`](#phli), [`Sogo`](#sogo).
 
-Languages a source records it for: 3. Largest: Imperial Aramaic (700-300 BCE), Parthian, Khwarezmian.
+Languages written mainly in it: 1. Imperial Aramaic (700-300 BCE). Also recorded as a further script for 3 more.
 Unicode: encoded since version 5.2, block from U+10840.
 
 ### Armn
@@ -389,7 +389,7 @@ Parent: [`Grek`](#grek) Greek, link **contested**.
 Source: Pifer, Encyclopaedia Iranica 'Mesrop Mastoc'; D'Aiuto 2020. Arranged in Greek order; derivation of the letter shapes from Greek, Iranian or Aramaic still argued.
 Children: [`Aghb`](#aghb).
 
-Languages a source records it for: 1. Eastern Armenian (6,700,000.0 speakers).
+Languages written mainly in it: 4. Largest: Eastern Armenian (6,700,000 speakers), Western Armenian (1,395,240 speakers), Lomavren, Classical-Middle Armenian.
 Unicode: encoded since version 1.1, block from U+0531.
 
 ### Avst
@@ -399,7 +399,7 @@ Unicode: encoded since version 1.1, block from U+0531.
 Parent: [`Phlv`](#phlv) Book Pahlavi, link **attested**.
 Source: Unicode ch.10; Hoffmann, Encyclopaedia Iranica 'Avestan script'. Created about the 5th-6th c. CE for the Avesta; earliest manuscript 1288; still used in Zoroastrian liturgy.
 
-Languages a source records it for: 2. Largest: Avestan, Pahlavi.
+Languages written mainly in it: 1. Avestan. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.2, block from U+10B00.
 
 ### Bali
@@ -409,7 +409,7 @@ Unicode: encoded since version 5.2, block from U+10B00.
 Parent: [`Kawi`](#kawi) Kawi, link **attested**.
 Source: Unicode ch.17. From Kawi; Belanjong pillar 914, Old Balinese beside Sanskrit.
 
-Languages a source records it for: 2. Largest: Balinese (4,000,000.0 speakers), Kawi.
+Languages written mainly in it: 1. Kawi. Also recorded as a further script for 2 more.
 Unicode: encoded since version 5.0, block from U+1B00.
 
 ### Bamu
@@ -419,7 +419,7 @@ Unicode: encoded since version 5.0, block from U+1B00.
 Parent: [`Arab`](#arab) Arabic, link **contested**.
 Source: Orosz, Cahiers d'etudes africaines 2013 (journals.openedition.org/etudesafricaines/18002). Arabic via Hausa traders is the most cited stimulus; European and Vai models also proposed.
 
-Languages a source records it for: 1. Bamun.
+Languages written mainly in it: 1. Bamun.
 Unicode: encoded since version 5.2, block from U+A6A0.
 
 ### Bass
@@ -429,7 +429,7 @@ Unicode: encoded since version 5.2, block from U+A6A0.
 Parent: [`Vaii`](#vaii) Vai, link **stimulus**.
 Source: Unicode N3941R (L2/10-382R); Unicode ch.19. May have been influenced by Vai; typeset from 1907.
 
-Languages a source records it for: 1. Bassa (420,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+16AD0.
 
 ### Batk
@@ -439,7 +439,7 @@ Unicode: encoded since version 7.0, block from U+16AD0.
 Parent: [`Kawi`](#kawi) Kawi, link **contested**.
 Source: Kozok 2000, BKI. No proto-forms found; a manuscript in the British Library by 1764; introduction date unknown.
 
-Languages a source records it for: 2. Largest: Batak Toba (2,000,000.0 speakers), Batak Mandailing (1,100,000.0 speakers).
+Languages written mainly in it: 2. Largest: Batak Mandailing (1,100,000 speakers), Batak Dairi. Also recorded as a further script for 4 more.
 Unicode: encoded since version 6.0, block from U+1BC0.
 
 ### Beng
@@ -449,7 +449,7 @@ Unicode: encoded since version 6.0, block from U+1BC0.
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
 Source: Salomon 1998 2.2.5.5; Unicode ch.15. Gaudi (proto-Bengali) current from the 10th to the 14th c.; a distinct Bengali from the 14th-15th c..
 
-Languages a source records it for: 16. Largest: Bengali (300,000,000.0 speakers), Assamese (15,300,000.0 speakers), Sylheti (13,980,000.0 speakers), Santali (7,200,000.0 speakers), Sadri (7,000,000.0 speakers).
+Languages written mainly in it: 16. Largest: Bengali (300,000,000 speakers), Assamese (15,300,000 speakers), Sylheti (13,980,000 speakers), Chittagonian (13,000,000 speakers), Mundari (1,500,000 speakers). Also recorded as a further script for 30 more.
 Unicode: encoded since version 1.1, block from U+0980.
 
 ### Berf
@@ -459,7 +459,7 @@ Unicode: encoded since version 1.1, block from U+0980.
 Parent: [`Arab`](#arab) Arabic through Zaghawa camel brands, link **invented**.
 Source: Unicode ch.19; L2/24-004R. Devised in the 1950s by Adam Tajir from livestock brand marks; revised 2004; left to right.
 
-Languages a source records it for: 1. Beria (274,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Bhks
@@ -469,7 +469,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Brah`](#brah) Brahmi, link **attested**.
 Source: Unicode ch.14; Dimitrov. Used 10th-13th c.; eleven inscriptions and four manuscripts known.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 9.0, block from U+11C00.
 
 ### Blis
@@ -489,7 +489,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Hani`](#hani) Han, link **attested**.
 Source: Ministry of Education, Taiwan; DeFrancis 1950. Adopted 1913 from simplified Han forms (Zhang Binglin), promulgated 1918.
 
-Languages a source records it for: none.
+Languages written mainly in it: 2. Largest: Ge, Eastern Qiandong Miao. Also recorded as a further script for 1 more.
 Unicode: encoded since version 1.1, block from U+02EA.
 
 ### Brah
@@ -500,7 +500,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **contested**.
 Source: Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy. Aramaic origin after Buhler is the majority view; not settled.
 Children: [`Sinh`](#sinh), [`Cham`](#cham), [`Knda`](#knda), [`Sidd`](#sidd), [`Gran`](#gran), [`Taml`](#taml), [`Telu`](#telu), [`Khmr`](#khmr), [`Tibt`](#tibt), [`Kawi`](#kawi), [`Shrd`](#shrd), [`Bhks`](#bhks), [`Mtei`](#mtei), [`Mymr`](#mymr), [`Gonm`](#gonm), [`Sora`](#sora), [`Gukh`](#gukh).
 
-Languages a source records it for: 7. Largest: Old Turkic, Tokharian B, Tokharian A, Old Cham, Khotanese.
+Languages written mainly in it: 6. Largest: Tokharian A, Old Cham, Maharastri Prakrit, Khotanese, Tumshuqese. Also recorded as a further script for 4 more.
 Unicode: encoded since version 6.0, block from U+11000.
 
 ### Brai
@@ -510,7 +510,7 @@ Unicode: encoded since version 6.0, block from U+11000.
 Parent: [`Latn`](#latn) Latin through Barbier's night writing, link **stimulus**.
 Source: RNIB; Unicode ch.21. A six-dot recoding of the French Latin alphabet, after Barbier's twelve-dot phonetic code.
 
-Languages a source records it for: none.
+Recorded as a further script for 128 languages, the main script for none.
 Unicode: encoded since version 3.0, block from U+2800.
 
 ### Bugi
@@ -520,7 +520,7 @@ Unicode: encoded since version 3.0, block from U+2800.
 Parent: [`Kawi`](#kawi) Kawi, link **contested**.
 Source: Everson, Unicode N2588. Of the Brahmic type and perhaps related to Javanese.
 
-Languages a source records it for: 3. Largest: Buginese (5,017,800.0 speakers), Makasar (1,600,000.0 speakers), Mandar.
+Recorded as a further script for 6 languages, the main script for none.
 Unicode: encoded since version 4.1, block from U+1A00.
 
 ### Buhd
@@ -530,7 +530,7 @@ Unicode: encoded since version 4.1, block from U+1A00.
 Parent: [`Tglg`](#tglg) Tagalog, link **contested**.
 Source: Unicode ch.17; Miller, Unicode Technical Note 35. Related to Tagalog but may not descend from it; within the range of 17th-c. Philippine handwriting.
 
-Languages a source records it for: 1. Buhid.
+Recorded as a further script for 3 languages, the main script for none.
 Unicode: encoded since version 3.2, block from U+1740.
 
 ### Cakm
@@ -540,7 +540,7 @@ Unicode: encoded since version 3.2, block from U+1740.
 Parent: [`Mymr`](#mymr) Myanmar, link **attested**.
 Source: Everson & Hosken, Unicode N3645 (L2/09-187). Brahmic, an early offshoot of the Mon-Burmese script; no dated early manuscript found.
 
-Languages a source records it for: 1. Chakma (326,000.0 speakers).
+Languages written mainly in it: 2. Largest: Chakma (326,000 speakers), Tangchangya.
 Unicode: encoded since version 6.1, block from U+11100.
 
 ### Cans
@@ -551,7 +551,7 @@ Parent: [`Latn`](#latn) Latin through British shorthand, link **stimulus**.
 Source: Nichols 1996, in Daniels & Bright. Most characters drawn from British shorthand; Evans knew Devanagari, but no source makes it his model.
 Children: [`Plrd`](#plrd).
 
-Languages a source records it for: 10. Largest: Plains Cree (34,000.0 speakers), Chipewyan (11,325.0 speakers), Severn Ojibwa (10,500.0 speakers), Algonquin (2,430.0 speakers), Eastern Canadian Inuktitut.
+Languages written mainly in it: 8. Largest: Plains Cree (34,000 speakers), Severn Ojibwa (10,500 speakers), Eastern Canadian Inuktitut, Naskapi, Swampy Cree. Also recorded as a further script for 12 more.
 Unicode: encoded since version 3.0, block from U+1400.
 
 ### Cari
@@ -561,7 +561,7 @@ Unicode: encoded since version 3.0, block from U+1400.
 Parent: [`Grek`](#grek) Greek, link **contested**.
 Source: Unicode ch.8; Adiego 2018. A development parallel to, and independent of, Greek cannot be ruled out.
 
-Languages a source records it for: 1. Carian.
+Languages written mainly in it: 1. Carian.
 Unicode: encoded since version 5.1, block from U+102A0.
 
 ### Cham
@@ -571,7 +571,7 @@ Unicode: encoded since version 5.1, block from U+102A0.
 Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Unicode ch.16; Filliozat 1969. Old Cham at Dong Yen Chau, c.4th c., in Pallava script.
 
-Languages a source records it for: 2. Largest: Western Cham (400,000.0 speakers), Eastern Cham.
+Languages written mainly in it: 1. Eastern Cham. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.1, block from U+AA00.
 
 ### Cher
@@ -581,7 +581,7 @@ Unicode: encoded since version 5.1, block from U+AA00.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Unicode ch.20. Sequoyah took letter shapes from Latin print without their Latin values, 1815-1821.
 
-Languages a source records it for: 1. Cherokee (12,300.0 speakers).
+Languages written mainly in it: 1. Cherokee (12,300 speakers).
 Unicode: encoded since version 3.0, block from U+13A0.
 
 ### Chis
@@ -591,7 +591,7 @@ Unicode: encoded since version 3.0, block from U+13A0.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: L2/22-218R3. Invented in 1986 by Jayanta Kumar Mahata from Kurmali ritual and rangoli signs.
 
-Languages a source records it for: 1. Kudmali.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Chrs
@@ -601,7 +601,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: L2/18-164R2 (Chorasmian). From Imperial Aramaic; dated cursive from Toprak-Kala, 3rd c. CE; earlier dates in the proposal unresolved.
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Khwarezmian.
 Unicode: encoded since version 13.0, block from U+10FB0.
 
 ### Cirt
@@ -621,7 +621,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Claremont Coptic Encyclopedia, 'Old Coptic'. Old Coptic papyri of the 1st-2nd c. CE; Greek letters plus six or seven from Demotic.
 
-Languages a source records it for: 4. Largest: Nobiin (669,000.0 speakers), Coptic, Egyptian (Ancient), Old Nubian.
+Languages written mainly in it: 2. Largest: Coptic, Old Nubian. Also recorded as a further script for 2 more.
 Unicode: encoded since version 4.1, block from U+03E2.
 
 ### Cpmn
@@ -632,7 +632,7 @@ Parent: [`Lina`](#lina) Linear A, link **attested**.
 Source: Olivier 2012; Steele 2014, Kadmos 53. Enkomi tablet of Late Cypriot I, c.1525-1475 BCE; derived from Linear A by sign form.
 Children: [`Cprt`](#cprt).
 
-Languages a source records it for: 1. Eteocypriot.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 14.0, block from U+12F90.
 
 ### Cprt
@@ -642,7 +642,7 @@ Unicode: encoded since version 14.0, block from U+12F90.
 Parent: [`Cpmn`](#cpmn) Cypro-Minoan, link **attested**.
 Source: Olivier 2012. The Palaepaphos obelos (11th c. BCE) may be the last Cypro-Minoan text rather than the first Cypriot one.
 
-Languages a source records it for: 1. Eteocypriot.
+Languages written mainly in it: 1. Eteocypriot. Also recorded as a further script for 1 more.
 Unicode: encoded since version 4.0, block from U+10800.
 
 ### Cyrl
@@ -653,7 +653,7 @@ Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Slavica Occitania 12 (2001), after the Kirilo-Metodievska enciklopedija. Earliest epigraphy Krepcha 921, a Preslav sherd 931, a dated Dobrudja inscription 943.
 Children: [`Cyrs`](#cyrs), [`Perm`](#perm).
 
-Languages a source records it for: 117. Largest: Russian (154,000,000.0 speakers), Ukrainian (26,900,000.0 speakers), Romanian (24,300,000.0 speakers), Serbian-Croatian-Bosnian (19,000,000.0 speakers), Turkmen (16,000,000.0 speakers).
+Languages written mainly in it: 99. Largest: Russian (154,000,000 speakers), Ukrainian (26,900,000 speakers), Tajik (14,000,000 speakers), Kazakh (12,900,000 speakers), Bulgarian (9,000,000 speakers). Also recorded as a further script for 38 more.
 Unicode: encoded since version 1.1, block from U+0400.
 
 ### Cyrs
@@ -662,7 +662,7 @@ Unicode: encoded since version 1.1, block from U+0400.
 
 Parent: [`Cyrl`](#cyrl) Cyrillic, link **variant**.
 
-Languages a source records it for: 1. Church Slavic.
+Recorded as a further script for 8 languages, the main script for none.
 Unicode: encoded since version 1.1.
 
 ### Deva
@@ -673,7 +673,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Nagari, lin
 Source: Salomon 1998, after Sukthankar. No authentic specimen before the Silahara inscriptions at Kanheri, 851 and 877-878.
 Children: [`Nand`](#nand), [`Gujr`](#gujr), [`Mahj`](#mahj), [`Modi`](#modi).
 
-Languages a source records it for: 101. Largest: Hindi (341,000,000.0 speakers), Marathi (83,100,000.0 speakers), Bhojpuri (52,200,000.0 speakers), Maithili (33,900,000.0 speakers), Sindhi (24,600,000.0 speakers).
+Languages written mainly in it: 180. Largest: Hindi (341,000,000 speakers), Marathi (83,100,000 speakers), Bhojpuri (52,200,000 speakers), Maithili (33,900,000 speakers), Awadhi (22,000,000 speakers). Also recorded as a further script for 35 more.
 Unicode: encoded since version 1.1, block from U+0900.
 
 ### Diak
@@ -683,7 +683,7 @@ Unicode: encoded since version 1.1, block from U+0900.
 Parent: [`Gran`](#gran) Grantha, link **attested**.
 Source: Pandey, L2/18-016R. Descended from Brahmi through Grantha; closest to medieval Sinhala.
 
-Languages a source records it for: 1. Dhivehi (340,500.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 13.0, block from U+11900.
 
 ### Dogr
@@ -703,7 +703,7 @@ Unicode: encoded since version 11.0, block from U+11800.
 Parent: [`Latn`](#latn) Latin through Pitman 1847 phonotypy, link **stimulus**.
 Source: Beesley, 'Deseret in Unicode'. Pitman's phonotypy the starting point, then an entirely new set of characters, adopted Dec 1853.
 
-Languages a source records it for: 1. English (753,359,540.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 3.1, block from U+10400.
 
 ### Dupl
@@ -713,7 +713,7 @@ Unicode: encoded since version 3.1, block from U+10400.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Unicode L2/10-272R2. A geometric shorthand, letterforms from circles and lines, for writing French.
 
-Languages a source records it for: 2. Largest: French (208,157,220.0 speakers), Creolized Grand Ronde Chinook Jargon (1.0 speakers).
+Languages written mainly in it: 1. Thompson (440 speakers). Also recorded as a further script for 8 more.
 Unicode: encoded since version 7.0, block from U+1BC00.
 
 ### Egyd
@@ -724,7 +724,7 @@ Parent: [`Egyh`](#egyh) Egyptian hieratic through Abnormal Hieratic, link **atte
 Source: Depauw, A Companion to Demotic Studies. Develops out of late hieratic in the 7th c. BCE; the earliest named object is not sourced here.
 Children: [`Merc`](#merc).
 
-Languages a source records it for: 1. Egyptian (Ancient).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Egyh
@@ -735,7 +735,7 @@ Parent: [`Egyp`](#egyp) Egyptian hieroglyphs, link **attested**.
 Source: Regulski, Oxford Handbook of Topics in Archaeology. Earliest hieratic on the stone vessels under the Step Pyramid, late 2nd dynasty to Djoser.
 Children: [`Egyd`](#egyd).
 
-Languages a source records it for: 1. Egyptian (Ancient).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 5.2.
 
 ### Egyp
@@ -746,7 +746,7 @@ A root: no known parent among the registry's codes.
 Source: Baines 2004, in Houston (ed.), The First Writing. Independent Egyptian invention is the majority view; stimulus from Sumer is argued and not excluded.
 Children: [`Egyh`](#egyh), [`Psin`](#psin), [`Mero`](#mero).
 
-Languages a source records it for: 1. Egyptian (Ancient).
+Languages written mainly in it: 1. Egyptian (Ancient).
 Unicode: encoded since version 5.2, block from U+13000.
 
 ### Elba
@@ -767,7 +767,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: L2/17-226 (Elymaic); Unicode ch.10. Derives from Aramaic; earliest on coins of the 2nd c. BCE.
 Children: [`Mand`](#mand).
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Elymian. Also recorded as a further script for 4 more.
 Unicode: encoded since version 12.0, block from U+10FE0.
 
 ### Ethi
@@ -777,7 +777,7 @@ Unicode: encoded since version 12.0, block from U+10FE0.
 Parent: [`Sarb`](#sarb) Old South Arabian, link **attested**.
 Source: Drewes, RIE III/B; Breton 2019, Cahiers d'etudes africaines. Earliest Ge'ez text the Addi Gelemo sceptre, late 2nd to early 3rd c. CE; vocalised under Ezana.
 
-Languages a source records it for: 35. Largest: Amharic (21,900,000.0 speakers), Tigrinya (7,507,780.0 speakers), Wolaytta (5,830,000.0 speakers), Gamo-Gofa-Dawro (2,000,000.0 speakers), Sidamo (1,800,000.0 speakers).
+Languages written mainly in it: 34. Largest: Amharic (21,900,000 speakers), Tigrinya (7,507,780 speakers), Wolaytta (5,830,000 speakers), Gamo-Gofa-Dawro (2,000,000 speakers), Sebat Bet Gurage (1,480,000 speakers). Also recorded as a further script for 24 more.
 Unicode: encoded since version 3.0, block from U+1200.
 
 ### Gara
@@ -787,7 +787,7 @@ Unicode: encoded since version 3.0, block from U+1200.
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Everson, Unicode N4709; Pandey, Unicode N4044. Influences of the Arabic writing system; written right to left.
 
-Languages a source records it for: 1. Wolof (3,700,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+10D40.
 
 ### Geok
@@ -798,7 +798,7 @@ Parent: [`Grek`](#grek) Greek, link **contested**.
 Source: Bolkvadze & Kiziria 2023; Giunashvili on Tsereteli. Greek provenance most widely accepted; Aramaic shapes argued; earliest inscriptions dated 430s, some earlier claims.
 Children: [`Geor`](#geor).
 
-Languages a source records it for: 1. Old Georgian.
+Languages written mainly in it: 1. Old Georgian. Also recorded as a further script for 1 more.
 Unicode: encoded since version 1.1, block from U+10A0.
 
 ### Geor
@@ -808,7 +808,7 @@ Unicode: encoded since version 1.1, block from U+10A0.
 Parent: [`Geok`](#geok) Khutsuri, link **attested**.
 Source: Aleksidze 1983; Typotheque 2023. First Mkhedruli inscription at Ateni Sioni, 982-986.
 
-Languages a source records it for: 3. Largest: Georgian (3,700,000.0 speakers), Mingrelian (345,530.0 speakers), Laz (250,000.0 speakers).
+Languages written mainly in it: 4. Largest: Georgian (3,700,000 speakers), Mingrelian (345,530 speakers), Svan (15,000 speakers), Bats (3,420 speakers). Also recorded as a further script for 3 more.
 Unicode: encoded since version 1.1, block from U+10A0.
 
 ### Glag
@@ -818,7 +818,7 @@ Unicode: encoded since version 1.1, block from U+10A0.
 Parent: [`Grek`](#grek) Greek, link **contested**.
 Source: Cubberley, 'Slavonic, Old Church: Orthography'; Schenker 1995. The search for the formal origins of Glagolitic remains unsolved.
 
-Languages a source records it for: 2. Largest: Old Russian, Church Slavic.
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 4.1, block from U+2C00.
 
 ### Gong
@@ -828,7 +828,7 @@ Unicode: encoded since version 4.1, block from U+2C00.
 Parent: [`Modi`](#modi) Modi, Moḍī, link **contested**.
 Source: Pandey, L2/15-235R. Not genetically related to other scripts, but strongly resembles Modi; c.1750 is a researchers' claim, 1942 the firm evidence.
 
-Languages a source records it for: 1. Adilabad Gondi.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 11.0, block from U+11D60.
 
 ### Gonm
@@ -838,7 +838,7 @@ Unicode: encoded since version 11.0, block from U+11D60.
 Parent: [`Brah`](#brah) Brahmi, link **stimulus**.
 Source: Pandey, L2/15-090R. No genetic relationship to other writing systems, but based upon the Brahmi model.
 
-Languages a source records it for: 2. Largest: Aheri Gondi (150,000.0 speakers), Adilabad Gondi.
+Languages written mainly in it: 1. Aheri Gondi (150,000 speakers). Also recorded as a further script for 1 more.
 Unicode: encoded since version 10.0, block from U+11D00.
 
 ### Goth
@@ -848,7 +848,7 @@ Unicode: encoded since version 10.0, block from U+11D00.
 Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Schaffner 2024, Oxford Research Encyclopedia of Linguistics. Wulfila's alphabet on the Greek model, with Latin and runic letters, c.350; manuscripts 5th-6th c..
 
-Languages a source records it for: 1. Gothic.
+Languages written mainly in it: 1. Gothic.
 Unicode: encoded since version 3.1, block from U+10330.
 
 ### Gran
@@ -859,7 +859,7 @@ Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Francis 2024; Pandey, L2/18-083. Pallava is the ancestor of Grantha; Grantha itself designed around 600 CE.
 Children: [`Diak`](#diak), [`Tutg`](#tutg), [`Mlym`](#mlym), [`Saur`](#saur).
 
-Languages a source records it for: 1. Sanskrit (49,736.0 speakers).
+Languages written mainly in it: 1. Old Tamil. Also recorded as a further script for 1 more.
 Unicode: encoded since version 7.0, block from U+11300.
 
 ### Grek
@@ -870,7 +870,7 @@ Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Janko, on Methone; Jeffery, Local Scripts of Archaic Greece. Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left.
 Children: [`Cari`](#cari), [`Ital`](#ital), [`Lydi`](#lydi), [`Lyci`](#lyci), [`Copt`](#copt), [`Goth`](#goth), [`Armn`](#armn), [`Geok`](#geok), [`Glag`](#glag), [`Cyrl`](#cyrl), [`Todr`](#todr), [`Elba`](#elba), [`Vith`](#vith).
 
-Languages a source records it for: 15. Largest: Modern Greek (15,000,000.0 speakers), Pontic (778,000.0 speakers), Rumelian Turkish (464,000.0 speakers), Kipchak Urum (185,000.0 speakers), Gagauz (148,720.0 speakers).
+Languages written mainly in it: 17. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0370.
 
 ### Gujr
@@ -880,7 +880,7 @@ Unicode: encoded since version 1.1, block from U+0370.
 Parent: [`Deva`](#deva) Devanagari through Nagari, link **attested**.
 Source: Unicode ch.12; Salomon 1998 3.4.3. Closely related to Devanagari; texts wholly in Gujarati from the late 15th c.; 1592 unsourced.
 
-Languages a source records it for: 4. Largest: Gujarati (56,400,000.0 speakers), Sindhi (24,600,000.0 speakers), Kachchi (866,000.0 speakers), Dungar Varli (600,000.0 speakers).
+Languages written mainly in it: 7. Largest: Gujarati (56,400,000 speakers), Dhanki, Dhodia-Kukna, Chodri, Gamit. Also recorded as a further script for 11 more.
 Unicode: encoded since version 1.1, block from U+0A81.
 
 ### Gukh
@@ -890,7 +890,7 @@ Unicode: encoded since version 1.1, block from U+0A81.
 Parent: [`Brah`](#brah) Brahmi, link **stimulus**.
 Source: L2/22-157. An alphasyllabary based upon the Brahmi model, created 1995.
 
-Languages a source records it for: 1. Gurung.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+16100.
 
 ### Guru
@@ -900,7 +900,7 @@ Unicode: encoded since version 16.0, block from U+16100.
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
 Source: Pandey, L2/10-011; Mann 1996, The Goindval Pothis. Landa the model; the Goindval Pothis of the 1570s are the earliest extant source; 1539 was a guruship date.
 
-Languages a source records it for: 1. Eastern Panjabi (125,000,000.0 speakers).
+Languages written mainly in it: 1. Eastern Panjabi (125,000,000 speakers). Also recorded as a further script for 2 more.
 Unicode: encoded since version 1.1, block from U+0A01.
 
 ### Hanb
@@ -920,7 +920,7 @@ Parent: [`Phag`](#phag) Phags-pa, link **contested**.
 Source: Ledyard 1966; Haerye 1446. Five or six consonant shapes from Phags-pa (Ledyard); the Haerye derives them from the speech organs.
 Children: [`Jamo`](#jamo).
 
-Languages a source records it for: 2. Largest: Korean (77,300,000.0 speakers), Cia-Cia (80,000.0 speakers).
+Languages written mainly in it: 1. Jejueo (5,000 speakers). Also recorded as a further script for 2 more.
 Unicode: encoded since version 1.1, block from U+1100.
 
 ### Hani
@@ -930,7 +930,7 @@ Unicode: encoded since version 1.1, block from U+1100.
 A root: no known parent among the registry's codes.
 Children: [`Seal`](#seal), [`Hant`](#hant), [`Hira`](#hira), [`Hrkt`](#hrkt), [`Jpan`](#jpan), [`Kana`](#kana), [`Kitl`](#kitl), [`Tang`](#tang), [`Shui`](#shui), [`Kore`](#kore), [`Yiii`](#yiii), [`Nshu`](#nshu), [`Hntl`](#hntl), [`Bopo`](#bopo), [`Hanb`](#hanb), [`Blis`](#blis), [`Hans`](#hans).
 
-Languages a source records it for: 18. Largest: Mandarin Chinese (918,000,000.0 speakers), Wu Chinese (81,400,000.0 speakers), Vietnamese (76,000,000.0 speakers), Min Nan Chinese (50,100,000.0 speakers), Hakka Chinese (48,200,000.0 speakers).
+Languages written mainly in it: 20. Largest: Mandarin Chinese (918,000,000 speakers), Eastern Hongshuihe Zhuang (1,200,000 speakers), Sui (300,000 speakers), Lakkia (9,000 speakers), Paekche. Also recorded as a further script for 20 more.
 Unicode: encoded since version 1.1, block from U+2E80.
 
 ### Hano
@@ -940,7 +940,7 @@ Unicode: encoded since version 1.1, block from U+2E80.
 Parent: [`Tglg`](#tglg) Tagalog, link **contested**.
 Source: Unicode ch.17; Miller, Unicode Technical Note 35. Related to Tagalog but may not descend from it; within the range of 17th-c. Philippine handwriting.
 
-Languages a source records it for: 1. Hanunoo.
+Recorded as a further script for 6 languages, the main script for none.
 Unicode: encoded since version 3.2, block from U+1720.
 
 ### Hans
@@ -949,7 +949,7 @@ Unicode: encoded since version 3.2, block from U+1720.
 
 Parent: [`Hani`](#hani) Han, link **variant**.
 
-Languages a source records it for: 10. Largest: Mandarin Chinese (918,000,000.0 speakers), Wu Chinese (81,400,000.0 speakers), Yue Chinese (73,100,000.0 speakers), Min Nan Chinese (50,100,000.0 speakers), Hakka Chinese (48,200,000.0 speakers).
+Languages written mainly in it: 14. Largest: Wu Chinese (81,400,000 speakers), Min Nan Chinese (50,100,000 speakers), Hakka Chinese (48,200,000 speakers), Jinyu Chinese (46,900,000 speakers), Xiang Chinese (37,300,000 speakers). Also recorded as a further script for 10 more.
 Unicode: encoded since version 1.1.
 
 ### Hant
@@ -958,7 +958,7 @@ Unicode: encoded since version 1.1.
 
 Parent: [`Hani`](#hani) Han, link **variant**.
 
-Languages a source records it for: 7. Largest: Yue Chinese (73,100,000.0 speakers), Min Nan Chinese (50,100,000.0 speakers), Hakka Chinese (48,200,000.0 speakers), Min Bei Chinese (11,000,000.0 speakers), Min Dong Chinese (10,300,000.0 speakers).
+Languages written mainly in it: 3. Largest: Yue Chinese (73,100,000 speakers), Classical Chinese, Middle Chinese. Also recorded as a further script for 18 more.
 Unicode: encoded since version 1.1.
 
 ### Hatr
@@ -968,7 +968,7 @@ Unicode: encoded since version 1.1.
 Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Unicode N4324 (L2/12-312). Inscriptions from 98-97 BCE to about 241 CE.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 8.0, block from U+108E0.
 
 ### Hebr
@@ -979,7 +979,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Unicode ch.10; Barag. The square Hebrew script grew out of Imperial Aramaic; Mount Gerizim inscriptions 3rd-2nd c. BCE.
 Children: [`Hmnp`](#hmnp).
 
-Languages a source records it for: 8. Largest: Levantine Arabic (44,000,000.0 speakers), Tajik (14,000,000.0 speakers), Modern Hebrew (9,303,950.0 speakers), Ladino (137,000.0 speakers), Judeo-Persian (60,000.0 speakers).
+Languages written mainly in it: 16. Largest: Modern Hebrew (9,303,950 speakers), Ladino (137,000 speakers), Judeo-Persian (60,000 speakers), Judeo-Yemeni Arabic (50,300 speakers), Hulaulá (10,000 speakers). Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0591.
 
 ### Hira
@@ -989,7 +989,7 @@ Unicode: encoded since version 1.1, block from U+0591.
 Parent: [`Hani`](#hani) Han through Man'yogana, link **attested**.
 Source: Unicode ch.18; Seeley 1991, A History of Writing in Japan. A 9th-c. development from cursive man'yogana; no securely dated first object.
 
-Languages a source records it for: 2. Largest: Japanese (128,000,000.0 speakers), Yonaguni (400.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 1.1, block from U+3041.
 
 ### Hluw
@@ -999,7 +999,7 @@ Unicode: encoded since version 1.1, block from U+3041.
 A root: no known parent among the registry's codes.
 Source: van den Hout 2020, A History of Hittite Literacy, ch.7. Egyptian inspiration unlikely; probably an Anatolian creation from indigenous signs.
 
-Languages a source records it for: 2. Largest: Hurrian, Hieroglyphic Luwian.
+Languages written mainly in it: 3. Largest: Hurrian, Hieroglyphic Luwian, Cuneiform Luwian.
 Unicode: encoded since version 8.0, block from U+14400.
 
 ### Hmng
@@ -1009,7 +1009,7 @@ Unicode: encoded since version 8.0, block from U+14400.
 Parent: [`Laoo`](#laoo) Lao, link **invented**.
 Source: Unicode ch.16; Smalley, Vang & Yang 1990, Mother of Writing. Devised by Shong Lue Yang in 1959; some letters may recall Lao and Latin.
 
-Languages a source records it for: 1. Hmong Njua (Retired) (4,000,000.0 speakers).
+Languages written mainly in it: 1. Hmong Njua (Retired) (4,000,000 speakers). Also recorded as a further script for 3 more.
 Unicode: encoded since version 7.0, block from U+16B00.
 
 ### Hmnp
@@ -1019,7 +1019,7 @@ Unicode: encoded since version 7.0, block from U+16B00.
 Parent: [`Hebr`](#hebr) Hebrew, link **stimulus**.
 Source: Everson, Unicode N4780R3. Several consonant letters appear derived from Hebrew characters; 1980s.
 
-Languages a source records it for: 1. Hmong Daw.
+Languages written mainly in it: 1. Hmong Njua. Also recorded as a further script for 1 more.
 Unicode: encoded since version 12.0, block from U+1E100.
 
 ### Hntl
@@ -1037,7 +1037,7 @@ Unicode: not encoded, so no font can show it.
 
 Parent: [`Hani`](#hani) Han, link **composite**.
 
-Languages a source records it for: 2. Largest: Japanese (128,000,000.0 speakers), Yonaguni (400.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 1.1.
 
 ### Hung
@@ -1047,7 +1047,7 @@ Unicode: encoded since version 1.1.
 Parent: [`Orkh`](#orkh) Old Turkic, Orkhon Runic, link **contested**.
 Source: Everson & Szelp, Unicode N3483; Demeczky et al., Unicode N4371. Thought to derive ultimately from Old Turkic; some treat them as distant relatives only.
 
-Languages a source records it for: 1. Hungarian (12,600,000.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 8.0, block from U+10C80.
 
 ### Inds
@@ -1068,7 +1068,7 @@ Parent: [`Grek`](#grek) Greek through Euboean Greek, link **attested**.
 Source: Everson, L2/00-140; Unicode TN40. From the Euboean Greek of Ischia and Cumae; Marsiliana abecedary 7th c. BCE; mostly right to left.
 Children: [`Latn`](#latn), [`Runr`](#runr).
 
-Languages a source records it for: 3. Largest: Etruscan, Umbrian, Oscan.
+Languages written mainly in it: 5. Largest: Etruscan, Venetic, Oscan, Transalpine Gaulish, Noric. Also recorded as a further script for 2 more.
 Unicode: encoded since version 3.1, block from U+10300.
 
 ### Jamo
@@ -1077,7 +1077,7 @@ Unicode: encoded since version 3.1, block from U+10300.
 
 Parent: [`Hang`](#hang) Hangul, link **variant**.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 1.1.
 
 ### Java
@@ -1087,7 +1087,7 @@ Unicode: encoded since version 1.1.
 Parent: [`Kawi`](#kawi) Kawi, link **attested**.
 Source: Pandey, L2/12-125. Kawi is the ancestor of Javanese and Balinese.
 
-Languages a source records it for: 5. Largest: Javanese (68,300,000.0 speakers), Madurese (15,000,000.0 speakers), Kangean (110,000.0 speakers), Caribbean Javanese (60,000.0 speakers), Kawi.
+Languages written mainly in it: 2. Largest: Osing (300,000 speakers), Tengger. Also recorded as a further script for 9 more.
 Unicode: encoded since version 5.2, block from U+A980.
 
 ### Jpan
@@ -1096,7 +1096,7 @@ Unicode: encoded since version 5.2, block from U+A980.
 
 Parent: [`Hani`](#hani) Han, link **composite**.
 
-Languages a source records it for: 3. Largest: Japanese (128,000,000.0 speakers), Central Okinawan (984,000.0 speakers), Yaeyama (47,600.0 speakers).
+Languages written mainly in it: 4. Largest: Japanese (128,000,000 speakers), Yaeyama (47,600 speakers), Southern Amami-Oshima (1,800 speakers), Yonaguni (400 speakers). Also recorded as a further script for 1 more.
 Unicode: encoded since version 1.1.
 
 ### Jurc
@@ -1106,7 +1106,7 @@ Unicode: encoded since version 1.1.
 Parent: [`Kitl`](#kitl) Khitan large script, link **attested**.
 Source: Kara 1996, in Daniels & Bright; Jinshi 73. Many characters copies or distorted copies of Chinese and Khitan large script.
 
-Languages a source records it for: 1. Jurchen.
+Languages written mainly in it: 1. Jurchen.
 Unicode: not encoded, so no font can show it.
 
 ### Kali
@@ -1116,7 +1116,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Mymr`](#mymr) Myanmar, link **stimulus**.
 Source: Unicode N3038. Ordering and some shapes show Brahmic relation, most shapes developed independently.
 
-Languages a source records it for: 2. Largest: Western Kayah (150,000.0 speakers), Eastern Kayah.
+Languages written mainly in it: 3. Largest: Western Kayah (150,000 speakers), Yintale Karen (1,000 speakers), Eastern Kayah.
 Unicode: encoded since version 5.1, block from U+A900.
 
 ### Kana
@@ -1126,7 +1126,7 @@ Unicode: encoded since version 5.1, block from U+A900.
 Parent: [`Hani`](#hani) Han through Man'yogana, link **attested**.
 Source: Whitman 2022; Seeley 1991. Todaiji fujumonko, 824-834, the earliest katakana used for an extended Japanese text.
 
-Languages a source records it for: 4. Largest: Japanese (128,000,000.0 speakers), Central Okinawan (984,000.0 speakers), Yonaguni (400.0 speakers), Hokkaido Ainu (10.0 speakers).
+Languages written mainly in it: 2. Largest: Central Okinawan (984,000 speakers), Hokkaido Ainu (10 speakers). Also recorded as a further script for 3 more.
 Unicode: encoded since version 1.1, block from U+30A1.
 
 ### Kawi
@@ -1137,7 +1137,7 @@ Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: de Casparis 1975, Indonesian Palaeography; Pandey, L2/12-125. Plumpungan c.750; de Casparis doubts direct descent from Pallava.
 Children: [`Bali`](#bali), [`Sund`](#sund), [`Java`](#java), [`Tglg`](#tglg), [`Bugi`](#bugi), [`Rjng`](#rjng), [`Batk`](#batk).
 
-Languages a source records it for: 2. Largest: Javanese (68,300,000.0 speakers), Kawi.
+Recorded as a further script for 3 languages, the main script for none.
 Unicode: encoded since version 15.0, block from U+11F00.
 
 ### Khar
@@ -1147,7 +1147,7 @@ Unicode: encoded since version 15.0, block from U+11F00.
 Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Strauch; Baums 2016; Salomon 1998. No securely dated document before the Ashokan edicts at Shahbazgarhi and Mansehra, mid-3rd c. BCE.
 
-Languages a source records it for: 2. Largest: Gandhari, Khotanese.
+Languages written mainly in it: 1. Gandhari. Also recorded as a further script for 4 more.
 Unicode: encoded since version 4.1, block from U+10A00.
 
 ### Khmr
@@ -1158,7 +1158,7 @@ Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Zakharov 2019; Unicode ch.16. Earliest dated Old Khmer K.557/600, 611; close to the Pallava script of the Coromandel coast.
 Children: [`Thai`](#thai).
 
-Languages a source records it for: 2. Largest: Central Khmer (16,600,000.0 speakers), Tampuan.
+Languages written mainly in it: 5. Largest: Central Khmer (16,600,000 speakers), Somray of Battambang-Somre of Siem Reap, Kaco', Tampuan, Brao. Also recorded as a further script for 5 more.
 Unicode: encoded since version 3.0, block from U+1780.
 
 ### Khoj
@@ -1168,7 +1168,7 @@ Unicode: encoded since version 3.0, block from U+1780.
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
 Source: Pandey, Unicode N3978; Unicode ch.15. A refined form of the Lohanaki variety of Landa, in use by the 16th c..
 
-Languages a source records it for: 1. Sindhi (24,600,000.0 speakers).
+Recorded as a further script for 4 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+11200.
 
 ### Kitl
@@ -1179,7 +1179,7 @@ Parent: [`Hani`](#hani) Han, link **stimulus**.
 Source: Kane 2009, The Kitan Language and Script. On the basis of Chinese clerical script with modifications; most characters novel.
 Children: [`Jurc`](#jurc).
 
-Languages a source records it for: 1. Kitan.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Kits
@@ -1189,7 +1189,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Ougr`](#ougr) Old Uyghur, link **stimulus**.
 Source: Kane 2009. Created after contact with Uighurs; phonetic components, no shared characters with the large script.
 
-Languages a source records it for: 1. Kitan.
+Languages written mainly in it: 1. Kitan.
 Unicode: encoded since version 13.0, block from U+16FE4.
 
 ### Knda
@@ -1199,7 +1199,7 @@ Unicode: encoded since version 13.0, block from U+16FE4.
 Parent: [`Brah`](#brah) Brahmi through Kadamba, link **attested**.
 Source: Mahadevan, Frontline; Gai. Halmidi inscription, mid-5th c., in Kadamba script; a sister of Telugu.
 
-Languages a source records it for: 4. Largest: Kannada (43,600,000.0 speakers), Lambadi (6,000,000.0 speakers), Goan Konkani (3,633,900.0 speakers), Tulu (2,000,000.0 speakers).
+Languages written mainly in it: 7. Largest: Kannada (43,600,000 speakers), Tulu (2,000,000 speakers), Kodava (200,000 speakers), Sholaga (24,000 speakers), Kudiya. Also recorded as a further script for 7 more.
 Unicode: encoded since version 1.1, block from U+0C80.
 
 ### Kore
@@ -1208,7 +1208,7 @@ Unicode: encoded since version 1.1, block from U+0C80.
 
 Parent: [`Hani`](#hani) Han, link **composite**.
 
-Languages a source records it for: 1. Korean (77,300,000.0 speakers).
+Languages written mainly in it: 1. Korean (77,300,000 speakers).
 Unicode: encoded since version 1.1.
 
 ### Kpel
@@ -1228,7 +1228,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Limb`](#limb) Limbu through Old Kirat lipi, link **contested**.
 Source: L2/22-043R. Derived from the Old Kirat script from which Limbu also comes; Sumhung Lipi of the 1920s, redesigned 2000.
 
-Languages a source records it for: 1. Bantawa.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+16D40.
 
 ### Kthi
@@ -1239,7 +1239,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Nagari, lin
 Source: Pandey, Unicode N3389. Kaithi and Devanagari are siblings within the Nagari family.
 Children: [`Sylo`](#sylo).
 
-Languages a source records it for: 2. Largest: Bhojpuri (52,200,000.0 speakers), Maithili (33,900,000.0 speakers).
+Recorded as a further script for 8 languages, the main script for none.
 Unicode: encoded since version 5.2, block from U+11080.
 
 ### Lana
@@ -1250,7 +1250,7 @@ Parent: [`Mymr`](#mymr) Myanmar through Old Mon, link **attested**.
 Source: Apiradee & Grabowsky 2024. Developed from the Mon script of Hariphunchai; earliest evidence 1376.
 Children: [`Talu`](#talu).
 
-Languages a source records it for: 4. Largest: Northern Thai (6,029,500.0 speakers), Lü (700,000.0 speakers), Tai Nüa (650,000.0 speakers), Samtao.
+Languages written mainly in it: 5. Largest: Northern Thai (6,029,500 speakers), Khün (120,000 speakers), Samtao, Phuan, Tai Ya. Also recorded as a further script for 2 more.
 Unicode: encoded since version 5.2, block from U+1A20.
 
 ### Laoo
@@ -1261,7 +1261,7 @@ Parent: [`Thai`](#thai) Thai through Fakkham, link **attested**.
 Source: Lorrillard, 'Scripts and history: the case of Laos'. Fakkham the prototype of Lao script; no direct Khmer transmission; first dated stele 1494 or 1497.
 Children: [`Hmng`](#hmng).
 
-Languages a source records it for: 7. Largest: Lao (5,225,552.0 speakers), Tai Dam (760,000.0 speakers), Lü (700,000.0 speakers), Tai Daeng-Meuay (650,000.0 speakers), Khmu (480,000.0 speakers).
+Languages written mainly in it: 14. Largest: Lao (5,225,552 speakers), Khmu (480,000 speakers), Kriang-Khlor, Western Katu, Upper Ta'oih. Also recorded as a further script for 14 more.
 Unicode: encoded since version 1.1, block from U+0E81.
 
 ### Latf
@@ -1270,7 +1270,7 @@ Unicode: encoded since version 1.1, block from U+0E81.
 
 Parent: [`Latn`](#latn) Latin, link **variant**.
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Middle Low German. Also recorded as a further script for 2 more.
 Unicode: encoded since version 1.1.
 
 ### Latg
@@ -1279,7 +1279,7 @@ Unicode: encoded since version 1.1.
 
 Parent: [`Latn`](#latn) Latin, link **variant**.
 
-Languages a source records it for: 1. Irish (141,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 1.1.
 
 ### Latn
@@ -1290,7 +1290,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020. Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over.
 Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Olck`](#olck), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tols`](#tols), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge), [`Toto`](#toto).
 
-Languages a source records it for: 1095. Largest: English (753,359,540.0 speakers), Spanish (485,000,000.0 speakers), Hindi (341,000,000.0 speakers), Portuguese (254,300,000.0 speakers), French (208,157,220.0 speakers).
+Languages written mainly in it: 3,610. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 205 more.
 Unicode: encoded since version 1.1, block from U+0041.
 
 ### Leke
@@ -1300,7 +1300,7 @@ Unicode: encoded since version 1.1, block from U+0041.
 Parent: [`Mymr`](#mymr) Myanmar, link **contested**.
 Source: Kato 2026 (user.keio.ac.jp/~kato/LekeScript.pdf); Unicode N4438. Created mid-19th c. with the Leke religion; some borrowing from Old Mon and Burmese.
 
-Languages a source records it for: 1. Pwo Eastern Karen.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Lepc
@@ -1311,7 +1311,7 @@ Parent: [`Tibt`](#tibt) Tibetan, link **attested**.
 Source: Unicode ch.13; Everson, Unicode N2947. Based directly on Tibetan; invented around 1720.
 Children: [`Limb`](#limb).
 
-Languages a source records it for: 1. Lepcha (75,000.0 speakers).
+Languages written mainly in it: 1. Lepcha (75,000 speakers).
 Unicode: encoded since version 5.1, block from U+1C00.
 
 ### Limb
@@ -1322,7 +1322,7 @@ Parent: [`Lepc`](#lepc) Lepcha, link **contested**.
 Source: Unicode ch.13; Hall, Unicode N4347. Oldest known writings collected in Darjeeling in the 1850s; 18th-c. Sirijanga origin is tradition.
 Children: [`Krai`](#krai).
 
-Languages a source records it for: 1. Limbu (420,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 4.0, block from U+1900.
 
 ### Lina
@@ -1333,7 +1333,7 @@ A root: no known parent among the registry's codes.
 Source: Salgarella 2020, Aegean Linear Script(s), CUP. Linear A grew out of the Cretan hieroglyphic tradition, which has no ISO code.
 Children: [`Cpmn`](#cpmn), [`Linb`](#linb).
 
-Languages a source records it for: 1. Minoan.
+Languages written mainly in it: 1. Minoan.
 Unicode: encoded since version 7.0, block from U+10600.
 
 ### Linb
@@ -1343,7 +1343,7 @@ Unicode: encoded since version 7.0, block from U+10600.
 Parent: [`Lina`](#lina) Linear A, link **attested**.
 Source: Olivier 2012, in Cline (ed.), Oxford Handbook of the Bronze Age Aegean. Knossos tablets 14th c. BCE on the compromise chronology; 1450 is the high date.
 
-Languages a source records it for: 2. Largest: Achaean Greek, Ionic-Attic Ancient Greek.
+Languages written mainly in it: 1. Achaean Greek. Also recorded as a further script for 1 more.
 Unicode: encoded since version 4.0, block from U+10000.
 
 ### Lisu
@@ -1353,7 +1353,7 @@ Unicode: encoded since version 4.0, block from U+10000.
 Parent: [`Latn`](#latn) Latin, link **attested**.
 Source: Unicode N3317; Cook, L2/07-294. Sara Ba Thaw and James Fraser modified the shapes of Latin letters, 1908-1914, published 1915.
 
-Languages a source records it for: 2. Largest: Zaiwa (80,000.0 speakers), Lisu.
+Languages written mainly in it: 1. Lisu. Also recorded as a further script for 3 more.
 Unicode: encoded since version 5.2, block from U+A4D0.
 
 ### Loma
@@ -1363,7 +1363,7 @@ Unicode: encoded since version 5.2, block from U+A4D0.
 Parent: [`Vaii`](#vaii) Vai, link **stimulus**.
 Source: Unicode N3756 (L2/10-005). Devised in the 1930s by Wido Zobo; Vai stimulus, no shared letterforms.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Lyci
@@ -1373,7 +1373,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Adiego 2018; Unicode ch.8. Both the letter shapes and the chronology point to a Greek origin; c.500 BCE.
 
-Languages a source records it for: 1. Lycian A.
+Languages written mainly in it: 2. Largest: Milyan, Lycian A.
 Unicode: encoded since version 5.1, block from U+10280.
 
 ### Lydi
@@ -1383,7 +1383,7 @@ Unicode: encoded since version 5.1, block from U+10280.
 Parent: [`Grek`](#grek) Greek, link **attested**.
 Source: Adiego 2018; Unicode ch.8. Greek or Phrygian model, an open question; late 8th or early 7th c. BCE; mostly right to left.
 
-Languages a source records it for: 1. Lydian.
+Languages written mainly in it: 1. Lydian.
 Unicode: encoded since version 5.1, block from U+10920.
 
 ### Mahj
@@ -1393,7 +1393,7 @@ Unicode: encoded since version 5.1, block from U+10920.
 Parent: [`Deva`](#deva) Devanagari through Landa, link **contested**.
 Source: Pandey, Unicode N4126. Often called a derivative of Kaithi or Devanagari; structure resembles Landa.
 
-Languages a source records it for: 1. Hindi (341,000,000.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+11150.
 
 ### Maka
@@ -1403,7 +1403,7 @@ Unicode: encoded since version 7.0, block from U+11150.
 Parent: [`Rjng`](#rjng) Rejang, link **contested**.
 Source: Pandey, L2/15-233; Unicode ch.17. Closest relative Rejang; no evolutionary relationship with Buginese.
 
-Languages a source records it for: 1. Makasar (1,600,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 11.0, block from U+11EE0.
 
 ### Mand
@@ -1413,7 +1413,7 @@ Unicode: encoded since version 11.0, block from U+11EE0.
 Parent: [`Elym`](#elym) Elymaic, link **contested**.
 Source: Encyclopaedia Iranica 'Mandaeans v'; Haberl 2006, BASOR. Based on the script of the Elymaean rock inscriptions; Unicode also allows Parthian chancery; bowls 4th-7th c..
 
-Languages a source records it for: 1. Classical Mandaic.
+Languages written mainly in it: 2. Largest: Classical Mandaic, Neo-Mandaic.
 Unicode: encoded since version 6.0, block from U+0840.
 
 ### Mani
@@ -1423,7 +1423,7 @@ Unicode: encoded since version 6.0, block from U+0840.
 Parent: [`Syrc`](#syrc) Syriac, link **contested**.
 Source: Unicode ch.10; Everson, Unicode N2544 and N3486. Based on Estrangela Syriac and Palmyrene; also described as a sister of Syriac out of Aramaic.
 
-Languages a source records it for: 4. Largest: Bactrian, Pahlavi, Parthian, Sogdian.
+Languages written mainly in it: 1. Tokharian B. Also recorded as a further script for 4 more.
 Unicode: encoded since version 7.0, block from U+10AC0.
 
 ### Marc
@@ -1433,7 +1433,7 @@ Unicode: encoded since version 7.0, block from U+10AC0.
 Parent: [`Tibt`](#tibt) Tibetan, link **contested**.
 Source: West, Unicode N4491. Quite different from Tibetan and Lantsa; no early texts known, likely a much more recent innovation.
 
-Languages a source records it for: 1. Zhangzhung.
+Languages written mainly in it: 1. Zhangzhung. Also recorded as a further script for 1 more.
 Unicode: encoded since version 9.0, block from U+11C70.
 
 ### Maya
@@ -1442,7 +1442,7 @@ Unicode: encoded since version 9.0, block from U+11C70.
 
 A root: no known parent among the registry's codes.
 
-Languages a source records it for: 1. Epigraphic Mayan.
+Languages written mainly in it: 1. Epigraphic Mayan.
 Unicode: not encoded, so no font can show it.
 
 ### Medf
@@ -1452,7 +1452,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: L2/16-101R. Strong influence of English orthography, capital and small letters; revealed 1927.
 
-Languages a source records it for: 1. Medefidrin.
+Languages written mainly in it: 1. Medefidrin.
 Unicode: encoded since version 11.0, block from U+16E40.
 
 ### Mend
@@ -1462,7 +1462,7 @@ Unicode: encoded since version 11.0, block from U+16E40.
 Parent: [`Vaii`](#vaii) Vai, link **stimulus**.
 Source: Unicode N4133 (L2/11-301). Syllabic blueprint unquestionably influenced by Vai; right to left.
 
-Languages a source records it for: 1. Mende (Sierra Leone).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+1E800.
 
 ### Merc
@@ -1472,7 +1472,7 @@ Unicode: encoded since version 7.0, block from U+1E800.
 Parent: [`Egyd`](#egyd) Egyptian demotic, link **attested**.
 Source: Rilly, UCLA Encyclopedia of Egyptology; Priese 1973. Developed from Demotic; earliest datable object a sistrum handle naming Arnekhamani, c.220 BCE.
 
-Languages a source records it for: 1. Meroitic.
+Languages written mainly in it: 1. Meroitic.
 Unicode: encoded since version 6.1, block from U+109A0.
 
 ### Mero
@@ -1492,7 +1492,7 @@ Unicode: encoded since version 6.1, block from U+10980.
 Parent: [`Gran`](#gran) Grantha through Chola Grantha, link **attested**.
 Source: ICANN Malayalam LGR 2019. The 830 Vazhappalli plates are in Vatteluttu; Malayalam script texts from about the 12th c..
 
-Languages a source records it for: 4. Largest: Malayalam (37,100,000.0 speakers), Goan Konkani (3,633,900.0 speakers), Tulu (2,000,000.0 speakers), Muthuvan.
+Languages written mainly in it: 11. Largest: Malayalam (37,100,000 speakers), Aranadan (200 speakers), Attapady Kurumba, Muduga, Kanikkaran. Also recorded as a further script for 7 more.
 Unicode: encoded since version 1.1, block from U+0D00.
 
 ### Modi
@@ -1503,7 +1503,7 @@ Parent: [`Deva`](#deva) Devanagari through Nagari, link **attested**.
 Source: Pandey, Unicode N4034; Salomon 1998 n.116. A Nagari-family script for continuous writing; earliest extant document early 17th c..
 Children: [`Gong`](#gong).
 
-Languages a source records it for: 1. Marathi (83,100,000.0 speakers).
+Languages written mainly in it: 1. Old Marathi. Also recorded as a further script for 3 more.
 Unicode: encoded since version 7.0, block from U+11600.
 
 ### Mong
@@ -1513,7 +1513,7 @@ Unicode: encoded since version 7.0, block from U+11600.
 Parent: [`Ougr`](#ougr) Old Uyghur, link **attested**.
 Source: Unicode ch.13; Brose 2005. Adopted 1204 by tradition; earliest surviving text the Stele of Yisungge, c.1224-1225.
 
-Languages a source records it for: 5. Largest: Halh Mongolian (2,704,030.0 speakers), Mongolia Buriat (42,500.0 speakers), Evenki (15,800.0 speakers), Manchu (20.0 speakers), Middle Mongol.
+Languages written mainly in it: 5. Largest: China Buriat (65,000 speakers), Xibe (30,000 speakers), Manchu (20 speakers), Middle Mongol, Peripheral Mongolian. Also recorded as a further script for 9 more.
 Unicode: encoded since version 3.0, block from U+1800.
 
 ### Moon
@@ -1533,7 +1533,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Unicode N3589. A messianic script of the 1980s with no genetic relationship to existing scripts.
 
-Languages a source records it for: 1. Mru.
+Languages written mainly in it: 1. Mru.
 Unicode: encoded since version 7.0, block from U+16A40.
 
 ### Mtei
@@ -1543,7 +1543,7 @@ Unicode: encoded since version 7.0, block from U+16A40.
 Parent: [`Brah`](#brah) Brahmi, link **contested**.
 Source: Everson, Unicode N3158. Earliest use dated 11th-12th c., from the Tibetan group; Tomba 1993 calls the old documents forgeries.
 
-Languages a source records it for: 2. Largest: Manipuri (1,470,000.0 speakers), Anal (23,000.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 5.2, block from U+AAE0.
 
 ### Mult
@@ -1553,7 +1553,7 @@ Unicode: encoded since version 5.2, block from U+AAE0.
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
 Source: Unicode ch.15. Related to Gurmukhi; used in the 19th and 20th c.; earlier date unsourced.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 8.0, block from U+11280.
 
 ### Mymr
@@ -1564,7 +1564,7 @@ Parent: [`Brah`](#brah) Brahmi through Old Mon or Pyu, link **attested**.
 Source: Unicode ch.16; Aung-Thwin 2005. First inscription 11th c. (Myazedi c.1113); Mon source in Unicode, Pyu argued by Aung-Thwin.
 Children: [`Ahom`](#ahom), [`Lana`](#lana), [`Tale`](#tale), [`Cakm`](#cakm), [`Leke`](#leke), [`Kali`](#kali).
 
-Languages a source records it for: 6. Largest: Burmese (32,900,000.0 speakers), Shan (3,000,000.0 speakers), Pa'o Karen (860,000.0 speakers), Mon (850,000.0 speakers), Khamti (13,000.0 speakers).
+Languages written mainly in it: 31. Largest: Burmese (32,900,000 speakers), S'gaw Karen (4,000,000 speakers), Shan (3,000,000 speakers), Pa'o Karen (860,000 speakers), Mon (850,000 speakers). Also recorded as a further script for 8 more.
 Unicode: encoded since version 3.0, block from U+1000.
 
 ### Nagm
@@ -1574,7 +1574,7 @@ Unicode: encoded since version 3.0, block from U+1000.
 Parent: [`Olck`](#olck) Ol Chiki, link **stimulus**.
 Source: L2/21-031R; Unicode ch.13. Organisation modelled on Ol Chiki; developed from the 1950s.
 
-Languages a source records it for: 1. Mundari (1,500,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 15.0, block from U+1E4D0.
 
 ### Nand
@@ -1584,7 +1584,7 @@ Unicode: encoded since version 15.0, block from U+1E4D0.
 Parent: [`Deva`](#deva) Devanagari through Nagari, link **attested**.
 Source: Pandey, L2/17-162. A sister of Devanagari within the Nagari family, 11th c..
 
-Languages a source records it for: none.
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 12.0, block from U+119A0.
 
 ### Narb
@@ -1594,7 +1594,7 @@ Unicode: encoded since version 12.0, block from U+119A0.
 Parent: [`Psin`](#psin) Proto-Sinaitic, link **attested**.
 Source: Al-Jallad 2015, An Outline of the Grammar of the Safaitic Inscriptions; Unicode ch.10. Shares an ancestor with Ancient South Arabian rather than descending from it.
 
-Languages a source records it for: 1. Ancient North Arabian.
+Languages written mainly in it: 1. Ancient North Arabian.
 Unicode: encoded since version 7.0, block from U+10A80.
 
 ### Nbat
@@ -1605,7 +1605,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Naveh, The Nabataeans. Elusa inscription early 2nd c. BCE not yet Nabataean in form; Aslah inscription, Petra, 95 BCE.
 Children: [`Arab`](#arab).
 
-Languages a source records it for: 1. Imperial Aramaic (700-300 BCE).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+10880.
 
 ### Newa
@@ -1616,7 +1616,7 @@ Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Kutila, lin
 Source: Pandey, Unicode N4184; Unicode ch.13. A distinct Newar script from the 10th c.; Lankavatara Sutra manuscript dated 908.
 Children: [`Ranj`](#ranj).
 
-Languages a source records it for: none.
+Recorded as a further script for 5 languages, the main script for none.
 Unicode: encoded since version 9.0, block from U+11400.
 
 ### Nkdb
@@ -1627,7 +1627,7 @@ A root: no known parent among the registry's codes.
 Source: Poupard 2019, Written Language & Literacy; Yang & He 2024. Earliest dated manuscripts 13th c.; independence hedged, created amid Chinese and Tibetan literacy.
 Children: [`Nkgb`](#nkgb).
 
-Languages a source records it for: none.
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Nkgb
@@ -1637,7 +1637,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Nkdb`](#nkdb) Naxi Dongba, link **contested**.
 Source: Friedrich 2023; Unicode N3442. Some characters from Dongba, some from Yi, Tibetan and Chinese; a dated stele of 1619.
 
-Languages a source records it for: none.
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Nkoo
@@ -1647,7 +1647,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Unicode ch.19; Oyler 2005; Wyrod 2019, African Studies Review. Kante tried Arabic ajami and Latin before devising N'Ko in 1949; direction and joining as Arabic.
 
-Languages a source records it for: 2. Largest: Bambara (4,200,000.0 speakers), Mandinka (1,350,000.0 speakers).
+Recorded as a further script for 3 languages, the main script for none.
 Unicode: encoded since version 5.0, block from U+07C0.
 
 ### Nshu
@@ -1667,7 +1667,7 @@ Unicode: encoded since version 10.0, block from U+16FE1.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: McManus 1991, A Guide to Ogam. The most likely immediate source is Latin; Greek and runes have had adherents.
 
-Languages a source records it for: 2. Largest: Pictish, Early Irish.
+Languages written mainly in it: 1. Pictish. Also recorded as a further script for 7 more.
 Unicode: encoded since version 3.0, block from U+1680.
 
 ### Olck
@@ -1678,7 +1678,7 @@ Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Unicode N2505; Zide 1996. Alphabetic, sharing none of the syllabic properties of Indic scripts; shapes from familiar objects.
 Children: [`Nagm`](#nagm).
 
-Languages a source records it for: 1. Santali (7,200,000.0 speakers).
+Languages written mainly in it: 1. Santali (7,200,000 speakers).
 Unicode: encoded since version 5.1, block from U+1C50.
 
 ### Onao
@@ -1688,7 +1688,7 @@ Unicode: encoded since version 5.1, block from U+1C50.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: L2/22-151. Invented by Mahendra Nath Sardar between 1981 and 1992; Bhumij was written in Odia, Bengali, Devanagari and Latin.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+1E5D0.
 
 ### Orkh
@@ -1699,7 +1699,7 @@ Parent: [`Sogd`](#sogd) Sogdian, link **contested**.
 Source: Everson et al., L2/08-071R2; Shcherbak 1996, Etudes mongoles 27. Aramaic via Iranian scripts is mainstream; a direct Sogdian link is denied by Rona-Tas.
 Children: [`Hung`](#hung).
 
-Languages a source records it for: 2. Largest: Old Turkish, Old Turkic.
+Languages written mainly in it: 1. Old Turkish. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.2, block from U+10C00.
 
 ### Orya
@@ -1709,7 +1709,7 @@ Unicode: encoded since version 5.2, block from U+10C00.
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
 Source: Salomon 1998 3.4.2. Early Oriya texts in Gaudi (Urajam 1051); a distinct Oriya script from the 14th c., of composite origin.
 
-Languages a source records it for: 15. Largest: Odia (34,500,000.0 speakers), Santali (7,200,000.0 speakers), Sadri (7,000,000.0 speakers), Sambalpuri (2,630,000.0 speakers), Ho (1,500,000.0 speakers).
+Languages written mainly in it: 15. Largest: Odia (34,500,000 speakers), Sambalpuri (2,630,000 speakers), Pengo (350,000 speakers), Juang (30,875 speakers), Bondo (9,000 speakers). Also recorded as a further script for 11 more.
 Unicode: encoded since version 1.1, block from U+0B01.
 
 ### Osge
@@ -1719,7 +1719,7 @@ Unicode: encoded since version 1.1, block from U+0B01.
 Parent: [`Latn`](#latn) Latin, link **attested**.
 Source: Everson, Lookout & Pratt, Unicode N4587. Letters in origin modifications or fusions of Latin letters, designed by 2006, revised 2012-2014.
 
-Languages a source records it for: 1. Osage.
+Languages written mainly in it: 1. Osage.
 Unicode: encoded since version 9.0, block from U+104B0.
 
 ### Osma
@@ -1729,7 +1729,7 @@ Unicode: encoded since version 9.0, block from U+104B0.
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Unicode ch.19; Tosco, AAP, after Cerulli 1932. Letter order follows Arabic; Latin gave only the direction; no Ethiopic role.
 
-Languages a source records it for: 1. Somali (16,200,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 4.0, block from U+10480.
 
 ### Ougr
@@ -1740,7 +1740,7 @@ Parent: [`Sogd`](#sogd) Sogdian, link **attested**.
 Source: L2/20-003 (Old Uyghur); Unicode ch.14. Believed to derive from Sogdian cursive in the 8th or 9th c..
 Children: [`Kits`](#kits), [`Mong`](#mong).
 
-Languages a source records it for: 1. Old Turkic.
+Languages written mainly in it: 1. Old Turkic. Also recorded as a further script for 1 more.
 Unicode: encoded since version 14.0, block from U+10F70.
 
 ### Palm
@@ -1750,7 +1750,7 @@ Unicode: encoded since version 14.0, block from U+10F70.
 Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Unicode ch.10. Inscriptions from 44 BCE to about 280 CE.
 
-Languages a source records it for: 1. Imperial Aramaic (700-300 BCE).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+10860.
 
 ### Pauc
@@ -1760,7 +1760,7 @@ Unicode: encoded since version 7.0, block from U+10860.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: L2/11-104R. No genetic relationship with any other writing system; revealed 1902, alphabetic form 1931.
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Tedim Chin.
 Unicode: encoded since version 7.0, block from U+11AC0.
 
 ### Pcun
@@ -1780,7 +1780,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Pcun`](#pcun) Proto-Cuneiform, link **stimulus**.
 Source: Dahl 2005, CDLJ 2005:3; Englund, Encyclopaedia Iranica 'Elam iii'. Unquestionably inspired by proto-cuneiform; numerical systems borrowed, signs largely new.
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Elamite.
 Unicode: not encoded, so no font can show it.
 
 ### Perm
@@ -1790,7 +1790,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Cyrl`](#cyrl) Cyrillic, link **stimulus**.
 Source: Everson, Unicode N4263. Modelled on Greek and Cyrillic, with many glyphs taken from tamga signs.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+10350.
 
 ### Phag
@@ -1801,7 +1801,7 @@ Parent: [`Tibt`](#tibt) Tibetan, link **attested**.
 Source: Unicode ch.14. Devised for Khubilai and promulgated in 1269; similar to Tibetan.
 Children: [`Hang`](#hang).
 
-Languages a source records it for: 1. Middle Mongol.
+Recorded as a further script for 4 languages, the main script for none.
 Unicode: encoded since version 5.0, block from U+A840.
 
 ### Phli
@@ -1812,7 +1812,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Humbach, Encyclopaedia Iranica 'Epigraphy i'; Rezakhani 2016. Sasanian inscriptions from 224 CE; descent through the Persis coin script is denied by Rezakhani.
 Children: [`Phlp`](#phlp), [`Phlv`](#phlv).
 
-Languages a source records it for: 1. Pahlavi.
+Languages written mainly in it: 1. Pahlavi.
 Unicode: encoded since version 5.2, block from U+10B60.
 
 ### Phlp
@@ -1822,7 +1822,7 @@ Unicode: encoded since version 5.2, block from U+10B60.
 Parent: [`Phli`](#phli) Inscriptional Pahlavi, link **attested**.
 Source: Encyclopaedia Iranica 'Pahlavi Psalter'; Unicode ch.10. 6th or 7th c. CE, after 552; more archaic than Book Pahlavi.
 
-Languages a source records it for: 1. Pahlavi.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+10B80.
 
 ### Phlv
@@ -1844,7 +1844,7 @@ Parent: [`Psin`](#psin) Proto-Sinaitic through Proto-Canaanite, link **attested*
 Source: Unicode ch.10; Ahiram sarcophagus, KAI 1. First long text the Ahiram sarcophagus, c.1000 BCE on palaeography; its date is disputed.
 Children: [`Armi`](#armi), [`Grek`](#grek), [`Sidt`](#sidt), [`Tfng`](#tfng), [`Samr`](#samr).
 
-Languages a source records it for: 3. Largest: Ancient Hebrew, Punic, Phoenician.
+Languages written mainly in it: 2. Largest: Punic, Phoenician. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.0, block from U+10900.
 
 ### Piqd
@@ -1864,7 +1864,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Cans`](#cans) Unified Canadian Aboriginal Syllabics, link **stimulus**.
 Source: Unicode N3789 (L2/10-093); Lewis & Dorais 2003. Structure adopted from Cree syllabics, with Latin, shorthand and Miao signs.
 
-Languages a source records it for: 5. Largest: Hmong Njua (Retired) (4,000,000.0 speakers), Diandongbei-Large Flowery Miao, Gha-mu, Lipo, Biyo.
+Languages written mainly in it: 10. Largest: Diandongbei-Large Flowery Miao, Gha-mu, Lipo, Biyo, Kaduo. Also recorded as a further script for 4 more.
 Unicode: encoded since version 6.1, block from U+16F00.
 
 ### Prti
@@ -1874,7 +1874,7 @@ Unicode: encoded since version 6.1, block from U+16F00.
 Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Skjaervo, Encyclopaedia Iranica 'Iran vi.3'; MacKenzie, 'Dates and dating'. Nisa ostraca of the 1st c. BCE, one dated 89 BCE.
 
-Languages a source records it for: 1. Parthian.
+Languages written mainly in it: 1. Parthian.
 Unicode: encoded since version 5.2, block from U+10B40.
 
 ### Psin
@@ -1896,7 +1896,7 @@ Parent: [`Newa`](#newa) Newa, Newar, Newari, Nepāla lipi, link **attested**.
 Source: Pandey, Unicode N4184, after Malla 1981. Developed from the Newar (pacumola) model; first in Nepal in 1099.
 Children: [`Soyo`](#soyo).
 
-Languages a source records it for: 1. Kathmandu Valley Newari (1,000,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Rjng
@@ -1907,7 +1907,7 @@ Parent: [`Kawi`](#kawi) Kawi, link **attested**.
 Source: Everson, Unicode N3096. First attested about the mid-18th c..
 Children: [`Maka`](#maka).
 
-Languages a source records it for: 2. Largest: Rejang (350,000.0 speakers), Musi.
+Languages written mainly in it: 1. Lampung Nyo. Also recorded as a further script for 4 more.
 Unicode: encoded since version 5.1, block from U+A930.
 
 ### Rohg
@@ -1917,7 +1917,7 @@ Unicode: encoded since version 5.1, block from U+A930.
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Pandey, L2/16-311. Influenced by Arabic but a modern construction with no direct genetic affiliation; finalised 1980.
 
-Languages a source records it for: 1. Rohingya (1,800,000.0 speakers).
+Languages written mainly in it: 1. Rohingya (1,800,000 speakers).
 Unicode: encoded since version 11.0, block from U+10D00.
 
 ### Roro
@@ -1938,7 +1938,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Unicode TN40; Looijenga 2003; Duwel 2008. Thought to come from North Italic; Vimose comb c.150-160; written in either direction.
 Children: [`Cirt`](#cirt).
 
-Languages a source records it for: 4. Largest: German (76,540,740.0 speakers), Gothic, Old Dutch-Old Frankish, Old Norse.
+Languages written mainly in it: 2. Largest: Central East Middle German (2,000,000 speakers), Old Norse. Also recorded as a further script for 14 more.
 Unicode: encoded since version 3.0, block from U+16A0.
 
 ### Samr
@@ -1948,7 +1948,7 @@ Unicode: encoded since version 3.0, block from U+16A0.
 Parent: [`Phnx`](#phnx) Phoenician through Paleo-Hebrew, link **contested**.
 Source: Barag, in Cambridge History of Judaism; Langlois 2019. A conscious creation of the 4th c. CE; Cross and Purvis argued a Hasmonean branch of paleo-Hebrew.
 
-Languages a source records it for: 2. Largest: Samaritan, Ancient Hebrew.
+Languages written mainly in it: 1. Samaritan. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.2, block from U+0800.
 
 ### Sara
@@ -1970,7 +1970,7 @@ Parent: [`Psin`](#psin) Proto-Sinaitic through Proto-Canaanite, link **contested
 Source: Hasselbach, in The Semitic Languages; Sass. Split off a Proto-Canaanite variant before 1000 BCE; Sass derives it from Phoenician-type letters.
 Children: [`Ethi`](#ethi).
 
-Languages a source records it for: 2. Largest: Hadrami, Sabaic.
+Languages written mainly in it: 2. Largest: Hadrami, Sabaic.
 Unicode: encoded since version 5.2, block from U+10A60.
 
 ### Saur
@@ -1980,7 +1980,7 @@ Unicode: encoded since version 5.2, block from U+10A60.
 Parent: [`Gran`](#gran) Grantha, link **contested**.
 Source: unsourced. Brahmic, exact derivation unknown; Randle 1943 records it printed in 1880.
 
-Languages a source records it for: 1. Saurashtra (300,000.0 speakers).
+Languages written mainly in it: 1. Saurashtra (300,000 speakers).
 Unicode: encoded since version 5.1, block from U+A880.
 
 ### Seal
@@ -1999,7 +1999,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Latn`](#latn) Latin through Sutton DanceWriting, link **invented**.
 Source: Unicode N4342. Developed in 1974 by Valerie Sutton out of her DanceWriting.
 
-Languages a source records it for: 9. Largest: Brazilian Sign Language (3,000,000.0 speakers), British Sign Language (327,000.0 speakers), American Sign Language (250,000.0 speakers), Mexican Sign Language, German Sign Language.
+Languages written mainly in it: 9. Largest: Brazilian Sign Language (3,000,000 speakers), British Sign Language (327,000 speakers), American Sign Language (250,000 speakers), Mexican Sign Language, German Sign Language.
 Unicode: encoded since version 8.0, block from U+1D800.
 
 ### Shaw
@@ -2009,7 +2009,7 @@ Unicode: encoded since version 8.0, block from U+1D800.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: University of Reading, Kingsley Read alphabet collection. A 48-character alphabet for English, shapes new, 1960.
 
-Languages a source records it for: 1. English (753,359,540.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 4.0, block from U+10450.
 
 ### Shrd
@@ -2020,7 +2020,7 @@ Parent: [`Brah`](#brah) Brahmi through Kutila, link **attested**.
 Source: Pandey, L2/08-200; Salomon 1998. Descended from Gupta through Kutila; Proto-Sarada from the 7th c., Sharada of Kashmir from the 8th.
 Children: [`Khoj`](#khoj), [`Takr`](#takr), [`Sind`](#sind), [`Guru`](#guru), [`Mult`](#mult).
 
-Languages a source records it for: 1. Sanskrit (49,736.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 6.1, block from U+11180.
 
 ### Shui
@@ -2030,7 +2030,7 @@ Unicode: encoded since version 6.1, block from U+11180.
 Parent: [`Hani`](#hani) Han, link **attested**.
 Source: L2/14-243 (Shuishu proposal). About half the characters derive from Chinese in mirrored or inverted form.
 
-Languages a source records it for: 1. Sui (300,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Sidd
@@ -2041,7 +2041,7 @@ Parent: [`Brah`](#brah) Brahmi through Gupta, link **attested**.
 Source: Salomon 1998, Indian Epigraphy 2.2.5.4. Evolved out of the Gupta script in the late 6th c.; Bodh-Gaya inscription of Mahanaman, 588-589.
 Children: [`Deva`](#deva), [`Newa`](#newa), [`Tirh`](#tirh), [`Orya`](#orya), [`Beng`](#beng), [`Kthi`](#kthi).
 
-Languages a source records it for: 1. Sanskrit (49,736.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+11580.
 
 ### Sidt
@@ -2051,7 +2051,7 @@ Unicode: encoded since version 7.0, block from U+11580.
 Parent: [`Phnx`](#phnx) Phoenician, link **contested**.
 Source: Pandey, L2/23-019. Origins not clearly known; thought to develop from Phoenician in parallel with Greek.
 
-Languages a source records it for: 1. Sidetic.
+Languages written mainly in it: 1. Sidetic.
 Unicode: not encoded, so no font can show it.
 
 ### Sind
@@ -2061,7 +2061,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Shrd`](#shrd) Sharada, Śāradā through Landa, link **attested**.
 Source: Pandey, L2/11-022; Unicode ch.15. A Landa-based script related to Sharada; standard form published 1868.
 
-Languages a source records it for: 1. Sindhi (24,600,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+112B0.
 
 ### Sinh
@@ -2071,7 +2071,7 @@ Unicode: encoded since version 7.0, block from U+112B0.
 Parent: [`Brah`](#brah) Brahmi, link **attested**.
 Source: Unicode L2/10-312. Brahmi inscriptions of the 3rd-2nd c. BCE; later influenced by Grantha.
 
-Languages a source records it for: 5. Largest: Sinhala (15,300,000.0 speakers), Sanskrit (49,736.0 speakers), Sri Lanka Malay (46,000.0 speakers), Veddah (300.0 speakers), Pali.
+Languages written mainly in it: 2. Largest: Sinhala (15,300,000 speakers), Veddah (300 speakers). Also recorded as a further script for 3 more.
 Unicode: encoded since version 3.0, block from U+0D81.
 
 ### Sogd
@@ -2082,7 +2082,7 @@ Parent: [`Sogo`](#sogo) Old Sogdian, link **attested**.
 Source: Unicode ch.14. Derived from Old Sogdian, used from the 7th to the 14th c. CE.
 Children: [`Orkh`](#orkh), [`Ougr`](#ougr).
 
-Languages a source records it for: 2. Largest: Khwarezmian, Sogdian.
+Languages written mainly in it: 1. Sogdian. Also recorded as a further script for 1 more.
 Unicode: encoded since version 11.0, block from U+10F30.
 
 ### Sogo
@@ -2093,7 +2093,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Encyclopaedia Iranica 'Ancient Letters'; Unicode ch.14. Ancient Letters securely dated 312-313 CE; the Kultobe inscriptions possibly earlier.
 Children: [`Sogd`](#sogd).
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 11.0, block from U+10F00.
 
 ### Sora
@@ -2103,7 +2103,7 @@ Unicode: encoded since version 11.0, block from U+10F00.
 Parent: [`Brah`](#brah) Brahmi, link **stimulus**.
 Source: Everson, Unicode N3647R (L2/09-189R). Of the Brahmic type, consonants with an inherent vowel; revealed 18 June 1936.
 
-Languages a source records it for: 1. Sora (410,000.0 speakers).
+Languages written mainly in it: 1. Sora (410,000 speakers).
 Unicode: encoded since version 6.1, block from U+110D0.
 
 ### Soyo
@@ -2113,7 +2113,7 @@ Unicode: encoded since version 6.1, block from U+110D0.
 Parent: [`Ranj`](#ranj) Ranjana through Lantsa, link **attested**.
 Source: Unicode ch.14; Unicode N1855. Created in 1686 by Zanabazar on the model of Lantsa, with Tibetan order and shapes.
 
-Languages a source records it for: none.
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 10.0, block from U+11A50.
 
 ### Sund
@@ -2123,7 +2123,7 @@ Unicode: encoded since version 10.0, block from U+11A50.
 Parent: [`Kawi`](#kawi) Kawi through Pallava, link **contested**.
 Source: Unicode ch.17; Pandey, L2/12-125. Unicode derives Old Sundanese from Pallawa, Pandey from Kawi; used 14th-18th c..
 
-Languages a source records it for: 1. Sundanese (32,400,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 5.1, block from U+1B80.
 
 ### Sunu
@@ -2133,7 +2133,7 @@ Unicode: encoded since version 5.1, block from U+1B80.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Pandey, L2/21-157. A linear alphabet whose structure is modelled upon the Latin alphabet.
 
-Languages a source records it for: 1. Sunwar.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+11BC0.
 
 ### Sylo
@@ -2143,7 +2143,7 @@ Unicode: encoded since version 16.0, block from U+11BC0.
 Parent: [`Kthi`](#kthi) Kaithi, link **attested**.
 Source: L2/02-388 (Syloti Nagri); Pandey, Unicode N3389. A form of Kaithi; earliest manuscript dated 1549 or 1774, exact origin unknown.
 
-Languages a source records it for: 1. Sylheti (13,980,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 4.1, block from U+A800.
 
 ### Syrc
@@ -2154,7 +2154,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Healey 2011, Hugoye; Drijvers & Healey As55. The earliest dated Syriac inscription is the Birecik inscription of 6 CE.
 Children: [`Syre`](#syre), [`Mani`](#mani), [`Syrj`](#syrj), [`Syrn`](#syrn), [`Yezi`](#yezi).
 
-Languages a source records it for: 4. Largest: Classical Syriac (575,000.0 speakers), Assyrian Neo-Aramaic (232,300.0 speakers), Turoyo (84,000.0 speakers), Sogdian.
+Languages written mainly in it: 10. Largest: Classical Syriac (575,000 speakers), Assyrian Neo-Aramaic (232,300 speakers), Old Aramaic-Sam'alian, Western Neo-Aramaic, Jewish Babylonian Aramaic (ca. 200-1200 CE). Also recorded as a further script for 4 more.
 Unicode: encoded since version 3.0, block from U+0700.
 
 ### Syre
@@ -2163,7 +2163,7 @@ Unicode: encoded since version 3.0, block from U+0700.
 
 Parent: [`Syrc`](#syrc) Syriac, link **variant**.
 
-Languages a source records it for: 1. Classical Syriac (575,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 3.0.
 
 ### Syrj
@@ -2172,7 +2172,7 @@ Unicode: encoded since version 3.0.
 
 Parent: [`Syrc`](#syrc) Syriac, link **variant**.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 3.0.
 
 ### Syrn
@@ -2191,7 +2191,7 @@ Unicode: encoded since version 3.0.
 Parent: [`Tglg`](#tglg) Tagalog, link **contested**.
 Source: Unicode ch.17; Miller, Unicode Technical Note 35. Related to Tagalog but may not descend from it; within the range of 17th-c. Philippine handwriting.
 
-Languages a source records it for: 2. Largest: Calamian Tagbanwa, Tagbanwa.
+Languages written mainly in it: 1. Calamian Tagbanwa. Also recorded as a further script for 2 more.
 Unicode: encoded since version 3.2, block from U+1760.
 
 ### Takr
@@ -2202,7 +2202,7 @@ Parent: [`Shrd`](#shrd) Sharada, Śāradā through Devasesha, link **attested**.
 Source: Pandey, L2/09-424. From Sharada through Devasesha (14th c.), differentiated in the 16th c..
 Children: [`Dogr`](#dogr).
 
-Languages a source records it for: 5. Largest: Mandeali (900,000.0 speakers), Mahasu Pahari, Hinduri, Pangwali, Gujari.
+Languages written mainly in it: 1. Hinduri. Also recorded as a further script for 13 more.
 Unicode: encoded since version 6.1, block from U+11680.
 
 ### Tale
@@ -2212,7 +2212,7 @@ Unicode: encoded since version 6.1, block from U+11680.
 Parent: [`Mymr`](#mymr) Myanmar, link **attested**.
 Source: Daniels 2012, Journal of Southeast Asian Studies. The Tay borrowed heavily from Burmese before the 15th c.; a Ming scroll of 1407.
 
-Languages a source records it for: 3. Largest: Lü (700,000.0 speakers), Tai Nüa (650,000.0 speakers), Samtao.
+Languages written mainly in it: 1. Tai Nüa (650,000 speakers). Also recorded as a further script for 4 more.
 Unicode: encoded since version 4.0, block from U+1950.
 
 ### Talu
@@ -2222,7 +2222,7 @@ Unicode: encoded since version 4.0, block from U+1950.
 Parent: [`Lana`](#lana) Tai Tham, link **attested**.
 Source: Grabowsky, Manuscript Cultures 3. A simplification of Tai Tham, officially introduced 1955.
 
-Languages a source records it for: 1. Lü (700,000.0 speakers).
+Languages written mainly in it: 1. Lü (700,000 speakers).
 Unicode: encoded since version 4.1, block from U+1980.
 
 ### Taml
@@ -2232,7 +2232,7 @@ Unicode: encoded since version 4.1, block from U+1980.
 Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Francis 2024. A new alphabet for Tamil around the start of the 7th c., a sister of Grantha, not from Vatteluttu.
 
-Languages a source records it for: 4. Largest: Tamil (75,000,000.0 speakers), Badaga (134,000.0 speakers), Sri Lanka Malay (46,000.0 speakers), Muthuvan.
+Languages written mainly in it: 12. Largest: Tamil (75,000,000 speakers), Badaga (134,000 speakers), Kurumba, Kannada, Kota (India), Toda. Also recorded as a further script for 5 more.
 Unicode: encoded since version 1.1, block from U+0B82.
 
 ### Tang
@@ -2242,7 +2242,7 @@ Unicode: encoded since version 1.1, block from U+0B82.
 Parent: [`Hani`](#hani) Han, link **stimulus**.
 Source: Cook, Unicode N3297. Invented by decree with Chinese writing as conceptual model; no shared characters.
 
-Languages a source records it for: 1. Tangut.
+Languages written mainly in it: 1. Tangut.
 Unicode: encoded since version 9.0, block from U+16FE0.
 
 ### Tavt
@@ -2252,7 +2252,7 @@ Unicode: encoded since version 9.0, block from U+16FE0.
 Parent: [`Thai`](#thai) Thai through Sukhothai, link **attested**.
 Source: Thai Research Fund report PDG4810005. Tai Dam script a derivative of Sukhothai script, arriving around the 16th c..
 
-Languages a source records it for: 4. Largest: Tai Dam (760,000.0 speakers), Tai Daeng-Meuay (650,000.0 speakers), Tai Dón (280,000.0 speakers), Thai Song.
+Languages written mainly in it: 3. Largest: Tai Dam (760,000 speakers), Tai Daeng-Meuay (650,000 speakers), Thai Song. Also recorded as a further script for 2 more.
 Unicode: encoded since version 5.2, block from U+AA80.
 
 ### Tayo
@@ -2262,7 +2262,7 @@ Unicode: encoded since version 5.2, block from U+AA80.
 Parent: [`Thai`](#thai) Thai, link **contested**.
 Source: L2/22-289; Ferlus 2006. A common origin with the Tai Dam group; written top to bottom in right-to-left columns.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Telu
@@ -2272,7 +2272,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Brah`](#brah) Brahmi through Kadamba, link **attested**.
 Source: Mahadevan, Frontline. Kalamalla inscription of the Renati Cholas, end of the 6th c..
 
-Languages a source records it for: 12. Largest: Telugu (82,000,000.0 speakers), Lambadi (6,000,000.0 speakers), Ho (1,500,000.0 speakers), Sora (410,000.0 speakers), Kuvi (350,000.0 speakers).
+Languages written mainly in it: 13. Largest: Telugu (82,000,000 speakers), Lambadi (6,000,000 speakers), Konda-Dora (20,000 speakers), Southeastern Kolami, Gorum-Parenga. Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0C00.
 
 ### Teng
@@ -2292,7 +2292,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Phnx`](#phnx) Phoenician through Libyco-Berber, link **contested**.
 Source: British Museum, 'Written in stone'; Chaker & Hachi 2000. Phoenician/Punic origin has the wider support; indigenous and South Arabian origins argued; first dated text 139/138 BCE (Dougga).
 
-Languages a source records it for: 17. Largest: Central Moroccan Berber (17,000,000.0 speakers), Tachelhit (8,000,000.0 speakers), Tarifiyt-Beni-Iznasen-Eastern Middle Atlas Berber (4,399,000.0 speakers), Chaouia of the Aures (2,300,000.0 speakers), Tawallammat Tamajaq (640,000.0 speakers).
+Languages written mainly in it: 7. Largest: Tachelhit (8,000,000 speakers), Tawallammat Tamajaq (640,000 speakers), Tagdal (26,900 speakers), Zenaga (200 speakers), Numidian. Also recorded as a further script for 15 more.
 Unicode: encoded since version 4.1, block from U+2D30.
 
 ### Tglg
@@ -2303,7 +2303,7 @@ Parent: [`Kawi`](#kawi) Kawi, link **contested**.
 Source: Miller 2011, 11-PLC; Unicode ch.17. Kawi, Bugis, Sumatran and Gujarati origins all argued; first verifiably dated text 1593.
 Children: [`Buhd`](#buhd), [`Hano`](#hano), [`Tagb`](#tagb).
 
-Languages a source records it for: 3. Largest: Filipino (90,000,000.0 speakers), Iloko (9,100,000.0 speakers), Waray (Philippines) (3,100,000.0 speakers).
+Recorded as a further script for 4 languages, the main script for none.
 Unicode: encoded since version 3.2, block from U+1700.
 
 ### Thaa
@@ -2313,7 +2313,7 @@ Unicode: encoded since version 3.2, block from U+1700.
 Parent: [`Arab`](#arab) Arabic, link **stimulus**.
 Source: Maldives National Centre for Linguistic and Historical Research, 'Scripts of Maldives'. First nine letters from Arabic numerals, next nine from Indic numerals; vowel marks from Arabic; earliest records 1705.
 
-Languages a source records it for: 1. Dhivehi (340,500.0 speakers).
+Languages written mainly in it: 1. Dhivehi (340,500 speakers).
 Unicode: encoded since version 3.0, block from U+0780.
 
 ### Thai
@@ -2324,7 +2324,7 @@ Parent: [`Khmr`](#khmr) Khmer through Sukhothai, link **attested**.
 Source: Penth 1989, JSS 77. Ram Khamhaeng inscription dated 1292, authenticity disputed; Wat Bang Sanuk 1219 also cited.
 Children: [`Laoo`](#laoo), [`Tavt`](#tavt), [`Tayo`](#tayo).
 
-Languages a source records it for: 16. Largest: Thai (20,700,000.0 speakers), Northeastern Thai (15,000,000.0 speakers), Northern Thai (6,029,500.0 speakers), Southern Thai (4,500,000.0 speakers), Kelantan-Pattani Malay (1,470,000.0 speakers).
+Languages written mainly in it: 23. Largest: Thai (20,700,000 speakers), Northeastern Thai (15,000,000 speakers), Southern Thai (4,500,000 speakers), Northern Khmer (1,400,000 speakers), Kuy (488,900 speakers). Also recorded as a further script for 22 more.
 Unicode: encoded since version 1.1, block from U+0E01.
 
 ### Tibt
@@ -2335,7 +2335,7 @@ Parent: [`Brah`](#brah) Brahmi through Late Gupta, link **attested**.
 Source: van Schaik 2012, in Tibetan manuscript studies. North Indian and Nepalese late Gupta inscriptions the closest models.
 Children: [`Marc`](#marc), [`Phag`](#phag), [`Zanb`](#zanb), [`Lepc`](#lepc).
 
-Languages a source records it for: 20. Largest: Khams Tibetan (1,500,000.0 speakers), Tibetan (1,200,000.0 speakers), Eastern Tamang (1,180,000.0 speakers), Amdo Tibetan (810,000.0 speakers), Balti (290,000.0 speakers).
+Languages written mainly in it: 28. Largest: Khams Tibetan (1,500,000 speakers), Tibetan (1,200,000 speakers), Amdo Tibetan (810,000 speakers), Dzongkha (237,080 speakers), Tshangla (175,000 speakers). Also recorded as a further script for 15 more.
 Unicode: encoded since version 2.0, block from U+0F00.
 
 ### Tirh
@@ -2345,7 +2345,7 @@ Unicode: encoded since version 2.0, block from U+0F00.
 Parent: [`Sidd`](#sidd) Siddham, Siddhaṃ, Siddhamātṛkā through Gaudi, link **attested**.
 Source: Pandey, L2/11-175R, after Salomon 1998. Derived from Gaudi (proto-Bengali); a sibling of Bengali, not its child; inscriptions 13th c..
 
-Languages a source records it for: 1. Maithili (33,900,000.0 speakers).
+Recorded as a further script for 2 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+11480.
 
 ### Tnsa
@@ -2355,7 +2355,7 @@ Unicode: encoded since version 7.0, block from U+11480.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Morey, eScholarship 5nz191bp; L2/13-231. Developed since 1990 by Lakhum Mossang; genetically unrelated to existing scripts.
 
-Languages a source records it for: none.
+Languages written mainly in it: 1. Pangwa Naga.
 Unicode: encoded since version 14.0, block from U+16A70.
 
 ### Todr
@@ -2375,7 +2375,7 @@ Unicode: encoded since version 16.0, block from U+105C0.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Pandey, L2/23-024. Invented in 1988 by Narayan Oraon, published 1999.
 
-Languages a source records it for: 1. Kurukh (2,000,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Toto
@@ -2385,7 +2385,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Anderson & Evans 2024, Nepalese Linguistics 38; L2/19-330. An entirely novel set of letters from everyday objects; launched May 2015.
 
-Languages a source records it for: 1. Toto.
+Languages written mainly in it: 1. Toto.
 Unicode: encoded since version 14.0, block from U+1E290.
 
 ### Tutg
@@ -2395,7 +2395,7 @@ Unicode: encoded since version 14.0, block from U+1E290.
 Parent: [`Gran`](#gran) Grantha through Chola Grantha, link **attested**.
 Source: L2/17-378. Evolved from the later Chola Grantha to write Sanskrit.
 
-Languages a source records it for: 1. Tulu (2,000,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 16.0, block from U+11380.
 
 ### Ugar
@@ -2405,7 +2405,7 @@ Unicode: encoded since version 16.0, block from U+11380.
 Parent: [`Psin`](#psin) Proto-Sinaitic through Proto-Canaanite linear alphabet, link **stimulus**.
 Source: Vita, 'Ugaritic' (CSIC 2021); Cross, 'A Ugaritic Abecedary'. Modelled on a linear alphabet of 27 signs; only the wedge medium is Mesopotamian.
 
-Languages a source records it for: 2. Largest: Hurrian, Ugaritic.
+Languages written mainly in it: 1. Ugaritic. Also recorded as a further script for 1 more.
 Unicode: encoded since version 4.0, block from U+10380.
 
 ### Vaii
@@ -2416,7 +2416,7 @@ Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Unicode ch.19; Tuchscherer & Hair 2002, History in Africa 29. Latin, Arabic and possibly Cherokee influence proposed; none established.
 Children: [`Bass`](#bass), [`Mend`](#mend), [`Kpel`](#kpel), [`Loma`](#loma).
 
-Languages a source records it for: 1. Vai.
+Languages written mainly in it: 1. Vai.
 Unicode: encoded since version 5.1, block from U+A500.
 
 ### Visp
@@ -2446,7 +2446,7 @@ Unicode: encoded since version 14.0, block from U+10570.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Everson, Unicode N4259 (L2/12-118). Devised by Lako Bodra in the 1950s; full vowel letters.
 
-Languages a source records it for: 1. Ho (1,500,000.0 speakers).
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+118A0.
 
 ### Wcho
@@ -2456,7 +2456,7 @@ Unicode: encoded since version 7.0, block from U+118A0.
 Parent: [`Latn`](#latn) Latin, link **invented**.
 Source: Unicode N4787. Devised 2001-2012 by Banwang Losu; a simple alphabetic script.
 
-Languages a source records it for: 1. Wancho Naga (59,154.0 speakers).
+Languages written mainly in it: 1. Wancho Naga (59,154 speakers).
 Unicode: encoded since version 12.0, block from U+1E2C0.
 
 ### Wole
@@ -2466,7 +2466,7 @@ Unicode: encoded since version 12.0, block from U+1E2C0.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Everson, Unicode N4146. One class of signs from Latin letters, the other invented; c.1905-1909.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: not encoded, so no font can show it.
 
 ### Xpeo
@@ -2476,7 +2476,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Xsux`](#xsux) Cuneiform, Sumero-Akkadian, link **stimulus**.
 Source: Schmitt, Encyclopaedia Iranica 'Cuneiform script'. An independent creation in wedge form for Darius's Bisotun inscription, c. 520 BCE.
 
-Languages a source records it for: 1. Old Persian (ca. 600-400 B.C.).
+Languages written mainly in it: 1. Old Persian (ca. 600-400 B.C.).
 Unicode: encoded since version 4.1, block from U+103A0.
 
 ### Xsux
@@ -2487,7 +2487,7 @@ Parent: [`Pcun`](#pcun) Proto-Cuneiform, link **attested**.
 Source: Unicode ch.11; L2/25-211 (proto-cuneiform). Cuneiform proper from c.2700-2600 BCE (Fara, Abu Salabikh); -2900 is the end of the archaic period.
 Children: [`Xpeo`](#xpeo).
 
-Languages a source records it for: 10. Largest: Sumerian, Elamite, Hattic, Hurrian, Urartian.
+Languages written mainly in it: 7. Largest: Sumerian, Hattic, Urartian, Hittite, Eblaite. Also recorded as a further script for 3 more.
 Unicode: encoded since version 5.0, block from U+12000.
 
 ### Yezi
@@ -2497,7 +2497,7 @@ Unicode: encoded since version 5.0, block from U+12000.
 Parent: [`Syrc`](#syrc) Syriac, link **contested**.
 Source: L2/19-051R (Yezidi proposal); Unicode ch.9. An original consonantal alphabet; manuscripts perhaps 12th-13th c.; no named ancestor.
 
-Languages a source records it for: none.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 13.0, block from U+10E80.
 
 ### Yiii
@@ -2507,7 +2507,7 @@ Unicode: encoded since version 13.0, block from U+10E80.
 Parent: [`Hani`](#hani) Han, link **contested**.
 Source: Bradley 2003; Unicode ch.18. Glyphs independent in form; earliest dated object a bronze bell of 1485.
 
-Languages a source records it for: 1. Sichuan Yi (2,000,000.0 speakers).
+Languages written mainly in it: 9. Largest: Sichuan Yi (2,000,000 speakers), Southwestern Nisu, Mantsi, Samatao, Sani. Also recorded as a further script for 2 more.
 Unicode: encoded since version 3.0, block from U+A000.
 
 ### Zanb
