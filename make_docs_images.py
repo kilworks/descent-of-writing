@@ -19,8 +19,8 @@ W, H = (int(x) for x in re.search(r'width="(\d+)" height="(\d+)"', head).groups(
 FIGURES = [
     # name, crop box on the real canvas, or None for the whole plate
     ("plate-full", None, 2400),
-    ("detail-origins", (22430, 470, 3380, 620), None),
-    ("detail-spine", (9550, 520, 3600, 2250), None),
+    ("detail-origins", (19950, 430, 3600, 660), None),
+    ("detail-spine", (9100, 520, 3600, 2250), None),
     ("detail-languages", (200, 4740, 3400, 940), None),
     ("detail-catalogue", (200, 10250, 3200, 900), None),
 ]

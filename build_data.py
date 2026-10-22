@@ -11,7 +11,7 @@ csv.field_size_limit(10 ** 8)
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA, OUT = os.path.join(BASE, "data"), os.path.join(BASE, "out")
 sys.path.insert(0, BASE)
-from genealogy import G
+from genealogy import G, SOURCES
 
 SPECIAL = {"Zinh", "Zyyy", "Zzzz", "Zmth", "Zsym", "Zxxx"}
 
@@ -70,10 +70,12 @@ def build_scripts():
         if code not in G:
             raise SystemExit("genealogy is missing %s" % code)
         parent, edge, typ, direction, start, end, status = G[code]
+        via, source, note = SOURCES.get(code, ("", "", ""))
         lo, n = blocks.get(rec["pva"], (None, 0))
         out[code] = dict(rec,
                          parent=parent, edge=edge, type=typ, direction=direction,
                          start=start, end=end, status=status,
+                         via=via, source=source, source_note=note,
                          native=native.get(code),
                          block_start=lo, block_size=n,
                          encoded=bool(rec["unicode"]),

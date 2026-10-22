@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Draw the plate.
 
-Zone A  the descent of writing: 218 scripts, 10 independent origins, real
+Zone A  the descent of writing: 218 scripts, 9 roots with no known parent, real
         glyph specimens, triangular silhouette per the source sketch.
 Zone B  every Glottolog language, hung under the script it is written in,
         with a separate field for those no open source records a script for.
@@ -280,7 +280,7 @@ a('<text x="%.0f" y="256" text-anchor="middle" font-size="46" fill="%s">'
   % (cx, INK_SOFT))
 a('<line x1="%d" y1="300" x2="%d" y2="300" stroke="%s" stroke-width="3"/>' % (PAD, W - PAD, RULE))
 a('<text x="%.0f" y="372" text-anchor="middle" font-size="34" fill="%s" class="m">'
-  '%d scripts of ISO 15924  &#183;  %d origins invented independently  &#183;  '
+  '%d scripts of ISO 15924  &#183;  %d roots with no known parent  &#183;  '
   '%d languages of Glottolog  &#183;  %d families  &#183;  %d isolates</text>'
   % (cx, INK_SOFT, ST["scripts"], len(ORIGINS), ST["languages"], ST["families"], ST["isolates"]))
 
@@ -299,6 +299,7 @@ for c, s in S.items():
     e = s["edge"]
     dash = {"attested": "", "contested": ' stroke-dasharray="16 14"',
             "stimulus": ' stroke-dasharray="4 18" stroke-linecap="round"',
+            "invented": ' stroke-dasharray="22 10 3 10"',
             "variant": ' stroke-dasharray="30 10"',
             "composite": ' stroke-dasharray="2 12"'}[e]
     wdt = 3.4 if e == "attested" else 2.4
@@ -350,13 +351,15 @@ for c, s in S.items():
           'font-style="italic">%s</text>' % (x, ty + 114, "#9c3b2e", s["status"]))
     a("</g>")
 
-# one caption over the origin row: ten labels at this pitch just collide
+# one caption over the root row: separate labels at this pitch just collide.
+# A root has no known parent in the registry; that is not the same claim as an
+# independent invention of writing, so the caption does not make it.
 _ox = [node_xy(r)[0] for r in ORIGINS]
 _oy = node_xy(ORIGINS[0])[1] - NODE_H / 2
 a('<line x1="%.0f" y1="%.0f" x2="%.0f" y2="%.0f" stroke="%s" stroke-width="2"/>'
   % (min(_ox) - NODE_W / 2, _oy - 34, max(_ox) + NODE_W / 2, _oy - 34, INK_SOFT))
 a('<text x="%.0f" y="%.0f" text-anchor="middle" font-size="34" fill="%s" letter-spacing="10">'
-  'INVENTED INDEPENDENTLY &#183; %d TIMES, NOT ONCE</text>'
+  '%d ROOTS &#183; NO KNOWN ANCESTOR IN THE REGISTRY</text>'
   % (sum(_ox) / len(_ox), _oy - 54, INK_SOFT, len(ORIGINS)))
 
 # ---- the base line of the sketch
@@ -477,8 +480,8 @@ a('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="3"/>'
 a('<text x="%d" y="%d" font-size="46" letter-spacing="10">CATALOGUE OF SCRIPTS</text>'
   % (PAD, ZONE_C_TOP - 16))
 a('<text x="%d" y="%d" font-size="26" fill="%s">'
-  'All %d, alphabetical by code. Columns: code, name, type, direction, span of use, status, parent.</text>'
-  % (PAD + 700, ZONE_C_TOP - 16, INK_SOFT, len(S)))
+  'All %d, alphabetical by code. Columns: code, name, type, direction, span of use, status, parent and link.</text>'
+  % (PAD + 1000, ZONE_C_TOP - 16, INK_SOFT, len(S)))
 
 CAT_COLS = 9
 rows_per = math.ceil(len(S) / CAT_COLS)
@@ -493,9 +496,10 @@ for i, c in enumerate(sorted(S)):
     nm = short_name(s["name"])
     a('<text x="%.0f" y="%.0f" font-size="38">%s</text>' % (cx0 + 148, cy0, esc(nm[:44])))
     a('<text x="%.0f" y="%.0f" font-size="29" fill="%s">'
-      '%s &#183; %s &#183; %s to %s &#183; %s%s%s</text>'
+      '%s &#183; %s &#183; %s to %s &#183; %s &#183; %s%s%s</text>'
       % (cx0 + 148, cy0 + 40, INK_SOFT, s["type"], s["direction"],
          yr(s["start"]), yr(s["end"]), s["status"],
+         "from %s, %s" % (s["parent"], s["edge"]) if s["parent"] else "root",
          "" if s["encoded"] else " &#183; not in Unicode",
          "" if s["glyph"] else " &#183; NO GLYPH"))
 
@@ -509,7 +513,8 @@ a('<text x="%d" y="%.0f" font-size="40" letter-spacing="8">HOW TO READ IT</text>
 for i, (label, dash, note) in enumerate([
         ("attested descent", "", "direct graphical descent, uncontroversial"),
         ("contested", "16 14", "descent claimed but disputed in the literature"),
-        ("stimulus diffusion", "4 18", "the idea of writing borrowed, the letters invented fresh"),
+        ("stimulus diffusion", "4 18", "a named script lent the idea or the structure, the letters are new"),
+        ("invented", "22 10 3 10", "made with no ancestor; hung under the script its makers wrote, a placement only"),
         ("variant", "30 10", "the same script in another style or tradition"),
         ("registry composite", "2 12", "an ISO code bundling several scripts, not a script")]):
     y = LEG_Y + 58 + i * 52
@@ -519,16 +524,15 @@ for i, (label, dash, note) in enumerate([
     a('<text x="%d" y="%.0f" font-size="28" fill="%s">%s</text>' % (lx + 700, y, INK_SOFT, note))
 
 lx2 = PAD + 2700
-a('<text x="%d" y="%.0f" font-size="40" letter-spacing="8">ORIGINS AND THEIR COLOUR</text>' % (lx2, LEG_Y))
+a('<text x="%d" y="%.0f" font-size="40" letter-spacing="8">ROOTS AND THEIR COLOUR</text>' % (lx2, LEG_Y))
 for i, r in enumerate(ORIGINS):
-    y = LEG_Y + 58 + i * 52
     cxx = lx2 + (i // 5) * 1250
-    yy = LEG_Y + 58 + (i % 5) * 52
+    yy = LEG_Y + 58 + (i % 5) * 80      # name and count on two lines need 80
     a('<rect x="%d" y="%.0f" width="46" height="30" fill="%s"/>' % (cxx, yy - 26, HUE[r]))
     a('<text x="%d" y="%.0f" font-size="32">%s</text>'
       % (cxx + 68, yy, esc(short_name(S[r]["name"])[:26])))
-    a('<text x="%d" y="%.0f" font-size="28" fill="%s">%d scripts</text>'
-      % (cxx + 68, yy + 34, INK_FAINT, DESC[r]))
+    a('<text x="%d" y="%.0f" font-size="28" fill="%s">%d script%s</text>'
+      % (cxx + 68, yy + 34, INK_FAINT, DESC[r], "" if DESC[r] == 1 else "s"))
 
 lx3 = PAD + 6600
 a('<text x="%d" y="%.0f" font-size="40" letter-spacing="8">WHAT WAS COUNTED</text>' % (lx3, LEG_Y))
@@ -546,7 +550,7 @@ checks = [
     % (ST["families"], ST["isolates"], ST["sign_languages"], ST["extinct"]),
     "Languages with no script recorded: %d, %.1f%% of the total."
     % (ST["languages_without_script"], 100 * ST["languages_without_script"] / ST["languages"]),
-    "Deepest chain of descent: %d generations. Every script traces to an origin or is one."
+    "Deepest chain of descent: %d generations. Every script traces to a root or is one."
     % MAXD,
 ]
 for i, t in enumerate(checks):

@@ -11,7 +11,7 @@ csv.field_size_limit(10 ** 8)
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA, OUT = os.path.join(BASE, "data"), os.path.join(BASE, "out")
 sys.path.insert(0, BASE)
-from genealogy import G
+from genealogy import G, SOURCES
 
 def short_name(n):
     """Drop a trailing parenthetical, keep a leading one.
@@ -107,12 +107,26 @@ for n in (ST["scripts"], ST["languages"], ST["families"], ST["isolates"],
 check("8. printed figures match the dataset",
       not [f for f in fails if str(f).startswith("printed")], "all key counts appear in the svg")
 
+# 9. every claim weaker than attested descent names its authority. A root is
+# only exempt when its independence is not argued (Sumer, China, Mesoamerica).
+UNDISPUTED_ROOTS = {"Pcun", "Hani", "Maya"}
+need = sorted(c for c in S if S[c]["edge"] in ("stimulus", "contested", "invented")
+              or (S[c]["parent"] is None and c not in UNDISPUTED_ROOTS))
+nosrc = [c for c in need if not S[c].get("source")]
+unsourced = sorted(c for c in need if S[c].get("source") == "unsourced")
+edges = collections.Counter(S[c]["edge"] or "root" for c in S)
+check("9. every non-attested edge and argued root is sourced",
+      not nosrc and not [c for c in SOURCES if c not in S],
+      "%d need a source, missing %s; marked unsourced: %s; edges: %s"
+      % (len(need), nosrc or "none", ", ".join(unsourced) or "none",
+         ", ".join("%s %d" % kv for kv in edges.most_common())))
+
 # ---- companion CSV, one row per script, all seven documented fields
 with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newline="") as f:
     w = csv.writer(f)
     w.writerow(["iso15924", "iso_number", "name_en", "name_fr", "native_name", "type",
                 "direction", "first_use", "last_use", "status", "parent", "edge",
-                "origin", "unicode_version", "unicode_block_start", "codepoints",
+                "origin", "via", "source", "source_note", "unicode_version", "unicode_block_start", "codepoints",
                 "specimen", "specimen_font", "glyph_missing_reason"])
     for c in sorted(S):
         s = S[c]
@@ -122,7 +136,8 @@ with open(os.path.join(OUT, "scripts_catalogue.csv"), "w", encoding="utf8", newl
         root = cur
         w.writerow([c, s["num"], s["name"], s["name_fr"], s["native"] or "", s["type"],
                     s["direction"], s["start"], s["end"] if s["end"] is not None else "present",
-                    s["status"], s["parent"] or "", s["edge"] or "origin", root,
+                    s["status"], s["parent"] or "", s["edge"] or "root", root,
+                    s.get("via", ""), s.get("source", ""), s.get("source_note", ""),
                     s["unicode"] or "not encoded",
                     "U+%04X" % s["block_start"] if s["block_start"] else "",
                     s["block_size"] or 0,

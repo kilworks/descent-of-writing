@@ -1,16 +1,16 @@
 # The Descent of Writing
 
-A single reference plate holding every script in the ISO 15924 registry, arranged by descent from the origins of writing, with every language in Glottolog hung beneath the script that writes it.
+A single reference plate holding every script in the ISO 15924 registry, arranged by descent from the roots of writing, with every language in Glottolog hung beneath the script that writes it.
 
-218 scripts. 10 independent inventions. 8,587 languages. Nothing sampled, nothing elided.
+218 scripts. 9 roots, three of them independent inventions of writing beyond dispute. 8,587 languages. Nothing sampled, nothing elided.
 
 ![The full plate](docs/plate-full.png)
 
-The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 25,922 x 11,396, where every node carries its ISO 15924 code or Glottocode as an element id. It is built to be zoomed: at full size each script card is legible, and the images below are 1:1 crops of the real file, not redrawn illustrations.
+The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 23,640 x 11,396, where every node carries its ISO 15924 code or Glottocode as an element id. It is built to be zoomed: at full size each script card is legible, and the images below are 1:1 crops of the real file, not redrawn illustrations.
 
 **The brief that produced it is in [PROMPT.md](PROMPT.md)**, written to be handed to any coding agent that can run code and reach the network. It carries the source URLs that actually resolve and a list of the traps that broke the first attempt, so you do not have to rediscover them.
 
-**[CONTINUE.md](CONTINUE.md) says where the soft parts are** and ranks the open work. The short version: 37 of the 56 stimulus edges default to Latin without per-script sourcing, and only 17.7% of languages have a script on record. Both are named there rather than left to be found.
+**[CONTINUE.md](CONTINUE.md) says where the soft parts are** and ranks the open work. The first item on it, the descent claims, has been worked through: every edge weaker than attested descent now names the publication it rests on, and the build fails if one does not. The largest remaining gap is that only 17.7% of languages have a script on record.
 
 ## What it counts
 
@@ -21,18 +21,20 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | **Scripts drawn** | **218**, each exactly once |
 | With a real glyph specimen | 179 |
 | Without | 39, of which 32 are not encoded in Unicode at all |
-| Independent origins | 10 |
+| Roots, no known parent in the registry | 9, of which 3 are independent inventions beyond dispute |
+| Descent edges | 108 attested, 38 stimulus, 28 contested, 18 invented, 11 variant, 6 composite |
+| Claims weaker than attested, with a named source | 90 of 90 (one, `Saur`, says outright that it is unsourced) |
 | Deepest chain of descent | 8 generations |
 | **Languages drawn** | **8,587** (8,618 Glottolog languoids at level=language, minus 31 constructed) |
 | Families / isolates | 245 / 183 |
 | Sign languages | 227 |
-| Languages with no script recorded | 7,069 (82.3%) |
+| Languages with no script recorded | 7,070 (82.3%) |
 
 Every figure above is recomputed from the source files by [`verify.py`](verify.py) and asserted against the finished SVG.
 
 ## Writing was invented more than once
 
-The plate has no single apex. Writing was invented independently at least three times beyond dispute, and the contested cases are drawn as contested rather than resolved.
+The plate has no single apex. It has nine roots, and a root means only that no ancestor is known among the registry's codes. Three of them, Sumerian proto-cuneiform, Chinese and Mayan, are independent inventions beyond dispute. Egyptian probably is one too, though stimulus from Sumer is still argued. The other five are roots for weaker reasons: Linear A grew out of a Cretan hieroglyphic script that has no code, Anatolian hieroglyphs look like a local creation, Naxi Dongba arose among people who already met Chinese and Tibetan writing, and nobody can yet say what Indus signs and rongorongo are. Each of those reasons is written down with its source.
 
 ![The origin row](docs/detail-origins.png)
 
@@ -44,7 +46,15 @@ Below the origins, the tree runs to full depth. The Proto-Sinaitic line is the d
 
 ![The Proto-Sinaitic spine](docs/detail-spine.png)
 
-Edge style carries the strength of the claim: solid for attested graphical descent, dashed for descent disputed in the literature, dotted for stimulus diffusion (the idea of writing borrowed, the letters invented fresh), and separate styles for style variants and for registry codes that bundle several scripts.
+Edge style carries the strength of the claim:
+
+- solid: attested graphical descent, the letter shapes inherited;
+- dashed: descent claimed in the literature and disputed;
+- dotted: stimulus, where a named script lent the idea of writing or a structure (letter order, an inherent vowel, a syllabic layout) and the letters were drawn fresh;
+- dash-dot: invented, a script made on purpose with no ancestor at all, hung under the script its makers already wrote. That position is a placement, not a descent, and the legend says so;
+- separate styles for style variants and for registry codes that bundle several scripts.
+
+The difference between the last two kinds matters. Most scripts devised in the twentieth century, Ol Chiki, Mro, Tangsa, Toto, Pau Cin Hau and others, are described in their own Unicode proposals as having "no genetic relationship" with any other script. Drawing them as Latin's children, as the first version did, asserted a descent that their sources deny.
 
 ## Specimens are shaped, not approximated
 
@@ -66,7 +76,7 @@ The lower register is the honest part. **It is not proof of unwritten languages.
 
 ![Catalogue and legend](docs/detail-catalogue.png)
 
-All 218 scripts appear again in a catalogue keyed by code, carrying type, direction, span of use, status, and whether a specimen exists. The same rows are in [`out/scripts_catalogue.csv`](out/scripts_catalogue.csv) with 19 columns, so the plate is auditable against its own data.
+All 218 scripts appear again in a catalogue keyed by code, carrying type, direction, span of use, status, parent and the kind of link, and whether a specimen exists. The same rows are in [`out/scripts_catalogue.csv`](out/scripts_catalogue.csv) with 22 columns, including the intermediary with no ISO code (Barbier's night writing behind Braille, Gaudi behind Tirhuta), the source each edge rests on, and what that source says, so the plate is auditable against its own data.
 
 ## Build it
 
@@ -85,26 +95,28 @@ python verify.py          # acceptance checks, write the catalogue CSV
 `fetch_wikidata.py` backs off past the query service's rate limit, which is currently one request per minute, so expect it to sit for a few minutes. Rasterizing uses the Chrome or Edge already installed rather than pulling a renderer:
 
 ```bash
-python rasterize.py out/descent_of_writing.svg out/descent_of_writing.png 6000 2638
+python rasterize.py out/descent_of_writing.svg out/descent_of_writing.png 6000 2892
 ```
 
 ## What is asserted, and what is not
 
-**Descent is curated, not scraped.** Wikidata's P144 covers barely half the registry and contradicts itself on the Semitic chain, so the parent of every script is set by hand in [`genealogy.py`](genealogy.py) against standard palaeography (Daniels and Bright, *The World's Writing Systems*; Coulmas, *Blackwell Encyclopedia of Writing Systems*; Unicode script proposals for the recent additions). Each edge is tagged with how strong the claim is. Disagreements belong in issues, and the file is one readable table.
+**Descent is curated, not scraped.** Wikidata's P144 covers barely half the registry and contradicts itself on the Semitic chain, so the parent of every script is set by hand in [`genealogy.py`](genealogy.py) against standard palaeography (Daniels and Bright, *The World's Writing Systems*; Coulmas, *Blackwell Encyclopedia of Writing Systems*; Unicode script proposals for the recent additions). Each edge is tagged with how strong the claim is, and every edge weaker than attested descent carries its authority in the `SOURCES` table of the same file: the intermediary where it has no code, the publication, and one line on what it says. Check 9 of `verify.py` fails the build when an edge needs a source and has none, and it has been seen to fail. Disagreements belong in issues, and the file is one readable table.
 
-**The origins are a position, not a fact.** Sumerian cuneiform, Chinese oracle bone, and Mesoamerican writing are treated as independent. Egyptian hieroglyphs are marked contested, since stimulus diffusion from Sumer is a live argument. The Indus script is included and marked contested twice over, because whether it encodes language at all is unsettled.
+**The roots are a position, not a fact.** Sumerian proto-cuneiform, Chinese and Mayan writing are treated as independent. Egyptian hieroglyphs stay a root, with the stimulus argument from Sumer recorded against them. Proto-Elamite is no longer a root: it now hangs from proto-cuneiform by a stimulus edge, because the specialists who work on it say it was inspired by it. The Indus script is a root whose very status as writing is disputed, and the plate says it is undeciphered rather than deciding.
 
 **Emoji is in the registry, so it is on the plate.** `Zsye` is not one of the six special codes the scope removes, so dropping it would have been a silent edit. It is drawn, and typed as a symbol set rather than a writing system.
 
 **The pyramid was traded away.** The sketch this began from was a pyramid. Centring each depth band produced a cleaner silhouette but severed a node's position from its parent's, and the descent lines became long horizontal sweeps nobody could follow. The layout is now a tidy tree. A genealogy you can trace beats a tidier outline.
 
-## Two bugs worth naming
+## Three bugs worth naming
 
-Both would have produced a wrong plate that looked right.
+The first two would have produced a wrong plate that looked right. The third stopped anyone else from building it.
 
 **HarfBuzz cannot open a woff2 blob.** It builds an empty face, every glyph resolves to `.notdef`, and Noto's `.notdef` is a drawn box with real bounds, so it passed the "does this glyph have an outline" check. The CJK specimens were rendering as neat tofu grids. Fixed by decompressing to sfnt before shaping (`TTFont.save()` keeps the woff2 flavor unless you clear it) and by refusing glyph id 0 outright.
 
 **Mark size was relative to each field's own cell.** A script with one language drew fatter dots than a script with ninety-one, inverting the only thing mark size is supposed to say. Fixed with one global cell across both registers.
+
+**A fresh clone did not build.** `data/` and `fonts/` are gitignored, nothing created them, and `fetch.py` caught all fourteen download failures and still exited 0. It only worked on the machine that already had the folders. The fetchers now create their directories and exit non-zero, naming every source they could not get.
 
 ## Sources
 
@@ -118,7 +130,9 @@ Both would have produced a wrong plate that looked right.
 | [SIL ISO 639-3 tables](https://iso639-3.sil.org/) | the 639-1 to 639-3 bridge | SIL terms |
 | [Noto fonts](https://github.com/notofonts/notofonts.github.io) | glyph specimens | SIL OFL 1.1 |
 
-Sources were retrieved 2026-08-28. The plate prints its own retrieval date.
+Sources were last retrieved 2026-10-22. The plate prints its own retrieval date.
+
+The descent claims rest on the publications named row by row in [`genealogy.py`](genealogy.py): the Unicode encoding proposals and core specification for most scripts added since 2000, and peer-reviewed work for the rest (Dahl on Proto-Elamite, McManus on Ogham, Salomon on Brahmi, Kane on Khitan, Al-Jallad on Ancient North Arabian, among others).
 
 ## Acknowledgement
 
@@ -126,7 +140,7 @@ The rule this plate is built on did not start here. Every edge carries the stren
 
 That rule has a precise name in someone else's work. It is `provenance continuity`, one of the ten design invariants of [the Context Layer](https://sierracatalina.com/context-layer), a draft protocol for user-owned context by [sierra catalina](https://sierracatalina.com): every derived claim must carry or reference enough provenance to identify the source records behind it. The specification was read at v0.1 on 2026-08-16, two weeks before this plate was built, and re-read at v0.2 on 2026-09-01. It is the document that turned a set of habits into rules with names.
 
-The same ten invariants are measured against a full record of 82 agent errors and 18 environment defects in [autonomy-log](https://github.com/Pkkls/autonomy-log), adopted where they hold, refused with counts where they do not, and one refusal has already been overturned by a recount. Credit given where it is owed, and checkable rather than polite.
+The same ten invariants are measured against a full record of 82 agent errors and 18 environment defects in [autonomy-log](https://github.com/kilworks/autonomy-log), adopted where they hold, refused with counts where they do not, and one refusal has already been overturned by a recount. Credit given where it is owed, and checkable rather than polite.
 
 ## Licence
 
