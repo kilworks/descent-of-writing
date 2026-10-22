@@ -191,13 +191,13 @@ that chapter is the cheapest useful review.
 ### 3. Done in part: language to script coverage, 17.7% to 53.2%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,569 of 8,587 (53.2%), 3,041 of them on langtags
+third source. Written: 4,569 of 8,587 (53.2%), 3,040 of them on langtags
 alone. Listed as unwritten: 2,857. No record either way: 1,161. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
 unwritten never contribute a script (langtags documents regional inference on
 them). Multi-script languages now hang under a ranked primary script
-(langtags default tag, then CLDR primary, then Wikidata); 6 of the 749
+(langtags default tag, then CLDR primary, then Wikidata); 6 of the 750
 with several still fall back to alphabetical order. Members of a
 macrolanguage (Mandarin, Malay) have
 their default tagset filed under the macrolanguage in langtags, which left
@@ -229,22 +229,40 @@ Still open:
   lists a script it agrees for 99.2% (2,364 of 2,382); eight corrections
   came from the disagreements, and 18 remain in
   out/crosscheck_wiktionary.txt for a reader who knows the languages.
-- 3,041 languages rest on langtags alone, which inherits the Ethnologue's
+- 3,040 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. Done in part on 2026-10-22: crosscheck_linguameta.py tests them
   against LinguaMeta's own curation (GOOGLE_RESEARCH-sourced scripts only),
-  which agrees on 1,486 of the 1,494 it speaks for (99.5%); with Wiktionary,
-  2,647 of the 3,041 (87.0%) are confirmed by a source kept apart from SIL.
-  The 394 left, and the 8 LinguaMeta disagreements in
-  out/crosscheck_linguameta.txt, are the next to check. ScriptSource is
-  not a candidate: SIL publishes it, as it does langtags, so it would not
-  be independent. Grammars and Glottolog's own bibliography per language
-  are; the Mehri disagreement, for one, needs a grammar saying speakers
-  write in Arabic letters, which the open web gives only second-hand.
-  One of them, Eastern Qiandong Miao in Bopomofo, comes from langtags'
-  hmn-Bopo tagset, reached through the alias rule of check 20. Northern
-  Qiandong Miao came the same way and now hangs under the Latin script set
-  for Hmu in 1956 (Enwall 2012, in corrections.py). Thompson, given only
-  Duployan by langtags, now hangs under Latin, its current script.
+  which agrees on 1,486 of the 1,493 it speaks for (99.5%); with Wiktionary,
+  2,647 of the 3,040 (87.1%) are confirmed by a source kept apart from SIL.
+  ScriptSource is not a candidate: SIL publishes it, as it does langtags,
+  so it would not be independent.
+  Wikipedia's language infoboxes were tried on the 393 left, as a
+  measurement only: 301 infoboxes have no script field and several
+  languages share one group article (the Tati and Zhuang varieties), so
+  only about 87 could be tested; about 81 agree. Too weak to keep as a
+  cross-check, but it named six real disagreements: Batak of Palawan
+  (Tagbanwa), Tai Ya (Tai Le), Maring Naga (Meitei), Southern Pumi
+  (Tibetan), Burma Pyu (the Pyu script, which has no ISO code, not
+  Burmese) and Eastern Qiandong Miao.
+  Fixed from that work, each in corrections.py: Northern and Eastern
+  Qiandong Miao, reached through langtags' hmn-Bopo tagset by the alias
+  rule of check 20, now hang under the Latin script set for Hmu in 1956
+  (Enwall 2012), Bopomofo kept as historical ("long since obsolete", West
+  2009, L2/09-049); Thompson, given only Duployan, under Latin.
+  Checked and kept as they stand: Alu Kurumba in Tamil, Caribbean
+  Hindustani in Latin (Wiktionary's "crp" is a language-group code, not a
+  script), Sani in Yi (Bradley 2011), Dandami Maria in Devanagari (Gondi
+  is written in Devanagari and Telugu, L2/15-005), Dhanki and Dubli in
+  Gujarati.
+  The review queue, each with the work that would settle it: Wambule
+  (Opgenort 2004, A Grammar of Wambule), Chenoua Berber (Laoust 1912),
+  Brokskat (Ramaswami 1982 and 1989; Perso-Arabic likely belongs), Hertevin
+  (Jastrow 1988; Syriac likely right), Turung (Morey 2010), Kakabe
+  (Vydrina's ELAR collection), Mehri (a grammar on what speakers write;
+  Latin is probably scholarly transcription), Yerukula (Telugu likely; the
+  Tamil may confuse it with Irula), and Asuri, Bussa, Jahanka, Qimant,
+  Luwati, Narua, Kotia Desiya, Tai Ya, Phuan and Zuojiang Zhuang, where no
+  open source was found.
 - The unwritten flag is positive evidence but not proof: a listed language can
   have a missionary or school orthography that langtags has not caught.
 - Of the 1,161 with no record, 754 have no ISO 639-3 code, which every

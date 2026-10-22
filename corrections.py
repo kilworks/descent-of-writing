@@ -73,6 +73,11 @@ CORRECTIONS = [
      "langtags gives only a Bopomofo tagset"),
     ("hea", "Latn", "main", "Enwall 2012, International Journal of the Sociology of Language 215",
      "the 1956 Latin script is the one in schools and in the 2009 New Testament"),
+    ("hmq", "Latn", "add", "Enwall 2012, IJSL 215; West 2009, L2/09-049 (WG2 N3570)",
+     "Hmu has a Latin script since 1956; the Bopomofo-based orthography Hutton made for Hmu "
+     "'is now long since obsolete' (West)"),
+    ("hmq", "Latn", "main", "Enwall 2012, IJSL 215; West 2009, L2/09-049 (WG2 N3570)",
+     "Bopomofo is kept as the historical script"),
     ("thp", "Latn", "add", "Thompson & Thompson 1996, Thompson River Salish Dictionary, UMOPL 12",
      "Thompson is written in a Latin orthography today; langtags gives only Duployan"),
     ("thp", "Latn", "main", "Thompson & Thompson 1996, UMOPL 12; Unicode L2/10-026 (Duployan)",

@@ -1,10 +1,10 @@
 Wiktionary language data (en.wiktionary.org, Module:languages), CC BY-SA 4.0, quoted for review only.
 
-Cross-check of the 3041 languages whose script rests on SIL langtags alone,
+Cross-check of the 3040 languages whose script rests on SIL langtags alone,
 against Wiktionary's language data modules (6070 codes with a script list).
 
-agrees on at least one script               2364   77.7%
-no Wiktionary entry or no script listed      659   21.7%
+agrees on at least one script               2364   77.8%
+no Wiktionary entry or no script listed      658   21.6%
 disagrees                                     18    0.6%
 
 Agreement where both speak: 2364 of 2382 (99.2%).
