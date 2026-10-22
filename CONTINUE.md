@@ -17,7 +17,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 18 of
 | With a real shaped specimen | 181 |
 | Roots | 9, of which 3 independent inventions beyond dispute |
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
-| Descent claims with a named source | 198 of 198, attested included; `Saur` marked unsourced |
+| Descent claims with a named source | 198 of 198, attested included, none marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
 | Languages with a recorded script | 4,517 (52.6%); 2,856 listed unwritten |
 | Languages with a speaker count | 1,699 (19.8%) |
@@ -152,7 +152,9 @@ descent claim now has a source and check 9 covers them all. It moved:
 
 Still soft, and named so it can be argued with:
 
-- `Saur` Saurashtra has no source for any parent; its row says so.
+- `Saur` Saurashtra: its encoding proposal (L2/05-222R2) calls it "of the
+  Brahmic type" and its origin "not known". It hung from Grantha with no
+  source; it now hangs from Brahmi, contested, until someone traces it.
 - Sixteen `invented` scripts sit under Latin, most because no source names
   the literacy their makers came from. For Toto, Mro and Chisoi a regional script
   (Bengali, Burmese) is at least as likely. The edge kind already says the

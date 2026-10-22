@@ -27,7 +27,7 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | Without | 37, of which 32 are not encoded in Unicode at all; the other 5 wait for a Noto face |
 | Roots, no known parent in the registry | 9, of which 3 are independent inventions beyond dispute |
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
-| Descent claims with a named source | 198 of 198, attested ones included (one, `Saur`, says outright that it is unsourced) |
+| Descent claims with a named source | 198 of 198, attested ones included |
 | Deepest chain of descent | 8 generations |
 | **Languages drawn** | **8,587** (8,618 Glottolog languoids at level=language, minus 31 constructed) |
 | Families / isolates | 238 / 183, not counting Glottolog's 7 pseudo-families (Bookkeeping, Sign Language, Unclassifiable and others, 913 languages), which the first version counted as 245 families |

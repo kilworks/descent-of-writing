@@ -227,7 +227,7 @@ G["Gran"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
 G["Taml"] = ("Brah", "attested", "abugida", "ltr", 600, None, "living")
 G["Mlym"] = ("Gran", "attested", "abugida", "ltr", 1100, None, "living")
 G["Tutg"] = ("Gran", "attested", "abugida", "ltr", 1000, None, "living")
-G["Saur"] = ("Gran", "contested", "abugida", "ltr", 1880, None, "living")
+G["Saur"] = ("Brah", "contested", "abugida", "ltr", 1880, None, "living")
 G["Sinh"] = ("Brah", "attested", "abugida", "ltr", -200, None, "living")
 G["Diak"] = ("Gran", "attested", "abugida", "ltr", 900, 1700, "historical")
 G["Knda"] = ("Brah", "attested", "abugida", "ltr", 450, None, "living")
@@ -480,8 +480,9 @@ SOURCES = {
              "Kaithi and Devanagari are siblings within the Nagari family"),
     "Mahj": ("Landa", "Pandey, Unicode N4126",
              "often called a derivative of Kaithi or Devanagari; structure resembles Landa"),
-    "Saur": ("", "unsourced",
-             "Brahmic, exact derivation unknown; Randle 1943 records it printed in 1880"),
+    "Saur": ("", "Everson & Krishnamoorty, L2/05-222R2 (Unicode N2969R2)",
+             "'of the Brahmic type'; its origin 'is not known' (Ucida, quoted there); "
+             "reformed and cast in type by T. M. Rama Ray in the 1880s"),
     "Diak": ("", "Pandey, L2/18-016R",
              "descended from Brahmi through Grantha; closest to medieval Sinhala"),
     "Tibt": ("Late Gupta", "van Schaik 2012, in Tibetan manuscript studies",

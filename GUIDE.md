@@ -199,7 +199,6 @@ Indented by generation. Each line gives the code, the name, the type, the first 
             - [`Diak`](#diak) Dives Akuru, abugida, 900 CE
             - [`Tutg`](#tutg) Tulu-Tigalari, abugida, 1000 CE
             - [`Mlym`](#mlym) Malayalam, abugida, 1100 CE
-            - [`Saur`](#saur) Saurashtra, abugida, 1880 CE *(contested)*
           - [`Taml`](#taml) Tamil, abugida, 600 CE
           - [`Telu`](#telu) Telugu, abugida, 600 CE
           - [`Khmr`](#khmr) Khmer, abugida, 611 CE
@@ -246,6 +245,7 @@ Indented by generation. Each line gives the code, the name, the type, the first 
             - [`Cakm`](#cakm) Chakma, abugida, 1700 CE
             - [`Leke`](#leke) Leke, abugida, 1844 CE *(contested)*
             - [`Kali`](#kali) Kayah Li, alphabet, 1962 CE *(stimulus)*
+          - [`Saur`](#saur) Saurashtra, abugida, 1880 CE *(contested)*
           - [`Gonm`](#gonm) Masaram Gondi, abugida, 1918 CE *(stimulus)*
           - [`Sora`](#sora) Sora Sompeng, abugida, 1936 CE *(stimulus)*
           - [`Gukh`](#gukh) Gurung Khema, abugida, 1995 CE *(stimulus)*
@@ -599,7 +599,7 @@ Unicode: encoded since version 1.1, block from U+02EA.
 
 Parent: [`Armi`](#armi) Imperial Aramaic, link **contested**.
 Source: Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy. Aramaic origin after Buhler is the majority view; not settled; earliest securely dated texts the Ashokan edicts, c.250 BCE.
-Children: [`Sinh`](#sinh), [`Cham`](#cham), [`Knda`](#knda), [`Sidd`](#sidd), [`Gran`](#gran), [`Taml`](#taml), [`Telu`](#telu), [`Khmr`](#khmr), [`Tibt`](#tibt), [`Kawi`](#kawi), [`Shrd`](#shrd), [`Bhks`](#bhks), [`Mtei`](#mtei), [`Mymr`](#mymr), [`Gonm`](#gonm), [`Sora`](#sora), [`Gukh`](#gukh).
+Children: [`Sinh`](#sinh), [`Cham`](#cham), [`Knda`](#knda), [`Sidd`](#sidd), [`Gran`](#gran), [`Taml`](#taml), [`Telu`](#telu), [`Khmr`](#khmr), [`Tibt`](#tibt), [`Kawi`](#kawi), [`Shrd`](#shrd), [`Bhks`](#bhks), [`Mtei`](#mtei), [`Mymr`](#mymr), [`Saur`](#saur), [`Gonm`](#gonm), [`Sora`](#sora), [`Gukh`](#gukh).
 
 Languages written mainly in it: 8. Largest: Tokharian B, Tokharian A, Old Cham, Maharastri Prakrit, Khotanese. Also recorded as a further script for 3 more.
 Unicode: encoded since version 6.0, block from U+11000.
@@ -958,7 +958,7 @@ Unicode: encoded since version 3.1, block from U+10330.
 
 Parent: [`Brah`](#brah) Brahmi through Pallava, link **attested**.
 Source: Francis 2024; Pandey, L2/18-083. Pallava is the ancestor of Grantha; Grantha itself designed around 600 CE.
-Children: [`Diak`](#diak), [`Tutg`](#tutg), [`Mlym`](#mlym), [`Saur`](#saur).
+Children: [`Diak`](#diak), [`Tutg`](#tutg), [`Mlym`](#mlym).
 
 Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 7.0, block from U+11300.
@@ -2078,8 +2078,8 @@ Unicode: encoded since version 5.2, block from U+10A60.
 
 **Saurashtra** (ꢱꣃꢬꢵꢰ꣄ꢜ꣄ꢬ ꢂꢒ꣄ꢯꢬꢸꢥ꣄). Abugida, written left to right. First attested 1880 CE, in use today; status living.
 
-Parent: [`Gran`](#gran) Grantha, link **contested**.
-Source: unsourced. Brahmic, exact derivation unknown; Randle 1943 records it printed in 1880.
+Parent: [`Brah`](#brah) Brahmi, link **contested**.
+Source: Everson & Krishnamoorty, L2/05-222R2 (Unicode N2969R2). 'of the Brahmic type'; its origin 'is not known' (Ucida, quoted there); reformed and cast in type by T. M. Rama Ray in the 1880s.
 
 Languages written mainly in it: 1. Saurashtra (300,000 speakers).
 Unicode: encoded since version 5.1, block from U+A880.
