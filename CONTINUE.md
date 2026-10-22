@@ -230,9 +230,16 @@ Still open:
   came from the disagreements, and 18 remain in
   out/crosscheck_wiktionary.txt for a reader who knows the languages.
 - 3,043 languages rest on langtags alone, which inherits the Ethnologue's
-  judgement. A second independent source per language would make them firmer.
-  ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
-  after that.
+  judgement. Done in part on 2026-10-22: crosscheck_linguameta.py tests them
+  against LinguaMeta's own curation (GOOGLE_RESEARCH-sourced scripts only),
+  which agrees on 1,485 of the 1,496 it speaks for (99.3%); with Wiktionary,
+  2,649 of the 3,043 (87.1%) are confirmed by a source kept apart from SIL.
+  The 394 left, and the 11 LinguaMeta disagreements in
+  out/crosscheck_linguameta.txt, are the next to check; ScriptSource
+  (scriptsource.org) is the candidate.
+  Two of those 11, Northern and Eastern Qiandong Miao in Bopomofo, come
+  from langtags' hmn-Bopo tagset, reached through the alias rule of
+  check 20; they are the first to verify.
 - The unwritten flag is positive evidence but not proof: a listed language can
   have a missionary or school orthography that langtags has not caught.
 - Of the 1,161 with no record, 754 have no ISO 639-3 code, which every

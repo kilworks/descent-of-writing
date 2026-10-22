@@ -93,7 +93,7 @@ Three rules keep the langtags data honest. A tagset flagged unwritten never cont
 
 The sources are still wrong in a few places, mostly for ancient scripts where they are thin. [`corrections.py`](corrections.py) holds twenty-five sourced fixes: Elymian, a language of Sicily written in Greek letters, had been given Elymaic, an Aramaic script of Iran, because the names collide; Hurrian had been hung under Anatolian hieroglyphs, and Old Aramaic and Jewish Babylonian Aramaic under Syriac; Tocharian B under Manichaean instead of Brahmi; Elamite under Proto-Elamite, whose language is not established. Check 13 fails if a correction stops being applied or loses its source.
 
-**The links resting on langtags alone were tested against an independent source.** [`crosscheck_wiktionary.py`](crosscheck_wiktionary.py) reads Wiktionary's language data modules, which its editors keep apart from SIL, and compares them with the 3,043 languages whose script only langtags gives. Where Wiktionary lists a script, it agrees with langtags on at least one for 99.2% of them; it lists none for a fifth. Eight corrections came out of the disagreements (Yevanic is written in Hebrew letters, not Greek; Raetic in North Italic, not Latin). Wiktionary is CC BY-SA, so nothing of it enters the dataset: the script only measures and writes [`out/crosscheck_wiktionary.txt`](out/crosscheck_wiktionary.txt), with the 18 disagreements left for review.
+**The links resting on langtags alone were tested against an independent source.** [`crosscheck_wiktionary.py`](crosscheck_wiktionary.py) reads Wiktionary's language data modules, which its editors keep apart from SIL, and compares them with the 3,043 languages whose script only langtags gives. Where Wiktionary lists a script, it agrees with langtags on at least one for 99.2% of them; it lists none for a fifth. Eight corrections came out of the disagreements (Yevanic is written in Hebrew letters, not Greek; Raetic in North Italic, not Latin). Wiktionary is CC BY-SA, so nothing of it enters the dataset: the script only measures and writes [`out/crosscheck_wiktionary.txt`](out/crosscheck_wiktionary.txt), with the 18 disagreements left for review. A second test, [`crosscheck_linguameta.py`](crosscheck_linguameta.py), uses LinguaMeta (Google Research, LREC-COLING 2024), keeping only the scripts it sources to its own curation: it speaks for 1,496 of the same languages and agrees on 1,485 (99.3%). Between the two, 2,649 of the 3,043 langtags-only links (87.1%) are confirmed by a source kept apart from SIL. LinguaMeta is CC BY-SA too, so it is used the same way, and writes [`out/crosscheck_linguameta.txt`](out/crosscheck_linguameta.txt).
 
 ## Readable without sight
 
@@ -122,6 +122,7 @@ python guide.py           # write GUIDE.md from the dataset
 python verify.py          # acceptance checks, write the catalogue CSV
 python drift.py           # figures that moved against the committed dataset
 python crosscheck_wiktionary.py  # optional: test langtags-only links against Wiktionary
+python crosscheck_linguameta.py  # optional: and against LinguaMeta's own curation
 ```
 
 The same pipeline runs on the 3rd of every month in GitHub Actions ([`monthly.yml`](.github/workflows/monthly.yml)) and fails when an upstream release moves any figure, so the plate cannot silently turn into an old snapshot.
