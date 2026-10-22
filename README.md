@@ -69,6 +69,10 @@ The difference between the last two kinds matters. Most scripts devised in the t
 
 A second plate, [`out/families_and_scripts.svg`](out/families_and_scripts.svg), turns the question around. Language families stand on the left, scripts on the right in the order of their descent tree, and each band is as thick as the number of languages of that family written mainly in that script. Latin takes 3,652 of the 4,569 languages with a script on record, from families on every continent, while most other scripts serve one family. Band colour is the script's great lineage, since nearly every script descends from Egyptian and the root colour of the main plate would say nothing here.
 
+![The language tree and the script tree, facing](docs/trees.png)
+
+A third plate, [`out/trees_facing.svg`](out/trees_facing.svg), draws both recursions as trees. Glottolog's classification stands on the left, opened clade by clade while a clade holds 40 or more written languages and lies within four levels of its family, to 164 leaves; the descent tree of the 115 scripts that are the main script of a language stands on the right, with their ancestors. The bands are the same as on the second plate, so a reader can follow Indo-Aryan into Devanagari, Arabic and Latin at once, or watch Austronesian, Atlantic-Congo and Nuclear Trans New Guinea all run into Latin. Check 21 fails if the plate is missing, drops a language or misses a main script.
+
 ## Specimens are shaped, not approximated
 
 Every specimen is a real outline pulled from a Noto face and shaped with HarfBuzz. Shaping is not cosmetic here. Arabic and every Brahmic script build their letterforms through GSUB, and Nastaliq's base glyphs are empty: drawing straight from the cmap gives disconnected stubs or nothing at all.
@@ -113,6 +117,7 @@ python fonts.py           # ~200 Noto faces, shape and extract outlines
 python build_data.py      # join everything into out/dataset.json
 python render.py          # draw the plate
 python render_families.py # draw the second plate, families facing scripts
+python render_trees.py    # draw the third plate, the two trees facing
 python guide.py           # write GUIDE.md from the dataset
 python verify.py          # acceptance checks, write the catalogue CSV
 python drift.py           # figures that moved against the committed dataset

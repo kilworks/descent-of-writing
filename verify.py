@@ -258,6 +258,18 @@ for t in json.load(open(os.path.join(DATA, "langtags.json"), encoding="utf8")):
 check("20. macrolanguage members reached through langtags aliases",
       not missed, "members left with no script or flag: %s" % (sorted(missed) or "none"))
 
+# 21. the facing-trees plate exists, draws every written language once, and
+# every script that is the main script of one
+TP = os.path.join(OUT, "trees_facing.svg")
+t_svg = open(TP, encoding="utf8").read() if os.path.exists(TP) else ""
+m = re.search(r"<desc>(\d+) languages with a script on record", t_svg)
+mains = {v["primary_script"] for v in L.values() if v["primary_script"]}
+drawn = set(re.findall(r'<g id="t-([A-Z][a-z]{3})">', t_svg))
+check("21. facing-trees plate draws every written language and main script",
+      bool(m) and int(m.group(1)) == ST["languages_with_script"] and drawn == mains,
+      "%s languages in the plate, %d in the dataset; %d of %d main scripts drawn"
+      % (m.group(1) if m else "no plate", ST["languages_with_script"], len(drawn & mains), len(mains)))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 21 of
-21 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 22 of
+22 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -278,15 +278,20 @@ Drawing both trees facing each other, linked by chords, is denser and more
 honest. It is also a different plate, so it may deserve to be a second output
 rather than a change to this one.
 
-GUIDE.md now measures the mismatch instead of drawing it: Latin writes
-languages of 272 families and isolates, Indo-European is written in 81
-scripts, and 139 of the 188 scripts recorded for any language serve a
-single family or isolate (Glottolog's filing categories left out). A second
+GUIDE.md measures the mismatch: Latin writes languages of 273 families
+and isolates, Indo-European is written in 85 scripts, and 143 of the 193
+scripts recorded for any language serve a single family or isolate
+(Glottolog's filing categories left out). A second
 plate now draws it: `render_families.py` writes
 `out/families_and_scripts.svg`, families facing scripts with bands sized by
 language counts, the top 40 families and 30 scripts named and the rest
-pooled. A full facing pair of trees, with the family tree drawn to depth
-rather than as a column, is still open.
+pooled. Done on 2026-10-22: `render_trees.py` writes
+`out/trees_facing.svg`, the full facing pair. Glottolog's classification
+(now kept per language in the dataset) is drawn to depth on the left,
+opened while a clade holds 40 or more written languages within four levels
+of its family (164 leaves); the script descent tree on the right; the same
+bands between. Check 21 holds it. Still open: the cut-off is a choice, and
+a viewer that opens clades on demand would show the whole tree.
 
 ### 7. Done: a browser viewer
 

@@ -42,6 +42,13 @@ if os.path.exists(fp):
     print("%-20s %8d bytes" % ("families", rasterize.render(
         fp, os.path.join(DOCS, "families.png"), 2100, round(2100 * fh / fw))))
 
+tp = os.path.join(OUT, "trees_facing.svg")
+if os.path.exists(tp):
+    tw, th = (int(x) for x in re.search(r'width="(\d+)" height="(\d+)"',
+                                        open(tp, encoding="utf8").read(800)).groups())
+    print("%-20s %8d bytes" % ("trees", rasterize.render(
+        tp, os.path.join(DOCS, "trees.png"), 1800, round(1800 * th / tw))))
+
 # the shaping witness sheet is its own artefact, not a crop of the plate
 sc = os.path.join(OUT, "specimen_check.svg")
 if os.path.exists(sc):

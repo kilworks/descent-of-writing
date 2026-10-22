@@ -29,6 +29,7 @@ jobs:
       - run: python build_data.py
       - run: python render.py
       - run: python render_families.py
+      - run: python render_trees.py
       - run: python guide.py
       - run: python verify.py
       - run: python drift.py

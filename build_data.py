@@ -116,14 +116,16 @@ def build_languages():
             if r["Level"] == "family":
                 fam_name[r["ID"]] = r["Name"]
 
-    # endangerment + category
-    aes, cat = {}, {}
+    # endangerment, category, and the path of subgroups from the family down
+    aes, cat, path = {}, {}, {}
     with open(os.path.join(DATA, "glottolog_values.csv"), encoding="utf8", newline="") as f:
         for r in csv.DictReader(f):
             if r["Parameter_ID"] == "aes":
                 aes[r["Language_ID"]] = (r["Code_ID"] or "").replace("aes-", "")
             elif r["Parameter_ID"] == "category":
                 cat[r["Language_ID"]] = (r["Code_ID"] or "").replace("category-", "")
+            elif r["Parameter_ID"] == "classification" and r["Language_ID"] in langs:
+                path[r["Language_ID"]] = [g for g in (r["Value"] or "").split("/") if g]
 
     by_iso = {v["iso"]: k for k, v in langs.items() if v["iso"]}
 
@@ -227,6 +229,7 @@ def build_languages():
     for gid, v in langs.items():
         v["aes"] = aes.get(gid, "unknown")
         v["category"] = cat.get(gid, "")
+        v["classification"] = path.get(gid, [])
         v["speakers"] = speakers.get(gid)
         v["scripts"] = sorted(lang_scripts.get(gid, []))
         v["script_sources"] = sorted(k for k, scs in by_source.get(gid, {}).items() if scs)
