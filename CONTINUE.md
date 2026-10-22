@@ -244,15 +244,13 @@ Drawing both trees facing each other, linked by chords, is denser and more
 honest. It is also a different plate, so it may deserve to be a second output
 rather than a change to this one.
 
-### 7. The SVG is not usable in a browser
+### 7. Done: a browser viewer
 
-26,248 pixels wide. Browsers will open it, but nobody can navigate it, and the
-6,000-wide PNG makes every card illegible. A deep-zoom viewer with tiles, or a
-simple pan-and-zoom page with the SVG inline, would make the artefact actually
-readable by people who are not going to download 1.7 MB and open Inkscape.
-
-The SVG already carries an id on every node, so a viewer can link to a single
-script.
+`viewer.html` loads the SVG inline and the dataset beside it: pan, zoom,
+keyboard control, search over every script and language, a card per item,
+and deep links by id. Tested at 1400 and 390 pixels wide. It needs http,
+so it works under `python -m http.server` or GitHub Pages, not from a file.
+Publishing it on GitHub Pages is a repository setting, left to the owner.
 
 ### 8. Smaller, real, unglamorous
 

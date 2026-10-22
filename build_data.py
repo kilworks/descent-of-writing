@@ -92,7 +92,9 @@ def build_languages():
                 continue
             langs[r["ID"]] = {
                 "id": r["ID"], "name": r["Name"], "iso": r["ISO639P3code"],
-                "macroarea": (r["Macroarea"] or "").split(";")[0],
+                # English spans three macroareas; keeping only the first, as
+                # this once did, put it in Africa
+                "macroareas": [m for m in (r["Macroarea"] or "").split(";") if m],
                 "family": r["Family_ID"] or r["ID"],
                 "isolate": r["Is_Isolate"] == "true",
             }
@@ -277,7 +279,7 @@ if __name__ == "__main__":
         "sign_languages": sum(1 for v in langs.values() if v["category"] == "Sign_Language"),
         "extinct": sum(1 for v in langs.values() if v["aes"] == "extinct"),
         "aes": dict(collections.Counter(v["aes"] for v in langs.values())),
-        "macroareas": dict(collections.Counter(v["macroarea"] for v in langs.values())),
+        "macroareas": dict(collections.Counter(m for v in langs.values() for m in v["macroareas"] or [""])),
     }
     stats["families"] = len({v["family"] for v in langs.values() if not v["isolate"]})
 

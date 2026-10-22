@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Descent of Writing, viewer</title>
+<meta name="description" content="Pan, zoom and search the plate of every ISO 15924 script and every Glottolog language.">
+<style>
+  :root {
+    --paper: #f6f1e6; --ink: #1a1714; --soft: #6b6155; --faint: #a89d8d; --rule: #c9bda9;
+    --accent: #9c3b2e; --panel: #fffaf0; --focus: #1d5fbf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --panel: #f2ebdc; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink);
+    font: 16px/1.45 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+  header { position: fixed; inset: 0 0 auto 0; display: flex; gap: 12px; align-items: center;
+    padding: 10px 16px; background: color-mix(in srgb, var(--paper) 92%, transparent);
+    border-bottom: 1px solid var(--rule); z-index: 3; flex-wrap: wrap; }
+  header h1 { font-size: 17px; letter-spacing: .12em; font-weight: normal; margin: 0; white-space: nowrap; }
+  .search { position: relative; flex: 1 1 260px; max-width: 520px; }
+  .search input { width: 100%; padding: 8px 10px; font: inherit; border: 1px solid var(--rule);
+    border-radius: 6px; background: #fff; color: var(--ink); }
+  .search input:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+  #results { position: absolute; top: 100%; left: 0; right: 0; margin: 4px 0 0; padding: 0; list-style: none;
+    background: #fff; border: 1px solid var(--rule); border-radius: 6px; max-height: 60vh; overflow: auto;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12); }
+  #results:empty { display: none; }
+  #results li { padding: 6px 10px; cursor: pointer; display: flex; gap: 8px; align-items: baseline; }
+  #results li[aria-selected="true"], #results li:hover { background: #efe6d4; }
+  #results .code { font-family: Consolas, "DejaVu Sans Mono", monospace; color: var(--soft); min-width: 7.5em; }
+  #results .kind { margin-left: auto; color: var(--faint); font-size: 13px; }
+  .tools { display: flex; gap: 6px; }
+  button { font: inherit; padding: 6px 11px; border: 1px solid var(--rule); border-radius: 6px;
+    background: #fff; color: var(--ink); cursor: pointer; min-width: 40px; min-height: 36px; }
+  button:hover { background: #efe6d4; }
+  #stage { position: fixed; inset: 0; overflow: hidden; cursor: grab; touch-action: none; }
+  #stage.dragging { cursor: grabbing; }
+  #stage svg { width: 100%; height: 100%; display: block; }
+  #panel { position: fixed; right: 16px; bottom: 16px; width: min(420px, calc(100vw - 32px));
+    max-height: 55vh; overflow: auto; background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 8px; padding: 14px 16px; box-shadow: 0 6px 24px rgba(0,0,0,.14); z-index: 2; }
+  #panel[hidden] { display: none; }
+  #panel h2 { margin: 0 0 4px; font-size: 20px; font-weight: normal; }
+  #panel .sub { color: var(--soft); margin: 0 0 10px; }
+  #panel dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; }
+  #panel dt { color: var(--soft); }
+  #panel dd { margin: 0; }
+  #panel .close { position: absolute; top: 8px; right: 8px; }
+  #panel a { color: var(--accent); }
+  #status { position: fixed; left: 16px; bottom: 16px; color: var(--soft); font-size: 13px;
+    background: color-mix(in srgb, var(--paper) 85%, transparent); padding: 4px 8px; border-radius: 4px; }
+  .hl { outline: none; }
+  @media (max-width: 600px) { header h1 { display: none; } #panel { max-height: 45vh; } }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>THE DESCENT OF WRITING</h1>
+  <div class="search" role="combobox" aria-expanded="false" aria-owns="results" aria-haspopup="listbox">
+    <label for="q" class="sr" style="position:absolute;left:-9999px">Search a script or a language</label>
+    <input id="q" type="search" autocomplete="off" placeholder="Search a script or a language (Latin, Deva, Hindi, Sumerian)"
+           aria-autocomplete="list" aria-controls="results">
+    <ul id="results" role="listbox"></ul>
+  </div>
+  <div class="tools">
+    <button id="zin" aria-label="Zoom in">+</button>
+    <button id="zout" aria-label="Zoom out">&minus;</button>
+    <button id="fit" aria-label="Show the whole plate">Whole plate</button>
+  </div>
+</header>
+<main id="stage" aria-label="The plate. Drag to move, wheel or plus and minus to zoom, arrow keys to pan." tabindex="0"></main>
+<aside id="panel" hidden aria-live="polite">
+  <button class="close" id="close" aria-label="Close">&times;</button>
+  <div id="card"></div>
+</aside>
+<div id="status">Loading the plate...</div>
+
+<script>
+// The plate and its dataset are read from out/, so this page must be served over
+// http (python -m http.server, or GitHub Pages); browsers refuse file:// fetches.
+const stage = document.getElementById("stage");
+const statusEl = document.getElementById("status");
+const q = document.getElementById("q"), results = document.getElementById("results");
+const panel = document.getElementById("panel"), card = document.getElementById("card");
+let svg, full, view, S = {}, L = {}, FAM = {}, index = [], marked = null;
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const year = v => v === null || v === undefined ? "present" : v < 0 ? (-v) + " BCE" : v + " CE";
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+function setView(v) {
+  view = v;
+  svg.setAttribute("viewBox", [v.x, v.y, v.w, v.h].map(n => n.toFixed(1)).join(" "));
+}
+function fit() { setView({ ...full }); }
+function zoom(f, cx, cy) {
+  const r = stage.getBoundingClientRect();
+  const px = cx === undefined ? 0.5 : (cx - r.left) / r.width;
+  const py = cy === undefined ? 0.5 : (cy - r.top) / r.height;
+  const w = Math.min(full.w * 1.2, Math.max(400, view.w / f)), h = w * view.h / view.w;
+  setView({ x: view.x + (view.w - w) * px, y: view.y + (view.h - h) * py, w, h });
+}
+function pan(dx, dy) { setView({ ...view, x: view.x + dx * view.w, y: view.y + dy * view.h }); }
+
+function focusOn(id) {
+  const el = svg.getElementById(id);
+  if (!el) return false;
+  const b = el.getBBox();
+  const r = stage.getBoundingClientRect();
+  const pad = Math.max(b.width, b.height) * 3 + 300;
+  // a language mark is small: keep enough of the field around it to see where it hangs
+  let w = Math.max(b.width + pad, id.startsWith("l-") ? 2600 : 0), h = w * r.height / r.width;
+  if (h < b.height + pad) { h = b.height + pad; w = h * r.width / r.height; }
+  setView({ x: b.x + b.width / 2 - w / 2, y: b.y + b.height / 2 - h / 2, w, h });
+  if (marked) marked.remove();
+  marked = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  marked.setAttribute("x", b.x - 14); marked.setAttribute("y", b.y - 14);
+  marked.setAttribute("width", b.width + 28); marked.setAttribute("height", b.height + 28);
+  marked.setAttribute("rx", 12); marked.setAttribute("fill", "none");
+  marked.setAttribute("stroke", "#1d5fbf"); marked.setAttribute("stroke-width", Math.max(4, b.width / 18));
+  svg.appendChild(marked);
+  return true;
+}
+
+function scriptCard(c) {
+  const s = S[c];
+  if (!s) return "";
+  const parent = s.parent
+    ? `<a href="#${s.parent}">${esc(s.parent)}</a> ${esc(S[s.parent].name)}${s.via ? " through " + esc(s.via) : ""}, <b>${esc(s.edge)}</b>`
+    : "a root: no known parent in the registry";
+  const langs = Object.values(L).filter(v => v.primary_script === c)
+    .sort((a, b) => (b.speakers || 0) - (a.speakers || 0));
+  const top = langs.slice(0, 6).map(v => `<a href="#l-${v.id}">${esc(v.name)}</a>`).join(", ");
+  return `<h2>${esc(s.name)}</h2>
+    <p class="sub">${esc(c)}${s.native ? " &middot; " + esc(s.native) : ""}</p>
+    <dl>
+      <dt>Type</dt><dd>${esc(s.type)}, ${esc(s.direction)}</dd>
+      <dt>Span</dt><dd>${year(s.start)} to ${year(s.end)}, ${esc(s.status)}</dd>
+      <dt>Parent</dt><dd>${parent}</dd>
+      ${s.source ? `<dt>Source</dt><dd>${esc(s.source)}${s.source_note ? ". " + esc(s.source_note[0].toUpperCase() + s.source_note.slice(1)) : ""}</dd>` : ""}
+      <dt>Languages</dt><dd>${langs.length ? langs.length + " written mainly in it" + (top ? ": " + top : "") : "none hung under it"}</dd>
+      <dt>Unicode</dt><dd>${s.encoded ? "since " + esc(s.unicode) : "not encoded"}</dd>
+    </dl>
+    <p><a href="GUIDE.md#${c.toLowerCase()}">Entry in the guide</a></p>`;
+}
+function langCard(gid) {
+  const v = L[gid];
+  if (!v) return "";
+  const scripts = v.scripts.length
+    ? v.scripts.map(c => `<a href="#${c}">${esc(c)}</a>${c === v.primary_script ? " (main)" : ""}`).join(", ")
+    : (v.sil_unwritten ? "none; listed as unwritten by SIL langtags" : "none on record either way");
+  return `<h2>${esc(v.name)}</h2>
+    <p class="sub">Glottocode ${esc(v.id)}${v.iso ? " &middot; ISO 639-3 " + esc(v.iso) : ""}</p>
+    <dl>
+      <dt>Family</dt><dd>${v.isolate ? "isolate" : esc(FAM[v.family] || v.family)}</dd>
+      <dt>Area</dt><dd>${esc((v.macroareas || []).join(", ") || "unknown")}</dd>
+      <dt>Scripts</dt><dd>${scripts}</dd>
+      ${v.script_sources.length ? `<dt>From</dt><dd>${esc(v.script_sources.join(", "))}</dd>` : ""}
+      <dt>Status</dt><dd>${esc((v.aes || "unknown").replace("_", " "))}</dd>
+      <dt>Speakers</dt><dd>${v.speakers ? Math.round(v.speakers).toLocaleString("en") : "no count on record"}</dd>
+    </dl>
+    <p><a href="https://glottolog.org/resource/languoid/id/${esc(v.id)}" rel="noopener">Glottolog</a></p>`;
+}
+
+function show(id) {
+  let html = "";
+  if (id.startsWith("l-")) html = langCard(id.slice(2));
+  else if (S[id]) html = scriptCard(id);
+  if (!html) return;
+  card.innerHTML = html;
+  panel.hidden = false;
+  focusOn(id.startsWith("l-") ? id : "s-" + id);
+  statusEl.textContent = id.startsWith("l-") ? L[id.slice(2)].name : S[id].name;
+}
+function route() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (id) show(id);
+}
+
+function search(text) {
+  const t = norm(text.trim());
+  results.innerHTML = "";
+  if (t.length < 2) { q.parentElement.setAttribute("aria-expanded", "false"); return; }
+  const hits = [];
+  for (const e of index) {
+    const i = e.key.indexOf(t);
+    if (i < 0) continue;
+    hits.push([e.code === t || e.code.toLowerCase() === t ? -1 : i === 0 ? 0 : 1, e.rank, e]);
+    if (hits.length > 600) break;
+  }
+  hits.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  hits.slice(0, 30).forEach(([, , e], n) => {
+    const li = document.createElement("li");
+    li.setAttribute("role", "option"); li.id = "opt" + n;
+    li.innerHTML = `<span class="code">${esc(e.code)}</span><span>${esc(e.label)}</span><span class="kind">${e.kind}</span>`;
+    li.addEventListener("mousedown", ev => { ev.preventDefault(); location.hash = e.id; results.innerHTML = ""; });
+    results.appendChild(li);
+  });
+  q.parentElement.setAttribute("aria-expanded", results.children.length ? "true" : "false");
+}
+q.addEventListener("input", () => search(q.value));
+q.addEventListener("keydown", ev => {
+  const items = [...results.children];
+  let i = items.findIndex(li => li.getAttribute("aria-selected") === "true");
+  if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+    ev.preventDefault();
+    if (i >= 0) items[i].removeAttribute("aria-selected");
+    i = ev.key === "ArrowDown" ? Math.min(items.length - 1, i + 1) : Math.max(0, i - 1);
+    if (items[i]) { items[i].setAttribute("aria-selected", "true"); q.setAttribute("aria-activedescendant", items[i].id); items[i].scrollIntoView({ block: "nearest" }); }
+  } else if (ev.key === "Enter") {
+    const pick = items[Math.max(0, i)];
+    if (pick) pick.dispatchEvent(new MouseEvent("mousedown"));
+  } else if (ev.key === "Escape") { results.innerHTML = ""; }
+});
+
+// pan and zoom
+let drag = null;
+stage.addEventListener("pointerdown", ev => {
+  if (ev.button !== 0) return;
+  drag = { x: ev.clientX, y: ev.clientY, v: { ...view }, moved: false };
+  stage.setPointerCapture(ev.pointerId); stage.classList.add("dragging");
+});
+stage.addEventListener("pointermove", ev => {
+  if (!drag) return;
+  const r = stage.getBoundingClientRect();
+  const dx = (ev.clientX - drag.x) * drag.v.w / r.width, dy = (ev.clientY - drag.y) * drag.v.h / r.height;
+  if (Math.abs(ev.clientX - drag.x) + Math.abs(ev.clientY - drag.y) > 4) drag.moved = true;
+  setView({ ...drag.v, x: drag.v.x - dx, y: drag.v.y - dy });
+});
+stage.addEventListener("pointerup", ev => {
+  stage.classList.remove("dragging");
+  const moved = drag && drag.moved;
+  drag = null;
+  if (moved) return;
+  const hit = ev.target.closest && ev.target.closest('[id^="s-"], [id^="l-"]');
+  if (hit) location.hash = hit.id.startsWith("s-") ? hit.id.slice(2) : hit.id;
+});
+stage.addEventListener("wheel", ev => { ev.preventDefault(); zoom(ev.deltaY < 0 ? 1.25 : 0.8, ev.clientX, ev.clientY); }, { passive: false });
+stage.addEventListener("keydown", ev => {
+  const k = { ArrowLeft: [-0.15, 0], ArrowRight: [0.15, 0], ArrowUp: [0, -0.15], ArrowDown: [0, 0.15] }[ev.key];
+  if (k) { ev.preventDefault(); pan(...k); }
+  else if (ev.key === "+" || ev.key === "=") zoom(1.4);
+  else if (ev.key === "-") zoom(1 / 1.4);
+  else if (ev.key === "0") fit();
+});
+document.getElementById("zin").onclick = () => zoom(1.5);
+document.getElementById("zout").onclick = () => zoom(1 / 1.5);
+document.getElementById("fit").onclick = () => { fit(); history.replaceState(null, "", location.pathname); };
+document.getElementById("close").onclick = () => { panel.hidden = true; if (marked) marked.remove(); };
+window.addEventListener("hashchange", route);
+
+Promise.all([
+  fetch("out/descent_of_writing.svg").then(r => { if (!r.ok) throw new Error("plate " + r.status); return r.text(); }),
+  fetch("out/dataset.json").then(r => { if (!r.ok) throw new Error("dataset " + r.status); return r.json(); }),
+]).then(([text, data]) => {
+  stage.innerHTML = text.replace(/^<\?xml[^>]*>\s*/, "");
+  svg = stage.querySelector("svg");
+  svg.removeAttribute("width"); svg.removeAttribute("height");
+  svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+  const vb = svg.viewBox.baseVal;
+  full = { x: vb.x, y: vb.y, w: vb.width, h: vb.height };
+  fit();
+  S = data.scripts; L = data.languages; FAM = data.family_names;
+  for (const [c, s] of Object.entries(S))
+    index.push({ id: c, code: c, label: s.name, kind: "script", key: norm(c + " " + s.name + " " + (s.native || "")), rank: 0 });
+  for (const v of Object.values(L))
+    index.push({ id: "l-" + v.id, code: v.iso || v.id, label: v.name, kind: "language",
+                 key: norm(v.name + " " + (v.iso || "") + " " + v.id), rank: 1 - Math.min(1, (v.speakers || 0) / 1e9) });
+  statusEl.textContent = Object.keys(S).length + " scripts, " + Object.keys(L).length + " languages. Search, or click a card.";
+  route();
+}).catch(err => {
+  statusEl.textContent = "Could not load the plate (" + err.message + "). Serve this folder over http: python -m http.server";
+});
+</script>
+</body>
+</html>
