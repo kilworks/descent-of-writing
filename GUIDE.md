@@ -80,7 +80,7 @@ Around 750 BCE Greek writers took Phoenician letters for consonants their langua
 
 ### Latin's reach
 
-Latin writes 3,653 of the 4,569 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 13 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
+Latin writes 3,654 of the 4,569 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 13 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
 
 ### Brahmi, and the abugida
 
@@ -815,7 +815,7 @@ Unicode: encoded since version 3.1, block from U+10400.
 Parent: [`Latn`](#latn) Latin, link **stimulus**.
 Source: Unicode L2/10-272R2. A geometric shorthand, letterforms from circles and lines, for writing French.
 
-Languages written mainly in it: 1. Thompson (440 speakers). Also recorded as a further script for 8 more.
+Recorded as a further script for 9 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+1BC00.
 
 ### Egyd
@@ -1392,7 +1392,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020. Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over.
 Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge).
 
-Languages written mainly in it: 3,653. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 212 more.
+Languages written mainly in it: 3,654. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 212 more.
 Unicode: encoded since version 1.1, block from U+0041.
 
 ### Leke

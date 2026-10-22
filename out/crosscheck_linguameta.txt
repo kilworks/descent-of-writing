@@ -1,14 +1,14 @@
 LinguaMeta (google-research/url-nlp, linguameta), CC BY-SA 4.0, quoted for review only.
 Only scripts LinguaMeta sources to its own curation (GOOGLE_RESEARCH) are used.
 
-Cross-check of the 3042 languages whose script rests on SIL langtags alone.
+Cross-check of the 3041 languages whose script rests on SIL langtags alone.
 
 no LinguaMeta curation of its own           1547   50.9%
 agrees on at least one script               1485   48.8%
-disagrees                                     10    0.3%
+disagrees                                      9    0.3%
 
-Agreement where both speak: 1485 of 1495 (99.3%).
-Confirmed by LinguaMeta or Wiktionary or both: 2648 of 3042 (87.0%).
+Agreement where both speak: 1485 of 1494 (99.4%).
+Confirmed by LinguaMeta or Wiktionary or both: 2647 of 3041 (87.0%).
 
 Disagreements (name, ISO 639-3, langtags, LinguaMeta):
   Brokskat [bkk]  Tibt  vs  Arab
@@ -18,6 +18,5 @@ Disagreements (name, ISO 639-3, langtags, LinguaMeta):
   Eastern Qiandong Miao [hmq]  Bopo  vs  Latn
   Mehri [gdq]  Latn  vs  Arab
   Phuan [phu]  Lana,Laoo  vs  Thai
-  Thompson [thp]  Dupl  vs  Latn
   Western Neo-Aramaic [amw]  Arab,Armi,Latn,Syrc,Syrj  vs  Syre
   Yerukula [yeu]  Telu  vs  Taml

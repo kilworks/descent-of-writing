@@ -73,4 +73,9 @@ CORRECTIONS = [
      "langtags gives only a Bopomofo tagset"),
     ("hea", "Latn", "main", "Enwall 2012, International Journal of the Sociology of Language 215",
      "the 1956 Latin script is the one in schools and in the 2009 New Testament"),
+    ("thp", "Latn", "add", "Thompson & Thompson 1996, Thompson River Salish Dictionary, UMOPL 12",
+     "Thompson is written in a Latin orthography today; langtags gives only Duployan"),
+    ("thp", "Latn", "main", "Thompson & Thompson 1996, UMOPL 12; Unicode L2/10-026 (Duployan)",
+     "Le Jeune's Duployan shorthand carried Thompson prayers from 1892 into the early 20th c.; "
+     "it is the historical script, Latin the current one"),
 ]
