@@ -500,7 +500,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **contested**.
 Source: Bright 1996, in Daniels & Bright; Salomon 1998, Indian Epigraphy. Aramaic origin after Buhler is the majority view; not settled.
 Children: [`Sinh`](#sinh), [`Cham`](#cham), [`Knda`](#knda), [`Sidd`](#sidd), [`Gran`](#gran), [`Taml`](#taml), [`Telu`](#telu), [`Khmr`](#khmr), [`Tibt`](#tibt), [`Kawi`](#kawi), [`Shrd`](#shrd), [`Bhks`](#bhks), [`Mtei`](#mtei), [`Mymr`](#mymr), [`Gonm`](#gonm), [`Sora`](#sora), [`Gukh`](#gukh).
 
-Languages written mainly in it: 6. Largest: Tokharian A, Old Cham, Maharastri Prakrit, Khotanese, Tumshuqese. Also recorded as a further script for 4 more.
+Languages written mainly in it: 7. Largest: Tokharian B, Tokharian A, Old Cham, Maharastri Prakrit, Khotanese. Also recorded as a further script for 3 more.
 Unicode: encoded since version 6.0, block from U+11000.
 
 ### Brai
@@ -767,7 +767,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: L2/17-226 (Elymaic); Unicode ch.10. Derives from Aramaic; earliest on coins of the 2nd c. BCE.
 Children: [`Mand`](#mand).
 
-Languages written mainly in it: 1. Elymian. Also recorded as a further script for 4 more.
+Recorded as a further script for 1 language, the main script for none.
 Unicode: encoded since version 12.0, block from U+10FE0.
 
 ### Ethi
@@ -870,7 +870,7 @@ Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Janko, on Methone; Jeffery, Local Scripts of Archaic Greece. Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left.
 Children: [`Cari`](#cari), [`Ital`](#ital), [`Lydi`](#lydi), [`Lyci`](#lyci), [`Copt`](#copt), [`Goth`](#goth), [`Armn`](#armn), [`Geok`](#geok), [`Glag`](#glag), [`Cyrl`](#cyrl), [`Todr`](#todr), [`Elba`](#elba), [`Vith`](#vith).
 
-Languages written mainly in it: 17. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 9 more.
+Languages written mainly in it: 18. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0370.
 
 ### Gujr
@@ -999,7 +999,7 @@ Unicode: encoded since version 1.1, block from U+3041.
 A root: no known parent among the registry's codes.
 Source: van den Hout 2020, A History of Hittite Literacy, ch.7. Egyptian inspiration unlikely; probably an Anatolian creation from indigenous signs.
 
-Languages written mainly in it: 3. Largest: Hurrian, Hieroglyphic Luwian, Cuneiform Luwian.
+Languages written mainly in it: 1. Hieroglyphic Luwian.
 Unicode: encoded since version 8.0, block from U+14400.
 
 ### Hmng
@@ -1423,7 +1423,7 @@ Unicode: encoded since version 6.0, block from U+0840.
 Parent: [`Syrc`](#syrc) Syriac, link **contested**.
 Source: Unicode ch.10; Everson, Unicode N2544 and N3486. Based on Estrangela Syriac and Palmyrene; also described as a sister of Syriac out of Aramaic.
 
-Languages written mainly in it: 1. Tokharian B. Also recorded as a further script for 4 more.
+Recorded as a further script for 5 languages, the main script for none.
 Unicode: encoded since version 7.0, block from U+10AC0.
 
 ### Marc
@@ -1780,7 +1780,7 @@ Unicode: not encoded, so no font can show it.
 Parent: [`Pcun`](#pcun) Proto-Cuneiform, link **stimulus**.
 Source: Dahl 2005, CDLJ 2005:3; Englund, Encyclopaedia Iranica 'Elam iii'. Unquestionably inspired by proto-cuneiform; numerical systems borrowed, signs largely new.
 
-Languages written mainly in it: 1. Elamite.
+Languages a source records it for: none.
 Unicode: not encoded, so no font can show it.
 
 ### Perm
@@ -2487,7 +2487,7 @@ Parent: [`Pcun`](#pcun) Proto-Cuneiform, link **attested**.
 Source: Unicode ch.11; L2/25-211 (proto-cuneiform). Cuneiform proper from c.2700-2600 BCE (Fara, Abu Salabikh); -2900 is the end of the archaic period.
 Children: [`Xpeo`](#xpeo).
 
-Languages written mainly in it: 7. Largest: Sumerian, Hattic, Urartian, Hittite, Eblaite. Also recorded as a further script for 3 more.
+Languages written mainly in it: 10. Largest: Sumerian, Elamite, Hattic, Hurrian, Urartian. Also recorded as a further script for 1 more.
 Unicode: encoded since version 5.0, block from U+12000.
 
 ### Yezi

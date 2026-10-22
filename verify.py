@@ -144,6 +144,23 @@ check("12. main scripts and the lower register are consistent",
       "Braille as main script with another available: %s; listed unwritten %d, no record %d"
       % (braille_main or "none", listed, norec))
 
+# 13. every correction to a source's language-to-script link is applied and sourced
+from corrections import CORRECTIONS
+by_iso = {v["iso"]: v for v in L.values() if v["iso"]}
+unapplied = []
+for iso, sc, action, src, note in CORRECTIONS:
+    v = by_iso.get(iso)
+    if not v or not src or not note:
+        unapplied.append(iso)
+    elif action == "drop" and sc in v["scripts"]:
+        unapplied.append("%s-%s" % (iso, sc))
+    elif action == "add" and sc not in v["scripts"]:
+        unapplied.append("%s+%s" % (iso, sc))
+    elif action == "main" and v["primary_script"] != sc:
+        unapplied.append("%s-%s" % (iso, sc))
+check("13. language-script corrections applied, each with its source",
+      not unapplied, "%d corrections, not applied: %s" % (len(CORRECTIONS), unapplied or "none"))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")

@@ -190,16 +190,35 @@ def build_languages():
                 lt_primary[gid] = c
     print("script links: %s" % dict(src_count))
 
+    # corrections.py: the few links the sources get wrong, each with its authority
+    from corrections import CORRECTIONS
+    forced_main = {}
+    for iso, sc, action, _src, _note in CORRECTIONS:
+        gid = by_iso.get(iso)
+        if not gid:
+            continue
+        if action == "drop":
+            lang_scripts[gid].discard(sc)
+            for k in by_source[gid]:
+                by_source[gid][k].discard(sc)
+        elif action == "add":
+            lang_scripts[gid].add(sc)
+            by_source[gid]["corrections"].add(sc)
+        elif action == "main":
+            forced_main[gid] = sc
+
     dropped = []
     for gid, v in langs.items():
         v["aes"] = aes.get(gid, "unknown")
         v["category"] = cat.get(gid, "")
         v["speakers"] = speakers.get(gid)
         v["scripts"] = sorted(lang_scripts.get(gid, []))
-        v["script_sources"] = sorted(by_source[gid]) if gid in by_source else []
+        v["script_sources"] = sorted(k for k, scs in by_source.get(gid, {}).items() if scs)
         # which script a language hangs under on the plate, when it has several
         if not v["scripts"]:
             v["primary_script"], v["primary_basis"] = None, None
+        elif forced_main.get(gid) in v["scripts"]:
+            v["primary_script"], v["primary_basis"] = forced_main[gid], "corrections.py"
         elif len(v["scripts"]) == 1:
             v["primary_script"], v["primary_basis"] = v["scripts"][0], "only script"
         elif lt_primary.get(gid) in v["scripts"]:

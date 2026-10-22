@@ -178,21 +178,27 @@ view. Each is recorded; none has been reviewed by someone who works on it.
 ### 3. Done in part: language to script coverage, 17.7% to 52.6%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,517 of 8,587 (52.6%), 3,000 of them on langtags
+third source. Written: 4,517 of 8,587 (52.6%), 2,998 of them on langtags
 alone. Listed as unwritten: 2,856. No record either way: 1,214. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
 unwritten never contribute a script (langtags documents regional inference on
 them). Multi-script languages now hang under a ranked primary script
-(langtags default tag, then CLDR primary, then Wikidata); 4 of 723 still fall
-back to alphabetical order. Members of a macrolanguage (Mandarin, Malay) have
+(langtags default tag, then CLDR primary, then Wikidata); 4 of the 720
+with several still fall back to alphabetical order. Members of a
+macrolanguage (Mandarin, Malay) have
 their default tagset filed under the macrolanguage in langtags, which left
 them only special tagsets; they were briefly drawn under Braille, and check 12
 now fails if Braille is ever the main script of a language that has another.
 
 Still open:
 
-- 3,000 languages rest on langtags alone, which inherits the Ethnologue's
+- A review of every language assigned to a historical script found eleven
+  wrong or misranked links, now fixed with sources in `corrections.py`
+  (Elymian under Elymaic, Hurrian under Anatolian hieroglyphs, Tocharian B
+  under Manichaean, Elamite under Proto-Elamite, four Aramaic varieties
+  under Elymaic). The living scripts have not had the same review.
+- 2,998 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. A second independent source per language would make them firmer.
   ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
   after that.
