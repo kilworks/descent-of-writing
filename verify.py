@@ -137,17 +137,19 @@ check("10. svg has a title, a description, and a title per script",
 
 # 12. where a language hangs, and how the lower register splits. Braille is a
 # recoding of other scripts, so it is a language's main script only when it
-# is its only one; and the two lower fields must add up and be printed.
+# is its only one; and the three lower fields must add up and be printed.
 braille_main = sorted(v["name"] for v in L.values()
                       if v["primary_script"] == "Brai" and len(v["scripts"]) > 1)
 listed = sum(1 for v in L.values() if not v["scripts"] and v["sil_unwritten"])
-norec = sum(1 for v in L.values() if not v["scripts"] and not v["sil_unwritten"])
+n_sign = sum(1 for v in L.values() if not v["scripts"] and not v["sil_unwritten"]
+             and v["category"] == "Sign_Language")
+norec = sum(1 for v in L.values() if not v["scripts"] and not v["sil_unwritten"]) - n_sign
 check("12. main scripts and the lower register are consistent",
       not braille_main and listed == ST["languages_recorded_unwritten"]
-      and listed + norec == ST["languages_without_script"]
+      and listed + norec + n_sign == ST["languages_without_script"]
       and "%d languages" % listed in SVG and "%d languages" % norec in SVG,
-      "Braille as main script with another available: %s; listed unwritten %d, no record %d"
-      % (braille_main or "none", listed, norec))
+      "Braille as main script with another available: %s; listed unwritten %d, no record %d, sign %d"
+      % (braille_main or "none", listed, norec, n_sign))
 
 # 13. every correction to a source's language-to-script link is applied and sourced
 from corrections import CORRECTIONS
@@ -234,6 +236,12 @@ wrong = sorted((squares - uncounted) | (circles & uncounted))
 check("18. uncounted languages are squares, counted ones circles",
       squares and not wrong and not (squares & circles),
       "%d squares, %d circles; drawn with the wrong shape: %s" % (len(squares), len(circles), wrong[:5] or "none"))
+
+# 19. sign languages with no script have their own field, not "no record"
+m = re.search(r">(\d+) sign languages<", SVG)
+check("19. sign languages with no script drawn in their own field",
+      bool(m) and int(m.group(1)) == n_sign,
+      "%s in the field, %d in the dataset" % (m.group(1) if m else "no field", n_sign))
 
 # 11. the written guide is generated from this dataset and must not lag it
 import guide

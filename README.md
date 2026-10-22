@@ -34,7 +34,7 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | Sign languages | 227 |
 | Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,991 of them from langtags alone |
 | Languages listed as unwritten (SIL langtags) | 2,856 (33.3%) |
-| Languages with no record either way | 1,214 (14.1%) |
+| Languages with no record either way | 996 (11.6%), and 218 sign languages with no script, drawn in a field of their own |
 | Languages with several scripts | 720; the one they hang under is ranked by a source for all but 4, and Braille is never the main script of a language that has another |
 
 Every figure above is recomputed from the source files by [`verify.py`](verify.py) and asserted against the finished SVG.

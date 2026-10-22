@@ -240,7 +240,11 @@ for gid, v in L.items():
     else:
         unwritten.append(gid)
 listed_unwritten = [g for g in unwritten if L[g]["sil_unwritten"]]
-no_record = [g for g in unwritten if not L[g]["sil_unwritten"]]
+# sign languages are not "unwritten" in langtags but tagged Zxxx, no written
+# form, so they get a field of their own instead of swelling "no record"
+sign = [g for g in unwritten if not L[g]["sil_unwritten"] and L[g]["category"] == "Sign_Language"]
+no_record = [g for g in unwritten if not L[g]["sil_unwritten"] and g not in set(sign)]
+sign_written = sum(1 for v in L.values() if v["category"] == "Sign_Language" and v["scripts"])
 
 
 def mark_r(v, cell):
@@ -488,10 +492,15 @@ draw_field(listed_unwritten, PAD, w_listed, NONE_GREY,
            "%d languages, %.0f%% of every language in Glottolog"
            % (len(listed_unwritten), 100 * len(listed_unwritten) / total),
            row_b_top, row_b_h, label_size=34)
-draw_field(no_record, PAD + w_listed + gapx * 4, inner - w_listed - gapx * 4, NONE_GREY,
+w_norec = (inner - gapx * 8) * len(no_record) / max(1, len(unwritten))
+draw_field(no_record, PAD + w_listed + gapx * 4, w_norec, NONE_GREY,
            "no record either way",
            "%d languages, %.0f%% of every language in Glottolog"
            % (len(no_record), 100 * len(no_record) / total),
+           row_b_top, row_b_h, label_size=34)
+draw_field(sign, PAD + w_listed + w_norec + gapx * 8, inner - w_listed - w_norec - gapx * 8, NONE_GREY,
+           "sign languages",
+           "%d sign languages" % len(sign),
            row_b_top, row_b_h, label_size=34)
 a('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="none" stroke="%s" '
   'stroke-width="2.5" stroke-dasharray="16 12"/>'
@@ -509,9 +518,10 @@ a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   % (PAD, foot, INK_SOFT, round(100 * sum(1 for v in L.values() if not v["speakers"]) / len(L))))
 a('<text x="%d" y="%.0f" font-size="30" fill="%s">'
   'The lower register is not proof of unwritten languages. Its left field is what SIL langtags, kept with the Ethnologue, '
-  'lists as unwritten; its right field is what no source used records either way. Scripts above come from Wikidata, '
+  'lists as unwritten; its middle field is what no source used records either way; its right field is the sign languages, '
+  'which langtags tags Zxxx, no written form, where it has them (%d more are written in SignWriting, above). Scripts above come from Wikidata, '
   'CLDR and SIL langtags; %d of the %d written languages rest on langtags alone.</text>'
-  % (PAD, foot + 44, "#9c3b2e", ST["languages_scripted_only_by_langtags"], ST["languages_with_script"]))
+  % (PAD, foot + 44, "#9c3b2e", sign_written, ST["languages_scripted_only_by_langtags"], ST["languages_with_script"]))
 
 # ---- zone C, the catalogue
 a('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="3"/>'
@@ -588,9 +598,9 @@ checks = [
     "Families: %d, not counting Glottolog's %d pseudo-families (%d languages). Isolates: %d. Sign languages: %d. Extinct: %d."
     % (ST["families"], len(ST["pseudo_families"]), ST["languages_in_pseudo_families"],
        ST["isolates"], ST["sign_languages"], ST["extinct"]),
-    "Languages with no script recorded: %d, %.1f%%; of them %d listed as unwritten, %d with no record."
+    "Languages with no script recorded: %d, %.1f%%; of them %d listed as unwritten, %d with no record, %d sign languages."
     % (ST["languages_without_script"], 100 * ST["languages_without_script"] / ST["languages"],
-       ST["languages_recorded_unwritten"], ST["languages_without_script"] - ST["languages_recorded_unwritten"]),
+       ST["languages_recorded_unwritten"], len(no_record), len(sign)),
     "Deepest chain of descent: %d generations. Every script traces to a root or is one."
     % MAXD,
 ]

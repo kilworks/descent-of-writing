@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 19 of
-19 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 20 of
+20 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -221,8 +221,9 @@ Still open:
 - Of the 1,214 with no record, 754 have no ISO 639-3 code, which every
   script source keys on; bridging Glottocodes to scripts directly would reach
   them. Another 218 are sign languages, which langtags tags `Zxxx` (no
-  script) rather than unwritten. They could take a field of their own, with
-  SignWriting as the one script that writes some of them.
+  written form) where it has them. Done on 2026-10-22: they have a field of
+  their own in the lower register, next to "no record" (now 996), and
+  check 19 holds it; the nine written in SignWriting hang under it above.
 
 ### 4. Done: monthly rebuild and drift check
 
