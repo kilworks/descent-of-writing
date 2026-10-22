@@ -68,4 +68,9 @@ CORRECTIONS = [
     ("txb", "Brah", "main", "Malzahn 2007, Instrumenta Tocharica; Unicode ch.14",
      "Tocharian B is written mainly in Tocharian Brahmi, a Brahmi variety Unicode has not encoded; "
      "only a few texts use the Manichaean script"),
+    ("hea", "Latn", "add", "Enwall 2012, International Journal of the Sociology of Language 215",
+     "a Latin-based script for Hmu, on the Yanghao dialect, was set in 1956 and reintroduced in schools in 1981; "
+     "langtags gives only a Bopomofo tagset"),
+    ("hea", "Latn", "main", "Enwall 2012, International Journal of the Sociology of Language 215",
+     "the 1956 Latin script is the one in schools and in the 2009 New Testament"),
 ]

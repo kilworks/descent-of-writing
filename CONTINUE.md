@@ -191,13 +191,13 @@ that chapter is the cheapest useful review.
 ### 3. Done in part: language to script coverage, 17.7% to 53.2%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,569 of 8,587 (53.2%), 3,043 of them on langtags
+third source. Written: 4,569 of 8,587 (53.2%), 3,042 of them on langtags
 alone. Listed as unwritten: 2,857. No record either way: 1,161. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
 unwritten never contribute a script (langtags documents regional inference on
 them). Multi-script languages now hang under a ranked primary script
-(langtags default tag, then CLDR primary, then Wikidata); 6 of the 747
+(langtags default tag, then CLDR primary, then Wikidata); 6 of the 748
 with several still fall back to alphabetical order. Members of a
 macrolanguage (Mandarin, Malay) have
 their default tagset filed under the macrolanguage in langtags, which left
@@ -226,20 +226,21 @@ Still open:
   and Jpan, which is how the sources tag them.
 - An independent check now exists: crosscheck_wiktionary.py compares the
   langtags-only links with Wiktionary's language data. Where Wiktionary
-  lists a script it agrees for 99.2% (2,366 of 2,384); eight corrections
+  lists a script it agrees for 99.2% (2,365 of 2,383); eight corrections
   came from the disagreements, and 18 remain in
   out/crosscheck_wiktionary.txt for a reader who knows the languages.
-- 3,043 languages rest on langtags alone, which inherits the Ethnologue's
+- 3,042 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. Done in part on 2026-10-22: crosscheck_linguameta.py tests them
   against LinguaMeta's own curation (GOOGLE_RESEARCH-sourced scripts only),
-  which agrees on 1,485 of the 1,496 it speaks for (99.3%); with Wiktionary,
-  2,649 of the 3,043 (87.1%) are confirmed by a source kept apart from SIL.
-  The 394 left, and the 11 LinguaMeta disagreements in
+  which agrees on 1,485 of the 1,495 it speaks for (99.3%); with Wiktionary,
+  2,648 of the 3,042 (87.0%) are confirmed by a source kept apart from SIL.
+  The 394 left, and the 10 LinguaMeta disagreements in
   out/crosscheck_linguameta.txt, are the next to check; ScriptSource
   (scriptsource.org) is the candidate.
-  Two of those 11, Northern and Eastern Qiandong Miao in Bopomofo, come
-  from langtags' hmn-Bopo tagset, reached through the alias rule of
-  check 20; they are the first to verify.
+  One of them, Eastern Qiandong Miao in Bopomofo, comes from langtags'
+  hmn-Bopo tagset, reached through the alias rule of check 20. Northern
+  Qiandong Miao came the same way and now hangs under the Latin script set
+  for Hmu in 1956 (Enwall 2012, in corrections.py).
 - The unwritten flag is positive evidence but not proof: a listed language can
   have a missionary or school orthography that langtags has not caught.
 - Of the 1,161 with no record, 754 have no ISO 639-3 code, which every
