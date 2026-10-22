@@ -32,7 +32,7 @@ The deliverable is [`out/descent_of_writing.svg`](out/descent_of_writing.svg), 2
 | **Languages drawn** | **8,587** (8,618 Glottolog languoids at level=language, minus 31 constructed) |
 | Families / isolates | 238 / 183, not counting Glottolog's 7 pseudo-families (Bookkeeping, Sign Language, Unclassifiable and others, 913 languages), which the first version counted as 245 families |
 | Sign languages | 227 |
-| Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,995 of them from langtags alone |
+| Languages with a script on record | 4,517 (52.6%), from Wikidata, CLDR and SIL langtags; 2,991 of them from langtags alone |
 | Languages listed as unwritten (SIL langtags) | 2,856 (33.3%) |
 | Languages with no record either way | 1,214 (14.1%) |
 | Languages with several scripts | 720; the one they hang under is ranked by a source for all but 4, and Braille is never the main script of a language that has another |
@@ -87,7 +87,9 @@ The lower register is the honest part. **It is not proof of unwritten languages.
 
 Three rules keep the langtags data honest. A tagset flagged unwritten never contributes a script, because langtags documents that such a tagset "may still have a non Zyyy script due to regional inference". The special codes `Zyyy` (unknown) and `Zxxx` (sign language) are not scripts. And where the three sources overlap, langtags agrees with Wikidata and CLDR on at least one script for 1,294 of 1,330 languages (97%); 187 languages carry a script from one source while langtags lists them as unwritten (50 of them extinct languages that linguists recorded in Latin); they keep the script, since a language written down by its students has been written.
 
-The sources are still wrong in a few places, mostly for ancient scripts where they are thin. [`corrections.py`](corrections.py) holds seventeen sourced fixes: Elymian, a language of Sicily written in Greek letters, had been given Elymaic, an Aramaic script of Iran, because the names collide; Hurrian had been hung under Anatolian hieroglyphs, and Old Aramaic and Jewish Babylonian Aramaic under Syriac; Tocharian B under Manichaean instead of Brahmi; Elamite under Proto-Elamite, whose language is not established. Check 13 fails if a correction stops being applied or loses its source.
+The sources are still wrong in a few places, mostly for ancient scripts where they are thin. [`corrections.py`](corrections.py) holds twenty-five sourced fixes: Elymian, a language of Sicily written in Greek letters, had been given Elymaic, an Aramaic script of Iran, because the names collide; Hurrian had been hung under Anatolian hieroglyphs, and Old Aramaic and Jewish Babylonian Aramaic under Syriac; Tocharian B under Manichaean instead of Brahmi; Elamite under Proto-Elamite, whose language is not established. Check 13 fails if a correction stops being applied or loses its source.
+
+**The links resting on langtags alone were tested against an independent source.** [`crosscheck_wiktionary.py`](crosscheck_wiktionary.py) reads Wiktionary's language data modules, which its editors keep apart from SIL, and compares them with the 2,991 languages whose script only langtags gives. Where Wiktionary lists a script, it agrees with langtags on at least one for 99.2% of them; it lists none for a fifth. Eight corrections came out of the disagreements (Yevanic is written in Hebrew letters, not Greek; Raetic in North Italic, not Latin). Wiktionary is CC BY-SA, so nothing of it enters the dataset: the script only measures and writes [`out/crosscheck_wiktionary.txt`](out/crosscheck_wiktionary.txt), with the 18 disagreements left for review.
 
 ## Readable without sight
 
@@ -114,6 +116,7 @@ python render_families.py # draw the second plate, families facing scripts
 python guide.py           # write GUIDE.md from the dataset
 python verify.py          # acceptance checks, write the catalogue CSV
 python drift.py           # figures that moved against the committed dataset
+python crosscheck_wiktionary.py  # optional: test langtags-only links against Wiktionary
 ```
 
 The same pipeline runs on the 3rd of every month in GitHub Actions ([`monthly.yml`](.github/workflows/monthly.yml)) and fails when an upstream release moves any figure, so the plate cannot silently turn into an old snapshot.

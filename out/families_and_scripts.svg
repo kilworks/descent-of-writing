@@ -8,162 +8,163 @@
 <text x="2100" y="170" text-anchor="middle" font-size="28" fill="#6b6155">4,517 languages with a script on record, each counted once, under its main script. The other 4,070 have none on record and are not drawn.</text>
 <text x="926" y="250" text-anchor="end" font-size="30" letter-spacing="5" fill="#6b6155">LANGUAGE FAMILIES (Glottolog)</text>
 <text x="3060" y="250" font-size="30" letter-spacing="5" fill="#6b6155">SCRIPTS (ISO 15924), IN DESCENT ORDER</text>
-<path d="M926.0 330.00 C 1993.0 330.00 1993.0 356.43 3060.0 356.43 L 3060.0 356.96 C 1993.0 356.96 1993.0 330.52 926.0 330.52 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 1 language, Brahmi</title></path>
-<path d="M926.0 330.52 C 1993.0 330.52 1993.0 366.70 3060.0 366.70 L 3060.0 370.45 C 1993.0 370.45 1993.0 334.15 926.0 334.15 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 7 languages, Kannada</title></path>
-<path d="M926.0 334.15 C 1993.0 334.15 1993.0 376.45 3060.0 376.45 L 3060.0 382.32 C 1993.0 382.32 1993.0 339.85 926.0 339.85 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 11 languages, Devanagari (Nagari)</title></path>
-<path d="M926.0 339.85 C 1993.0 339.85 1993.0 488.38 3060.0 488.38 L 3060.0 489.99 C 1993.0 489.99 1993.0 341.41 926.0 341.41 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 3 languages, Oriya (Odia)</title></path>
-<path d="M926.0 341.41 C 1993.0 341.41 1993.0 516.95 3060.0 516.95 L 3060.0 522.83 C 1993.0 522.83 1993.0 347.11 926.0 347.11 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 11 languages, Malayalam</title></path>
-<path d="M926.0 347.11 C 1993.0 347.11 1993.0 528.83 3060.0 528.83 L 3060.0 534.17 C 1993.0 534.17 1993.0 352.29 926.0 352.29 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 10 languages, Tamil</title></path>
-<path d="M926.0 352.29 C 1993.0 352.29 1993.0 541.24 3060.0 541.24 L 3060.0 546.05 C 1993.0 546.05 1993.0 356.96 926.0 356.96 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 9 languages, Telugu</title></path>
-<path d="M926.0 356.96 C 1993.0 356.96 1993.0 629.49 3060.0 629.49 L 3060.0 630.03 C 1993.0 630.03 1993.0 357.48 926.0 357.48 Z" fill="#2f7a52" opacity="0.42"><title>Dravidian, 1 language, Arabic</title></path>
-<path d="M926.0 357.48 C 1993.0 357.48 1993.0 758.48 3060.0 758.48 L 3060.0 759.55 C 1993.0 759.55 1993.0 358.52 926.0 358.52 Z" fill="#3d5f8a" opacity="0.42"><title>Dravidian, 2 languages, Latin</title></path>
-<path d="M926.0 358.52 C 1993.0 358.52 1993.0 2859.99 3060.0 2859.99 L 3060.0 2860.52 C 1993.0 2860.52 1993.0 359.04 926.0 359.04 Z" fill="#9c9488" opacity="0.42"><title>Dravidian, 1 language, 85 other scripts</title></path>
+<path d="M926.0 330.00 C 1993.0 330.00 1993.0 356.96 3060.0 356.96 L 3060.0 357.50 C 1993.0 357.50 1993.0 330.52 926.0 330.52 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 1 language, Brahmi</title></path>
+<path d="M926.0 330.52 C 1993.0 330.52 1993.0 367.24 3060.0 367.24 L 3060.0 370.98 C 1993.0 370.98 1993.0 334.15 926.0 334.15 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 7 languages, Kannada</title></path>
+<path d="M926.0 334.15 C 1993.0 334.15 1993.0 376.98 3060.0 376.98 L 3060.0 382.86 C 1993.0 382.86 1993.0 339.85 926.0 339.85 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 11 languages, Devanagari (Nagari)</title></path>
+<path d="M926.0 339.85 C 1993.0 339.85 1993.0 488.92 3060.0 488.92 L 3060.0 490.52 C 1993.0 490.52 1993.0 341.41 926.0 341.41 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 3 languages, Oriya (Odia)</title></path>
+<path d="M926.0 341.41 C 1993.0 341.41 1993.0 517.49 3060.0 517.49 L 3060.0 523.36 C 1993.0 523.36 1993.0 347.11 926.0 347.11 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 11 languages, Malayalam</title></path>
+<path d="M926.0 347.11 C 1993.0 347.11 1993.0 529.36 3060.0 529.36 L 3060.0 534.71 C 1993.0 534.71 1993.0 352.29 926.0 352.29 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 10 languages, Tamil</title></path>
+<path d="M926.0 352.29 C 1993.0 352.29 1993.0 541.78 3060.0 541.78 L 3060.0 546.59 C 1993.0 546.59 1993.0 356.96 926.0 356.96 Z" fill="#b5651d" opacity="0.42"><title>Dravidian, 9 languages, Telugu</title></path>
+<path d="M926.0 356.96 C 1993.0 356.96 1993.0 630.03 3060.0 630.03 L 3060.0 630.56 C 1993.0 630.56 1993.0 357.48 926.0 357.48 Z" fill="#2f7a52" opacity="0.42"><title>Dravidian, 1 language, Arabic</title></path>
+<path d="M926.0 357.48 C 1993.0 357.48 1993.0 758.69 3060.0 758.69 L 3060.0 759.76 C 1993.0 759.76 1993.0 358.52 926.0 358.52 Z" fill="#3d5f8a" opacity="0.42"><title>Dravidian, 2 languages, Latin</title></path>
+<path d="M926.0 358.52 C 1993.0 358.52 1993.0 2859.66 3060.0 2859.66 L 3060.0 2860.20 C 1993.0 2860.20 1993.0 359.04 926.0 359.04 Z" fill="#9c9488" opacity="0.42"><title>Dravidian, 1 language, 85 other scripts</title></path>
 <path d="M926.0 365.04 C 1993.0 365.04 1993.0 330.00 3060.0 330.00 L 3060.0 331.60 C 1993.0 331.60 1993.0 366.59 926.0 366.59 Z" fill="#8c3b2e" opacity="0.42"><title>Indo-European, 3 languages, Cuneiform, Sumero-Akkadian</title></path>
-<path d="M926.0 366.59 C 1993.0 366.59 1993.0 341.34 3060.0 341.34 L 3060.0 343.48 C 1993.0 343.48 1993.0 368.66 926.0 368.66 Z" fill="#2f7a52" opacity="0.42"><title>Indo-European, 4 languages, Hebrew</title></path>
-<path d="M926.0 368.66 C 1993.0 368.66 1993.0 356.96 3060.0 356.96 L 3060.0 360.17 C 1993.0 360.17 1993.0 371.78 926.0 371.78 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 6 languages, Brahmi</title></path>
-<path d="M926.0 371.78 C 1993.0 371.78 1993.0 382.32 3060.0 382.32 L 3060.0 432.03 C 1993.0 432.03 1993.0 419.99 926.0 419.99 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 93 languages, Devanagari (Nagari)</title></path>
-<path d="M926.0 419.99 C 1993.0 419.99 1993.0 478.64 3060.0 478.64 L 3060.0 482.38 C 1993.0 482.38 1993.0 423.62 926.0 423.62 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 7 languages, Gujarati</title></path>
-<path d="M926.0 423.62 C 1993.0 423.62 1993.0 489.99 3060.0 489.99 L 3060.0 492.12 C 1993.0 492.12 1993.0 425.70 926.0 425.70 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 4 languages, Oriya (Odia)</title></path>
-<path d="M926.0 425.70 C 1993.0 425.70 1993.0 502.40 3060.0 502.40 L 3060.0 506.14 C 1993.0 506.14 1993.0 429.33 926.0 429.33 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 7 languages, Bengali (Bangla)</title></path>
-<path d="M926.0 429.33 C 1993.0 429.33 1993.0 534.17 3060.0 534.17 L 3060.0 534.71 C 1993.0 534.71 1993.0 429.85 926.0 429.85 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 1 language, Tamil</title></path>
-<path d="M926.0 429.85 C 1993.0 429.85 1993.0 546.05 3060.0 546.05 L 3060.0 547.66 C 1993.0 547.66 1993.0 431.40 926.0 431.40 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 3 languages, Telugu</title></path>
-<path d="M926.0 431.40 C 1993.0 431.40 1993.0 585.96 3060.0 585.96 L 3060.0 586.50 C 1993.0 586.50 1993.0 431.92 926.0 431.92 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 1 language, Tibetan</title></path>
-<path d="M926.0 431.92 C 1993.0 431.92 1993.0 630.03 3060.0 630.03 L 3060.0 674.92 C 1993.0 674.92 1993.0 475.47 926.0 475.47 Z" fill="#2f7a52" opacity="0.42"><title>Indo-European, 84 languages, Arabic</title></path>
-<path d="M926.0 475.47 C 1993.0 475.47 1993.0 733.87 3060.0 733.87 L 3060.0 739.21 C 1993.0 739.21 1993.0 480.66 926.0 480.66 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 10 languages, Greek</title></path>
+<path d="M926.0 366.59 C 1993.0 366.59 1993.0 341.34 3060.0 341.34 L 3060.0 344.02 C 1993.0 344.02 1993.0 369.18 926.0 369.18 Z" fill="#2f7a52" opacity="0.42"><title>Indo-European, 5 languages, Hebrew</title></path>
+<path d="M926.0 369.18 C 1993.0 369.18 1993.0 357.50 3060.0 357.50 L 3060.0 360.70 C 1993.0 360.70 1993.0 372.29 926.0 372.29 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 6 languages, Brahmi</title></path>
+<path d="M926.0 372.29 C 1993.0 372.29 1993.0 382.86 3060.0 382.86 L 3060.0 432.56 C 1993.0 432.56 1993.0 420.51 926.0 420.51 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 93 languages, Devanagari (Nagari)</title></path>
+<path d="M926.0 420.51 C 1993.0 420.51 1993.0 479.18 3060.0 479.18 L 3060.0 482.92 C 1993.0 482.92 1993.0 424.14 926.0 424.14 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 7 languages, Gujarati</title></path>
+<path d="M926.0 424.14 C 1993.0 424.14 1993.0 490.52 3060.0 490.52 L 3060.0 492.66 C 1993.0 492.66 1993.0 426.22 926.0 426.22 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 4 languages, Oriya (Odia)</title></path>
+<path d="M926.0 426.22 C 1993.0 426.22 1993.0 502.93 3060.0 502.93 L 3060.0 506.68 C 1993.0 506.68 1993.0 429.85 926.0 429.85 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 7 languages, Bengali (Bangla)</title></path>
+<path d="M926.0 429.85 C 1993.0 429.85 1993.0 534.71 3060.0 534.71 L 3060.0 535.24 C 1993.0 535.24 1993.0 430.36 926.0 430.36 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 1 language, Tamil</title></path>
+<path d="M926.0 430.36 C 1993.0 430.36 1993.0 546.59 3060.0 546.59 L 3060.0 548.19 C 1993.0 548.19 1993.0 431.92 926.0 431.92 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 3 languages, Telugu</title></path>
+<path d="M926.0 431.92 C 1993.0 431.92 1993.0 586.50 3060.0 586.50 L 3060.0 587.03 C 1993.0 587.03 1993.0 432.44 926.0 432.44 Z" fill="#b5651d" opacity="0.42"><title>Indo-European, 1 language, Tibetan</title></path>
+<path d="M926.0 432.44 C 1993.0 432.44 1993.0 630.56 3060.0 630.56 L 3060.0 675.46 C 1993.0 675.46 1993.0 475.99 926.0 475.99 Z" fill="#2f7a52" opacity="0.42"><title>Indo-European, 84 languages, Arabic</title></path>
+<path d="M926.0 475.99 C 1993.0 475.99 1993.0 734.40 3060.0 734.40 L 3060.0 739.21 C 1993.0 739.21 1993.0 480.66 926.0 480.66 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 9 languages, Greek</title></path>
 <path d="M926.0 480.66 C 1993.0 480.66 1993.0 749.48 3060.0 749.48 L 3060.0 751.62 C 1993.0 751.62 1993.0 482.73 926.0 482.73 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 4 languages, Old Italic (Etruscan, Oscan, etc.)</title></path>
-<path d="M926.0 482.73 C 1993.0 482.73 1993.0 759.55 3060.0 759.55 L 3060.0 860.03 C 1993.0 860.03 1993.0 580.21 926.0 580.21 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 188 languages, Latin</title></path>
-<path d="M926.0 580.21 C 1993.0 580.21 1993.0 2726.19 3060.0 2726.19 L 3060.0 2735.28 C 1993.0 2735.28 1993.0 589.02 926.0 589.02 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 17 languages, Cyrillic</title></path>
-<path d="M926.0 589.02 C 1993.0 589.02 1993.0 2860.52 3060.0 2860.52 L 3060.0 2877.09 C 1993.0 2877.09 1993.0 605.09 926.0 605.09 Z" fill="#9c9488" opacity="0.42"><title>Indo-European, 31 languages, 85 other scripts</title></path>
-<path d="M926.0 611.09 C 1993.0 611.09 1993.0 432.03 3060.0 432.03 L 3060.0 435.77 C 1993.0 435.77 1993.0 614.72 926.0 614.72 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 7 languages, Devanagari (Nagari)</title></path>
-<path d="M926.0 614.72 C 1993.0 614.72 1993.0 492.12 3060.0 492.12 L 3060.0 494.80 C 1993.0 494.80 1993.0 617.32 926.0 617.32 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 5 languages, Oriya (Odia)</title></path>
-<path d="M926.0 617.32 C 1993.0 617.32 1993.0 506.14 3060.0 506.14 L 3060.0 507.21 C 1993.0 507.21 1993.0 618.35 926.0 618.35 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 2 languages, Bengali (Bangla)</title></path>
-<path d="M926.0 618.35 C 1993.0 618.35 1993.0 547.66 3060.0 547.66 L 3060.0 548.19 C 1993.0 548.19 1993.0 618.87 926.0 618.87 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 1 language, Telugu</title></path>
-<path d="M926.0 618.87 C 1993.0 618.87 1993.0 554.19 3060.0 554.19 L 3060.0 559.53 C 1993.0 559.53 1993.0 624.06 926.0 624.06 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 10 languages, Thai</title></path>
-<path d="M926.0 624.06 C 1993.0 624.06 1993.0 572.48 3060.0 572.48 L 3060.0 578.89 C 1993.0 578.89 1993.0 630.28 926.0 630.28 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 12 languages, Lao</title></path>
-<path d="M926.0 630.28 C 1993.0 630.28 1993.0 606.93 3060.0 606.93 L 3060.0 611.20 C 1993.0 611.20 1993.0 634.43 926.0 634.43 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 8 languages, Myanmar (Burmese)</title></path>
-<path d="M926.0 634.43 C 1993.0 634.43 1993.0 860.03 3060.0 860.03 L 3060.0 883.01 C 1993.0 883.01 1993.0 656.72 926.0 656.72 Z" fill="#3d5f8a" opacity="0.42"><title>Austroasiatic, 43 languages, Latin</title></path>
-<path d="M926.0 656.72 C 1993.0 656.72 1993.0 2877.09 3060.0 2877.09 L 3060.0 2881.37 C 1993.0 2881.37 1993.0 660.87 926.0 660.87 Z" fill="#9c9488" opacity="0.42"><title>Austroasiatic, 8 languages, 85 other scripts</title></path>
-<path d="M926.0 666.87 C 1993.0 666.87 1993.0 435.77 3060.0 435.77 L 3060.0 468.37 C 1993.0 468.37 1993.0 698.50 926.0 698.50 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 61 languages, Devanagari (Nagari)</title></path>
-<path d="M926.0 698.50 C 1993.0 698.50 1993.0 507.21 3060.0 507.21 L 3060.0 510.42 C 1993.0 510.42 1993.0 701.61 926.0 701.61 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 6 languages, Bengali (Bangla)</title></path>
-<path d="M926.0 701.61 C 1993.0 701.61 1993.0 559.53 3060.0 559.53 L 3060.0 562.74 C 1993.0 562.74 1993.0 704.72 926.0 704.72 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 6 languages, Thai</title></path>
-<path d="M926.0 704.72 C 1993.0 704.72 1993.0 578.89 3060.0 578.89 L 3060.0 579.43 C 1993.0 579.43 1993.0 705.24 926.0 705.24 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 1 language, Lao</title></path>
-<path d="M926.0 705.24 C 1993.0 705.24 1993.0 586.50 3060.0 586.50 L 3060.0 599.86 C 1993.0 599.86 1993.0 718.20 926.0 718.20 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 25 languages, Tibetan</title></path>
-<path d="M926.0 718.20 C 1993.0 718.20 1993.0 611.20 3060.0 611.20 L 3060.0 618.68 C 1993.0 618.68 1993.0 725.46 926.0 725.46 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 14 languages, Myanmar (Burmese)</title></path>
-<path d="M926.0 725.46 C 1993.0 725.46 1993.0 674.92 3060.0 674.92 L 3060.0 675.99 C 1993.0 675.99 1993.0 726.49 926.0 726.49 Z" fill="#2f7a52" opacity="0.42"><title>Sino-Tibetan, 2 languages, Arabic</title></path>
-<path d="M926.0 726.49 C 1993.0 726.49 1993.0 883.01 3060.0 883.01 L 3060.0 958.36 C 1993.0 958.36 1993.0 799.60 926.0 799.60 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 141 languages, Latin</title></path>
-<path d="M926.0 799.60 C 1993.0 799.60 1993.0 2704.04 3060.0 2704.04 L 3060.0 2708.31 C 1993.0 2708.31 1993.0 803.75 926.0 803.75 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 8 languages, Miao (Pollard)</title></path>
-<path d="M926.0 803.75 C 1993.0 803.75 1993.0 2735.28 3060.0 2735.28 L 3060.0 2735.81 C 1993.0 2735.81 1993.0 804.27 926.0 804.27 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 1 language, Cyrillic</title></path>
-<path d="M926.0 804.27 C 1993.0 804.27 1993.0 2819.01 3060.0 2819.01 L 3060.0 2821.15 C 1993.0 2821.15 1993.0 806.34 926.0 806.34 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 4 languages, Han (Hanzi, Kanji, Hanja)</title></path>
-<path d="M926.0 806.34 C 1993.0 806.34 1993.0 2835.70 3060.0 2835.70 L 3060.0 2839.97 C 1993.0 2839.97 1993.0 810.49 926.0 810.49 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 8 languages, Yi</title></path>
-<path d="M926.0 810.49 C 1993.0 810.49 1993.0 2846.51 3060.0 2846.51 L 3060.0 2853.99 C 1993.0 2853.99 1993.0 817.75 926.0 817.75 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 14 languages, Han (Simplified variant)</title></path>
-<path d="M926.0 817.75 C 1993.0 817.75 1993.0 2881.37 3060.0 2881.37 L 3060.0 2889.38 C 1993.0 2889.38 1993.0 825.53 926.0 825.53 Z" fill="#9c9488" opacity="0.42"><title>Sino-Tibetan, 15 languages, 85 other scripts</title></path>
+<path d="M926.0 482.73 C 1993.0 482.73 1993.0 759.76 3060.0 759.76 L 3060.0 860.23 C 1993.0 860.23 1993.0 580.21 926.0 580.21 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 188 languages, Latin</title></path>
+<path d="M926.0 580.21 C 1993.0 580.21 1993.0 2725.86 3060.0 2725.86 L 3060.0 2734.95 C 1993.0 2734.95 1993.0 589.02 926.0 589.02 Z" fill="#3d5f8a" opacity="0.42"><title>Indo-European, 17 languages, Cyrillic</title></path>
+<path d="M926.0 589.02 C 1993.0 589.02 1993.0 2860.20 3060.0 2860.20 L 3060.0 2876.76 C 1993.0 2876.76 1993.0 605.09 926.0 605.09 Z" fill="#9c9488" opacity="0.42"><title>Indo-European, 31 languages, 85 other scripts</title></path>
+<path d="M926.0 611.09 C 1993.0 611.09 1993.0 432.56 3060.0 432.56 L 3060.0 436.30 C 1993.0 436.30 1993.0 614.72 926.0 614.72 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 7 languages, Devanagari (Nagari)</title></path>
+<path d="M926.0 614.72 C 1993.0 614.72 1993.0 492.66 3060.0 492.66 L 3060.0 495.33 C 1993.0 495.33 1993.0 617.32 926.0 617.32 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 5 languages, Oriya (Odia)</title></path>
+<path d="M926.0 617.32 C 1993.0 617.32 1993.0 506.68 3060.0 506.68 L 3060.0 507.74 C 1993.0 507.74 1993.0 618.35 926.0 618.35 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 2 languages, Bengali (Bangla)</title></path>
+<path d="M926.0 618.35 C 1993.0 618.35 1993.0 548.19 3060.0 548.19 L 3060.0 548.72 C 1993.0 548.72 1993.0 618.87 926.0 618.87 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 1 language, Telugu</title></path>
+<path d="M926.0 618.87 C 1993.0 618.87 1993.0 554.72 3060.0 554.72 L 3060.0 560.07 C 1993.0 560.07 1993.0 624.06 926.0 624.06 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 10 languages, Thai</title></path>
+<path d="M926.0 624.06 C 1993.0 624.06 1993.0 573.02 3060.0 573.02 L 3060.0 579.43 C 1993.0 579.43 1993.0 630.28 926.0 630.28 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 12 languages, Lao</title></path>
+<path d="M926.0 630.28 C 1993.0 630.28 1993.0 607.46 3060.0 607.46 L 3060.0 611.74 C 1993.0 611.74 1993.0 634.43 926.0 634.43 Z" fill="#b5651d" opacity="0.42"><title>Austroasiatic, 8 languages, Myanmar (Burmese)</title></path>
+<path d="M926.0 634.43 C 1993.0 634.43 1993.0 860.23 3060.0 860.23 L 3060.0 883.21 C 1993.0 883.21 1993.0 656.72 926.0 656.72 Z" fill="#3d5f8a" opacity="0.42"><title>Austroasiatic, 43 languages, Latin</title></path>
+<path d="M926.0 656.72 C 1993.0 656.72 1993.0 2876.76 3060.0 2876.76 L 3060.0 2881.04 C 1993.0 2881.04 1993.0 660.87 926.0 660.87 Z" fill="#9c9488" opacity="0.42"><title>Austroasiatic, 8 languages, 85 other scripts</title></path>
+<path d="M926.0 666.87 C 1993.0 666.87 1993.0 436.30 3060.0 436.30 L 3060.0 468.90 C 1993.0 468.90 1993.0 698.50 926.0 698.50 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 61 languages, Devanagari (Nagari)</title></path>
+<path d="M926.0 698.50 C 1993.0 698.50 1993.0 507.74 3060.0 507.74 L 3060.0 510.95 C 1993.0 510.95 1993.0 701.61 926.0 701.61 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 6 languages, Bengali (Bangla)</title></path>
+<path d="M926.0 701.61 C 1993.0 701.61 1993.0 560.07 3060.0 560.07 L 3060.0 563.28 C 1993.0 563.28 1993.0 704.72 926.0 704.72 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 6 languages, Thai</title></path>
+<path d="M926.0 704.72 C 1993.0 704.72 1993.0 579.43 3060.0 579.43 L 3060.0 579.96 C 1993.0 579.96 1993.0 705.24 926.0 705.24 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 1 language, Lao</title></path>
+<path d="M926.0 705.24 C 1993.0 705.24 1993.0 587.03 3060.0 587.03 L 3060.0 600.39 C 1993.0 600.39 1993.0 718.20 926.0 718.20 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 25 languages, Tibetan</title></path>
+<path d="M926.0 718.20 C 1993.0 718.20 1993.0 611.74 3060.0 611.74 L 3060.0 619.22 C 1993.0 619.22 1993.0 725.46 926.0 725.46 Z" fill="#b5651d" opacity="0.42"><title>Sino-Tibetan, 14 languages, Myanmar (Burmese)</title></path>
+<path d="M926.0 725.46 C 1993.0 725.46 1993.0 675.46 3060.0 675.46 L 3060.0 676.52 C 1993.0 676.52 1993.0 726.49 926.0 726.49 Z" fill="#2f7a52" opacity="0.42"><title>Sino-Tibetan, 2 languages, Arabic</title></path>
+<path d="M926.0 726.49 C 1993.0 726.49 1993.0 883.21 3060.0 883.21 L 3060.0 958.57 C 1993.0 958.57 1993.0 799.60 926.0 799.60 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 141 languages, Latin</title></path>
+<path d="M926.0 799.60 C 1993.0 799.60 1993.0 2703.71 3060.0 2703.71 L 3060.0 2707.98 C 1993.0 2707.98 1993.0 803.75 926.0 803.75 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 8 languages, Miao (Pollard)</title></path>
+<path d="M926.0 803.75 C 1993.0 803.75 1993.0 2734.95 3060.0 2734.95 L 3060.0 2735.48 C 1993.0 2735.48 1993.0 804.27 926.0 804.27 Z" fill="#3d5f8a" opacity="0.42"><title>Sino-Tibetan, 1 language, Cyrillic</title></path>
+<path d="M926.0 804.27 C 1993.0 804.27 1993.0 2818.68 3060.0 2818.68 L 3060.0 2820.82 C 1993.0 2820.82 1993.0 806.34 926.0 806.34 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 4 languages, Han (Hanzi, Kanji, Hanja)</title></path>
+<path d="M926.0 806.34 C 1993.0 806.34 1993.0 2835.37 3060.0 2835.37 L 3060.0 2839.65 C 1993.0 2839.65 1993.0 810.49 926.0 810.49 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 8 languages, Yi</title></path>
+<path d="M926.0 810.49 C 1993.0 810.49 1993.0 2846.18 3060.0 2846.18 L 3060.0 2853.66 C 1993.0 2853.66 1993.0 817.75 926.0 817.75 Z" fill="#2f5d50" opacity="0.42"><title>Sino-Tibetan, 14 languages, Han (Simplified variant)</title></path>
+<path d="M926.0 817.75 C 1993.0 817.75 1993.0 2881.04 3060.0 2881.04 L 3060.0 2889.06 C 1993.0 2889.06 1993.0 825.53 926.0 825.53 Z" fill="#9c9488" opacity="0.42"><title>Sino-Tibetan, 15 languages, 85 other scripts</title></path>
 <path d="M926.0 831.53 C 1993.0 831.53 1993.0 331.60 3060.0 331.60 L 3060.0 332.67 C 1993.0 332.67 1993.0 832.56 926.0 832.56 Z" fill="#8c3b2e" opacity="0.42"><title>Afro-Asiatic, 2 languages, Cuneiform, Sumero-Akkadian</title></path>
-<path d="M926.0 832.56 C 1993.0 832.56 1993.0 343.48 3060.0 343.48 L 3060.0 349.36 C 1993.0 349.36 1993.0 838.27 926.0 838.27 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 11 languages, Hebrew</title></path>
-<path d="M926.0 838.27 C 1993.0 838.27 1993.0 675.99 3060.0 675.99 L 3060.0 694.69 C 1993.0 694.69 1993.0 856.41 926.0 856.41 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 35 languages, Arabic</title></path>
-<path d="M926.0 856.41 C 1993.0 856.41 1993.0 714.59 3060.0 714.59 L 3060.0 718.87 C 1993.0 718.87 1993.0 860.56 926.0 860.56 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 8 languages, Syriac</title></path>
-<path d="M926.0 860.56 C 1993.0 860.56 1993.0 958.36 3060.0 958.36 L 3060.0 1039.59 C 1993.0 1039.59 1993.0 939.37 926.0 939.37 Z" fill="#3d5f8a" opacity="0.42"><title>Afro-Asiatic, 152 languages, Latin</title></path>
-<path d="M926.0 939.37 C 1993.0 939.37 1993.0 2785.10 3060.0 2785.10 L 3060.0 2787.77 C 1993.0 2787.77 1993.0 941.96 926.0 941.96 Z" fill="#9c9488" opacity="0.42"><title>Afro-Asiatic, 5 languages, Tifinagh (Berber)</title></path>
-<path d="M926.0 941.96 C 1993.0 941.96 1993.0 2794.84 3060.0 2794.84 L 3060.0 2806.60 C 1993.0 2806.60 1993.0 953.37 926.0 953.37 Z" fill="#7a4a8a" opacity="0.42"><title>Afro-Asiatic, 22 languages, Ethiopic (Geʻez)</title></path>
-<path d="M926.0 953.37 C 1993.0 953.37 1993.0 2889.38 3060.0 2889.38 L 3060.0 2896.33 C 1993.0 2896.33 1993.0 960.11 926.0 960.11 Z" fill="#9c9488" opacity="0.42"><title>Afro-Asiatic, 13 languages, 85 other scripts</title></path>
-<path d="M926.0 966.11 C 1993.0 966.11 1993.0 694.69 3060.0 694.69 L 3060.0 696.30 C 1993.0 696.30 1993.0 967.67 926.0 967.67 Z" fill="#2f7a52" opacity="0.42"><title>Mande, 3 languages, Arabic</title></path>
-<path d="M926.0 967.67 C 1993.0 967.67 1993.0 1039.59 3060.0 1039.59 L 3060.0 1066.31 C 1993.0 1066.31 1993.0 993.59 926.0 993.59 Z" fill="#3d5f8a" opacity="0.42"><title>Mande, 50 languages, Latin</title></path>
-<path d="M926.0 993.59 C 1993.0 993.59 1993.0 2896.33 3060.0 2896.33 L 3060.0 2896.87 C 1993.0 2896.87 1993.0 994.11 926.0 994.11 Z" fill="#9c9488" opacity="0.42"><title>Mande, 1 language, 85 other scripts</title></path>
-<path d="M926.0 1000.11 C 1993.0 1000.11 1993.0 696.30 3060.0 696.30 L 3060.0 698.44 C 1993.0 698.44 1993.0 1002.18 926.0 1002.18 Z" fill="#2f7a52" opacity="0.42"><title>Atlantic-Congo, 4 languages, Arabic</title></path>
-<path d="M926.0 1002.18 C 1993.0 1002.18 1993.0 1066.31 3060.0 1066.31 L 3060.0 1507.75 C 1993.0 1507.75 1993.0 1430.45 926.0 1430.45 Z" fill="#3d5f8a" opacity="0.42"><title>Atlantic-Congo, 826 languages, Latin</title></path>
-<path d="M926.0 1430.45 C 1993.0 1430.45 1993.0 2896.87 3060.0 2896.87 L 3060.0 2897.40 C 1993.0 2897.40 1993.0 1430.97 926.0 1430.97 Z" fill="#9c9488" opacity="0.42"><title>Atlantic-Congo, 1 language, 85 other scripts</title></path>
-<path d="M926.0 1436.97 C 1993.0 1436.97 1993.0 1507.75 3060.0 1507.75 L 3060.0 1526.45 C 1993.0 1526.45 1993.0 1455.12 926.0 1455.12 Z" fill="#3d5f8a" opacity="0.42"><title>Athabaskan-Eyak-Tlingit, 35 languages, Latin</title></path>
-<path d="M926.0 1461.12 C 1993.0 1461.12 1993.0 1526.45 3060.0 1526.45 L 3060.0 1532.87 C 1993.0 1532.87 1993.0 1467.34 926.0 1467.34 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear-Macro-Je, 12 languages, Latin</title></path>
-<path d="M926.0 1473.34 C 1993.0 1473.34 1993.0 1532.87 3060.0 1532.87 L 3060.0 1545.16 C 1993.0 1545.16 1993.0 1485.26 926.0 1485.26 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear Torricelli, 23 languages, Latin</title></path>
-<path d="M926.0 1491.26 C 1993.0 1491.26 1993.0 1545.16 3060.0 1545.16 L 3060.0 1564.40 C 1993.0 1564.40 1993.0 1509.93 926.0 1509.93 Z" fill="#3d5f8a" opacity="0.42"><title>Pama-Nyungan, 36 languages, Latin</title></path>
-<path d="M926.0 1515.93 C 1993.0 1515.93 1993.0 1564.40 3060.0 1564.40 L 3060.0 1572.95 C 1993.0 1572.95 1993.0 1524.22 926.0 1524.22 Z" fill="#3d5f8a" opacity="0.42"><title>Cariban, 16 languages, Latin</title></path>
-<path d="M926.0 1530.22 C 1993.0 1530.22 1993.0 1572.95 3060.0 1572.95 L 3060.0 1580.43 C 1993.0 1580.43 1993.0 1537.48 926.0 1537.48 Z" fill="#3d5f8a" opacity="0.42"><title>Ramu, 14 languages, Latin</title></path>
-<path d="M926.0 1543.48 C 1993.0 1543.48 1993.0 1580.43 3060.0 1580.43 L 3060.0 1589.52 C 1993.0 1589.52 1993.0 1552.30 926.0 1552.30 Z" fill="#3d5f8a" opacity="0.42"><title>Sepik, 17 languages, Latin</title></path>
-<path d="M926.0 1558.30 C 1993.0 1558.30 1993.0 1589.52 3060.0 1589.52 L 3060.0 1610.36 C 1993.0 1610.36 1993.0 1578.52 926.0 1578.52 Z" fill="#3d5f8a" opacity="0.42"><title>Central Sudanic, 39 languages, Latin</title></path>
-<path d="M926.0 1584.52 C 1993.0 1584.52 1993.0 1610.36 3060.0 1610.36 L 3060.0 1634.41 C 1993.0 1634.41 1993.0 1607.85 926.0 1607.85 Z" fill="#3d5f8a" opacity="0.42"><title>Uto-Aztecan, 45 languages, Latin</title></path>
-<path d="M926.0 1613.85 C 1993.0 1613.85 1993.0 1634.41 3060.0 1634.41 L 3060.0 1646.17 C 1993.0 1646.17 1993.0 1625.26 926.0 1625.26 Z" fill="#3d5f8a" opacity="0.42"><title>Kru, 22 languages, Latin</title></path>
-<path d="M926.0 1631.26 C 1993.0 1631.26 1993.0 1646.17 3060.0 1646.17 L 3060.0 1662.73 C 1993.0 1662.73 1993.0 1647.33 926.0 1647.33 Z" fill="#3d5f8a" opacity="0.42"><title>Tupian, 31 languages, Latin</title></path>
-<path d="M926.0 1653.33 C 1993.0 1653.33 1993.0 1662.73 3060.0 1662.73 L 3060.0 1669.15 C 1993.0 1669.15 1993.0 1659.55 926.0 1659.55 Z" fill="#3d5f8a" opacity="0.42"><title>Totonacan, 12 languages, Latin</title></path>
-<path d="M926.0 1665.55 C 1993.0 1665.55 1993.0 1669.15 3060.0 1669.15 L 3060.0 1678.77 C 1993.0 1678.77 1993.0 1674.89 926.0 1674.89 Z" fill="#3d5f8a" opacity="0.42"><title>Pano-Tacanan, 18 languages, Latin</title></path>
-<path d="M926.0 1680.89 C 1993.0 1680.89 1993.0 1678.77 3060.0 1678.77 L 3060.0 1782.98 C 1993.0 1782.98 1993.0 1781.99 926.0 1781.99 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear Trans New Guinea, 195 languages, Latin</title></path>
-<path d="M926.0 1787.99 C 1993.0 1787.99 1993.0 1782.98 3060.0 1782.98 L 3060.0 1801.68 C 1993.0 1801.68 1993.0 1806.14 926.0 1806.14 Z" fill="#3d5f8a" opacity="0.42"><title>Arawakan, 35 languages, Latin</title></path>
-<path d="M926.0 1812.14 C 1993.0 1812.14 1993.0 1801.68 3060.0 1801.68 L 3060.0 1819.85 C 1993.0 1819.85 1993.0 1829.77 926.0 1829.77 Z" fill="#3d5f8a" opacity="0.42"><title>Quechuan, 34 languages, Latin</title></path>
-<path d="M926.0 1835.77 C 1993.0 1835.77 1993.0 1819.85 3060.0 1819.85 L 3060.0 1826.80 C 1993.0 1826.80 1993.0 1842.51 926.0 1842.51 Z" fill="#3d5f8a" opacity="0.42"><title>Mixe-Zoque, 13 languages, Latin</title></path>
-<path d="M926.0 1848.51 C 1993.0 1848.51 1993.0 1826.80 3060.0 1826.80 L 3060.0 1836.42 C 1993.0 1836.42 1993.0 1857.84 926.0 1857.84 Z" fill="#3d5f8a" opacity="0.42"><title>Tucanoan, 18 languages, Latin</title></path>
-<path d="M926.0 1863.84 C 1993.0 1863.84 1993.0 1836.42 3060.0 1836.42 L 3060.0 1913.38 C 1993.0 1913.38 1993.0 1938.50 926.0 1938.50 Z" fill="#3d5f8a" opacity="0.42"><title>Otomanguean, 144 languages, Latin</title></path>
-<path d="M926.0 1944.50 C 1993.0 1944.50 1993.0 1913.38 3060.0 1913.38 L 3060.0 1920.33 C 1993.0 1920.33 1993.0 1951.24 926.0 1951.24 Z" fill="#3d5f8a" opacity="0.42"><title>Chibchan, 13 languages, Latin</title></path>
-<path d="M926.0 1957.24 C 1993.0 1957.24 1993.0 360.17 3060.0 360.17 L 3060.0 360.70 C 1993.0 360.70 1993.0 1957.76 926.0 1957.76 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 1 language, Brahmi</title></path>
-<path d="M926.0 1957.76 C 1993.0 1957.76 1993.0 562.74 3060.0 562.74 L 3060.0 563.81 C 1993.0 563.81 1993.0 1958.80 926.0 1958.80 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 2 languages, Thai</title></path>
-<path d="M926.0 1958.80 C 1993.0 1958.80 1993.0 618.68 3060.0 618.68 L 3060.0 619.22 C 1993.0 619.22 1993.0 1959.31 926.0 1959.31 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 1 language, Myanmar (Burmese)</title></path>
-<path d="M926.0 1959.31 C 1993.0 1959.31 1993.0 698.44 3060.0 698.44 L 3060.0 699.50 C 1993.0 699.50 1993.0 1960.35 926.0 1960.35 Z" fill="#2f7a52" opacity="0.42"><title>Austronesian, 2 languages, Arabic</title></path>
-<path d="M926.0 1960.35 C 1993.0 1960.35 1993.0 1920.33 3060.0 1920.33 L 3060.0 2299.77 C 1993.0 2299.77 1993.0 2328.48 926.0 2328.48 Z" fill="#3d5f8a" opacity="0.42"><title>Austronesian, 710 languages, Latin</title></path>
-<path d="M926.0 2328.48 C 1993.0 2328.48 1993.0 2897.40 3060.0 2897.40 L 3060.0 2901.68 C 1993.0 2901.68 1993.0 2332.62 926.0 2332.62 Z" fill="#9c9488" opacity="0.42"><title>Austronesian, 8 languages, 85 other scripts</title></path>
-<path d="M926.0 2338.62 C 1993.0 2338.62 1993.0 2299.77 3060.0 2299.77 L 3060.0 2321.68 C 1993.0 2321.68 1993.0 2359.88 926.0 2359.88 Z" fill="#3d5f8a" opacity="0.42"><title>Nilotic, 41 languages, Latin</title></path>
-<path d="M926.0 2359.88 C 1993.0 2359.88 1993.0 2806.60 3060.0 2806.60 L 3060.0 2807.13 C 1993.0 2807.13 1993.0 2360.40 926.0 2360.40 Z" fill="#7a4a8a" opacity="0.42"><title>Nilotic, 1 language, Ethiopic (Geʻez)</title></path>
-<path d="M926.0 2366.40 C 1993.0 2366.40 1993.0 2321.68 3060.0 2321.68 L 3060.0 2334.51 C 1993.0 2334.51 1993.0 2378.84 926.0 2378.84 Z" fill="#3d5f8a" opacity="0.42"><title>Algic, 24 languages, Latin</title></path>
-<path d="M926.0 2378.84 C 1993.0 2378.84 1993.0 2693.76 3060.0 2693.76 L 3060.0 2697.50 C 1993.0 2697.50 1993.0 2382.47 926.0 2382.47 Z" fill="#3d5f8a" opacity="0.42"><title>Algic, 7 languages, Unified Canadian Aboriginal Syllabics</title></path>
-<path d="M926.0 2388.47 C 1993.0 2388.47 1993.0 2334.51 3060.0 2334.51 L 3060.0 2350.00 C 1993.0 2350.00 1993.0 2403.51 926.0 2403.51 Z" fill="#3d5f8a" opacity="0.42"><title>Mayan, 29 languages, Latin</title></path>
-<path d="M926.0 2403.51 C 1993.0 2403.51 1993.0 2901.68 3060.0 2901.68 L 3060.0 2902.21 C 1993.0 2902.21 1993.0 2404.03 926.0 2404.03 Z" fill="#9c9488" opacity="0.42"><title>Mayan, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2410.03 C 1993.0 2410.03 1993.0 2350.00 3060.0 2350.00 L 3060.0 2356.42 C 1993.0 2356.42 1993.0 2416.25 926.0 2416.25 Z" fill="#3d5f8a" opacity="0.42"><title>Salishan, 12 languages, Latin</title></path>
-<path d="M926.0 2416.25 C 1993.0 2416.25 1993.0 2902.21 3060.0 2902.21 L 3060.0 2902.74 C 1993.0 2902.74 1993.0 2416.77 926.0 2416.77 Z" fill="#9c9488" opacity="0.42"><title>Salishan, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2422.77 C 1993.0 2422.77 1993.0 599.86 3060.0 599.86 L 3060.0 600.39 C 1993.0 600.39 1993.0 2423.29 926.0 2423.29 Z" fill="#b5651d" opacity="0.42"><title>Mongolic-Khitan, 1 language, Tibetan</title></path>
-<path d="M926.0 2423.29 C 1993.0 2423.29 1993.0 724.87 3060.0 724.87 L 3060.0 726.47 C 1993.0 726.47 1993.0 2424.84 926.0 2424.84 Z" fill="#2f7a52" opacity="0.42"><title>Mongolic-Khitan, 3 languages, Mongolian</title></path>
-<path d="M926.0 2424.84 C 1993.0 2424.84 1993.0 2356.42 3060.0 2356.42 L 3060.0 2358.02 C 1993.0 2358.02 1993.0 2426.40 926.0 2426.40 Z" fill="#3d5f8a" opacity="0.42"><title>Mongolic-Khitan, 3 languages, Latin</title></path>
-<path d="M926.0 2426.40 C 1993.0 2426.40 1993.0 2735.81 3060.0 2735.81 L 3060.0 2737.95 C 1993.0 2737.95 1993.0 2428.47 926.0 2428.47 Z" fill="#3d5f8a" opacity="0.42"><title>Mongolic-Khitan, 4 languages, Cyrillic</title></path>
-<path d="M926.0 2428.47 C 1993.0 2428.47 1993.0 2902.74 3060.0 2902.74 L 3060.0 2903.28 C 1993.0 2903.28 1993.0 2428.99 926.0 2428.99 Z" fill="#9c9488" opacity="0.42"><title>Mongolic-Khitan, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2434.99 C 1993.0 2434.99 1993.0 699.50 3060.0 699.50 L 3060.0 703.78 C 1993.0 703.78 1993.0 2439.14 926.0 2439.14 Z" fill="#2f7a52" opacity="0.42"><title>Turkic, 8 languages, Arabic</title></path>
+<path d="M926.0 832.56 C 1993.0 832.56 1993.0 344.02 3060.0 344.02 L 3060.0 349.90 C 1993.0 349.90 1993.0 838.27 926.0 838.27 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 11 languages, Hebrew</title></path>
+<path d="M926.0 838.27 C 1993.0 838.27 1993.0 676.52 3060.0 676.52 L 3060.0 695.23 C 1993.0 695.23 1993.0 856.41 926.0 856.41 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 35 languages, Arabic</title></path>
+<path d="M926.0 856.41 C 1993.0 856.41 1993.0 715.12 3060.0 715.12 L 3060.0 719.40 C 1993.0 719.40 1993.0 860.56 926.0 860.56 Z" fill="#2f7a52" opacity="0.42"><title>Afro-Asiatic, 8 languages, Syriac</title></path>
+<path d="M926.0 860.56 C 1993.0 860.56 1993.0 958.57 3060.0 958.57 L 3060.0 1039.80 C 1993.0 1039.80 1993.0 939.37 926.0 939.37 Z" fill="#3d5f8a" opacity="0.42"><title>Afro-Asiatic, 152 languages, Latin</title></path>
+<path d="M926.0 939.37 C 1993.0 939.37 1993.0 2784.77 3060.0 2784.77 L 3060.0 2787.44 C 1993.0 2787.44 1993.0 941.96 926.0 941.96 Z" fill="#9c9488" opacity="0.42"><title>Afro-Asiatic, 5 languages, Tifinagh (Berber)</title></path>
+<path d="M926.0 941.96 C 1993.0 941.96 1993.0 2794.51 3060.0 2794.51 L 3060.0 2806.27 C 1993.0 2806.27 1993.0 953.37 926.0 953.37 Z" fill="#7a4a8a" opacity="0.42"><title>Afro-Asiatic, 22 languages, Ethiopic (Geʻez)</title></path>
+<path d="M926.0 953.37 C 1993.0 953.37 1993.0 2889.06 3060.0 2889.06 L 3060.0 2896.00 C 1993.0 2896.00 1993.0 960.11 926.0 960.11 Z" fill="#9c9488" opacity="0.42"><title>Afro-Asiatic, 13 languages, 85 other scripts</title></path>
+<path d="M926.0 966.11 C 1993.0 966.11 1993.0 695.23 3060.0 695.23 L 3060.0 696.83 C 1993.0 696.83 1993.0 967.67 926.0 967.67 Z" fill="#2f7a52" opacity="0.42"><title>Mande, 3 languages, Arabic</title></path>
+<path d="M926.0 967.67 C 1993.0 967.67 1993.0 1039.80 3060.0 1039.80 L 3060.0 1066.52 C 1993.0 1066.52 1993.0 993.59 926.0 993.59 Z" fill="#3d5f8a" opacity="0.42"><title>Mande, 50 languages, Latin</title></path>
+<path d="M926.0 993.59 C 1993.0 993.59 1993.0 2896.00 3060.0 2896.00 L 3060.0 2896.54 C 1993.0 2896.54 1993.0 994.11 926.0 994.11 Z" fill="#9c9488" opacity="0.42"><title>Mande, 1 language, 85 other scripts</title></path>
+<path d="M926.0 1000.11 C 1993.0 1000.11 1993.0 696.83 3060.0 696.83 L 3060.0 698.97 C 1993.0 698.97 1993.0 1002.18 926.0 1002.18 Z" fill="#2f7a52" opacity="0.42"><title>Atlantic-Congo, 4 languages, Arabic</title></path>
+<path d="M926.0 1002.18 C 1993.0 1002.18 1993.0 1066.52 3060.0 1066.52 L 3060.0 1507.96 C 1993.0 1507.96 1993.0 1430.45 926.0 1430.45 Z" fill="#3d5f8a" opacity="0.42"><title>Atlantic-Congo, 826 languages, Latin</title></path>
+<path d="M926.0 1430.45 C 1993.0 1430.45 1993.0 2896.54 3060.0 2896.54 L 3060.0 2897.07 C 1993.0 2897.07 1993.0 1430.97 926.0 1430.97 Z" fill="#9c9488" opacity="0.42"><title>Atlantic-Congo, 1 language, 85 other scripts</title></path>
+<path d="M926.0 1436.97 C 1993.0 1436.97 1993.0 1507.96 3060.0 1507.96 L 3060.0 1526.66 C 1993.0 1526.66 1993.0 1455.12 926.0 1455.12 Z" fill="#3d5f8a" opacity="0.42"><title>Athabaskan-Eyak-Tlingit, 35 languages, Latin</title></path>
+<path d="M926.0 1461.12 C 1993.0 1461.12 1993.0 1526.66 3060.0 1526.66 L 3060.0 1533.07 C 1993.0 1533.07 1993.0 1467.34 926.0 1467.34 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear-Macro-Je, 12 languages, Latin</title></path>
+<path d="M926.0 1473.34 C 1993.0 1473.34 1993.0 1533.07 3060.0 1533.07 L 3060.0 1545.37 C 1993.0 1545.37 1993.0 1485.26 926.0 1485.26 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear Torricelli, 23 languages, Latin</title></path>
+<path d="M926.0 1491.26 C 1993.0 1491.26 1993.0 1545.37 3060.0 1545.37 L 3060.0 1564.61 C 1993.0 1564.61 1993.0 1509.93 926.0 1509.93 Z" fill="#3d5f8a" opacity="0.42"><title>Pama-Nyungan, 36 languages, Latin</title></path>
+<path d="M926.0 1515.93 C 1993.0 1515.93 1993.0 1564.61 3060.0 1564.61 L 3060.0 1573.16 C 1993.0 1573.16 1993.0 1524.22 926.0 1524.22 Z" fill="#3d5f8a" opacity="0.42"><title>Cariban, 16 languages, Latin</title></path>
+<path d="M926.0 1530.22 C 1993.0 1530.22 1993.0 1573.16 3060.0 1573.16 L 3060.0 1580.64 C 1993.0 1580.64 1993.0 1537.48 926.0 1537.48 Z" fill="#3d5f8a" opacity="0.42"><title>Ramu, 14 languages, Latin</title></path>
+<path d="M926.0 1543.48 C 1993.0 1543.48 1993.0 1580.64 3060.0 1580.64 L 3060.0 1589.72 C 1993.0 1589.72 1993.0 1552.30 926.0 1552.30 Z" fill="#3d5f8a" opacity="0.42"><title>Sepik, 17 languages, Latin</title></path>
+<path d="M926.0 1558.30 C 1993.0 1558.30 1993.0 1589.72 3060.0 1589.72 L 3060.0 1610.57 C 1993.0 1610.57 1993.0 1578.52 926.0 1578.52 Z" fill="#3d5f8a" opacity="0.42"><title>Central Sudanic, 39 languages, Latin</title></path>
+<path d="M926.0 1584.52 C 1993.0 1584.52 1993.0 1610.57 3060.0 1610.57 L 3060.0 1634.61 C 1993.0 1634.61 1993.0 1607.85 926.0 1607.85 Z" fill="#3d5f8a" opacity="0.42"><title>Uto-Aztecan, 45 languages, Latin</title></path>
+<path d="M926.0 1613.85 C 1993.0 1613.85 1993.0 1634.61 3060.0 1634.61 L 3060.0 1646.37 C 1993.0 1646.37 1993.0 1625.26 926.0 1625.26 Z" fill="#3d5f8a" opacity="0.42"><title>Kru, 22 languages, Latin</title></path>
+<path d="M926.0 1631.26 C 1993.0 1631.26 1993.0 1646.37 3060.0 1646.37 L 3060.0 1662.94 C 1993.0 1662.94 1993.0 1647.33 926.0 1647.33 Z" fill="#3d5f8a" opacity="0.42"><title>Tupian, 31 languages, Latin</title></path>
+<path d="M926.0 1653.33 C 1993.0 1653.33 1993.0 1662.94 3060.0 1662.94 L 3060.0 1669.35 C 1993.0 1669.35 1993.0 1659.55 926.0 1659.55 Z" fill="#3d5f8a" opacity="0.42"><title>Totonacan, 12 languages, Latin</title></path>
+<path d="M926.0 1665.55 C 1993.0 1665.55 1993.0 1669.35 3060.0 1669.35 L 3060.0 1678.97 C 1993.0 1678.97 1993.0 1674.89 926.0 1674.89 Z" fill="#3d5f8a" opacity="0.42"><title>Pano-Tacanan, 18 languages, Latin</title></path>
+<path d="M926.0 1680.89 C 1993.0 1680.89 1993.0 1678.97 3060.0 1678.97 L 3060.0 1783.19 C 1993.0 1783.19 1993.0 1781.99 926.0 1781.99 Z" fill="#3d5f8a" opacity="0.42"><title>Nuclear Trans New Guinea, 195 languages, Latin</title></path>
+<path d="M926.0 1787.99 C 1993.0 1787.99 1993.0 1783.19 3060.0 1783.19 L 3060.0 1801.89 C 1993.0 1801.89 1993.0 1806.14 926.0 1806.14 Z" fill="#3d5f8a" opacity="0.42"><title>Arawakan, 35 languages, Latin</title></path>
+<path d="M926.0 1812.14 C 1993.0 1812.14 1993.0 1801.89 3060.0 1801.89 L 3060.0 1820.06 C 1993.0 1820.06 1993.0 1829.77 926.0 1829.77 Z" fill="#3d5f8a" opacity="0.42"><title>Quechuan, 34 languages, Latin</title></path>
+<path d="M926.0 1835.77 C 1993.0 1835.77 1993.0 1820.06 3060.0 1820.06 L 3060.0 1827.01 C 1993.0 1827.01 1993.0 1842.51 926.0 1842.51 Z" fill="#3d5f8a" opacity="0.42"><title>Mixe-Zoque, 13 languages, Latin</title></path>
+<path d="M926.0 1848.51 C 1993.0 1848.51 1993.0 1827.01 3060.0 1827.01 L 3060.0 1836.63 C 1993.0 1836.63 1993.0 1857.84 926.0 1857.84 Z" fill="#3d5f8a" opacity="0.42"><title>Tucanoan, 18 languages, Latin</title></path>
+<path d="M926.0 1863.84 C 1993.0 1863.84 1993.0 1836.63 3060.0 1836.63 L 3060.0 1913.58 C 1993.0 1913.58 1993.0 1938.50 926.0 1938.50 Z" fill="#3d5f8a" opacity="0.42"><title>Otomanguean, 144 languages, Latin</title></path>
+<path d="M926.0 1944.50 C 1993.0 1944.50 1993.0 1913.58 3060.0 1913.58 L 3060.0 1920.53 C 1993.0 1920.53 1993.0 1951.24 926.0 1951.24 Z" fill="#3d5f8a" opacity="0.42"><title>Chibchan, 13 languages, Latin</title></path>
+<path d="M926.0 1957.24 C 1993.0 1957.24 1993.0 360.70 3060.0 360.70 L 3060.0 361.24 C 1993.0 361.24 1993.0 1957.76 926.0 1957.76 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 1 language, Brahmi</title></path>
+<path d="M926.0 1957.76 C 1993.0 1957.76 1993.0 563.28 3060.0 563.28 L 3060.0 564.34 C 1993.0 564.34 1993.0 1958.80 926.0 1958.80 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 2 languages, Thai</title></path>
+<path d="M926.0 1958.80 C 1993.0 1958.80 1993.0 619.22 3060.0 619.22 L 3060.0 619.75 C 1993.0 619.75 1993.0 1959.31 926.0 1959.31 Z" fill="#b5651d" opacity="0.42"><title>Austronesian, 1 language, Myanmar (Burmese)</title></path>
+<path d="M926.0 1959.31 C 1993.0 1959.31 1993.0 698.97 3060.0 698.97 L 3060.0 700.04 C 1993.0 700.04 1993.0 1960.35 926.0 1960.35 Z" fill="#2f7a52" opacity="0.42"><title>Austronesian, 2 languages, Arabic</title></path>
+<path d="M926.0 1960.35 C 1993.0 1960.35 1993.0 1920.53 3060.0 1920.53 L 3060.0 2299.97 C 1993.0 2299.97 1993.0 2328.48 926.0 2328.48 Z" fill="#3d5f8a" opacity="0.42"><title>Austronesian, 710 languages, Latin</title></path>
+<path d="M926.0 2328.48 C 1993.0 2328.48 1993.0 2897.07 3060.0 2897.07 L 3060.0 2901.35 C 1993.0 2901.35 1993.0 2332.62 926.0 2332.62 Z" fill="#9c9488" opacity="0.42"><title>Austronesian, 8 languages, 85 other scripts</title></path>
+<path d="M926.0 2338.62 C 1993.0 2338.62 1993.0 2299.97 3060.0 2299.97 L 3060.0 2321.89 C 1993.0 2321.89 1993.0 2359.88 926.0 2359.88 Z" fill="#3d5f8a" opacity="0.42"><title>Nilotic, 41 languages, Latin</title></path>
+<path d="M926.0 2359.88 C 1993.0 2359.88 1993.0 2806.27 3060.0 2806.27 L 3060.0 2806.80 C 1993.0 2806.80 1993.0 2360.40 926.0 2360.40 Z" fill="#7a4a8a" opacity="0.42"><title>Nilotic, 1 language, Ethiopic (Geʻez)</title></path>
+<path d="M926.0 2366.40 C 1993.0 2366.40 1993.0 2321.89 3060.0 2321.89 L 3060.0 2334.71 C 1993.0 2334.71 1993.0 2378.84 926.0 2378.84 Z" fill="#3d5f8a" opacity="0.42"><title>Algic, 24 languages, Latin</title></path>
+<path d="M926.0 2378.84 C 1993.0 2378.84 1993.0 2693.43 3060.0 2693.43 L 3060.0 2697.17 C 1993.0 2697.17 1993.0 2382.47 926.0 2382.47 Z" fill="#3d5f8a" opacity="0.42"><title>Algic, 7 languages, Unified Canadian Aboriginal Syllabics</title></path>
+<path d="M926.0 2388.47 C 1993.0 2388.47 1993.0 2334.71 3060.0 2334.71 L 3060.0 2350.21 C 1993.0 2350.21 1993.0 2403.51 926.0 2403.51 Z" fill="#3d5f8a" opacity="0.42"><title>Mayan, 29 languages, Latin</title></path>
+<path d="M926.0 2403.51 C 1993.0 2403.51 1993.0 2901.35 3060.0 2901.35 L 3060.0 2901.88 C 1993.0 2901.88 1993.0 2404.03 926.0 2404.03 Z" fill="#9c9488" opacity="0.42"><title>Mayan, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2410.03 C 1993.0 2410.03 1993.0 2350.21 3060.0 2350.21 L 3060.0 2356.62 C 1993.0 2356.62 1993.0 2416.25 926.0 2416.25 Z" fill="#3d5f8a" opacity="0.42"><title>Salishan, 12 languages, Latin</title></path>
+<path d="M926.0 2416.25 C 1993.0 2416.25 1993.0 2901.88 3060.0 2901.88 L 3060.0 2902.42 C 1993.0 2902.42 1993.0 2416.77 926.0 2416.77 Z" fill="#9c9488" opacity="0.42"><title>Salishan, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2422.77 C 1993.0 2422.77 1993.0 600.39 3060.0 600.39 L 3060.0 600.93 C 1993.0 600.93 1993.0 2423.29 926.0 2423.29 Z" fill="#b5651d" opacity="0.42"><title>Mongolic-Khitan, 1 language, Tibetan</title></path>
+<path d="M926.0 2423.29 C 1993.0 2423.29 1993.0 725.40 3060.0 725.40 L 3060.0 727.00 C 1993.0 727.00 1993.0 2424.84 926.0 2424.84 Z" fill="#2f7a52" opacity="0.42"><title>Mongolic-Khitan, 3 languages, Mongolian</title></path>
+<path d="M926.0 2424.84 C 1993.0 2424.84 1993.0 2356.62 3060.0 2356.62 L 3060.0 2358.23 C 1993.0 2358.23 1993.0 2426.40 926.0 2426.40 Z" fill="#3d5f8a" opacity="0.42"><title>Mongolic-Khitan, 3 languages, Latin</title></path>
+<path d="M926.0 2426.40 C 1993.0 2426.40 1993.0 2735.48 3060.0 2735.48 L 3060.0 2737.62 C 1993.0 2737.62 1993.0 2428.47 926.0 2428.47 Z" fill="#3d5f8a" opacity="0.42"><title>Mongolic-Khitan, 4 languages, Cyrillic</title></path>
+<path d="M926.0 2428.47 C 1993.0 2428.47 1993.0 2902.42 3060.0 2902.42 L 3060.0 2902.95 C 1993.0 2902.95 1993.0 2428.99 926.0 2428.99 Z" fill="#9c9488" opacity="0.42"><title>Mongolic-Khitan, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2434.99 C 1993.0 2434.99 1993.0 700.04 3060.0 700.04 L 3060.0 704.31 C 1993.0 704.31 1993.0 2439.14 926.0 2439.14 Z" fill="#2f7a52" opacity="0.42"><title>Turkic, 8 languages, Arabic</title></path>
 <path d="M926.0 2439.14 C 1993.0 2439.14 1993.0 739.21 3060.0 739.21 L 3060.0 740.81 C 1993.0 740.81 1993.0 2440.69 926.0 2440.69 Z" fill="#3d5f8a" opacity="0.42"><title>Turkic, 3 languages, Greek</title></path>
-<path d="M926.0 2440.69 C 1993.0 2440.69 1993.0 2358.02 3060.0 2358.02 L 3060.0 2362.30 C 1993.0 2362.30 1993.0 2444.84 926.0 2444.84 Z" fill="#3d5f8a" opacity="0.42"><title>Turkic, 8 languages, Latin</title></path>
-<path d="M926.0 2444.84 C 1993.0 2444.84 1993.0 2737.95 3060.0 2737.95 L 3060.0 2748.64 C 1993.0 2748.64 1993.0 2455.21 926.0 2455.21 Z" fill="#3d5f8a" opacity="0.42"><title>Turkic, 20 languages, Cyrillic</title></path>
-<path d="M926.0 2455.21 C 1993.0 2455.21 1993.0 2903.28 3060.0 2903.28 L 3060.0 2903.81 C 1993.0 2903.81 1993.0 2455.73 926.0 2455.73 Z" fill="#9c9488" opacity="0.42"><title>Turkic, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2461.73 C 1993.0 2461.73 1993.0 2362.30 3060.0 2362.30 L 3060.0 2374.05 C 1993.0 2374.05 1993.0 2473.14 926.0 2473.14 Z" fill="#3d5f8a" opacity="0.42"><title>Uralic, 22 languages, Latin</title></path>
-<path d="M926.0 2473.14 C 1993.0 2473.14 1993.0 2748.64 3060.0 2748.64 L 3060.0 2757.72 C 1993.0 2757.72 1993.0 2481.95 926.0 2481.95 Z" fill="#3d5f8a" opacity="0.42"><title>Uralic, 17 languages, Cyrillic</title></path>
-<path d="M926.0 2487.95 C 1993.0 2487.95 1993.0 2374.05 3060.0 2374.05 L 3060.0 2381.54 C 1993.0 2381.54 1993.0 2495.21 926.0 2495.21 Z" fill="#3d5f8a" opacity="0.42"><title>Hmong-Mien, 14 languages, Latin</title></path>
-<path d="M926.0 2495.21 C 1993.0 2495.21 1993.0 2708.31 3060.0 2708.31 L 3060.0 2709.38 C 1993.0 2709.38 1993.0 2496.25 926.0 2496.25 Z" fill="#3d5f8a" opacity="0.42"><title>Hmong-Mien, 2 languages, Miao (Pollard)</title></path>
-<path d="M926.0 2496.25 C 1993.0 2496.25 1993.0 2903.81 3060.0 2903.81 L 3060.0 2905.42 C 1993.0 2905.42 1993.0 2497.80 926.0 2497.80 Z" fill="#9c9488" opacity="0.42"><title>Hmong-Mien, 3 languages, 85 other scripts</title></path>
-<path d="M926.0 2503.80 C 1993.0 2503.80 1993.0 563.81 3060.0 563.81 L 3060.0 566.48 C 1993.0 566.48 1993.0 2506.39 926.0 2506.39 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 5 languages, Thai</title></path>
-<path d="M926.0 2506.39 C 1993.0 2506.39 1993.0 579.43 3060.0 579.43 L 3060.0 579.96 C 1993.0 579.96 1993.0 2506.91 926.0 2506.91 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 1 language, Lao</title></path>
-<path d="M926.0 2506.91 C 1993.0 2506.91 1993.0 619.22 3060.0 619.22 L 3060.0 622.43 C 1993.0 622.43 1993.0 2510.02 926.0 2510.02 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 6 languages, Myanmar (Burmese)</title></path>
-<path d="M926.0 2510.02 C 1993.0 2510.02 1993.0 2381.54 3060.0 2381.54 L 3060.0 2389.02 C 1993.0 2389.02 1993.0 2517.28 926.0 2517.28 Z" fill="#3d5f8a" opacity="0.42"><title>Tai-Kadai, 14 languages, Latin</title></path>
-<path d="M926.0 2517.28 C 1993.0 2517.28 1993.0 2821.15 3060.0 2821.15 L 3060.0 2829.16 C 1993.0 2829.16 1993.0 2525.06 926.0 2525.06 Z" fill="#2f5d50" opacity="0.42"><title>Tai-Kadai, 15 languages, Han (Hanzi, Kanji, Hanja)</title></path>
-<path d="M926.0 2525.06 C 1993.0 2525.06 1993.0 2905.42 3060.0 2905.42 L 3060.0 2910.76 C 1993.0 2910.76 1993.0 2530.24 926.0 2530.24 Z" fill="#9c9488" opacity="0.42"><title>Tai-Kadai, 10 languages, 85 other scripts</title></path>
-<path d="M926.0 2536.24 C 1993.0 2536.24 1993.0 2389.02 3060.0 2389.02 L 3060.0 2393.83 C 1993.0 2393.83 1993.0 2540.91 926.0 2540.91 Z" fill="#3d5f8a" opacity="0.42"><title>Ta-Ne-Omotic, 9 languages, Latin</title></path>
-<path d="M926.0 2540.91 C 1993.0 2540.91 1993.0 2807.13 3060.0 2807.13 L 3060.0 2810.87 C 1993.0 2810.87 1993.0 2544.54 926.0 2544.54 Z" fill="#7a4a8a" opacity="0.42"><title>Ta-Ne-Omotic, 7 languages, Ethiopic (Geʻez)</title></path>
-<path d="M926.0 2550.54 C 1993.0 2550.54 1993.0 726.47 3060.0 726.47 L 3060.0 727.54 C 1993.0 727.54 1993.0 2551.58 926.0 2551.58 Z" fill="#2f7a52" opacity="0.42"><title>Tungusic, 2 languages, Mongolian</title></path>
-<path d="M926.0 2551.58 C 1993.0 2551.58 1993.0 2757.72 3060.0 2757.72 L 3060.0 2762.00 C 1993.0 2762.00 1993.0 2555.73 926.0 2555.73 Z" fill="#3d5f8a" opacity="0.42"><title>Tungusic, 8 languages, Cyrillic</title></path>
-<path d="M926.0 2555.73 C 1993.0 2555.73 1993.0 2910.76 3060.0 2910.76 L 3060.0 2911.30 C 1993.0 2911.30 1993.0 2556.24 926.0 2556.24 Z" fill="#9c9488" opacity="0.42"><title>Tungusic, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2562.24 C 1993.0 2562.24 1993.0 2393.83 3060.0 2393.83 L 3060.0 2394.90 C 1993.0 2394.90 1993.0 2563.28 926.0 2563.28 Z" fill="#3d5f8a" opacity="0.42"><title>Nakh-Daghestanian, 2 languages, Latin</title></path>
-<path d="M926.0 2563.28 C 1993.0 2563.28 1993.0 2762.00 3060.0 2762.00 L 3060.0 2771.08 C 1993.0 2771.08 1993.0 2572.10 926.0 2572.10 Z" fill="#3d5f8a" opacity="0.42"><title>Nakh-Daghestanian, 17 languages, Cyrillic</title></path>
-<path d="M926.0 2572.10 C 1993.0 2572.10 1993.0 2911.30 3060.0 2911.30 L 3060.0 2912.36 C 1993.0 2912.36 1993.0 2573.13 926.0 2573.13 Z" fill="#9c9488" opacity="0.42"><title>Nakh-Daghestanian, 2 languages, 85 other scripts</title></path>
+<path d="M926.0 2440.69 C 1993.0 2440.69 1993.0 2358.23 3060.0 2358.23 L 3060.0 2362.50 C 1993.0 2362.50 1993.0 2444.84 926.0 2444.84 Z" fill="#3d5f8a" opacity="0.42"><title>Turkic, 8 languages, Latin</title></path>
+<path d="M926.0 2444.84 C 1993.0 2444.84 1993.0 2737.62 3060.0 2737.62 L 3060.0 2748.31 C 1993.0 2748.31 1993.0 2455.21 926.0 2455.21 Z" fill="#3d5f8a" opacity="0.42"><title>Turkic, 20 languages, Cyrillic</title></path>
+<path d="M926.0 2455.21 C 1993.0 2455.21 1993.0 2902.95 3060.0 2902.95 L 3060.0 2903.49 C 1993.0 2903.49 1993.0 2455.73 926.0 2455.73 Z" fill="#9c9488" opacity="0.42"><title>Turkic, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2461.73 C 1993.0 2461.73 1993.0 2362.50 3060.0 2362.50 L 3060.0 2374.26 C 1993.0 2374.26 1993.0 2473.14 926.0 2473.14 Z" fill="#3d5f8a" opacity="0.42"><title>Uralic, 22 languages, Latin</title></path>
+<path d="M926.0 2473.14 C 1993.0 2473.14 1993.0 2748.31 3060.0 2748.31 L 3060.0 2757.39 C 1993.0 2757.39 1993.0 2481.95 926.0 2481.95 Z" fill="#3d5f8a" opacity="0.42"><title>Uralic, 17 languages, Cyrillic</title></path>
+<path d="M926.0 2487.95 C 1993.0 2487.95 1993.0 2374.26 3060.0 2374.26 L 3060.0 2381.74 C 1993.0 2381.74 1993.0 2495.21 926.0 2495.21 Z" fill="#3d5f8a" opacity="0.42"><title>Hmong-Mien, 14 languages, Latin</title></path>
+<path d="M926.0 2495.21 C 1993.0 2495.21 1993.0 2707.98 3060.0 2707.98 L 3060.0 2709.05 C 1993.0 2709.05 1993.0 2496.25 926.0 2496.25 Z" fill="#3d5f8a" opacity="0.42"><title>Hmong-Mien, 2 languages, Miao (Pollard)</title></path>
+<path d="M926.0 2496.25 C 1993.0 2496.25 1993.0 2903.49 3060.0 2903.49 L 3060.0 2905.09 C 1993.0 2905.09 1993.0 2497.80 926.0 2497.80 Z" fill="#9c9488" opacity="0.42"><title>Hmong-Mien, 3 languages, 85 other scripts</title></path>
+<path d="M926.0 2503.80 C 1993.0 2503.80 1993.0 564.34 3060.0 564.34 L 3060.0 567.02 C 1993.0 567.02 1993.0 2506.39 926.0 2506.39 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 5 languages, Thai</title></path>
+<path d="M926.0 2506.39 C 1993.0 2506.39 1993.0 579.96 3060.0 579.96 L 3060.0 580.50 C 1993.0 580.50 1993.0 2506.91 926.0 2506.91 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 1 language, Lao</title></path>
+<path d="M926.0 2506.91 C 1993.0 2506.91 1993.0 619.75 3060.0 619.75 L 3060.0 622.96 C 1993.0 622.96 1993.0 2510.02 926.0 2510.02 Z" fill="#b5651d" opacity="0.42"><title>Tai-Kadai, 6 languages, Myanmar (Burmese)</title></path>
+<path d="M926.0 2510.02 C 1993.0 2510.02 1993.0 2381.74 3060.0 2381.74 L 3060.0 2389.22 C 1993.0 2389.22 1993.0 2517.28 926.0 2517.28 Z" fill="#3d5f8a" opacity="0.42"><title>Tai-Kadai, 14 languages, Latin</title></path>
+<path d="M926.0 2517.28 C 1993.0 2517.28 1993.0 2820.82 3060.0 2820.82 L 3060.0 2828.84 C 1993.0 2828.84 1993.0 2525.06 926.0 2525.06 Z" fill="#2f5d50" opacity="0.42"><title>Tai-Kadai, 15 languages, Han (Hanzi, Kanji, Hanja)</title></path>
+<path d="M926.0 2525.06 C 1993.0 2525.06 1993.0 2905.09 3060.0 2905.09 L 3060.0 2910.43 C 1993.0 2910.43 1993.0 2530.24 926.0 2530.24 Z" fill="#9c9488" opacity="0.42"><title>Tai-Kadai, 10 languages, 85 other scripts</title></path>
+<path d="M926.0 2536.24 C 1993.0 2536.24 1993.0 2389.22 3060.0 2389.22 L 3060.0 2394.03 C 1993.0 2394.03 1993.0 2540.91 926.0 2540.91 Z" fill="#3d5f8a" opacity="0.42"><title>Ta-Ne-Omotic, 9 languages, Latin</title></path>
+<path d="M926.0 2540.91 C 1993.0 2540.91 1993.0 2806.80 3060.0 2806.80 L 3060.0 2810.54 C 1993.0 2810.54 1993.0 2544.54 926.0 2544.54 Z" fill="#7a4a8a" opacity="0.42"><title>Ta-Ne-Omotic, 7 languages, Ethiopic (Geʻez)</title></path>
+<path d="M926.0 2550.54 C 1993.0 2550.54 1993.0 727.00 3060.0 727.00 L 3060.0 728.07 C 1993.0 728.07 1993.0 2551.58 926.0 2551.58 Z" fill="#2f7a52" opacity="0.42"><title>Tungusic, 2 languages, Mongolian</title></path>
+<path d="M926.0 2551.58 C 1993.0 2551.58 1993.0 2757.39 3060.0 2757.39 L 3060.0 2761.67 C 1993.0 2761.67 1993.0 2555.73 926.0 2555.73 Z" fill="#3d5f8a" opacity="0.42"><title>Tungusic, 8 languages, Cyrillic</title></path>
+<path d="M926.0 2555.73 C 1993.0 2555.73 1993.0 2910.43 3060.0 2910.43 L 3060.0 2910.97 C 1993.0 2910.97 1993.0 2556.24 926.0 2556.24 Z" fill="#9c9488" opacity="0.42"><title>Tungusic, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2562.24 C 1993.0 2562.24 1993.0 2394.03 3060.0 2394.03 L 3060.0 2395.10 C 1993.0 2395.10 1993.0 2563.28 926.0 2563.28 Z" fill="#3d5f8a" opacity="0.42"><title>Nakh-Daghestanian, 2 languages, Latin</title></path>
+<path d="M926.0 2563.28 C 1993.0 2563.28 1993.0 2761.67 3060.0 2761.67 L 3060.0 2770.75 C 1993.0 2770.75 1993.0 2572.10 926.0 2572.10 Z" fill="#3d5f8a" opacity="0.42"><title>Nakh-Daghestanian, 17 languages, Cyrillic</title></path>
+<path d="M926.0 2572.10 C 1993.0 2572.10 1993.0 2910.97 3060.0 2910.97 L 3060.0 2912.04 C 1993.0 2912.04 1993.0 2573.13 926.0 2573.13 Z" fill="#9c9488" opacity="0.42"><title>Nakh-Daghestanian, 2 languages, 85 other scripts</title></path>
 <path d="M926.0 2579.13 C 1993.0 2579.13 1993.0 332.67 3060.0 332.67 L 3060.0 333.74 C 1993.0 333.74 1993.0 2580.17 926.0 2580.17 Z" fill="#8c3b2e" opacity="0.42"><title>156 other families, 2 languages, Cuneiform, Sumero-Akkadian</title></path>
-<path d="M926.0 2580.17 C 1993.0 2580.17 1993.0 703.78 3060.0 703.78 L 3060.0 706.45 C 1993.0 706.45 1993.0 2582.76 926.0 2582.76 Z" fill="#2f7a52" opacity="0.42"><title>156 other families, 5 languages, Arabic</title></path>
-<path d="M926.0 2582.76 C 1993.0 2582.76 1993.0 2394.90 3060.0 2394.90 L 3060.0 2626.30 C 1993.0 2626.30 1993.0 2807.27 926.0 2807.27 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 433 languages, Latin</title></path>
-<path d="M926.0 2807.27 C 1993.0 2807.27 1993.0 2697.50 3060.0 2697.50 L 3060.0 2698.04 C 1993.0 2698.04 1993.0 2807.78 926.0 2807.78 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 1 language, Unified Canadian Aboriginal Syllabics</title></path>
-<path d="M926.0 2807.78 C 1993.0 2807.78 1993.0 2771.08 3060.0 2771.08 L 3060.0 2779.10 C 1993.0 2779.10 1993.0 2815.56 926.0 2815.56 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 15 languages, Cyrillic</title></path>
-<path d="M926.0 2815.56 C 1993.0 2815.56 1993.0 2787.77 3060.0 2787.77 L 3060.0 2788.31 C 1993.0 2788.31 1993.0 2816.08 926.0 2816.08 Z" fill="#9c9488" opacity="0.42"><title>156 other families, 1 language, Tifinagh (Berber)</title></path>
-<path d="M926.0 2816.08 C 1993.0 2816.08 1993.0 2810.87 3060.0 2810.87 L 3060.0 2812.48 C 1993.0 2812.48 1993.0 2817.64 926.0 2817.64 Z" fill="#7a4a8a" opacity="0.42"><title>156 other families, 3 languages, Ethiopic (Geʻez)</title></path>
-<path d="M926.0 2817.64 C 1993.0 2817.64 1993.0 2912.36 3060.0 2912.36 L 3060.0 2920.38 C 1993.0 2920.38 1993.0 2825.41 926.0 2825.41 Z" fill="#9c9488" opacity="0.42"><title>156 other families, 15 languages, 85 other scripts</title></path>
+<path d="M926.0 2580.17 C 1993.0 2580.17 1993.0 704.31 3060.0 704.31 L 3060.0 706.99 C 1993.0 706.99 1993.0 2582.76 926.0 2582.76 Z" fill="#2f7a52" opacity="0.42"><title>156 other families, 5 languages, Arabic</title></path>
+<path d="M926.0 2582.76 C 1993.0 2582.76 1993.0 2395.10 3060.0 2395.10 L 3060.0 2626.51 C 1993.0 2626.51 1993.0 2807.27 926.0 2807.27 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 433 languages, Latin</title></path>
+<path d="M926.0 2807.27 C 1993.0 2807.27 1993.0 2697.17 3060.0 2697.17 L 3060.0 2697.71 C 1993.0 2697.71 1993.0 2807.78 926.0 2807.78 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 1 language, Unified Canadian Aboriginal Syllabics</title></path>
+<path d="M926.0 2807.78 C 1993.0 2807.78 1993.0 2770.75 3060.0 2770.75 L 3060.0 2778.77 C 1993.0 2778.77 1993.0 2815.56 926.0 2815.56 Z" fill="#3d5f8a" opacity="0.42"><title>156 other families, 15 languages, Cyrillic</title></path>
+<path d="M926.0 2815.56 C 1993.0 2815.56 1993.0 2787.44 3060.0 2787.44 L 3060.0 2787.98 C 1993.0 2787.98 1993.0 2816.08 926.0 2816.08 Z" fill="#9c9488" opacity="0.42"><title>156 other families, 1 language, Tifinagh (Berber)</title></path>
+<path d="M926.0 2816.08 C 1993.0 2816.08 1993.0 2810.54 3060.0 2810.54 L 3060.0 2812.15 C 1993.0 2812.15 1993.0 2817.64 926.0 2817.64 Z" fill="#7a4a8a" opacity="0.42"><title>156 other families, 3 languages, Ethiopic (Geʻez)</title></path>
+<path d="M926.0 2817.64 C 1993.0 2817.64 1993.0 2912.04 3060.0 2912.04 L 3060.0 2920.05 C 1993.0 2920.05 1993.0 2825.41 926.0 2825.41 Z" fill="#9c9488" opacity="0.42"><title>156 other families, 15 languages, 85 other scripts</title></path>
 <path d="M926.0 2831.41 C 1993.0 2831.41 1993.0 333.74 3060.0 333.74 L 3060.0 335.34 C 1993.0 335.34 1993.0 2832.97 926.0 2832.97 Z" fill="#8c3b2e" opacity="0.42"><title>Isolates, 3 languages, Cuneiform, Sumero-Akkadian</title></path>
-<path d="M926.0 2832.97 C 1993.0 2832.97 1993.0 468.37 3060.0 468.37 L 3060.0 468.90 C 1993.0 468.90 1993.0 2833.49 926.0 2833.49 Z" fill="#b5651d" opacity="0.42"><title>Isolates, 1 language, Devanagari (Nagari)</title></path>
-<path d="M926.0 2833.49 C 1993.0 2833.49 1993.0 706.45 3060.0 706.45 L 3060.0 706.99 C 1993.0 706.99 1993.0 2834.01 926.0 2834.01 Z" fill="#2f7a52" opacity="0.42"><title>Isolates, 1 language, Arabic</title></path>
+<path d="M926.0 2832.97 C 1993.0 2832.97 1993.0 468.90 3060.0 468.90 L 3060.0 469.44 C 1993.0 469.44 1993.0 2833.49 926.0 2833.49 Z" fill="#b5651d" opacity="0.42"><title>Isolates, 1 language, Devanagari (Nagari)</title></path>
+<path d="M926.0 2833.49 C 1993.0 2833.49 1993.0 706.99 3060.0 706.99 L 3060.0 707.52 C 1993.0 707.52 1993.0 2834.01 926.0 2834.01 Z" fill="#2f7a52" opacity="0.42"><title>Isolates, 1 language, Arabic</title></path>
 <path d="M926.0 2834.01 C 1993.0 2834.01 1993.0 751.62 3060.0 751.62 L 3060.0 752.16 C 1993.0 752.16 1993.0 2834.52 926.0 2834.52 Z" fill="#3d5f8a" opacity="0.42"><title>Isolates, 1 language, Old Italic (Etruscan, Oscan, etc.)</title></path>
-<path d="M926.0 2834.52 C 1993.0 2834.52 1993.0 2626.30 3060.0 2626.30 L 3060.0 2667.99 C 1993.0 2667.99 1993.0 2874.97 926.0 2874.97 Z" fill="#3d5f8a" opacity="0.42"><title>Isolates, 78 languages, Latin</title></path>
-<path d="M926.0 2874.97 C 1993.0 2874.97 1993.0 2920.38 3060.0 2920.38 L 3060.0 2920.91 C 1993.0 2920.91 1993.0 2875.48 926.0 2875.48 Z" fill="#9c9488" opacity="0.42"><title>Isolates, 1 language, 85 other scripts</title></path>
-<path d="M926.0 2881.48 C 1993.0 2881.48 1993.0 349.36 3060.0 349.36 L 3060.0 350.43 C 1993.0 350.43 1993.0 2882.52 926.0 2882.52 Z" fill="#2f7a52" opacity="0.42"><title>Unclassified and other categories, 2 languages, Hebrew</title></path>
-<path d="M926.0 2882.52 C 1993.0 2882.52 1993.0 468.90 3060.0 468.90 L 3060.0 472.64 C 1993.0 472.64 1993.0 2886.15 926.0 2886.15 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 7 languages, Devanagari (Nagari)</title></path>
-<path d="M926.0 2886.15 C 1993.0 2886.15 1993.0 494.80 3060.0 494.80 L 3060.0 496.40 C 1993.0 496.40 1993.0 2887.71 926.0 2887.71 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 3 languages, Oriya (Odia)</title></path>
-<path d="M926.0 2887.71 C 1993.0 2887.71 1993.0 510.42 3060.0 510.42 L 3060.0 510.95 C 1993.0 510.95 1993.0 2888.22 926.0 2888.22 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Bengali (Bangla)</title></path>
-<path d="M926.0 2888.22 C 1993.0 2888.22 1993.0 534.71 3060.0 534.71 L 3060.0 535.24 C 1993.0 535.24 1993.0 2888.74 926.0 2888.74 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Tamil</title></path>
-<path d="M926.0 2888.74 C 1993.0 2888.74 1993.0 600.39 3060.0 600.39 L 3060.0 600.93 C 1993.0 600.93 1993.0 2889.26 926.0 2889.26 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Tibetan</title></path>
-<path d="M926.0 2889.26 C 1993.0 2889.26 1993.0 622.43 3060.0 622.43 L 3060.0 623.49 C 1993.0 623.49 1993.0 2890.30 926.0 2890.30 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 2 languages, Myanmar (Burmese)</title></path>
-<path d="M926.0 2890.30 C 1993.0 2890.30 1993.0 706.99 3060.0 706.99 L 3060.0 708.59 C 1993.0 708.59 1993.0 2891.85 926.0 2891.85 Z" fill="#2f7a52" opacity="0.42"><title>Unclassified and other categories, 3 languages, Arabic</title></path>
+<path d="M926.0 2834.52 C 1993.0 2834.52 1993.0 2626.51 3060.0 2626.51 L 3060.0 2668.19 C 1993.0 2668.19 1993.0 2874.97 926.0 2874.97 Z" fill="#3d5f8a" opacity="0.42"><title>Isolates, 78 languages, Latin</title></path>
+<path d="M926.0 2874.97 C 1993.0 2874.97 1993.0 2920.05 3060.0 2920.05 L 3060.0 2920.59 C 1993.0 2920.59 1993.0 2875.48 926.0 2875.48 Z" fill="#9c9488" opacity="0.42"><title>Isolates, 1 language, 85 other scripts</title></path>
+<path d="M926.0 2881.48 C 1993.0 2881.48 1993.0 349.90 3060.0 349.90 L 3060.0 350.96 C 1993.0 350.96 1993.0 2882.52 926.0 2882.52 Z" fill="#2f7a52" opacity="0.42"><title>Unclassified and other categories, 2 languages, Hebrew</title></path>
+<path d="M926.0 2882.52 C 1993.0 2882.52 1993.0 469.44 3060.0 469.44 L 3060.0 473.18 C 1993.0 473.18 1993.0 2886.15 926.0 2886.15 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 7 languages, Devanagari (Nagari)</title></path>
+<path d="M926.0 2886.15 C 1993.0 2886.15 1993.0 495.33 3060.0 495.33 L 3060.0 496.93 C 1993.0 496.93 1993.0 2887.71 926.0 2887.71 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 3 languages, Oriya (Odia)</title></path>
+<path d="M926.0 2887.71 C 1993.0 2887.71 1993.0 510.95 3060.0 510.95 L 3060.0 511.49 C 1993.0 511.49 1993.0 2888.22 926.0 2888.22 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Bengali (Bangla)</title></path>
+<path d="M926.0 2888.22 C 1993.0 2888.22 1993.0 535.24 3060.0 535.24 L 3060.0 535.78 C 1993.0 535.78 1993.0 2888.74 926.0 2888.74 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Tamil</title></path>
+<path d="M926.0 2888.74 C 1993.0 2888.74 1993.0 600.93 3060.0 600.93 L 3060.0 601.46 C 1993.0 601.46 1993.0 2889.26 926.0 2889.26 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 1 language, Tibetan</title></path>
+<path d="M926.0 2889.26 C 1993.0 2889.26 1993.0 622.96 3060.0 622.96 L 3060.0 624.03 C 1993.0 624.03 1993.0 2890.30 926.0 2890.30 Z" fill="#b5651d" opacity="0.42"><title>Unclassified and other categories, 2 languages, Myanmar (Burmese)</title></path>
+<path d="M926.0 2890.30 C 1993.0 2890.30 1993.0 707.52 3060.0 707.52 L 3060.0 709.12 C 1993.0 709.12 1993.0 2891.85 926.0 2891.85 Z" fill="#2f7a52" opacity="0.42"><title>Unclassified and other categories, 3 languages, Arabic</title></path>
 <path d="M926.0 2891.85 C 1993.0 2891.85 1993.0 740.81 3060.0 740.81 L 3060.0 743.48 C 1993.0 743.48 1993.0 2894.45 926.0 2894.45 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 5 languages, Greek</title></path>
-<path d="M926.0 2894.45 C 1993.0 2894.45 1993.0 2667.99 3060.0 2667.99 L 3060.0 2687.76 C 1993.0 2687.76 1993.0 2913.63 926.0 2913.63 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 37 languages, Latin</title></path>
-<path d="M926.0 2913.63 C 1993.0 2913.63 1993.0 2715.38 3060.0 2715.38 L 3060.0 2720.19 C 1993.0 2720.19 1993.0 2918.30 926.0 2918.30 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 9 languages, SignWriting</title></path>
-<path d="M926.0 2918.30 C 1993.0 2918.30 1993.0 2788.31 3060.0 2788.31 L 3060.0 2788.84 C 1993.0 2788.84 1993.0 2918.82 926.0 2918.82 Z" fill="#9c9488" opacity="0.42"><title>Unclassified and other categories, 1 language, Tifinagh (Berber)</title></path>
-<path d="M926.0 2918.82 C 1993.0 2918.82 1993.0 2812.48 3060.0 2812.48 L 3060.0 2813.01 C 1993.0 2813.01 1993.0 2919.33 926.0 2919.33 Z" fill="#7a4a8a" opacity="0.42"><title>Unclassified and other categories, 1 language, Ethiopic (Geʻez)</title></path>
-<path d="M926.0 2919.33 C 1993.0 2919.33 1993.0 2829.16 3060.0 2829.16 L 3060.0 2829.70 C 1993.0 2829.70 1993.0 2919.85 926.0 2919.85 Z" fill="#2f5d50" opacity="0.42"><title>Unclassified and other categories, 1 language, Han (Hanzi, Kanji, Hanja)</title></path>
-<path d="M926.0 2919.85 C 1993.0 2919.85 1993.0 2839.97 3060.0 2839.97 L 3060.0 2840.51 C 1993.0 2840.51 1993.0 2920.37 926.0 2920.37 Z" fill="#2f5d50" opacity="0.42"><title>Unclassified and other categories, 1 language, Yi</title></path>
-<path d="M926.0 2920.37 C 1993.0 2920.37 1993.0 2920.91 3060.0 2920.91 L 3060.0 2924.66 C 1993.0 2924.66 1993.0 2924.00 926.0 2924.00 Z" fill="#9c9488" opacity="0.42"><title>Unclassified and other categories, 7 languages, 85 other scripts</title></path>
+<path d="M926.0 2894.45 C 1993.0 2894.45 1993.0 752.16 3060.0 752.16 L 3060.0 752.69 C 1993.0 752.69 1993.0 2894.96 926.0 2894.96 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 1 language, Old Italic (Etruscan, Oscan, etc.)</title></path>
+<path d="M926.0 2894.96 C 1993.0 2894.96 1993.0 2668.19 3060.0 2668.19 L 3060.0 2687.43 C 1993.0 2687.43 1993.0 2913.63 926.0 2913.63 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 36 languages, Latin</title></path>
+<path d="M926.0 2913.63 C 1993.0 2913.63 1993.0 2715.05 3060.0 2715.05 L 3060.0 2719.86 C 1993.0 2719.86 1993.0 2918.30 926.0 2918.30 Z" fill="#3d5f8a" opacity="0.42"><title>Unclassified and other categories, 9 languages, SignWriting</title></path>
+<path d="M926.0 2918.30 C 1993.0 2918.30 1993.0 2787.98 3060.0 2787.98 L 3060.0 2788.51 C 1993.0 2788.51 1993.0 2918.82 926.0 2918.82 Z" fill="#9c9488" opacity="0.42"><title>Unclassified and other categories, 1 language, Tifinagh (Berber)</title></path>
+<path d="M926.0 2918.82 C 1993.0 2918.82 1993.0 2812.15 3060.0 2812.15 L 3060.0 2812.68 C 1993.0 2812.68 1993.0 2919.33 926.0 2919.33 Z" fill="#7a4a8a" opacity="0.42"><title>Unclassified and other categories, 1 language, Ethiopic (Geʻez)</title></path>
+<path d="M926.0 2919.33 C 1993.0 2919.33 1993.0 2828.84 3060.0 2828.84 L 3060.0 2829.37 C 1993.0 2829.37 1993.0 2919.85 926.0 2919.85 Z" fill="#2f5d50" opacity="0.42"><title>Unclassified and other categories, 1 language, Han (Hanzi, Kanji, Hanja)</title></path>
+<path d="M926.0 2919.85 C 1993.0 2919.85 1993.0 2839.65 3060.0 2839.65 L 3060.0 2840.18 C 1993.0 2840.18 1993.0 2920.37 926.0 2920.37 Z" fill="#2f5d50" opacity="0.42"><title>Unclassified and other categories, 1 language, Yi</title></path>
+<path d="M926.0 2920.37 C 1993.0 2920.37 1993.0 2920.59 3060.0 2920.59 L 3060.0 2924.33 C 1993.0 2924.33 1993.0 2924.00 926.0 2924.00 Z" fill="#9c9488" opacity="0.42"><title>Unclassified and other categories, 7 languages, 85 other scripts</title></path>
 <rect x="900" y="330.00" width="26" height="29.04" fill="#1a1714"/>
 <text x="884" y="344.5" text-anchor="end" font-size="20" dominant-baseline="middle">Dravidian <tspan fill="#6b6155">56</tspan></text>
 <rect x="900" y="365.04" width="26" height="240.06" fill="#1a1714"/>
@@ -280,151 +281,151 @@
 <text x="3102" y="332.7" font-size="20" dominant-baseline="middle">Xsux Cuneiform, Sumero-Akkadian <tspan fill="#6b6155">10</tspan></text>
 </g>
 <g id="r-Hebr">
-<rect x="3060" y="341.34" width="26" height="9.09" fill="#2f7a52"/>
-<path d="M3086 345.9 L3094 345.9 L3098 356.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="356.7" font-size="20" dominant-baseline="middle">Hebr Hebrew <tspan fill="#6b6155">17</tspan></text>
+<rect x="3060" y="341.34" width="26" height="9.62" fill="#2f7a52"/>
+<path d="M3086 346.2 L3094 346.2 L3098 356.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="356.7" font-size="20" dominant-baseline="middle">Hebr Hebrew <tspan fill="#6b6155">18</tspan></text>
 </g>
 <g id="r-Brah">
-<rect x="3060" y="356.43" width="26" height="4.28" fill="#b5651d"/>
-<path d="M3086 358.6 L3094 358.6 L3098 380.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<rect x="3060" y="356.96" width="26" height="4.28" fill="#b5651d"/>
+<path d="M3086 359.1 L3094 359.1 L3098 380.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
 <text x="3102" y="380.7" font-size="20" dominant-baseline="middle">Brah Brahmi <tspan fill="#6b6155">8</tspan></text>
 </g>
 <g id="r-Knda">
-<rect x="3060" y="366.70" width="26" height="3.74" fill="#b5651d"/>
-<path d="M3086 368.6 L3094 368.6 L3098 404.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<rect x="3060" y="367.24" width="26" height="3.74" fill="#b5651d"/>
+<path d="M3086 369.1 L3094 369.1 L3098 404.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
 <text x="3102" y="404.7" font-size="20" dominant-baseline="middle">Knda Kannada <tspan fill="#6b6155">7</tspan></text>
 </g>
 <g id="r-Deva">
-<rect x="3060" y="376.45" width="26" height="96.20" fill="#b5651d"/>
-<path d="M3086 424.5 L3094 424.5 L3098 428.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<rect x="3060" y="376.98" width="26" height="96.20" fill="#b5651d"/>
+<path d="M3086 425.1 L3094 425.1 L3098 428.7" fill="none" stroke="#a89d8d" stroke-width="1"/>
 <text x="3102" y="428.7" font-size="20" dominant-baseline="middle">Deva Devanagari (Nagari) <tspan fill="#6b6155">180</tspan></text>
 </g>
 <g id="r-Gujr">
-<rect x="3060" y="478.64" width="26" height="3.74" fill="#b5651d"/>
-<text x="3102" y="480.5" font-size="20" dominant-baseline="middle">Gujr Gujarati <tspan fill="#6b6155">7</tspan></text>
+<rect x="3060" y="479.18" width="26" height="3.74" fill="#b5651d"/>
+<text x="3102" y="481.0" font-size="20" dominant-baseline="middle">Gujr Gujarati <tspan fill="#6b6155">7</tspan></text>
 </g>
 <g id="r-Orya">
-<rect x="3060" y="488.38" width="26" height="8.02" fill="#b5651d"/>
-<path d="M3086 492.4 L3094 492.4 L3098 504.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="504.5" font-size="20" dominant-baseline="middle">Orya Oriya (Odia) <tspan fill="#6b6155">15</tspan></text>
+<rect x="3060" y="488.92" width="26" height="8.02" fill="#b5651d"/>
+<path d="M3086 492.9 L3094 492.9 L3098 505.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="505.0" font-size="20" dominant-baseline="middle">Orya Oriya (Odia) <tspan fill="#6b6155">15</tspan></text>
 </g>
 <g id="r-Beng">
-<rect x="3060" y="502.40" width="26" height="8.55" fill="#b5651d"/>
-<path d="M3086 506.7 L3094 506.7 L3098 528.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="528.5" font-size="20" dominant-baseline="middle">Beng Bengali (Bangla) <tspan fill="#6b6155">16</tspan></text>
+<rect x="3060" y="502.93" width="26" height="8.55" fill="#b5651d"/>
+<path d="M3086 507.2 L3094 507.2 L3098 529.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="529.0" font-size="20" dominant-baseline="middle">Beng Bengali (Bangla) <tspan fill="#6b6155">16</tspan></text>
 </g>
 <g id="r-Mlym">
-<rect x="3060" y="516.95" width="26" height="5.88" fill="#b5651d"/>
-<path d="M3086 519.9 L3094 519.9 L3098 552.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="552.5" font-size="20" dominant-baseline="middle">Mlym Malayalam <tspan fill="#6b6155">11</tspan></text>
+<rect x="3060" y="517.49" width="26" height="5.88" fill="#b5651d"/>
+<path d="M3086 520.4 L3094 520.4 L3098 553.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="553.0" font-size="20" dominant-baseline="middle">Mlym Malayalam <tspan fill="#6b6155">11</tspan></text>
 </g>
 <g id="r-Taml">
-<rect x="3060" y="528.83" width="26" height="6.41" fill="#b5651d"/>
-<path d="M3086 532.0 L3094 532.0 L3098 576.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="576.5" font-size="20" dominant-baseline="middle">Taml Tamil <tspan fill="#6b6155">12</tspan></text>
+<rect x="3060" y="529.36" width="26" height="6.41" fill="#b5651d"/>
+<path d="M3086 532.6 L3094 532.6 L3098 577.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="577.0" font-size="20" dominant-baseline="middle">Taml Tamil <tspan fill="#6b6155">12</tspan></text>
 </g>
 <g id="r-Telu">
-<rect x="3060" y="541.24" width="26" height="6.95" fill="#b5651d"/>
-<path d="M3086 544.7 L3094 544.7 L3098 600.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="600.5" font-size="20" dominant-baseline="middle">Telu Telugu <tspan fill="#6b6155">13</tspan></text>
+<rect x="3060" y="541.78" width="26" height="6.95" fill="#b5651d"/>
+<path d="M3086 545.3 L3094 545.3 L3098 601.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="601.0" font-size="20" dominant-baseline="middle">Telu Telugu <tspan fill="#6b6155">13</tspan></text>
 </g>
 <g id="r-Thai">
-<rect x="3060" y="554.19" width="26" height="12.29" fill="#b5651d"/>
-<path d="M3086 560.3 L3094 560.3 L3098 624.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="624.5" font-size="20" dominant-baseline="middle">Thai Thai <tspan fill="#6b6155">23</tspan></text>
+<rect x="3060" y="554.72" width="26" height="12.29" fill="#b5651d"/>
+<path d="M3086 560.9 L3094 560.9 L3098 625.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="625.0" font-size="20" dominant-baseline="middle">Thai Thai <tspan fill="#6b6155">23</tspan></text>
 </g>
 <g id="r-Laoo">
-<rect x="3060" y="572.48" width="26" height="7.48" fill="#b5651d"/>
-<path d="M3086 576.2 L3094 576.2 L3098 648.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="648.5" font-size="20" dominant-baseline="middle">Laoo Lao <tspan fill="#6b6155">14</tspan></text>
+<rect x="3060" y="573.02" width="26" height="7.48" fill="#b5651d"/>
+<path d="M3086 576.8 L3094 576.8 L3098 649.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="649.0" font-size="20" dominant-baseline="middle">Laoo Lao <tspan fill="#6b6155">14</tspan></text>
 </g>
 <g id="r-Tibt">
-<rect x="3060" y="585.96" width="26" height="14.96" fill="#b5651d"/>
-<path d="M3086 593.4 L3094 593.4 L3098 672.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="672.5" font-size="20" dominant-baseline="middle">Tibt Tibetan <tspan fill="#6b6155">28</tspan></text>
+<rect x="3060" y="586.50" width="26" height="14.96" fill="#b5651d"/>
+<path d="M3086 594.0 L3094 594.0 L3098 673.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="673.0" font-size="20" dominant-baseline="middle">Tibt Tibetan <tspan fill="#6b6155">28</tspan></text>
 </g>
 <g id="r-Mymr">
-<rect x="3060" y="606.93" width="26" height="16.57" fill="#b5651d"/>
-<path d="M3086 615.2 L3094 615.2 L3098 696.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="696.5" font-size="20" dominant-baseline="middle">Mymr Myanmar (Burmese) <tspan fill="#6b6155">31</tspan></text>
+<rect x="3060" y="607.46" width="26" height="16.57" fill="#b5651d"/>
+<path d="M3086 615.7 L3094 615.7 L3098 697.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="697.0" font-size="20" dominant-baseline="middle">Mymr Myanmar (Burmese) <tspan fill="#6b6155">31</tspan></text>
 </g>
 <g id="r-Arab">
-<rect x="3060" y="629.49" width="26" height="79.09" fill="#2f7a52"/>
-<path d="M3086 669.0 L3094 669.0 L3098 720.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="720.5" font-size="20" dominant-baseline="middle">Arab Arabic <tspan fill="#6b6155">148</tspan></text>
+<rect x="3060" y="630.03" width="26" height="79.09" fill="#2f7a52"/>
+<path d="M3086 669.6 L3094 669.6 L3098 721.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="721.0" font-size="20" dominant-baseline="middle">Arab Arabic <tspan fill="#6b6155">148</tspan></text>
 </g>
 <g id="r-Syrc">
-<rect x="3060" y="714.59" width="26" height="4.28" fill="#2f7a52"/>
-<path d="M3086 716.7 L3094 716.7 L3098 744.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="744.5" font-size="20" dominant-baseline="middle">Syrc Syriac <tspan fill="#6b6155">8</tspan></text>
+<rect x="3060" y="715.12" width="26" height="4.28" fill="#2f7a52"/>
+<path d="M3086 717.3 L3094 717.3 L3098 745.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="745.0" font-size="20" dominant-baseline="middle">Syrc Syriac <tspan fill="#6b6155">8</tspan></text>
 </g>
 <g id="r-Mong">
-<rect x="3060" y="724.87" width="26" height="3.00" fill="#2f7a52"/>
-<path d="M3086 726.4 L3094 726.4 L3098 768.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="768.5" font-size="20" dominant-baseline="middle">Mong Mongolian <tspan fill="#6b6155">5</tspan></text>
+<rect x="3060" y="725.40" width="26" height="3.00" fill="#2f7a52"/>
+<path d="M3086 726.9 L3094 726.9 L3098 769.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="769.0" font-size="20" dominant-baseline="middle">Mong Mongolian <tspan fill="#6b6155">5</tspan></text>
 </g>
 <g id="r-Grek">
-<rect x="3060" y="733.87" width="26" height="9.62" fill="#3d5f8a"/>
-<path d="M3086 738.7 L3094 738.7 L3098 792.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="792.5" font-size="20" dominant-baseline="middle">Grek Greek <tspan fill="#6b6155">18</tspan></text>
+<rect x="3060" y="734.40" width="26" height="9.09" fill="#3d5f8a"/>
+<path d="M3086 738.9 L3094 738.9 L3098 793.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="793.0" font-size="20" dominant-baseline="middle">Grek Greek <tspan fill="#6b6155">17</tspan></text>
 </g>
 <g id="r-Ital">
-<rect x="3060" y="749.48" width="26" height="3.00" fill="#3d5f8a"/>
-<path d="M3086 751.0 L3094 751.0 L3098 816.5" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="816.5" font-size="20" dominant-baseline="middle">Ital Old Italic (Etruscan, Oscan, etc.) <tspan fill="#6b6155">5</tspan></text>
+<rect x="3060" y="749.48" width="26" height="3.21" fill="#3d5f8a"/>
+<path d="M3086 751.1 L3094 751.1 L3098 817.0" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="817.0" font-size="20" dominant-baseline="middle">Ital Old Italic (Etruscan, Oscan, etc.) <tspan fill="#6b6155">6</tspan></text>
 </g>
 <g id="r-Latn">
-<rect x="3060" y="758.48" width="26" height="1929.28" fill="#3d5f8a"/>
-<text x="3102" y="1723.1" font-size="20" dominant-baseline="middle">Latn Latin <tspan fill="#6b6155">3,610</tspan></text>
+<rect x="3060" y="758.69" width="26" height="1928.74" fill="#3d5f8a"/>
+<text x="3102" y="1723.1" font-size="20" dominant-baseline="middle">Latn Latin <tspan fill="#6b6155">3,609</tspan></text>
 </g>
 <g id="r-Cans">
-<rect x="3060" y="2693.76" width="26" height="4.28" fill="#3d5f8a"/>
-<text x="3102" y="2695.9" font-size="20" dominant-baseline="middle">Cans Unified Canadian Aboriginal Syllabics <tspan fill="#6b6155">8</tspan></text>
+<rect x="3060" y="2693.43" width="26" height="4.28" fill="#3d5f8a"/>
+<text x="3102" y="2695.6" font-size="20" dominant-baseline="middle">Cans Unified Canadian Aboriginal Syllabics <tspan fill="#6b6155">8</tspan></text>
 </g>
 <g id="r-Plrd">
-<rect x="3060" y="2704.04" width="26" height="5.34" fill="#3d5f8a"/>
-<path d="M3086 2706.7 L3094 2706.7 L3098 2719.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2719.9" font-size="20" dominant-baseline="middle">Plrd Miao (Pollard) <tspan fill="#6b6155">10</tspan></text>
+<rect x="3060" y="2703.71" width="26" height="5.34" fill="#3d5f8a"/>
+<path d="M3086 2706.4 L3094 2706.4 L3098 2719.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2719.6" font-size="20" dominant-baseline="middle">Plrd Miao (Pollard) <tspan fill="#6b6155">10</tspan></text>
 </g>
 <g id="r-Sgnw">
-<rect x="3060" y="2715.38" width="26" height="4.81" fill="#3d5f8a"/>
-<path d="M3086 2717.8 L3094 2717.8 L3098 2743.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2743.9" font-size="20" dominant-baseline="middle">Sgnw SignWriting <tspan fill="#6b6155">9</tspan></text>
+<rect x="3060" y="2715.05" width="26" height="4.81" fill="#3d5f8a"/>
+<path d="M3086 2717.5 L3094 2717.5 L3098 2743.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2743.6" font-size="20" dominant-baseline="middle">Sgnw SignWriting <tspan fill="#6b6155">9</tspan></text>
 </g>
 <g id="r-Cyrl">
-<rect x="3060" y="2726.19" width="26" height="52.91" fill="#3d5f8a"/>
-<path d="M3086 2752.6 L3094 2752.6 L3098 2767.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2767.9" font-size="20" dominant-baseline="middle">Cyrl Cyrillic <tspan fill="#6b6155">99</tspan></text>
+<rect x="3060" y="2725.86" width="26" height="52.91" fill="#3d5f8a"/>
+<path d="M3086 2752.3 L3094 2752.3 L3098 2767.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2767.6" font-size="20" dominant-baseline="middle">Cyrl Cyrillic <tspan fill="#6b6155">99</tspan></text>
 </g>
 <g id="r-Tfng">
-<rect x="3060" y="2785.10" width="26" height="3.74" fill="#9c9488"/>
-<path d="M3086 2787.0 L3094 2787.0 L3098 2791.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2791.9" font-size="20" dominant-baseline="middle">Tfng Tifinagh (Berber) <tspan fill="#6b6155">7</tspan></text>
+<rect x="3060" y="2784.77" width="26" height="3.74" fill="#9c9488"/>
+<path d="M3086 2786.6 L3094 2786.6 L3098 2791.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2791.6" font-size="20" dominant-baseline="middle">Tfng Tifinagh (Berber) <tspan fill="#6b6155">7</tspan></text>
 </g>
 <g id="r-Ethi">
-<rect x="3060" y="2794.84" width="26" height="18.17" fill="#7a4a8a"/>
-<path d="M3086 2803.9 L3094 2803.9 L3098 2815.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2815.9" font-size="20" dominant-baseline="middle">Ethi Ethiopic (Geʻez) <tspan fill="#6b6155">34</tspan></text>
+<rect x="3060" y="2794.51" width="26" height="18.17" fill="#7a4a8a"/>
+<path d="M3086 2803.6 L3094 2803.6 L3098 2815.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2815.6" font-size="20" dominant-baseline="middle">Ethi Ethiopic (Geʻez) <tspan fill="#6b6155">34</tspan></text>
 </g>
 <g id="r-Hani">
-<rect x="3060" y="2819.01" width="26" height="10.69" fill="#2f5d50"/>
-<path d="M3086 2824.4 L3094 2824.4 L3098 2839.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2839.9" font-size="20" dominant-baseline="middle">Hani Han (Hanzi, Kanji, Hanja) <tspan fill="#6b6155">20</tspan></text>
+<rect x="3060" y="2818.68" width="26" height="10.69" fill="#2f5d50"/>
+<path d="M3086 2824.0 L3094 2824.0 L3098 2839.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2839.6" font-size="20" dominant-baseline="middle">Hani Han (Hanzi, Kanji, Hanja) <tspan fill="#6b6155">20</tspan></text>
 </g>
 <g id="r-Yiii">
-<rect x="3060" y="2835.70" width="26" height="4.81" fill="#2f5d50"/>
-<path d="M3086 2838.1 L3094 2838.1 L3098 2863.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2863.9" font-size="20" dominant-baseline="middle">Yiii Yi <tspan fill="#6b6155">9</tspan></text>
+<rect x="3060" y="2835.37" width="26" height="4.81" fill="#2f5d50"/>
+<path d="M3086 2837.8 L3094 2837.8 L3098 2863.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2863.6" font-size="20" dominant-baseline="middle">Yiii Yi <tspan fill="#6b6155">9</tspan></text>
 </g>
 <g id="r-Hans">
-<rect x="3060" y="2846.51" width="26" height="7.48" fill="#2f5d50"/>
-<path d="M3086 2850.2 L3094 2850.2 L3098 2887.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2887.9" font-size="20" dominant-baseline="middle">Hans Han (Simplified variant) <tspan fill="#6b6155">14</tspan></text>
+<rect x="3060" y="2846.18" width="26" height="7.48" fill="#2f5d50"/>
+<path d="M3086 2849.9 L3094 2849.9 L3098 2887.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2887.6" font-size="20" dominant-baseline="middle">Hans Han (Simplified variant) <tspan fill="#6b6155">14</tspan></text>
 </g>
 <g id="r-other">
-<rect x="3060" y="2859.99" width="26" height="64.67" fill="#9c9488"/>
-<path d="M3086 2892.3 L3094 2892.3 L3098 2911.9" fill="none" stroke="#a89d8d" stroke-width="1"/>
-<text x="3102" y="2911.9" font-size="20" dominant-baseline="middle">85 other scripts <tspan fill="#6b6155">121</tspan></text>
+<rect x="3060" y="2859.66" width="26" height="64.67" fill="#9c9488"/>
+<path d="M3086 2892.0 L3094 2892.0 L3098 2911.6" fill="none" stroke="#a89d8d" stroke-width="1"/>
+<text x="3102" y="2911.6" font-size="20" dominant-baseline="middle">85 other scripts <tspan fill="#6b6155">121</tspan></text>
 </g>
 <rect x="160" y="2966" width="40" height="22" fill="#b5651d" opacity="0.7"/>
 <text x="212" y="2984" font-size="24">Brahmi</text>
@@ -442,7 +443,7 @@
 <text x="3572" y="2984" font-size="24">other lineages</text>
 <line x1="120" y1="3190" x2="4080" y2="3190" stroke="#c9bda9" stroke-width="2"/>
 <text x="120" y="3240" font-size="26" fill="#6b6155">Band colour is the script's great lineage (key above). A language with several scripts is counted once, under its main script.</text>
-<text x="120" y="3280" font-size="26" fill="#6b6155">Script and family do not line up: Latin alone writes 3,610 of these languages, from families on every continent, while most other scripts serve one family.</text>
+<text x="120" y="3280" font-size="26" fill="#6b6155">Script and family do not line up: Latin alone writes 3,609 of these languages, from families on every continent, while most other scripts serve one family.</text>
 <text x="120" y="3320" font-size="26" fill="#6b6155">40 families and isolates are drawn by name; the other 156 are pooled, as are the 85 scripts after the first 30. Glottolog's filing categories (Bookkeeping, Unclassifiable and the rest) are pooled as one.</text>
 <text x="120" y="3360" font-size="26" fill="#6b6155">Sources: Glottolog 5 CLDF (CC-BY-4.0); Wikidata P282, Unicode CLDR and SIL langtags for scripts. Built by render_families.py from out/dataset.json.</text>
 </svg>

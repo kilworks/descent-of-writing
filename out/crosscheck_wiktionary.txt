@@ -1,0 +1,30 @@
+Wiktionary language data (en.wiktionary.org, Module:languages), CC BY-SA 4.0, quoted for review only.
+
+Cross-check of the 2991 languages whose script rests on SIL langtags alone,
+against Wiktionary's language data modules (6070 codes with a script list).
+
+agrees on at least one script               2350   78.6%
+no Wiktionary entry or no script listed      623   20.8%
+disagrees                                     18    0.6%
+
+Agreement where both speak: 2350 of 2368 (99.2%).
+
+Disagreements (name, ISO 639-3, langtags, Wiktionary):
+  Alu Kurumba [xua]  Taml  vs  Knda
+  Asuri [asr]  Deva  vs  Latn
+  Batak [bya]  Latn  vs  Tagb
+  Bussa [dox]  Ethi  vs  Latn
+  Caribbean Hindustani [hns]  Latn  vs  crp
+  Hertevin [hrt]  Syrc  vs  Latn
+  Jahanka [jad]  Arab  vs  Latn
+  Kakabe [kke]  Arab  vs  Latn
+  Kotia-Adivasi Oriya-Desiya [ort]  Telu  vs  Orya
+  Luwati [luv]  Arab  vs  Khoj
+  Narua [nru]  Hans,Hant,Nkdb,Nkgb  vs  Latn
+  Qimant [ahg]  Ethi  vs  Latn
+  Sani [ysn]  Yiii  vs  Latn
+  Tai Ya [cuu]  Lana  vs  Latn
+  Turung [try]  Latn  vs  Beng
+  Wambule [wme]  Deva  vs  Latn
+  Western Algerian Berber [cnu]  Tfng  vs  Latn
+  Zuojiang Zhuang [zzj]  Hani  vs  Latn

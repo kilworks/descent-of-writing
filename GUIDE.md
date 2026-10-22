@@ -80,7 +80,7 @@ Around 750 BCE Greek writers took Phoenician letters for consonants their langua
 
 ### Latin's reach
 
-Latin writes 3,610 of the 4,517 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 16 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
+Latin writes 3,609 of the 4,517 languages that have a script on record, more than every other script together. That is the history of the last five centuries, missionary and colonial orthographies above all, not a property of the letters. It also explains a pattern on the plate: 16 of the scripts hung under Latin are modern inventions with no ancestor at all (the dash-dot links). They sit there because their makers already wrote in Latin, and the plate says that is a placement, not a descent.
 
 ### Brahmi, and the abugida
 
@@ -971,7 +971,7 @@ Parent: [`Phnx`](#phnx) Phoenician, link **attested**.
 Source: Janko, on Methone; Jeffery, Local Scripts of Archaic Greece. Dipylon jug c.740 BCE and Nestor's cup; Gabii c.770 on the traditional chronology; earliest texts right to left.
 Children: [`Cari`](#cari), [`Ital`](#ital), [`Lydi`](#lydi), [`Lyci`](#lyci), [`Copt`](#copt), [`Goth`](#goth), [`Armn`](#armn), [`Geok`](#geok), [`Glag`](#glag), [`Cyrl`](#cyrl), [`Todr`](#todr), [`Elba`](#elba), [`Vith`](#vith).
 
-Languages written mainly in it: 18. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 9 more.
+Languages written mainly in it: 17. Largest: Modern Greek (15,000,000 speakers), Pontic (778,000 speakers), Rumelian Turkish (464,000 speakers), Kipchak Urum (185,000 speakers), Cappadocian Greek (2,800 speakers). Also recorded as a further script for 10 more.
 Unicode: encoded since version 1.1, block from U+0370.
 
 ### Gujr
@@ -1080,7 +1080,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Unicode ch.10; Barag. The square Hebrew script grew out of Imperial Aramaic; Mount Gerizim inscriptions 3rd-2nd c. BCE.
 Children: [`Hmnp`](#hmnp).
 
-Languages written mainly in it: 17. Largest: Modern Hebrew (9,303,950 speakers), Ladino (137,000 speakers), Judeo-Persian (60,000 speakers), Judeo-Yemeni Arabic (50,300 speakers), Hulaulá (10,000 speakers). Also recorded as a further script for 9 more.
+Languages written mainly in it: 18. Largest: Modern Hebrew (9,303,950 speakers), Ladino (137,000 speakers), Judeo-Persian (60,000 speakers), Judeo-Yemeni Arabic (50,300 speakers), Hulaulá (10,000 speakers). Also recorded as a further script for 9 more.
 Unicode: encoded since version 1.1, block from U+0591.
 
 ### Hira
@@ -1169,7 +1169,7 @@ Parent: [`Grek`](#grek) Greek through Euboean Greek, link **attested**.
 Source: Everson, L2/00-140; Unicode TN40. From the Euboean Greek of Ischia and Cumae; Marsiliana abecedary 7th c. BCE; mostly right to left.
 Children: [`Latn`](#latn), [`Runr`](#runr).
 
-Languages written mainly in it: 5. Largest: Etruscan, Venetic, Oscan, Transalpine Gaulish, Noric. Also recorded as a further script for 2 more.
+Languages written mainly in it: 6. Largest: Etruscan, Raetic, Venetic, Oscan, Transalpine Gaulish. Also recorded as a further script for 2 more.
 Unicode: encoded since version 3.1, block from U+10300.
 
 ### Jamo
@@ -1391,7 +1391,7 @@ Parent: [`Ital`](#ital) Old Italic, link **attested**.
 Source: Rocca & Sarullo 2007; CNR 2011 on the Praeneste fibula; Gippert 2020. Lapis Niger and Lapis Satricanus 6th c. BCE; the Praeneste fibula (7th c.) is still argued over.
 Children: [`Ogam`](#ogam), [`Latg`](#latg), [`Latf`](#latf), [`Cher`](#cher), [`Brai`](#brai), [`Vaii`](#vaii), [`Cans`](#cans), [`Moon`](#moon), [`Dsrt`](#dsrt), [`Dupl`](#dupl), [`Visp`](#visp), [`Pauc`](#pauc), [`Wole`](#wole), [`Afak`](#afak), [`Lisu`](#lisu), [`Sara`](#sara), [`Olck`](#olck), [`Medf`](#medf), [`Sunu`](#sunu), [`Wara`](#wara), [`Shaw`](#shaw), [`Sgnw`](#sgnw), [`Piqd`](#piqd), [`Mroo`](#mroo), [`Onao`](#onao), [`Chis`](#chis), [`Tols`](#tols), [`Tnsa`](#tnsa), [`Zsye`](#zsye), [`Wcho`](#wcho), [`Osge`](#osge), [`Toto`](#toto).
 
-Languages written mainly in it: 3,610. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 205 more.
+Languages written mainly in it: 3,609. Largest: English (753,359,540 speakers), Spanish (485,000,000 speakers), Portuguese (254,300,000 speakers), French (208,157,220 speakers), Standard Indonesian (198,996,550 speakers). Also recorded as a further script for 205 more.
 Unicode: encoded since version 1.1, block from U+0041.
 
 ### Leke
@@ -2255,7 +2255,7 @@ Parent: [`Armi`](#armi) Imperial Aramaic, link **attested**.
 Source: Healey 2011, Hugoye; Drijvers & Healey As55. The earliest dated Syriac inscription is the Birecik inscription of 6 CE.
 Children: [`Syre`](#syre), [`Mani`](#mani), [`Syrj`](#syrj), [`Syrn`](#syrn), [`Yezi`](#yezi).
 
-Languages written mainly in it: 8. Largest: Classical Syriac (575,000 speakers), Assyrian Neo-Aramaic (232,300 speakers), Western Neo-Aramaic, Mlahsô, Gardabani Bohtan Neo-Aramaic. Also recorded as a further script for 4 more.
+Languages written mainly in it: 8. Largest: Classical Syriac (575,000 speakers), Assyrian Neo-Aramaic (232,300 speakers), Western Neo-Aramaic, Chaldean Neo-Aramaic, Mlahsô. Also recorded as a further script for 4 more.
 Unicode: encoded since version 3.0, block from U+0700.
 
 ### Syre

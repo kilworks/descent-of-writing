@@ -182,7 +182,7 @@ that chapter is the cheapest useful review.
 ### 3. Done in part: language to script coverage, 17.7% to 52.6%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,517 of 8,587 (52.6%), 2,995 of them on langtags
+third source. Written: 4,517 of 8,587 (52.6%), 2,991 of them on langtags
 alone. Listed as unwritten: 2,856. No record either way: 1,214. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
@@ -205,7 +205,12 @@ Still open:
   Aramaic and Jewish Babylonian Aramaic had fallen under Syriac, Old Tamil
   under Grantha. Korean and Japanese stay under the registry composites Kore
   and Jpan, which is how the sources tag them.
-- 2,995 languages rest on langtags alone, which inherits the Ethnologue's
+- An independent check now exists: crosscheck_wiktionary.py compares the
+  langtags-only links with Wiktionary's language data. Where Wiktionary
+  lists a script it agrees for 99.2% (2,350 of 2,368); eight corrections
+  came from the disagreements, and 18 remain in
+  out/crosscheck_wiktionary.txt for a reader who knows the languages.
+- 2,991 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. A second independent source per language would make them firmer.
   ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
   after that.

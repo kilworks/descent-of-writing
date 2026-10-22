@@ -34,6 +34,7 @@ derivative work under the OFL.
 | Wikidata | CC0 |
 | SIL ISO 639-3 code tables | [SIL terms of use](https://iso639-3.sil.org/code_tables/download_tables) |
 | SIL langtags.json | MIT, Copyright (c) 2019-2025 SIL International |
+| Wiktionary language data modules | CC BY-SA 4.0; used only to check the dataset, never merged into it. `out/crosscheck_wiktionary.txt` quotes the scripts Wiktionary gives for the languages where it disagrees, under that licence |
 
 None of these sources are redistributed in this repository. `fetch.py` and
 `fetch_wikidata.py` retrieve them at build time. What is committed under
