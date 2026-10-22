@@ -188,19 +188,22 @@ def build_languages():
     for t in lt:
         if not isinstance(t, dict) or t.get("tag", "").startswith("_"):
             continue
-        gid = by_iso.get(t.get("iso639_3"))
-        if not gid:
-            continue
-        if t.get("unwritten"):
-            sil_unwritten.add(gid)
-            continue
-        c = t.get("script")
-        if c in valid:
-            lang_scripts[gid].add(c)
-            by_source[gid]["langtags"].add(c)
-            src_count["langtags"] += 1
-            if "-" not in t.get("tag", "-"):
-                lt_primary[gid] = c
+        gids = [by_iso[t["iso639_3"]]] if t.get("iso639_3") in by_iso else [
+            # a macrolanguage's tagset (fa, iso639_3 fas) names the members
+            # Glottolog lists (pes) only among its alias tags; without this,
+            # Persian, Uzbek, Pashto and Estonian had no script on record
+            by_iso[m] for m in sorted({a.split("-")[0] for a in t.get("tags", [])} & set(by_iso))]
+        for gid in gids:
+            if t.get("unwritten"):
+                sil_unwritten.add(gid)
+                continue
+            c = t.get("script")
+            if c in valid:
+                lang_scripts[gid].add(c)
+                by_source[gid]["langtags"].add(c)
+                src_count["langtags"] += 1
+                if "-" not in t.get("tag", "-"):
+                    lt_primary[gid] = c
     print("script links: %s" % dict(src_count))
 
     # corrections.py: the few links the sources get wrong, each with its authority

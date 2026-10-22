@@ -8,8 +8,8 @@ pick one.
 
 ## Where it stands
 
-Everything builds from a cold clone. `python verify.py` currently passes 20 of
-20 and exits 1 if any check fails.
+Everything builds from a cold clone. `python verify.py` currently passes 21 of
+21 and exits 1 if any check fails.
 
 | | |
 |---|---|
@@ -19,7 +19,7 @@ Everything builds from a cold clone. `python verify.py` currently passes 20 of
 | Descent edges | 99 attested, 38 stimulus, 37 contested, 18 invented, 11 variant, 6 composite |
 | Descent claims with a named source | 198 of 198, attested included, none marked unsourced |
 | Languages drawn | 8,587 of 8,587 |
-| Languages with a recorded script | 4,517 (52.6%); 2,856 listed unwritten |
+| Languages with a recorded script | 4,569 (53.2%); 2,857 listed unwritten |
 | Languages with a speaker count | 1,699 (19.8%) |
 | Scripts with a native name | 121 of 218 |
 | Sources retrieved | 2026-10-22 |
@@ -188,21 +188,27 @@ rongorongo, Glagolitic) with the positions, their evidence and where the
 field stands, from 34 sources read on 2026-10-22. A specialist reading of
 that chapter is the cheapest useful review.
 
-### 3. Done in part: language to script coverage, 17.7% to 52.6%
+### 3. Done in part: language to script coverage, 17.7% to 53.2%
 
 SIL's langtags.json (MIT, kept with the Ethnologue script editor) is now a
-third source. Written: 4,517 of 8,587 (52.6%), 2,991 of them on langtags
-alone. Listed as unwritten: 2,856. No record either way: 1,214. Before it was
+third source. Written: 4,569 of 8,587 (53.2%), 3,043 of them on langtags
+alone. Listed as unwritten: 2,857. No record either way: 1,161. Before it was
 added, its agreement with Wikidata and CLDR was measured: at least one shared
 script for 1,294 of the 1,330 languages all three cover. Tagsets flagged
 unwritten never contribute a script (langtags documents regional inference on
 them). Multi-script languages now hang under a ranked primary script
-(langtags default tag, then CLDR primary, then Wikidata); 4 of the 720
+(langtags default tag, then CLDR primary, then Wikidata); 6 of the 747
 with several still fall back to alphabetical order. Members of a
 macrolanguage (Mandarin, Malay) have
 their default tagset filed under the macrolanguage in langtags, which left
 them only special tagsets; they were briefly drawn under Braille, and check 12
 now fails if Braille is ever the main script of a language that has another.
+The same filing hid 52 languages altogether until 2026-10-22: a
+macrolanguage's tagset (fa, iso639_3 fas) names the member Glottolog lists
+(pes) only among its alias tags, so Persian, Uzbek, Pashto, Azerbaijani,
+Guarani, Pulaar, Estonian and Nepali drew as having no script on record.
+Members named in a tagset's aliases now take its script, and check 20
+fails if one is missed.
 
 Still open:
 
@@ -216,20 +222,20 @@ Still open:
   and Jpan, which is how the sources tag them.
 - An independent check now exists: crosscheck_wiktionary.py compares the
   langtags-only links with Wiktionary's language data. Where Wiktionary
-  lists a script it agrees for 99.2% (2,350 of 2,368); eight corrections
+  lists a script it agrees for 99.2% (2,366 of 2,384); eight corrections
   came from the disagreements, and 18 remain in
   out/crosscheck_wiktionary.txt for a reader who knows the languages.
-- 2,991 languages rest on langtags alone, which inherits the Ethnologue's
+- 3,043 languages rest on langtags alone, which inherits the Ethnologue's
   judgement. A second independent source per language would make them firmer.
   ScriptSource (scriptsource.org) is the next candidate; Wikipedia infoboxes
   after that.
 - The unwritten flag is positive evidence but not proof: a listed language can
   have a missionary or school orthography that langtags has not caught.
-- Of the 1,214 with no record, 754 have no ISO 639-3 code, which every
+- Of the 1,161 with no record, 754 have no ISO 639-3 code, which every
   script source keys on; bridging Glottocodes to scripts directly would reach
   them. Another 218 are sign languages, which langtags tags `Zxxx` (no
   written form) where it has them. Done on 2026-10-22: they have a field of
-  their own in the lower register, next to "no record" (now 996), and
+  their own in the lower register, next to "no record" (now 943), and
   check 19 holds it; the nine written in SignWriting hang under it above.
 
 ### 4. Done: monthly rebuild and drift check

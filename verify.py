@@ -243,6 +243,21 @@ check("19. sign languages with no script drawn in their own field",
       bool(m) and int(m.group(1)) == n_sign,
       "%s in the field, %d in the dataset" % (m.group(1) if m else "no field", n_sign))
 
+# 20. a macrolanguage member that langtags names only as an alias (Persian,
+# pes, under fa) still gets the tagset's script; they had fallen through
+iso_of = {v["iso"]: v for v in L.values() if v["iso"]}
+missed = set()
+for t in json.load(open(os.path.join(DATA, "langtags.json"), encoding="utf8")):
+    if not isinstance(t, dict) or t.get("tag", "_").startswith("_") or t.get("iso639_3") in iso_of:
+        continue
+    for m in {a.split("-")[0] for a in t.get("tags", [])} & set(iso_of):
+        v = iso_of[m]
+        # an unwritten tagset may still name a script by regional inference
+        if (not v["sil_unwritten"]) if t.get("unwritten") else (t.get("script") in S and not v["scripts"]):
+            missed.add(m)
+check("20. macrolanguage members reached through langtags aliases",
+      not missed, "members left with no script or flag: %s" % (sorted(missed) or "none"))
+
 # 11. the written guide is generated from this dataset and must not lag it
 import guide
 _gp = os.path.join(BASE, "GUIDE.md")
